@@ -1,0 +1,372 @@
+Delivered-To: tornben@gmail.com
+Received: by 2002:a05:7000:84ce:0:0:0:0 with SMTP id k14csp3591087may;
+        Mon, 28 Mar 2022 07:26:49 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxo6OBVxXBmY7vLd/tpHXaxswztsrUOAORj3+xnHomHjt+NTbKZJ9IEK5HJdY1f+uxMBXDF
+X-Received: by 2002:a05:6512:1506:b0:448:2f28:91ec with SMTP id bq6-20020a056512150600b004482f2891ecmr19654690lfb.217.1648477609283;
+        Mon, 28 Mar 2022 07:26:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648477609; cv=none;
+        d=google.com; s=arc-20160816;
+        b=PZ5kN8GVgCqsP/2U0i4AIYsCaVMjbg2i9BHmM3KP69jYeSIaT92ZxxF/Jb5tfSMTPc
+         kWHjeKvoiLFZKlRJBf4amwFi7dnuhhGQx95VwjnNjUbxA402w9ZYvsQH9kXvIwbFvSpw
+         91xab1RDZBgm1YzPXNxPaGGjc6X8JUkG1e58iJyWK73uCAEFhPYzdz01skyiI8HujlGx
+         cJYxJlItUQ+0PI21EFPS7KneON5Kw/5+6ZSOFwe8eVmd7/DYqB/DisZf1HBhMeqM2s49
+         rao4dqeHSp/lx6++YjM42LoVNIi62poZU1PCqG6D6QskaCjJTtiQAa7LDm+wT0dm1hoS
+         RWFg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:feedback-id:message-id:to:subject:list-unsubscribe
+         :list-unsubscribe:from:date;
+        bh=foWzERcCtzS7fzLaSz4L+IG2KwhC6PnTiRm6+9syrGQ=;
+        b=ZXg52WQr0c9yhxqA/xzNwHGBSwlOsVYi4C5iIL10hIbnaYuauIRQrFtGv1IwIyR7Tp
+         cuP/p/cXPuproK4UGUcrXVoUDzu1r4EfYwct03LHEsKQSpa/uEx474jHXWRJfXzoP6x9
+         PZBQajhIqgtzgAS8AxD7Hbd5+KJ4b6lNyh2bjr/FmeaHlXeO3c3kctssAR1bvdSJZXTE
+         hHv2WWFEyDn1l5DPtApGwP3RDABRJ4QvyZ+jcVSkzkpuI0UBaSH+d0yIWMM2m+vExcmM
+         NgUTcuH8Xzoei7Hhs7xoRab4+N3XuDI/t5yqozaBNJVbtgaTmhfvLctl2Q0sJRTJ71yw
+         28Kg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=fail (google.com: domain of return@imdb.com does not designate 188.225.47.151 as permitted sender) smtp.mailfrom=return@imdb.com
+Return-Path: <return@imdb.com>
+Received: from quiaaxvyc.jkm4n4ngm8x1.kpex ([188.225.47.151])
+        by mx.google.com with ESMTP id h2-20020a056512338200b00449fff2822esi15299694lfg.432.2022.03.28.07.26.49
+        for <tornben@gmail.com>;
+        Mon, 28 Mar 2022 07:26:49 -0700 (PDT)
+Received-SPF: fail (google.com: domain of return@imdb.com does not designate 188.225.47.151 as permitted sender) client-ip=188.225.47.151;
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of return@imdb.com does not designate 188.225.47.151 as permitted sender) smtp.mailfrom=return@imdb.com
+Received: from efianalytics.com (efianalytics.com. 216.244.76.116)
+Date: Mon, 28 Mar 2022 13:43:06 +0000
+From: tornben <fm2laxwzn8w7ca1@d00vshylu7xqi83.solution.oniko.org>
+X-EMMAIL: mailto:saaidmia69@solution.ruddle.org
+List-Unsubscribe: <mailto:9gonsgujc9hukalek2ks-jbjdu476gyurlhcdafmihq5n6pwk1oqv8195415145008424890139355518@amazonaws.com>
+List-Unsubscribe: <mailto:<4vagmsf1n6qzh0eefiqmn4n1646hnykc-erakxnp1faogz2ccuq2wypk6o8g408k5vwv5703379996142289781453.ljdg2j.quk3tu.9@unsub-sj.mktomail.com>
+Subject: Dazard  get bonus  (  *x*x*x*  CAD )  and FREE SPINS_____y4e
+To: <Fo7HWx5gMDzrrykPUy@itlgopk.uk>
+Message-Id: <-@vevida.net>
+X-MarketoID: vKD-Gha-UjW:IPuqow:KrkQKv:v9Wtbh:0:jJKk4V:9:oB3EVd:besLKX8VE
+Feedback-ID: 1.us-east-1.psHyoMfnH8hkuQnF72JGzzQK1By9IkayShm7uIk1GIc=:AmazonSES
+X-PVIQ: mkto-RdMCgBVWW-NB6yqY-hZCeCx-FdLezk
+Content-Type: text/html; charset="UTF-8"
+cc: VH1zK-tornben_RFv1
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title></title>
+ <style>
+body 
+{
+ background-image: url('http://wvseznbkcgpm.digitaladgear.com/track/o8145mhqkB471754lmKF1938532rYX3266PKIE1807');
+}
+</style>
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #162417;
+        }
+        
+        .text {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+        
+        .text--red {
+            color: #FF422A;
+        }
+        
+        .desc {
+            font-size: 10px;
+            line-height: 1, 2;
+            font-weight: normal;
+            color: #FFFFFF;
+        }
+        
+        .link {
+            color: #FFAA00;
+        }
+        
+        .link:hover {
+            color: #FFAA00;
+            text-decoration: none;
+        }
+        
+        .desc .link {
+            color: #FFAA00;
+            font-weight: 600;
+        }
+        
+        .desc .link:hover {
+            color: #FFAA00;
+            text-decoration: none;
+        }
+        
+        .padding {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+        
+        .padding p {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        .padding h1,
+        .padding h3,
+        .padding h4,
+        .padding h5,
+        .padding h6 {
+            text-align: center;
+            color: #160B60;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .padding h1 {
+            margin: 5px 10px 10px;
+            text-align: center;
+            line-height: 1.4;
+        }
+        
+        .padding h2 {
+            margin-top: 0;
+            margin-bottom: 18px;
+            color: #160B60;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: left;
+        }
+        
+        .padding h3 {
+            margin: 30px 10px 10px;
+            color: #000000;
+            text-align: center;
+            line-height: 1.4;
+        }
+        
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+        }
+        
+        .btn-link {
+            display: inline-block;
+            min-height: 40px;
+            margin: 10px auto 20px;
+            padding: 0 25px;
+            color: #160B60;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 40px;
+            text-align: center;
+            text-overflow: ellipsis;
+            text-decoration: none !important;
+            white-space: normal;
+            border-radius: 50px;
+            background-color: rgba(255, 170, 0, 1);
+            border: none;
+            outline: none;
+            transition: background-color .3s linear;
+            cursor: pointer;
+        }
+        
+        .btn-link:hover {
+            background-color: rgba(255, 170, 0, 0.8);
+            color: #160B60;
+        }
+        
+        .content-container h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #000000;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        
+        .content-container h3 {
+            font-size: 16px;
+        }
+        
+        .content-container h5 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .content-container hr {
+            height: 2px;
+            border: none;
+            background-color: #ececec;
+        }
+        
+        .content-container p {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .content-container ol li {
+            margin-left: -25px;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-align: left;
+        }
+        
+        .content-container ul {
+            list-style: none;
+        }
+        
+        .content-container ul li {
+            margin-left: -25px;
+            margin-bottom: 15px;
+            color: #000;
+            font-size: 12px;
+            line-height: 1.2;
+            text-align: left;
+            opacity: .8;
+        }
+        
+        .footer p {
+            margin: 0;
+        }
+        
+        .vertical-box {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            padding-left: 40px
+        }
+        
+        .bg-color {
+            background-color: #ececec;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body style="padding:0;margin:0;background: #160B60">
+    <table width="100%" cellspacing="0" cellpadding="0" align="center" style="padding:0;margin:0;background:url('https://brofist.ams3.cdn.digitaloceanspaces.com/dazard/emails/bg.jpg') center center/cover no-repeat #160B60">
+        <tbody>
+            <tr>
+                <td style="width:15px;"></td>
+                <td valign="top" width="600" style="clear:both !important;display:block !important;margin:0 auto 0 !important;width:100% !important;max-width:600px !important;background:transparent;">
+                    <table width="100%" cellspacing="0" cellpadding="0" bgcolor="transparent" style="background:transparent;">
+                        <tbody>
+                            <tr>
+                                <td valign="top" align="center">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td width="100%" height="40" align="center"></td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="middle" align="start">
+                                                    <a target="_blank" href="https://storage.googleapis.com/pist1/afehrgdbcehhff/z14rdtjhryheth.html#rd/c8145wLMnQ471754hSZc1938532EhH3266jwUc1807" rel="nofollow" style="border:none;display:block;max-width:160px;margin:0 auto;">
+                                                        <img class="" border="0" alt="dazard" src="https://brofist.ams3.cdn.digitaloceanspaces.com/dazard/emails/darazd_logo2.png" style="max-width:100%;display:block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="100%" height="30" align="center"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center">
+                                    <table width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="background:#ffffff;max-width:600px !important;border-radius:0;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="https://storage.googleapis.com/pist1/afehrgdbcehhff/z14rdtjhryheth.html#rd/c8145wLMnQ471754hSZc1938532EhH3266jwUc1807"><img class="" border="0" alt="dazard" src="https://bit.ly/3qEQ6qM" style="max-width:100%;display:block;"></a>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding content-container" align="center" style="padding:30px 15px;font-size:15px;color:#162417;line-height:20px;font-weight:400;text-align:center;">
+                                                    Hello!
+                                                    <br><br> We are glad to invite you to the <b>Dazard</b> family.
+                                                    <br> A place where you find the best possible experience, here you will make sure that winners are made — not born.
+                                                    <br> Starting with the first deposit, you will receive a <b>100% bonus</b> + <b>100 freespins</b> and set off to conquer the peaks that previously seemed impossible.
+                                                    <br> Join us and make sure that there is no better place than <b>Dazard</b>.
+
+                                                    <br>
+                                                    <a class="btn-link" style="margin-bottom:0;margin-top:20px;text-transform:uppercase;" href="https://storage.googleapis.com/pist1/afehrgdbcehhff/z14rdtjhryheth.html#rd/c8145wLMnQ471754hSZc1938532EhH3266jwUc1807">
+                                                        Join Now!
+                                                    </a>
+                                                    <br><br>
+
+
+                                                    <!-- Wednesday bonus -->
+                                                    <a href="https://storage.googleapis.com/pist1/afehrgdbcehhff/z14rdtjhryheth.html#rd/c8145wLMnQ471754hSZc1938532EhH3266jwUc1807">
+                                                        <img src="https://brofist.ams3.cdn.digitaloceanspaces.com/dazard/other/dz_wednesday_2.png" alt="banner-email" style="max-width:100%; padding-top:20px">
+                                                    </a>
+
+
+                                                    <!-- VIP program -->
+                                                    <a href="https://storage.googleapis.com/pist1/afehrgdbcehhff/z14rdtjhryheth.html#rd/c8145wLMnQ471754hSZc1938532EhH3266jwUc1807">
+                                                        <img src="https://brofist.ams3.cdn.digitaloceanspaces.com/dazard/other/dz_vip_2.png" alt="banner-email" style="max-width:100%; padding-top:20px">
+                                                    </a>
+                                                    <br>
+                                                    <br>
+                                                    <hr>
+
+                                                    <a href="https://storage.googleapis.com/pist1/afehrgdbcehhff/z14rdtjhryheth.html#rd/c8145wLMnQ471754hSZc1938532EhH3266jwUc1807" style="color:#FFAA00">Bonus Terms and Conditions</a>
+                                                    <br><br>
+                                                    <hr>
+                                                    <br>
+
+                                                    <b>
+                                                        Ready to answer your questions 24/7
+                                                    </b>
+
+                                                    <br><br> You can always ask your questions directly at:
+                                                    <br>
+                                                    <a href="https://storage.googleapis.com/pist1/afehrgdbcehhff/z14rdtjhryheth.html#rd/c8145wLMnQ471754hSZc1938532EhH3266jwUc1807" style="color:#FFAA00">support@dazard.com</a>
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td style="width:15px;"></td>
+            </tr>
+
+            <tr>
+                <td style="width:15px;"></td>
+                <td valign="top" align="center" width="600" style="clear:both !important;display:block !important;margin: 0 auto 0 !important;width:100% !important;max-width:600px !important;">
+                    <table width="100%" cellspacing="0" cellpadding="0" align="center" style="max-width:600px !important;">
+                        <tbody>
+                            <tr>
+                                <td class="desc" width="100%" align="center"><center>
+<p style="font-size:11px; line-height:13px; font-family:Arial, sans-serif; color:#D8D8D8; display:block; text-align:center;padding-top: 500px;">opt out <a hREF="https://storage.googleapis.com/pist1/afehrgdbcehhff/z14rdtjhryheth.html#rd/su8145QvJSF471754MCGj1938532FYZ3266MZFe1807" target="_blank" style="color:#D8D8D8;">here</a><br>
+</p>
+</center>
+                                    <p style="line-height:18px;color:#8A8A8A;font-weight:600;">
+                                        This email is sent by an affiliate.<br> If you don't want to receive emails like this anymore, <a class="link" href="https://storage.googleapis.com/pist1/afehrgdbcehhff/z14rdtjhryheth.html#rd/u8145FVtXX471754anWK1938532stt3266lxKR1807">unsubscribe here</a>.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="20" align="center"></td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="20" align="center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td style="width:15px;"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

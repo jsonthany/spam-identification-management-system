@@ -1,0 +1,110 @@
+Delivered-To: richard@rxyang.ca
+Received: by 2002:a05:6838:735a:0:0:0:0 with SMTP id y26csp856562nkm;
+        Sun, 20 Mar 2022 05:09:33 -0700 (PDT)
+X-Received: by 2002:a17:906:181a:b0:6d0:ebf5:c064 with SMTP id v26-20020a170906181a00b006d0ebf5c064mr16125178eje.82.1647778171722;
+        Sun, 20 Mar 2022 05:09:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1647778171; cv=none;
+        d=google.com; s=arc-20160816;
+        b=PMjyIKNxdhMRqSWxVcY0Scpq2IQyZZmkyO14PUV5cjLaFnaOS+DDw3DSj1g3iktjCz
+         V4flb0vlzM98FRbe9XK75o63cCuEsMb3j09bYCKNT+koG0245Xqazb0bU4Kfp3c3kXEZ
+         HT9S6s/yl8RiAjZt9dIGyQTnfreEzMLLKz5QvWVa05MoUN1hjXfq8egXl4mznTT8kaar
+         k6ShWbl1eZ7pQlh9Rw7GBiYIC5WoLrAjb0JubCqycns65x7IV24QOZkqd5PafO8h+unO
+         au4bcuoSsVnzKSxrDQhHKoZZKgYmK/cgZ0Y/yD1NVJWCTSo/YOttuC1Cqp2L42nKfkVX
+         ZV2g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=jVRN8ZpKKqospxD60EESbo42zG6cPRwExTJIyX0ximw=;
+        b=h93nGVil6gZnb/aSaHj+j8PSNaP04uKRjBBRMiKPfPePPyFNJh34YBnlJbxk6yXAKa
+         S1i5CnbeUCrrDdE9slQXUt4xyJWZutL+c7QJGMP4IymNMdqxt0vtcB+FRcjK760ETeCh
+         2lXJR9Jmd4FJuQyIQRcDta1JC3cWL3+kEuwvlDiqLLmAJ0qRnED9T1Wyj83elGPa9ODr
+         VwI5iNPlai7qHh+XCVJUFS4uqHXqzx7Groo5n3gR6jQ373a+G1RBTu68EXhcQ8LFCRni
+         WXV8rJlOYVU41FQRK8ajDklmYVjIU2172s4hSrsbw5uoML8ffrFWlkNmcvz2bC156J5X
+         e9+Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="mYNjm/Wd";
+       spf=pass (google.com: domain of matatajeol1@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=matatajeol1@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <matatajeol1@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id y20-20020a170906915400b006df841cd587sor4498507ejw.92.2022.03.20.05.09.31
+        for <richard@rxyang.ca>
+        (Google Transport Security);
+        Sun, 20 Mar 2022 05:09:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of matatajeol1@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="mYNjm/Wd";
+       spf=pass (google.com: domain of matatajeol1@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=matatajeol1@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:reply-to:from:date:message-id:subject:to;
+        bh=jVRN8ZpKKqospxD60EESbo42zG6cPRwExTJIyX0ximw=;
+        b=mYNjm/Wd3c2026I8/8tvZpwaie7l7ABATijoCQc0VZVABDAlD6UDzdkAJGpfMhrdvy
+         7nA6kMztBWHuWxF/+UzgyaufA8vxulg4/vWi20CCeJMrYG/Tl+5xPweJQ38NF12A3I5l
+         XkwtYzZbbZF0wAYRAf83c8oo+IFszxg/3GN56qDaeg3HM5sNKA+AVAKBuzLGq14ZiJ4C
+         UvYF9m9VlIdnL08fyY3Ew2nDm9NnIlavgoks5vv5MpcomeXCfv1NeXaufNaRycW6v3y/
+         kiLuh4B1lhasN9zOF0izHpTD/bTNspnjlSwus2nZNNqcsQRKPUUdfxs75pWnrPUVcxFc
+         WNjg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:reply-to:from:date:message-id
+         :subject:to;
+        bh=jVRN8ZpKKqospxD60EESbo42zG6cPRwExTJIyX0ximw=;
+        b=PwoQd+QqfL6lbEXtRPHNbai9bOFGDXvRrVUmaeIvus9bNH7oj6U0+pMO18QwoR+Wmn
+         YgX9n7r58I0MrhAWIBEiu813ueUrKKvnUPloWs61NKSR3+BXLIWi7cXl8wrmVw7DjQZN
+         Hh+TkAEd//4NmtQm02sApBckhvgh4U2QPLbUmkccSamzFIUx3q75BR2/YmRE0MStoaR6
+         +YZZ3eFlsGzBYDQwbQcpiwuoR5344qaT2GLulyZkfziTWkWZWmSbp2Oo+9OoD284Ongq
+         vZogMN2+DqiDZxLD0Rou21ceGHz4uC5sRGW7FrHr7r6e2KM2FLRsQQ6C+swWeNOFhxuz
+         geKA==
+X-Gm-Message-State: AOAM531NoOldlK63Q3mCORZjidqnXb3xtPoZ4Vpe6yqCsKmOgt+RzBAr
+	/IJBebvIwLzicjl1nKwr1KpjWMi1G8RCXH5ysnQ=
+X-Google-Smtp-Source: ABdhPJx2OdpMa8VK7QSmkj/IbIEYAMntNE4xPIayo1PFHQhzteoDxhzGZZgLKNuTClrLVPoKIGEn6xPIDZkoWA/Xu50=
+X-Received: by 2002:a17:907:9602:b0:6df:e82c:f84 with SMTP id
+ gb2-20020a170907960200b006dfe82c0f84mr4490222ejc.590.1647778170519; Sun, 20
+ Mar 2022 05:09:30 -0700 (PDT)
+MIME-Version: 1.0
+Reply-To: mrsnesara@gmail.com
+From: "Mrs.Noah Emily Sara" <matatajeol1@gmail.com>
+Date: Sun, 20 Mar 2022 05:09:18 -0700
+Message-ID: <CANkx+YZ40jA=AHXPNj2L8WcK0rrfFV6SpfpGfWKZAeBXuCAXAQ@mail.gmail.com>
+Subject: Hello
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="00000000000085c98205daa5405c"
+Bcc: richard@rxyang.ca
+
+--00000000000085c98205daa5405c
+Content-Type: text/plain; charset="UTF-8"
+
+My names are Mrs.Noah Emily Sara I'm from Alberta Canada but stay here in
+the Bradford United Kingdom. There is something
+
+very important I want to discuss with you.
+
+I'm a very influential and wealthy woman but I'm sick and dying. I'm
+suffering from severe oesophageal cancer and have a few months to live. I
+send you this message because I want to make a donation to you for charity
+purposes. I would like to donate funds for charity and investment purposes
+to you.
+
+Get back to me so I can send you more details about my donation.
+
+Warm Regards,
+Mrs.Noah Emily Sara
+
+--00000000000085c98205daa5405c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=
+=3D"gmail_signature">My names are Mrs.Noah Emily Sara I&#39;m from Alberta =
+Canada but stay here in the Bradford United Kingdom. There is something <br=
+><br>very important I want to discuss with you.<br>=C2=A0<br>I&#39;m a very=
+ influential and wealthy woman but I&#39;m sick and dying. I&#39;m sufferin=
+g from severe oesophageal cancer and have a few months to live. I send you =
+this message because I want to make a donation to you for charity purposes.=
+ I would like to donate funds for charity and investment purposes to you.<b=
+r>=C2=A0<br>Get back to me so I can send you more details about my donation=
+. <br><br>Warm Regards,<br>Mrs.Noah Emily Sara</div></div>
+
+--00000000000085c98205daa5405c--

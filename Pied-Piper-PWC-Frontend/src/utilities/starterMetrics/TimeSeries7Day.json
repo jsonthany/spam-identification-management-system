@@ -1,0 +1,3530 @@
+[
+  {
+    "startTime": "2022-03-20T04:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 94,
+      "safe": 80,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 0,
+      "quarantineAllowed": 0
+    },
+    "totalCounts": {
+      "total": 94,
+      "safe": 80,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 0,
+      "quarantineAllowed": 0
+    }
+  },
+  {
+    "startTime": "2022-03-20T05:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 192,
+      "safe": 164,
+      "suspect": 19,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    }
+  },
+  {
+    "startTime": "2022-03-20T06:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 88,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 295,
+      "safe": 252,
+      "suspect": 30,
+      "quarantinePending": 4,
+      "quarantineDenied": 7,
+      "quarantineAllowed": 2
+    }
+  },
+  {
+    "startTime": "2022-03-20T07:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 395,
+      "safe": 338,
+      "suspect": 40,
+      "quarantinePending": 4,
+      "quarantineDenied": 10,
+      "quarantineAllowed": 3
+    }
+  },
+  {
+    "startTime": "2022-03-20T08:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 86,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 495,
+      "safe": 424,
+      "suspect": 49,
+      "quarantinePending": 5,
+      "quarantineDenied": 13,
+      "quarantineAllowed": 4
+    }
+  },
+  {
+    "startTime": "2022-03-20T09:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 594,
+      "safe": 508,
+      "suspect": 59,
+      "quarantinePending": 5,
+      "quarantineDenied": 17,
+      "quarantineAllowed": 5
+    }
+  },
+  {
+    "startTime": "2022-03-20T10:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 698,
+      "safe": 596,
+      "suspect": 69,
+      "quarantinePending": 6,
+      "quarantineDenied": 21,
+      "quarantineAllowed": 6
+    }
+  },
+  {
+    "startTime": "2022-03-20T11:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 802,
+      "safe": 684,
+      "suspect": 79,
+      "quarantinePending": 6,
+      "quarantineDenied": 26,
+      "quarantineAllowed": 7
+    }
+  },
+  {
+    "startTime": "2022-03-20T12:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 82,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 899,
+      "safe": 766,
+      "suspect": 88,
+      "quarantinePending": 6,
+      "quarantineDenied": 31,
+      "quarantineAllowed": 8
+    }
+  },
+  {
+    "startTime": "2022-03-20T13:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 999,
+      "safe": 851,
+      "suspect": 98,
+      "quarantinePending": 5,
+      "quarantineDenied": 36,
+      "quarantineAllowed": 9
+    }
+  },
+  {
+    "startTime": "2022-03-20T14:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 86,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 1101,
+      "safe": 937,
+      "suspect": 109,
+      "quarantinePending": 5,
+      "quarantineDenied": 40,
+      "quarantineAllowed": 10
+    }
+  },
+  {
+    "startTime": "2022-03-20T15:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 7,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 1200,
+      "safe": 1020,
+      "suspect": 118,
+      "quarantinePending": 7,
+      "quarantineDenied": 44,
+      "quarantineAllowed": 11
+    }
+  },
+  {
+    "startTime": "2022-03-20T16:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 90,
+      "suspect": 11,
+      "quarantinePending": 3,
+      "quarantineDenied": 6,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 1304,
+      "safe": 1110,
+      "suspect": 129,
+      "quarantinePending": 3,
+      "quarantineDenied": 50,
+      "quarantineAllowed": 12
+    }
+  },
+  {
+    "startTime": "2022-03-20T17:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 1404,
+      "safe": 1195,
+      "suspect": 140,
+      "quarantinePending": 4,
+      "quarantineDenied": 52,
+      "quarantineAllowed": 13
+    }
+  },
+  {
+    "startTime": "2022-03-20T18:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 1504,
+      "safe": 1280,
+      "suspect": 150,
+      "quarantinePending": 5,
+      "quarantineDenied": 55,
+      "quarantineAllowed": 14
+    }
+  },
+  {
+    "startTime": "2022-03-20T19:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 105,
+      "safe": 89,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 1609,
+      "safe": 1369,
+      "suspect": 161,
+      "quarantinePending": 5,
+      "quarantineDenied": 59,
+      "quarantineAllowed": 15
+    }
+  },
+  {
+    "startTime": "2022-03-20T20:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 1710,
+      "safe": 1455,
+      "suspect": 171,
+      "quarantinePending": 5,
+      "quarantineDenied": 63,
+      "quarantineAllowed": 16
+    }
+  },
+  {
+    "startTime": "2022-03-20T21:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 1812,
+      "safe": 1542,
+      "suspect": 181,
+      "quarantinePending": 5,
+      "quarantineDenied": 67,
+      "quarantineAllowed": 17
+    }
+  },
+  {
+    "startTime": "2022-03-20T22:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 1913,
+      "safe": 1629,
+      "suspect": 191,
+      "quarantinePending": 4,
+      "quarantineDenied": 71,
+      "quarantineAllowed": 18
+    }
+  },
+  {
+    "startTime": "2022-03-20T23:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2017,
+      "safe": 1717,
+      "suspect": 202,
+      "quarantinePending": 5,
+      "quarantineDenied": 74,
+      "quarantineAllowed": 19
+    }
+  },
+  {
+    "startTime": "2022-03-21T00:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2115,
+      "safe": 1801,
+      "suspect": 212,
+      "quarantinePending": 4,
+      "quarantineDenied": 78,
+      "quarantineAllowed": 20
+    }
+  },
+  {
+    "startTime": "2022-03-21T01:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2215,
+      "safe": 1885,
+      "suspect": 222,
+      "quarantinePending": 6,
+      "quarantineDenied": 81,
+      "quarantineAllowed": 21
+    }
+  },
+  {
+    "startTime": "2022-03-21T02:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 82,
+      "suspect": 9,
+      "quarantinePending": 7,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2313,
+      "safe": 1967,
+      "suspect": 231,
+      "quarantinePending": 7,
+      "quarantineDenied": 86,
+      "quarantineAllowed": 22
+    }
+  },
+  {
+    "startTime": "2022-03-21T03:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 6,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2414,
+      "safe": 2052,
+      "suspect": 241,
+      "quarantinePending": 6,
+      "quarantineDenied": 92,
+      "quarantineAllowed": 23
+    }
+  },
+  {
+    "startTime": "2022-03-21T04:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2515,
+      "safe": 2138,
+      "suspect": 252,
+      "quarantinePending": 4,
+      "quarantineDenied": 97,
+      "quarantineAllowed": 24
+    }
+  },
+  {
+    "startTime": "2022-03-21T05:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 86,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2617,
+      "safe": 2224,
+      "suspect": 263,
+      "quarantinePending": 5,
+      "quarantineDenied": 100,
+      "quarantineAllowed": 25
+    }
+  },
+  {
+    "startTime": "2022-03-21T06:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2719,
+      "safe": 2311,
+      "suspect": 273,
+      "quarantinePending": 5,
+      "quarantineDenied": 104,
+      "quarantineAllowed": 26
+    }
+  },
+  {
+    "startTime": "2022-03-21T07:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 87,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2821,
+      "safe": 2398,
+      "suspect": 284,
+      "quarantinePending": 4,
+      "quarantineDenied": 108,
+      "quarantineAllowed": 27
+    }
+  },
+  {
+    "startTime": "2022-03-21T08:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 2922,
+      "safe": 2484,
+      "suspect": 294,
+      "quarantinePending": 5,
+      "quarantineDenied": 111,
+      "quarantineAllowed": 28
+    }
+  },
+  {
+    "startTime": "2022-03-21T09:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 83,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3020,
+      "safe": 2567,
+      "suspect": 304,
+      "quarantinePending": 5,
+      "quarantineDenied": 115,
+      "quarantineAllowed": 29
+    }
+  },
+  {
+    "startTime": "2022-03-21T10:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3120,
+      "safe": 2652,
+      "suspect": 314,
+      "quarantinePending": 5,
+      "quarantineDenied": 119,
+      "quarantineAllowed": 30
+    }
+  },
+  {
+    "startTime": "2022-03-21T11:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3217,
+      "safe": 2735,
+      "suspect": 323,
+      "quarantinePending": 5,
+      "quarantineDenied": 123,
+      "quarantineAllowed": 31
+    }
+  },
+  {
+    "startTime": "2022-03-21T12:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 95,
+      "safe": 80,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3312,
+      "safe": 2815,
+      "suspect": 332,
+      "quarantinePending": 6,
+      "quarantineDenied": 127,
+      "quarantineAllowed": 32
+    }
+  },
+  {
+    "startTime": "2022-03-21T13:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 86,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3414,
+      "safe": 2901,
+      "suspect": 343,
+      "quarantinePending": 5,
+      "quarantineDenied": 132,
+      "quarantineAllowed": 33
+    }
+  },
+  {
+    "startTime": "2022-03-21T14:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3517,
+      "safe": 2989,
+      "suspect": 353,
+      "quarantinePending": 5,
+      "quarantineDenied": 136,
+      "quarantineAllowed": 34
+    }
+  },
+  {
+    "startTime": "2022-03-21T15:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3619,
+      "safe": 3076,
+      "suspect": 363,
+      "quarantinePending": 5,
+      "quarantineDenied": 140,
+      "quarantineAllowed": 35
+    }
+  },
+  {
+    "startTime": "2022-03-21T16:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 87,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3722,
+      "safe": 3163,
+      "suspect": 374,
+      "quarantinePending": 5,
+      "quarantineDenied": 144,
+      "quarantineAllowed": 36
+    }
+  },
+  {
+    "startTime": "2022-03-21T17:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3825,
+      "safe": 3250,
+      "suspect": 384,
+      "quarantinePending": 6,
+      "quarantineDenied": 148,
+      "quarantineAllowed": 37
+    }
+  },
+  {
+    "startTime": "2022-03-21T18:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 3923,
+      "safe": 3333,
+      "suspect": 393,
+      "quarantinePending": 6,
+      "quarantineDenied": 153,
+      "quarantineAllowed": 38
+    }
+  },
+  {
+    "startTime": "2022-03-21T19:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 8,
+      "quarantinePending": 7,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4022,
+      "safe": 3417,
+      "suspect": 401,
+      "quarantinePending": 7,
+      "quarantineDenied": 158,
+      "quarantineAllowed": 39
+    }
+  },
+  {
+    "startTime": "2022-03-21T20:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 6,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4125,
+      "safe": 3505,
+      "suspect": 411,
+      "quarantinePending": 5,
+      "quarantineDenied": 164,
+      "quarantineAllowed": 40
+    }
+  },
+  {
+    "startTime": "2022-03-21T21:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4226,
+      "safe": 3591,
+      "suspect": 421,
+      "quarantinePending": 5,
+      "quarantineDenied": 168,
+      "quarantineAllowed": 41
+    }
+  },
+  {
+    "startTime": "2022-03-21T22:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4326,
+      "safe": 3677,
+      "suspect": 431,
+      "quarantinePending": 4,
+      "quarantineDenied": 172,
+      "quarantineAllowed": 42
+    }
+  },
+  {
+    "startTime": "2022-03-21T23:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4426,
+      "safe": 3761,
+      "suspect": 441,
+      "quarantinePending": 6,
+      "quarantineDenied": 175,
+      "quarantineAllowed": 43
+    }
+  },
+  {
+    "startTime": "2022-03-22T00:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4527,
+      "safe": 3846,
+      "suspect": 451,
+      "quarantinePending": 6,
+      "quarantineDenied": 180,
+      "quarantineAllowed": 44
+    }
+  },
+  {
+    "startTime": "2022-03-22T01:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 82,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4624,
+      "safe": 3928,
+      "suspect": 460,
+      "quarantinePending": 6,
+      "quarantineDenied": 185,
+      "quarantineAllowed": 45
+    }
+  },
+  {
+    "startTime": "2022-03-22T02:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 88,
+      "suspect": 11,
+      "quarantinePending": 3,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4726,
+      "safe": 4016,
+      "suspect": 471,
+      "quarantinePending": 3,
+      "quarantineDenied": 190,
+      "quarantineAllowed": 46
+    }
+  },
+  {
+    "startTime": "2022-03-22T03:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4825,
+      "safe": 4100,
+      "suspect": 480,
+      "quarantinePending": 6,
+      "quarantineDenied": 192,
+      "quarantineAllowed": 47
+    }
+  },
+  {
+    "startTime": "2022-03-22T04:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 89,
+      "suspect": 11,
+      "quarantinePending": 3,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 4928,
+      "safe": 4189,
+      "suspect": 491,
+      "quarantinePending": 3,
+      "quarantineDenied": 197,
+      "quarantineAllowed": 48
+    }
+  },
+  {
+    "startTime": "2022-03-22T05:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5027,
+      "safe": 4273,
+      "suspect": 500,
+      "quarantinePending": 6,
+      "quarantineDenied": 199,
+      "quarantineAllowed": 49
+    }
+  },
+  {
+    "startTime": "2022-03-22T06:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 87,
+      "suspect": 11,
+      "quarantinePending": 3,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5128,
+      "safe": 4360,
+      "suspect": 511,
+      "quarantinePending": 3,
+      "quarantineDenied": 204,
+      "quarantineAllowed": 50
+    }
+  },
+  {
+    "startTime": "2022-03-22T07:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5228,
+      "safe": 4446,
+      "suspect": 521,
+      "quarantinePending": 4,
+      "quarantineDenied": 206,
+      "quarantineAllowed": 51
+    }
+  },
+  {
+    "startTime": "2022-03-22T08:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5331,
+      "safe": 4533,
+      "suspect": 531,
+      "quarantinePending": 6,
+      "quarantineDenied": 209,
+      "quarantineAllowed": 52
+    }
+  },
+  {
+    "startTime": "2022-03-22T09:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5435,
+      "safe": 4621,
+      "suspect": 541,
+      "quarantinePending": 6,
+      "quarantineDenied": 214,
+      "quarantineAllowed": 53
+    }
+  },
+  {
+    "startTime": "2022-03-22T10:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5536,
+      "safe": 4706,
+      "suspect": 551,
+      "quarantinePending": 6,
+      "quarantineDenied": 219,
+      "quarantineAllowed": 54
+    }
+  },
+  {
+    "startTime": "2022-03-22T11:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 7,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5635,
+      "safe": 4789,
+      "suspect": 560,
+      "quarantinePending": 7,
+      "quarantineDenied": 224,
+      "quarantineAllowed": 55
+    }
+  },
+  {
+    "startTime": "2022-03-22T12:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 89,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 6,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5739,
+      "safe": 4878,
+      "suspect": 570,
+      "quarantinePending": 5,
+      "quarantineDenied": 230,
+      "quarantineAllowed": 56
+    }
+  },
+  {
+    "startTime": "2022-03-22T13:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5839,
+      "safe": 4963,
+      "suspect": 580,
+      "quarantinePending": 5,
+      "quarantineDenied": 234,
+      "quarantineAllowed": 57
+    }
+  },
+  {
+    "startTime": "2022-03-22T14:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 5942,
+      "safe": 5050,
+      "suspect": 590,
+      "quarantinePending": 6,
+      "quarantineDenied": 238,
+      "quarantineAllowed": 58
+    }
+  },
+  {
+    "startTime": "2022-03-22T15:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6041,
+      "safe": 5135,
+      "suspect": 600,
+      "quarantinePending": 4,
+      "quarantineDenied": 243,
+      "quarantineAllowed": 59
+    }
+  },
+  {
+    "startTime": "2022-03-22T16:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6140,
+      "safe": 5219,
+      "suspect": 609,
+      "quarantinePending": 6,
+      "quarantineDenied": 246,
+      "quarantineAllowed": 60
+    }
+  },
+  {
+    "startTime": "2022-03-22T17:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6242,
+      "safe": 5305,
+      "suspect": 619,
+      "quarantinePending": 6,
+      "quarantineDenied": 251,
+      "quarantineAllowed": 61
+    }
+  },
+  {
+    "startTime": "2022-03-22T18:53:12.385Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 89,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6346,
+      "safe": 5394,
+      "suspect": 630,
+      "quarantinePending": 4,
+      "quarantineDenied": 256,
+      "quarantineAllowed": 62
+    }
+  },
+  {
+    "startTime": "2022-03-22T19:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6444,
+      "safe": 5477,
+      "suspect": 639,
+      "quarantinePending": 6,
+      "quarantineDenied": 259,
+      "quarantineAllowed": 63
+    }
+  },
+  {
+    "startTime": "2022-03-22T20:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6543,
+      "safe": 5561,
+      "suspect": 649,
+      "quarantinePending": 5,
+      "quarantineDenied": 264,
+      "quarantineAllowed": 64
+    }
+  },
+  {
+    "startTime": "2022-03-22T21:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6643,
+      "safe": 5645,
+      "suspect": 659,
+      "quarantinePending": 6,
+      "quarantineDenied": 268,
+      "quarantineAllowed": 65
+    }
+  },
+  {
+    "startTime": "2022-03-22T22:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6743,
+      "safe": 5730,
+      "suspect": 670,
+      "quarantinePending": 4,
+      "quarantineDenied": 273,
+      "quarantineAllowed": 66
+    }
+  },
+  {
+    "startTime": "2022-03-22T23:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6842,
+      "safe": 5814,
+      "suspect": 681,
+      "quarantinePending": 4,
+      "quarantineDenied": 276,
+      "quarantineAllowed": 67
+    }
+  },
+  {
+    "startTime": "2022-03-23T00:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 6946,
+      "safe": 5902,
+      "suspect": 691,
+      "quarantinePending": 6,
+      "quarantineDenied": 279,
+      "quarantineAllowed": 68
+    }
+  },
+  {
+    "startTime": "2022-03-23T01:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 96,
+      "safe": 81,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7042,
+      "safe": 5983,
+      "suspect": 701,
+      "quarantinePending": 5,
+      "quarantineDenied": 284,
+      "quarantineAllowed": 69
+    }
+  },
+  {
+    "startTime": "2022-03-23T02:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7143,
+      "safe": 6069,
+      "suspect": 710,
+      "quarantinePending": 6,
+      "quarantineDenied": 288,
+      "quarantineAllowed": 70
+    }
+  },
+  {
+    "startTime": "2022-03-23T03:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7242,
+      "safe": 6153,
+      "suspect": 719,
+      "quarantinePending": 6,
+      "quarantineDenied": 293,
+      "quarantineAllowed": 71
+    }
+  },
+  {
+    "startTime": "2022-03-23T04:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7341,
+      "safe": 6238,
+      "suspect": 729,
+      "quarantinePending": 4,
+      "quarantineDenied": 298,
+      "quarantineAllowed": 72
+    }
+  },
+  {
+    "startTime": "2022-03-23T05:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 84,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7439,
+      "safe": 6322,
+      "suspect": 738,
+      "quarantinePending": 5,
+      "quarantineDenied": 301,
+      "quarantineAllowed": 73
+    }
+  },
+  {
+    "startTime": "2022-03-23T06:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7538,
+      "safe": 6406,
+      "suspect": 747,
+      "quarantinePending": 6,
+      "quarantineDenied": 305,
+      "quarantineAllowed": 74
+    }
+  },
+  {
+    "startTime": "2022-03-23T07:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7638,
+      "safe": 6490,
+      "suspect": 757,
+      "quarantinePending": 6,
+      "quarantineDenied": 310,
+      "quarantineAllowed": 75
+    }
+  },
+  {
+    "startTime": "2022-03-23T08:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 82,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7735,
+      "safe": 6572,
+      "suspect": 766,
+      "quarantinePending": 6,
+      "quarantineDenied": 315,
+      "quarantineAllowed": 76
+    }
+  },
+  {
+    "startTime": "2022-03-23T09:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7838,
+      "safe": 6660,
+      "suspect": 776,
+      "quarantinePending": 5,
+      "quarantineDenied": 320,
+      "quarantineAllowed": 77
+    }
+  },
+  {
+    "startTime": "2022-03-23T10:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 7941,
+      "safe": 6748,
+      "suspect": 786,
+      "quarantinePending": 5,
+      "quarantineDenied": 324,
+      "quarantineAllowed": 78
+    }
+  },
+  {
+    "startTime": "2022-03-23T11:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 96,
+      "safe": 82,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8037,
+      "safe": 6830,
+      "suspect": 796,
+      "quarantinePending": 4,
+      "quarantineDenied": 328,
+      "quarantineAllowed": 79
+    }
+  },
+  {
+    "startTime": "2022-03-23T12:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8141,
+      "safe": 6918,
+      "suspect": 807,
+      "quarantinePending": 5,
+      "quarantineDenied": 331,
+      "quarantineAllowed": 80
+    }
+  },
+  {
+    "startTime": "2022-03-23T13:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8241,
+      "safe": 7003,
+      "suspect": 817,
+      "quarantinePending": 5,
+      "quarantineDenied": 335,
+      "quarantineAllowed": 81
+    }
+  },
+  {
+    "startTime": "2022-03-23T14:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8345,
+      "safe": 7091,
+      "suspect": 827,
+      "quarantinePending": 6,
+      "quarantineDenied": 339,
+      "quarantineAllowed": 82
+    }
+  },
+  {
+    "startTime": "2022-03-23T15:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8443,
+      "safe": 7175,
+      "suspect": 837,
+      "quarantinePending": 4,
+      "quarantineDenied": 344,
+      "quarantineAllowed": 83
+    }
+  },
+  {
+    "startTime": "2022-03-23T16:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8545,
+      "safe": 7262,
+      "suspect": 847,
+      "quarantinePending": 5,
+      "quarantineDenied": 347,
+      "quarantineAllowed": 84
+    }
+  },
+  {
+    "startTime": "2022-03-23T17:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 83,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8644,
+      "safe": 7345,
+      "suspect": 858,
+      "quarantinePending": 5,
+      "quarantineDenied": 351,
+      "quarantineAllowed": 85
+    }
+  },
+  {
+    "startTime": "2022-03-23T18:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 95,
+      "safe": 81,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8739,
+      "safe": 7426,
+      "suspect": 867,
+      "quarantinePending": 5,
+      "quarantineDenied": 355,
+      "quarantineAllowed": 86
+    }
+  },
+  {
+    "startTime": "2022-03-23T19:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8839,
+      "safe": 7511,
+      "suspect": 877,
+      "quarantinePending": 5,
+      "quarantineDenied": 359,
+      "quarantineAllowed": 87
+    }
+  },
+  {
+    "startTime": "2022-03-23T20:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 7,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 8943,
+      "safe": 7598,
+      "suspect": 887,
+      "quarantinePending": 7,
+      "quarantineDenied": 363,
+      "quarantineAllowed": 88
+    }
+  },
+  {
+    "startTime": "2022-03-23T21:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 6,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9044,
+      "safe": 7683,
+      "suspect": 897,
+      "quarantinePending": 6,
+      "quarantineDenied": 369,
+      "quarantineAllowed": 89
+    }
+  },
+  {
+    "startTime": "2022-03-23T22:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9146,
+      "safe": 7769,
+      "suspect": 907,
+      "quarantinePending": 6,
+      "quarantineDenied": 374,
+      "quarantineAllowed": 90
+    }
+  },
+  {
+    "startTime": "2022-03-23T23:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9243,
+      "safe": 7852,
+      "suspect": 916,
+      "quarantinePending": 5,
+      "quarantineDenied": 379,
+      "quarantineAllowed": 91
+    }
+  },
+  {
+    "startTime": "2022-03-24T00:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 87,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9346,
+      "safe": 7939,
+      "suspect": 927,
+      "quarantinePending": 5,
+      "quarantineDenied": 383,
+      "quarantineAllowed": 92
+    }
+  },
+  {
+    "startTime": "2022-03-24T01:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 3,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9443,
+      "safe": 8023,
+      "suspect": 937,
+      "quarantinePending": 3,
+      "quarantineDenied": 387,
+      "quarantineAllowed": 93
+    }
+  },
+  {
+    "startTime": "2022-03-24T02:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 9,
+      "quarantinePending": 7,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9547,
+      "safe": 8111,
+      "suspect": 946,
+      "quarantinePending": 7,
+      "quarantineDenied": 389,
+      "quarantineAllowed": 94
+    }
+  },
+  {
+    "startTime": "2022-03-24T03:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 12,
+      "quarantinePending": 3,
+      "quarantineDenied": 6,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9647,
+      "safe": 8196,
+      "suspect": 958,
+      "quarantinePending": 3,
+      "quarantineDenied": 395,
+      "quarantineAllowed": 95
+    }
+  },
+  {
+    "startTime": "2022-03-24T04:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9746,
+      "safe": 8280,
+      "suspect": 968,
+      "quarantinePending": 5,
+      "quarantineDenied": 397,
+      "quarantineAllowed": 96
+    }
+  },
+  {
+    "startTime": "2022-03-24T05:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9847,
+      "safe": 8365,
+      "suspect": 978,
+      "quarantinePending": 6,
+      "quarantineDenied": 401,
+      "quarantineAllowed": 97
+    }
+  },
+  {
+    "startTime": "2022-03-24T06:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 108,
+      "safe": 92,
+      "suspect": 12,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 9955,
+      "safe": 8457,
+      "suspect": 990,
+      "quarantinePending": 4,
+      "quarantineDenied": 406,
+      "quarantineAllowed": 98
+    }
+  },
+  {
+    "startTime": "2022-03-24T07:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10055,
+      "safe": 8542,
+      "suspect": 1000,
+      "quarantinePending": 5,
+      "quarantineDenied": 409,
+      "quarantineAllowed": 99
+    }
+  },
+  {
+    "startTime": "2022-03-24T08:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 95,
+      "safe": 80,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10150,
+      "safe": 8622,
+      "suspect": 1009,
+      "quarantinePending": 6,
+      "quarantineDenied": 413,
+      "quarantineAllowed": 100
+    }
+  },
+  {
+    "startTime": "2022-03-24T09:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10250,
+      "safe": 8707,
+      "suspect": 1019,
+      "quarantinePending": 5,
+      "quarantineDenied": 418,
+      "quarantineAllowed": 101
+    }
+  },
+  {
+    "startTime": "2022-03-24T10:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10351,
+      "safe": 8793,
+      "suspect": 1029,
+      "quarantinePending": 5,
+      "quarantineDenied": 422,
+      "quarantineAllowed": 102
+    }
+  },
+  {
+    "startTime": "2022-03-24T11:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10451,
+      "safe": 8878,
+      "suspect": 1040,
+      "quarantinePending": 4,
+      "quarantineDenied": 426,
+      "quarantineAllowed": 103
+    }
+  },
+  {
+    "startTime": "2022-03-24T12:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10552,
+      "safe": 8964,
+      "suspect": 1049,
+      "quarantinePending": 6,
+      "quarantineDenied": 429,
+      "quarantineAllowed": 104
+    }
+  },
+  {
+    "startTime": "2022-03-24T13:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10652,
+      "safe": 9050,
+      "suspect": 1059,
+      "quarantinePending": 4,
+      "quarantineDenied": 434,
+      "quarantineAllowed": 105
+    }
+  },
+  {
+    "startTime": "2022-03-24T14:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 89,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10756,
+      "safe": 9139,
+      "suspect": 1069,
+      "quarantinePending": 5,
+      "quarantineDenied": 437,
+      "quarantineAllowed": 106
+    }
+  },
+  {
+    "startTime": "2022-03-24T15:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 7,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10859,
+      "safe": 9225,
+      "suspect": 1079,
+      "quarantinePending": 7,
+      "quarantineDenied": 441,
+      "quarantineAllowed": 107
+    }
+  },
+  {
+    "startTime": "2022-03-24T16:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 6,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 10959,
+      "safe": 9309,
+      "suspect": 1089,
+      "quarantinePending": 6,
+      "quarantineDenied": 447,
+      "quarantineAllowed": 108
+    }
+  },
+  {
+    "startTime": "2022-03-24T17:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 82,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11056,
+      "safe": 9391,
+      "suspect": 1099,
+      "quarantinePending": 5,
+      "quarantineDenied": 452,
+      "quarantineAllowed": 109
+    }
+  },
+  {
+    "startTime": "2022-03-24T18:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11158,
+      "safe": 9479,
+      "suspect": 1109,
+      "quarantinePending": 4,
+      "quarantineDenied": 456,
+      "quarantineAllowed": 110
+    }
+  },
+  {
+    "startTime": "2022-03-24T19:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 88,
+      "suspect": 11,
+      "quarantinePending": 3,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11260,
+      "safe": 9567,
+      "suspect": 1120,
+      "quarantinePending": 3,
+      "quarantineDenied": 459,
+      "quarantineAllowed": 111
+    }
+  },
+  {
+    "startTime": "2022-03-24T20:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 85,
+      "suspect": 11,
+      "quarantinePending": 3,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11359,
+      "safe": 9652,
+      "suspect": 1131,
+      "quarantinePending": 3,
+      "quarantineDenied": 461,
+      "quarantineAllowed": 112
+    }
+  },
+  {
+    "startTime": "2022-03-24T21:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 105,
+      "safe": 90,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11464,
+      "safe": 9742,
+      "suspect": 1142,
+      "quarantinePending": 4,
+      "quarantineDenied": 463,
+      "quarantineAllowed": 113
+    }
+  },
+  {
+    "startTime": "2022-03-24T22:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11562,
+      "safe": 9825,
+      "suspect": 1151,
+      "quarantinePending": 6,
+      "quarantineDenied": 466,
+      "quarantineAllowed": 114
+    }
+  },
+  {
+    "startTime": "2022-03-24T23:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 94,
+      "safe": 79,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11656,
+      "safe": 9904,
+      "suspect": 1160,
+      "quarantinePending": 6,
+      "quarantineDenied": 471,
+      "quarantineAllowed": 115
+    }
+  },
+  {
+    "startTime": "2022-03-25T00:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11753,
+      "safe": 9987,
+      "suspect": 1169,
+      "quarantinePending": 5,
+      "quarantineDenied": 476,
+      "quarantineAllowed": 116
+    }
+  },
+  {
+    "startTime": "2022-03-25T01:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 96,
+      "safe": 82,
+      "suspect": 8,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11849,
+      "safe": 10069,
+      "suspect": 1177,
+      "quarantinePending": 6,
+      "quarantineDenied": 480,
+      "quarantineAllowed": 117
+    }
+  },
+  {
+    "startTime": "2022-03-25T02:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 87,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 11951,
+      "safe": 10156,
+      "suspect": 1186,
+      "quarantinePending": 6,
+      "quarantineDenied": 485,
+      "quarantineAllowed": 118
+    }
+  },
+  {
+    "startTime": "2022-03-25T03:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 87,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12054,
+      "safe": 10243,
+      "suspect": 1197,
+      "quarantinePending": 5,
+      "quarantineDenied": 490,
+      "quarantineAllowed": 119
+    }
+  },
+  {
+    "startTime": "2022-03-25T04:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12154,
+      "safe": 10327,
+      "suspect": 1207,
+      "quarantinePending": 6,
+      "quarantineDenied": 494,
+      "quarantineAllowed": 120
+    }
+  },
+  {
+    "startTime": "2022-03-25T05:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 7,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12253,
+      "safe": 10410,
+      "suspect": 1216,
+      "quarantinePending": 7,
+      "quarantineDenied": 499,
+      "quarantineAllowed": 121
+    }
+  },
+  {
+    "startTime": "2022-03-25T06:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 94,
+      "safe": 81,
+      "suspect": 9,
+      "quarantinePending": 4,
+      "quarantineDenied": 6,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12347,
+      "safe": 10491,
+      "suspect": 1225,
+      "quarantinePending": 4,
+      "quarantineDenied": 505,
+      "quarantineAllowed": 122
+    }
+  },
+  {
+    "startTime": "2022-03-25T07:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12450,
+      "safe": 10579,
+      "suspect": 1235,
+      "quarantinePending": 5,
+      "quarantineDenied": 508,
+      "quarantineAllowed": 123
+    }
+  },
+  {
+    "startTime": "2022-03-25T08:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 83,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12548,
+      "safe": 10662,
+      "suspect": 1245,
+      "quarantinePending": 5,
+      "quarantineDenied": 512,
+      "quarantineAllowed": 124
+    }
+  },
+  {
+    "startTime": "2022-03-25T09:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12649,
+      "safe": 10748,
+      "suspect": 1255,
+      "quarantinePending": 5,
+      "quarantineDenied": 516,
+      "quarantineAllowed": 125
+    }
+  },
+  {
+    "startTime": "2022-03-25T10:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12748,
+      "safe": 10832,
+      "suspect": 1266,
+      "quarantinePending": 4,
+      "quarantineDenied": 520,
+      "quarantineAllowed": 126
+    }
+  },
+  {
+    "startTime": "2022-03-25T11:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12849,
+      "safe": 10917,
+      "suspect": 1276,
+      "quarantinePending": 6,
+      "quarantineDenied": 523,
+      "quarantineAllowed": 127
+    }
+  },
+  {
+    "startTime": "2022-03-25T12:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 7,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 12948,
+      "safe": 11000,
+      "suspect": 1285,
+      "quarantinePending": 7,
+      "quarantineDenied": 528,
+      "quarantineAllowed": 128
+    }
+  },
+  {
+    "startTime": "2022-03-25T13:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 6,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13049,
+      "safe": 11085,
+      "suspect": 1296,
+      "quarantinePending": 5,
+      "quarantineDenied": 534,
+      "quarantineAllowed": 129
+    }
+  },
+  {
+    "startTime": "2022-03-25T14:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 82,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13146,
+      "safe": 11167,
+      "suspect": 1306,
+      "quarantinePending": 5,
+      "quarantineDenied": 538,
+      "quarantineAllowed": 130
+    }
+  },
+  {
+    "startTime": "2022-03-25T15:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 84,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13244,
+      "safe": 11251,
+      "suspect": 1315,
+      "quarantinePending": 5,
+      "quarantineDenied": 542,
+      "quarantineAllowed": 131
+    }
+  },
+  {
+    "startTime": "2022-03-25T16:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 83,
+      "suspect": 11,
+      "quarantinePending": 3,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13341,
+      "safe": 11334,
+      "suspect": 1326,
+      "quarantinePending": 3,
+      "quarantineDenied": 546,
+      "quarantineAllowed": 132
+    }
+  },
+  {
+    "startTime": "2022-03-25T17:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13445,
+      "safe": 11422,
+      "suspect": 1337,
+      "quarantinePending": 5,
+      "quarantineDenied": 548,
+      "quarantineAllowed": 133
+    }
+  },
+  {
+    "startTime": "2022-03-25T18:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13546,
+      "safe": 11507,
+      "suspect": 1348,
+      "quarantinePending": 5,
+      "quarantineDenied": 552,
+      "quarantineAllowed": 134
+    }
+  },
+  {
+    "startTime": "2022-03-25T19:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13646,
+      "safe": 11593,
+      "suspect": 1358,
+      "quarantinePending": 4,
+      "quarantineDenied": 556,
+      "quarantineAllowed": 135
+    }
+  },
+  {
+    "startTime": "2022-03-25T20:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13743,
+      "safe": 11676,
+      "suspect": 1367,
+      "quarantinePending": 5,
+      "quarantineDenied": 559,
+      "quarantineAllowed": 136
+    }
+  },
+  {
+    "startTime": "2022-03-25T21:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13847,
+      "safe": 11764,
+      "suspect": 1378,
+      "quarantinePending": 5,
+      "quarantineDenied": 563,
+      "quarantineAllowed": 137
+    }
+  },
+  {
+    "startTime": "2022-03-25T22:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 13946,
+      "safe": 11848,
+      "suspect": 1389,
+      "quarantinePending": 4,
+      "quarantineDenied": 567,
+      "quarantineAllowed": 138
+    }
+  },
+  {
+    "startTime": "2022-03-25T23:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14046,
+      "safe": 11933,
+      "suspect": 1398,
+      "quarantinePending": 6,
+      "quarantineDenied": 570,
+      "quarantineAllowed": 139
+    }
+  },
+  {
+    "startTime": "2022-03-26T00:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 87,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14148,
+      "safe": 12020,
+      "suspect": 1408,
+      "quarantinePending": 5,
+      "quarantineDenied": 575,
+      "quarantineAllowed": 140
+    }
+  },
+  {
+    "startTime": "2022-03-26T01:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 95,
+      "safe": 81,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14243,
+      "safe": 12101,
+      "suspect": 1417,
+      "quarantinePending": 5,
+      "quarantineDenied": 579,
+      "quarantineAllowed": 141
+    }
+  },
+  {
+    "startTime": "2022-03-26T02:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 87,
+      "suspect": 11,
+      "quarantinePending": 3,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14344,
+      "safe": 12188,
+      "suspect": 1428,
+      "quarantinePending": 3,
+      "quarantineDenied": 583,
+      "quarantineAllowed": 142
+    }
+  },
+  {
+    "startTime": "2022-03-26T03:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 88,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 2,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14447,
+      "safe": 12276,
+      "suspect": 1439,
+      "quarantinePending": 4,
+      "quarantineDenied": 585,
+      "quarantineAllowed": 143
+    }
+  },
+  {
+    "startTime": "2022-03-26T04:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 88,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14550,
+      "safe": 12364,
+      "suspect": 1449,
+      "quarantinePending": 5,
+      "quarantineDenied": 588,
+      "quarantineAllowed": 144
+    }
+  },
+  {
+    "startTime": "2022-03-26T05:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 105,
+      "safe": 90,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14655,
+      "safe": 12454,
+      "suspect": 1460,
+      "quarantinePending": 4,
+      "quarantineDenied": 592,
+      "quarantineAllowed": 145
+    }
+  },
+  {
+    "startTime": "2022-03-26T06:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 96,
+      "safe": 82,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14751,
+      "safe": 12536,
+      "suspect": 1470,
+      "quarantinePending": 4,
+      "quarantineDenied": 595,
+      "quarantineAllowed": 146
+    }
+  },
+  {
+    "startTime": "2022-03-26T07:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 87,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14854,
+      "safe": 12623,
+      "suspect": 1481,
+      "quarantinePending": 5,
+      "quarantineDenied": 598,
+      "quarantineAllowed": 147
+    }
+  },
+  {
+    "startTime": "2022-03-26T08:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 103,
+      "safe": 88,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 14957,
+      "safe": 12711,
+      "suspect": 1490,
+      "quarantinePending": 6,
+      "quarantineDenied": 602,
+      "quarantineAllowed": 148
+    }
+  },
+  {
+    "startTime": "2022-03-26T09:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15058,
+      "safe": 12797,
+      "suspect": 1499,
+      "quarantinePending": 6,
+      "quarantineDenied": 607,
+      "quarantineAllowed": 149
+    }
+  },
+  {
+    "startTime": "2022-03-26T10:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15158,
+      "safe": 12881,
+      "suspect": 1509,
+      "quarantinePending": 6,
+      "quarantineDenied": 612,
+      "quarantineAllowed": 150
+    }
+  },
+  {
+    "startTime": "2022-03-26T11:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15256,
+      "safe": 12965,
+      "suspect": 1519,
+      "quarantinePending": 4,
+      "quarantineDenied": 617,
+      "quarantineAllowed": 151
+    }
+  },
+  {
+    "startTime": "2022-03-26T12:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 88,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15360,
+      "safe": 13053,
+      "suspect": 1530,
+      "quarantinePending": 5,
+      "quarantineDenied": 620,
+      "quarantineAllowed": 152
+    }
+  },
+  {
+    "startTime": "2022-03-26T13:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 98,
+      "safe": 83,
+      "suspect": 9,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15458,
+      "safe": 13136,
+      "suspect": 1539,
+      "quarantinePending": 6,
+      "quarantineDenied": 624,
+      "quarantineAllowed": 153
+    }
+  },
+  {
+    "startTime": "2022-03-26T14:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15559,
+      "safe": 13222,
+      "suspect": 1549,
+      "quarantinePending": 5,
+      "quarantineDenied": 629,
+      "quarantineAllowed": 154
+    }
+  },
+  {
+    "startTime": "2022-03-26T15:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15660,
+      "safe": 13307,
+      "suspect": 1559,
+      "quarantinePending": 6,
+      "quarantineDenied": 633,
+      "quarantineAllowed": 155
+    }
+  },
+  {
+    "startTime": "2022-03-26T16:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 102,
+      "safe": 87,
+      "suspect": 11,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15762,
+      "safe": 13394,
+      "suspect": 1570,
+      "quarantinePending": 4,
+      "quarantineDenied": 638,
+      "quarantineAllowed": 156
+    }
+  },
+  {
+    "startTime": "2022-03-26T17:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15863,
+      "safe": 13480,
+      "suspect": 1580,
+      "quarantinePending": 5,
+      "quarantineDenied": 641,
+      "quarantineAllowed": 157
+    }
+  },
+  {
+    "startTime": "2022-03-26T18:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 15962,
+      "safe": 13564,
+      "suspect": 1590,
+      "quarantinePending": 5,
+      "quarantineDenied": 645,
+      "quarantineAllowed": 158
+    }
+  },
+  {
+    "startTime": "2022-03-26T19:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 95,
+      "safe": 81,
+      "suspect": 9,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 16057,
+      "safe": 13645,
+      "suspect": 1599,
+      "quarantinePending": 5,
+      "quarantineDenied": 649,
+      "quarantineAllowed": 159
+    }
+  },
+  {
+    "startTime": "2022-03-26T20:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 85,
+      "suspect": 11,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 16158,
+      "safe": 13730,
+      "suspect": 1610,
+      "quarantinePending": 5,
+      "quarantineDenied": 653,
+      "quarantineAllowed": 160
+    }
+  },
+  {
+    "startTime": "2022-03-26T21:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 84,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 16257,
+      "safe": 13814,
+      "suspect": 1620,
+      "quarantinePending": 5,
+      "quarantineDenied": 657,
+      "quarantineAllowed": 161
+    }
+  },
+  {
+    "startTime": "2022-03-26T22:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 85,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 16357,
+      "safe": 13899,
+      "suspect": 1630,
+      "quarantinePending": 5,
+      "quarantineDenied": 661,
+      "quarantineAllowed": 162
+    }
+  },
+  {
+    "startTime": "2022-03-26T23:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 99,
+      "safe": 83,
+      "suspect": 10,
+      "quarantinePending": 6,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 16456,
+      "safe": 13982,
+      "suspect": 1640,
+      "quarantinePending": 6,
+      "quarantineDenied": 665,
+      "quarantineAllowed": 163
+    }
+  },
+  {
+    "startTime": "2022-03-27T00:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 100,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 4,
+      "quarantineDenied": 5,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 16556,
+      "safe": 14068,
+      "suspect": 1650,
+      "quarantinePending": 4,
+      "quarantineDenied": 670,
+      "quarantineAllowed": 164
+    }
+  },
+  {
+    "startTime": "2022-03-27T01:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 104,
+      "safe": 89,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 3,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 16660,
+      "safe": 14157,
+      "suspect": 1660,
+      "quarantinePending": 5,
+      "quarantineDenied": 673,
+      "quarantineAllowed": 165
+    }
+  },
+  {
+    "startTime": "2022-03-27T02:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 101,
+      "safe": 86,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 16761,
+      "safe": 14243,
+      "suspect": 1670,
+      "quarantinePending": 5,
+      "quarantineDenied": 677,
+      "quarantineAllowed": 166
+    }
+  },
+  {
+    "startTime": "2022-03-27T03:53:12.386Z",
+    "interval": 1,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 97,
+      "safe": 82,
+      "suspect": 10,
+      "quarantinePending": 5,
+      "quarantineDenied": 4,
+      "quarantineAllowed": 1
+    },
+    "totalCounts": {
+      "total": 16858,
+      "safe": 14325,
+      "suspect": 1680,
+      "quarantinePending": 5,
+      "quarantineDenied": 681,
+      "quarantineAllowed": 167
+    }
+  }
+]

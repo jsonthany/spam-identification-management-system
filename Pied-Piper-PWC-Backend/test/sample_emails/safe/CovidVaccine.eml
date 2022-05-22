@@ -1,0 +1,87 @@
+Delivered-To: jasonthany@gmail.com
+Received: by 2002:a5d:6510:0:0:0:0:0 with SMTP id x16csp320371wru;
+        Thu, 12 Aug 2021 02:51:43 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy2B0ZxLeyPVUOFf7Ar9CbBH9iop0UfoUmdZ9A9B5G4A1fbYuIziv42TjGcyrMs5sjE7Gmm
+X-Received: by 2002:a05:620a:102f:: with SMTP id a15mr3643496qkk.128.1628761903152;
+        Thu, 12 Aug 2021 02:51:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1628761903; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AcvO5e0MbeomOJIaQ4HwKn24NYDWQGGSdiftwesClHGjT5/aT97oaTZ8fJu/Z58XkB
+         pcL38npKqkKOvnWHczKNda4HpzH25Wyht7YUQPRBiL1+dw17xv18Idv0svat+qrD7BdA
+         cPal8X5DnFOZkzxZwQtVJanFdpKbMdkBfiszic+c/tbZOcFlXhZrHl6LysGe+8n/YDdp
+         tzqyGOTkuGW8MS8luvauyde8hAQZvnKgSUeb94Rfw0WLoBf+hRKrxL0Xi3pBFGpjz3uF
+         8sjn6CpF8zLqGvx+iC8MNNVPlYQjF8HmMhtSAbrgX8PajNNO0ODUOxm77ZEk/Ewfeepm
+         An8Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:date:message-id:content-transfer-encoding:mime-version
+         :subject:to:from:dkim-signature:dkim-signature;
+        bh=hRkmyl9VWb3A45m3WR+UNNjZBoNq0w6JgeM7zMgmKno=;
+        b=0cU8XchH6d69i/MAtzxtWtV5jHtPIBs/xQCl5lmNT2EBjLZnhWbINPaz+ecksxlhAQ
+         Nz0m+hWi+1c0Az0Vn4e+Y7nzZl6T5ZUn9Fih0bDJbASrP+BtUoIPz7l9RdlLbdXthF20
+         DACf+8TLdu0lGYWH4OB/0pOBVA2q8Mo/nlslctW959CZ9bBgMzwRlxSKi/ZB66aY8P+6
+         yjFNulHh2bUDhN+kLQVVtX+AIsNDfR3I9dxJXf7GQYz2/KPmO9wmUsrqiNzyqP5nmH39
+         1HceZM9qKemulCU5+dnFVjE/ts+c39ee1xEVvpwPH/2aUzAEsTA0C4ndeTaxCNtZ89up
+         RFgQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@hlth.gov.bc.ca header.s=jfrjqy6qqcu3wqovu6d4wid4jo5256sj header.b=lIpPGUNI;
+       dkim=pass header.i=@amazonses.com header.s=3alvvvbel33b2fx6aci3gonjgwxev6s4 header.b=a7SihZck;
+       spf=pass (google.com: domain of 010d017b39c64dfc-60dc26db-25cb-4627-b421-c0b4216d362c-000000@ca-central-1.amazonses.com designates 23.249.209.207 as permitted sender) smtp.mailfrom=010d017b39c64dfc-60dc26db-25cb-4627-b421-c0b4216d362c-000000@ca-central-1.amazonses.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hlth.gov.bc.ca
+Return-Path: <010d017b39c64dfc-60dc26db-25cb-4627-b421-c0b4216d362c-000000@ca-central-1.amazonses.com>
+Received: from d209-207.smtp-out.ca-central-1.amazonses.com (d209-207.smtp-out.ca-central-1.amazonses.com. [23.249.209.207])
+        by mx.google.com with ESMTPS id 88si1471887qte.10.2021.08.12.02.51.42
+        for <jasonthany@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Thu, 12 Aug 2021 02:51:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 010d017b39c64dfc-60dc26db-25cb-4627-b421-c0b4216d362c-000000@ca-central-1.amazonses.com designates 23.249.209.207 as permitted sender) client-ip=23.249.209.207;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hlth.gov.bc.ca header.s=jfrjqy6qqcu3wqovu6d4wid4jo5256sj header.b=lIpPGUNI;
+       dkim=pass header.i=@amazonses.com header.s=3alvvvbel33b2fx6aci3gonjgwxev6s4 header.b=a7SihZck;
+       spf=pass (google.com: domain of 010d017b39c64dfc-60dc26db-25cb-4627-b421-c0b4216d362c-000000@ca-central-1.amazonses.com designates 23.249.209.207 as permitted sender) smtp.mailfrom=010d017b39c64dfc-60dc26db-25cb-4627-b421-c0b4216d362c-000000@ca-central-1.amazonses.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hlth.gov.bc.ca
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=jfrjqy6qqcu3wqovu6d4wid4jo5256sj; d=hlth.gov.bc.ca; t=1628761902;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date;
+	bh=hRkmyl9VWb3A45m3WR+UNNjZBoNq0w6JgeM7zMgmKno=;
+	b=lIpPGUNI/xkKmetT6KJ83WC7/a5egGGw/HtUUjW+meF0iE4WvgekbFUzj96WMHHt
+	EFt0OdKC0GP53M7yfGM+FqVxorVWYfKktW3MWE0Gwgbl1Z6rkpEwpuDOJSH72QktUei
+	xsGxQIME0MrqGlEGEmr8Fwxb/lXPkHlsgxrbfgnk=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=3alvvvbel33b2fx6aci3gonjgwxev6s4; d=amazonses.com; t=1628761902;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date:Feedback-ID;
+	bh=hRkmyl9VWb3A45m3WR+UNNjZBoNq0w6JgeM7zMgmKno=;
+	b=a7SihZckRC/hyT9NGpKSHaKPqG8CELVuBgGR4d/rkTy3veK/u7tmvi1lylVbSIpH
+	OS2cYGSCnvzLTkOcpdPLcbAh5gGmtADn8nGTVJpi/QWeGeLbDdfnDwt9UVG5wbQRLB3
+	j1IaKOWxvtNNwIkuvnWSdTGOXmTqjeo137lnFZdo=
+From: BCVaccDoNotReply@hlth.gov.bc.ca
+To: jasonthany@gmail.com
+Subject: Your second dose of COVID-19 vaccine is waiting for you
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <010d017b39c64dfc-60dc26db-25cb-4627-b421-c0b4216d362c-000000@ca-central-1.amazonses.com>
+Date: Thu, 12 Aug 2021 09:51:42 +0000
+Feedback-ID: 1.ca-central-1.G+C/WHIFfxQdilbc9uFFmOf10rWQSKWPrbXPHjZE98U=:AmazonSES
+X-SES-Outgoing: 2021.08.12-23.249.209.207
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head>
+<body>Jason, it looks like you haven't booked an appointment to get your se=
+cond dose of vaccine.<br><br>
+<a href=3D"https://www.getvaccinated.gov.bc.ca/s/booking?Id=3DlIzOF1SAmKGlP=
+Ar4tQt8t0tgISagtxxE7s6eKkZ%2B%2BKMHFbvO6H7Yu3Klxq3ke4i7&status=3Dfalse">Boo=
+k your appointment now</a> =E2=80=93 it=E2=80=99s fast and easy. <br><br>
+If you need to get vaccinated during your workday, by law you can take up t=
+o <a href=3D"https://www2.gov.bc.ca/gov/content/employment-business/employm=
+ent-standards-advice/employment-standards/time-off/taking-unexpected-time-o=
+ff#covid">3 hours of paid leave for your appointment</a>. <br><br>
+If you=E2=80=99d like to talk to someone about booking an appointment, call=
+ 1-833-838-2323.<br><br>
+If you have already booked an appointment, you don=E2=80=99t need to book a=
+nother one.<br><br>
+Learn more about getting vaccinated: <a href=3D"gov.bc.ca/getvaccinated">go=
+v.bc.ca/getvaccinated</a><br><br>
+Get translated information: <a href=3D"https://www2.gov.bc.ca/gov/content/c=
+ovid-19/vaccine/register#translations">gov.bc.ca/getvaccinated#translations=
+ </a><br><br>
+</body></html>

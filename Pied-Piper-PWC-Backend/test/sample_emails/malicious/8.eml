@@ -1,0 +1,378 @@
+Delivered-To: richardy910@gmail.com
+Received: by 2002:a17:522:86ae:b0:437:1325:4065 with SMTP id w14csp426032pvz;
+        Tue, 29 Mar 2022 11:57:23 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJx8mpLz0iHaO/fCxZqWxmDZmC3JYkgmAcL2bz0D6hRmHKfn3ZmDz6qG4RO2TbnuD1YnBwlj
+X-Received: by 2002:ac2:4e71:0:b0:448:2cf8:dafc with SMTP id y17-20020ac24e71000000b004482cf8dafcmr4059109lfs.558.1648580243188;
+        Tue, 29 Mar 2022 11:57:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648580243; cv=none;
+        d=google.com; s=arc-20160816;
+        b=dq9y9nQ86VD4NSNOF76k9Ubb20juhXhD0l2J2DI16CxF7SBE9oIenRxqi/L0sOWk9x
+         qqT2gbkpIW2oi9alUBz1oQy2AnIdaJCyJbiPlGBNqxMrGuKDV9F2V64Skv3HJWJDI8qY
+         Bq6FjBo8DaPLWKMtvQIjnsRW4ZpTEBpQjUWcQk+ktNpKS4O+WZC4pgQL+s/dtzu+3kx0
+         If8sJ4EJjBFLUA3qAPDUqkKMKwa43y6RKZZfmB52C5VhwYVAeuZDj1OlA1cSsLggi5/P
+         Zr7wBDejzJp3oZy1MKJNahLtQv3/XuHYzXPPaDkihlUi1ugMhEIYpeC/sBg+sgIlpcXe
+         aRlQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:to:subject:envelope-to:list-unsubscribe:from
+         :sender:sender:date;
+        bh=/NcBbHBnwPrckfrPgzXeUngjREpRBZc0MUrZ4swOKn8=;
+        b=E5oHnFKdJu796O0koUR17ki3SF/aHYhi6I5NNAwPBbkBDLMgQuqWk6dB+J4yEh4bv+
+         e+rpnjktvw5LBbtQSlAvznKIoFrUg1Cq+MV46COPIrus+gPM4nzjnD/3ubcUVSzHr/5L
+         sbn3C/HpPudpbP4nW8tNlZdVBxRJS7GvQeiQvBbqXzgvsddogWCh7NzC2G1WSnpRHhpB
+         +xD+IdY5XwmbDuIkhbFuq1dr2UgCVRkE3o/pt2oSgLJwkI5+bRWNcyKfFDQfX8wxu2Y6
+         kra5xppvms+ecK2m//dsy+C8zbhZV4sl2daTmWPvhYXZZf1av3F7FG4REJdese8U8vtD
+         Rk5A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 91.234.35.161 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Return-Path: <bounce@imdb.com>
+Received: from a2ecommerce.com ([91.234.35.161])
+        by mx.google.com with ESMTP id m8-20020a194348000000b0044a7f61208bsi16861339lfj.306.2022.03.29.11.57.22
+        for <richardy910@gmail.com>;
+        Tue, 29 Mar 2022 11:57:23 -0700 (PDT)
+Received-SPF: fail (google.com: domain of bounce@imdb.com does not designate 91.234.35.161 as permitted sender) client-ip=91.234.35.161;
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 91.234.35.161 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Received: from efianalytics.com (efianalytics.com. 216.244.76.116)
+Date: Tue, 29 Mar 2022 18:54:19 +0000
+Sender: <mxmgeukumm@groch.newspapen.com>
+Sender: <vrwbdaxzqw@groch.newspapen.com>
+From: ".FINANCIAL.PANDEMIC." <sqqxcpfnir@lroli.newspapen.com>
+X-EMMAIL: mailto:sarahmailsarahmail@kodehexa.net
+List-Unsubscribe: <mailto:<o22446lFTIw51557265jQUJ1564661EjS2619caZl1284-c22446CkXxO51557265wVYq1564661OwZ2619kjKg1284.ljdg2j.quk3tu.9@unsub-sj.mktomail.com>
+Envelope-To: <mailto:rogerquinn@gmail.com>
+Subject: How to Protect Your Finances and Build Wealth Swiftly👉THE FINANCIAL PANDEMIC OF 2022--mes
+To: <[an18]@itlgopk.uk>
+Message-Id: <-@vevida.net>
+X-MarketoID: vKD-Gha-UjW:IPuqow:KrkQKv51557265_1564661:v9Wtbh:0:jJKk4V:9:oB3EVd:besLKX8VE
+Feedback-ID: 1.us-east-1.psHyoMfnH8hkuQnF72JGzzQK1By9IkayShm7uIk1GIc=:AmazonSES
+X-PVIQ: mkto-RdMCgBVWW-NB6yqY-hZCeCx-FdLezk
+Content-Type: multipart/report; boundary="000000000000SGCNuB7Qm6umj710elBSQB";
+
+--000000000000SGCNuB7Qm6umj710elBSQB
+Content-Type: multipart/related; boundary="000000000000B0MNRUNyYR84HR9a"
+
+--000000000000B0MNRUNyYR84HR9a
+Content-Type: multipart/alternative; boundary="000000000000B0MNRUNyYR84HR9b"
+
+--000000000000B0MNRUNyYR84HR9b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: Sep 0, 2019
+
+o22446nkaVx51557265LHDR1564661dBy2619YLgD1284
+-----
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+--000000000000B0MNRUNyYR84HR9b
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--><title></title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width"><meta name="x-apple-disable-message-reformatting"><meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light only"><style id="vendor_styles">:root {color-scheme: light only;}html {-ms-overflow-y: auto !important;}body img {-ms-interpolation-mode: bicubic;}table.radius td {-webkit-border-radius: 3px;-moz-border-radius: 3px;}table.columns td.element_connector, td.element_connector {width: 100% !important;width: calc(100%) !important;width: -webkit-calc(100%) !important;}div, p, a, li, td {-webkit-text-size-adjust: none;}li {margin-bottom: 10px;}@media screen {img {width: 100% !important;}}@media screen and (max-device-width: 720px), screen and (max-width: 720px) {table.body center {min-width: 0px !important;}table.body .container {max-width: 720px;width: 100% !important;}table.body .container > tbody > tr > td:not(.wrapper) {min-width: 0px !important;}table.body .row {width: 100% !important;display: block !important;}table.body .row > tbody > tr > td:not(.wrapper) {min-width: 0px !important;}table.body .row::after {content: " ";display: table;height: 0px;clear: both;visibility: hidden;}table.row > tbody > tr > td.align-center {padding: 0px !important;}table.body .wrapper {display: block !important;float: none !important;}table.body .wrapper, table.body .wrapper-stack {min-width: 0px !important;}table.body .columns, table.body .column {max-width: 720px !important;table-layout: fixed !important;float: left !important;padding-right: 0px !important;padding-left: 0px !important;width: 100% !important;}table.body .columns td.element_connector, table.body .column td.element_connector {width: 100% !important;min-width: 0px !important;}table.body .twelve {width: 100% !important;}}@media screen and (max-width:720px) {body .row.row-1 {padding-bottom: 0px !important;}body .row .columns.column-2 td.element_connector {padding-top: 0px !important;}table.social-box-wrapper.social-icons > tbody > tr > td.margin-bottom {padding-bottom: 10px !important;}}.list{ padding: 0; margin: 0; list-style-type: none;}.check-black{ background: url('https://finance.weissratings.com/media/images/mam/img/mis/check-black.png') no-repeat left 7px; padding-left: 25px;} </style></head><body style="min-width:100%;margin:0px;padding:0px;width:100%;border:none;max-width:none;position:relative;mso-font-alt: Helvetica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;text-size-adjust:100%;background-color:#ffffff;" bgcolor="#ffffff"><table cellpadding="0" cellspacing="0" border="0" class="body" style="height:100%;width:100%;"><tbody><tr> <!--[if !mso]> <!-- --><td class="align-center" align="center" valign="top" style="text-size-adjust:none;text-align:center;background-color:#ffffff;" bgcolor="#ffffff"><!--<![endif]--><center class="grid_selector" style="min-width:720px;width:100%;"><table cellpadding="0" cellspacing="0" border="0" class="row row-1" style="width:100%;position:relative;background-color:transparent;padding-top:0px;padding-bottom:0px;box-shadow:none;" bgcolor="#000000"><tbody><tr><td class="align-center" align="center" style="text-size-adjust:none;text-align:center;"><center style="min-width:720px;width:100%;"><table cellpadding="0" cellspacing="0" border="0" class="container" style="width:720px;margin:0px auto;text-align:inherit;"><tbody><tr><td class="wrapper-stack" style="min-width:720px;"><table cellpadding="0" cellspacing="0" border="0" class="columns twelve column-2" style="margin:0px auto;text-align:left;width:720px;margin-top:0px;" align="left"><tbody><tr> <!--[if !mso]> <!-- --><td class="expander" style="text-size-adjust:none;width:0px;visibility:hidden;padding:0px;"></td><!-- <![endif]--><td class="element_connector" style="text-size-adjust:none;width:100%;background-color:#ffffff;padding:0px;height:0px;" bgcolor="#ffffff"><table cellpadding="0" cellspacing="0" border="0" class="paragraph paragraph-1" style="width:100%;display:table;text-align:left;"><tbody><tr><td class="element" style="text-size-adjust:none;text-align:left;padding-right:20px;padding-left:20px;"><div id="body" class="mktoText" mktoname="Message Body" style="mso-font-alt: Helvetica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:normal;padding:0px;text-align:left;margin:0px 0px 1.35em;text-size-adjust:none;font-size:22px;color:#000000;line-height:1.25;"> <!-- COPY STARTS HERE --><!--Salutation--><p>Dear Investor,<font color=red>richardy910</font></p>  <!-- Author image --><!-- If size needs to change here, DO NOT ADD OR REMOVE UNIT LABLES. This messes it up. Values however can change.--><table cellpadding="0" cellspacing="0" width="100" align="left" style="margin: 0 15px 5px 0;"> <tr><td>  </td></tr></table> <!--Body Content starts here--><p>If you think the financial repercussions of the first phase of the pandemic were shocking,&nbsp;brace yourself for what&rsquo;s coming in 2022&nbsp;&hellip;</p><p>A new surge in COVID-19&nbsp;&mdash; and the government&rsquo;s knee-jerk reactions&nbsp;&mdash; are about to trigger a series of devastating events that could strike with even greater force and speed.</p><p>Never forget: The first time around, the pandemic struck when the economy was still strong&nbsp;&hellip;</p><p>When there was virtually no consumer price inflation in America&nbsp;&hellip;</p><p>When the Federal Reserve still had the power to come to the rescue and&nbsp;&hellip;</p><p>And when people still trusted the federal government.</p><p>But now, all that has changed.</p><p>Congress embarked on the single largest spending spree of all time.</p><p>The Fed printed more paper money than the total amount it printed in its entire 107-year history.</p><p>Supply-chain disruptions have gutted the very heart of the economy.</p><p>And, as a result, a new, highly contagious kind of INFLATION is sweeping the nation.</p><p>Millions of people are about to be evicted from their homes.</p><p>Millions more could be thrown out of work.</p><p>Even the rich will take a big hit, and they have the most to lose.</p><p>Almost everything you own could be in jeopardy, including investments you thought were safe.</p><p>But all is not lost.</p><p>This is not the &ldquo;end of America.&rdquo;</p><p>If you take the right steps today, you can not only protect your savings and income, but you can also turn this crisis into a generational opportunity to build wealth swiftly.</p><p>And you can get started right away by following the seven simple steps I guide you through in my just-released video, <strong><a href="http://A0038.uigruwtql.com/rd/moozfjgnyimqamjmtphpeqizxzezdk/c22446eMJgU51557265JXcK1564661UCZ2619ermL1284" target="_blank">The Financial Pandemic of 2022</a></strong>.</p><p>Just click <a href="http://A0038.uigruwtql.com/rd/asyzxgrzdihspounyjopsemgwgknzs/c22446eMJgU51557265JXcK1564661UCZ2619ermL1284" target="_blank">here</a>, and it will begin playing on your screen immediately.</p> <p>Good luck and God bless!</p><!-- Signature --><table cellpadding="0" cellspacing="0" width="100%" align="left" style="margin: 0 15px 5px 0;" > <tr><td>  </td></tr> <tr><td style="padding-top: 5px"> <p>Dr. Martin D. Weiss, Founder</p> </td></tr> <tr><td>&nbsp;</td></tr><tr> <td height="56" align="center" valign="top" style="font-family: 'Roboto', Verdana, Arial, sans-serif; font-size: 12px; line-height: 18px; color: #797979;"> If you no longer wish to receive these emails, you may unsubscribe by clicking <a href="http://A0038.uigruwtql.com/rd/ousbedvdzmfpoakvzzxvxitkfdmptr/u22446lviDK51557265chKK1564661CzN2619stvT1284">here</a><br> or by writing to 9901 Brodie Lane Ste 160Austin, TX 78748 </td> </tr></table><!-- COPY ENDS HERE --> </tr></tbody></table></td></tr></tbody></table></center></td></tr></tbody></table></center></td></tr></tbody></table></body></html>
+<center>
+<br/>
+<p style="text-align:center;font-family: 'Open Sans','Arial','Helvetica',sans-serif;font-size:13px;"><br><br>
+The advertiser does not manage your subscription. <br>
+If you prefer not to receive further communication please unsubscribe <a href="https://tinyurl.com/2pfrmhne/su22446oGOcq51557265VpIU1564661gMG2619NQMp1284"> here </a><br>
+<br>
+<br>
+</p>
+</center>
+ </body>
+</html>
+<object><title>
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+Your Enterprise Plus member number and user name is trendxs.
+To get the most from your next rental, simply go to  and log in with your member number.
+Welcome to the Enterprise Plus? membership experience.
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+Dear grec fadon,
+</title>
+<!--
+                 _                                 _     
+                /\ \                               /\ \    
+   _    __    \_\ \    __    _  ___     __   \_\ \   
+ /'__`\/'  `\  /'_` \  / _`\/\`'__\/',__\  /'__`\ /'_` \  
+/\  _//\ \/\ \/\ \L\ \/\ \L\ \ \ \/\_, `\/\  __//\ \L\ \ 
+\ \____\ \_\ \_\ \___,_\ \____/\ \_\/\____/\ \____\ \___,_\
+ \/____/\/_/\/_/\/__, /\/___/  \/_/\/___/  \/____/\/__, /
+                                                           
+                                                           
+-->
+<emd 
+salute
+was
+federal
+land
+housing
+inequality
+will
+to
+has
+Robert
+make
+resources
+does
+added
+newsletterGet
+Years
+on
+lowincome
+their
+potential
+America
+direct
+in
+and
+without
+we
+New
+children
+people
+this
+Commission
+to
+documented
+inequality
+lower
+need
+than
+cities
+but
+After
+says
+Orleans
+Americans
+to
+In
+on
+more
+Foundation
+than
+Eisenhower
+never
+Brookings
+of
+making
+going
+Healing
+has
+May
+failed
+deregulation
+which
+going
+ETPerhaps
+report
+children
+to
+ask
+And
+The
+housing
+United
+senator
+to
+everSo
+creates
+enforcement
+Commission
+students
+of
+access
+with
+doesnt
+graders
+poverty
+access
+disparities
+effect
+that
+step
+Shortly
+on
+and
+have
+has
+developers
+or
+Why
+atrisk
+about
+half
+will
+have
+while
+school
+as
+by
+of
+and
+Who
+that
+observed
+childrenShare
+plan
+privatesector
+and
+at
+flag
+provides
+this
+former
+work
+there
+suffer
+policy
+We
+at
+race
+urban
+living
+integration
+and
+emerged
+and
+opportunityOne
+For
+ask
+racial
+opposed
+looks
+childrens
+of
+still
+and
+chronicled
+care
+to
+will
+Professor
+resulted
+ideology
+Act
+evidence
+lowest
+has
+white
+America
+wants
+in
+decades
+be
+ExperimentSegregation
+communities
+that
+hard
+housewives
+had
+with
+unemployment
+remained
+laws
+this
+problem
+public
+expanding
+more
+intentional
+poor
+down
+of
+Franz
+Americaxs
+Bernard
+Kerner
+for
+University
+housing
+of
+on
+commission
+Violence
+model
+integrate
+failed
+government
+boasted
+last
+rightWhile
+college
+nation
+newsletterSUBSCRIBEMORE>
+<html>
+	<body>
+		<center>
+			<table style="display:none;">
+								our support forum at the bottom.
+				Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+				Thank you!
+				all along your road to budgeting glory. Please confirm by clicking the link
+				you to see what the software is capable of.
+				=== Account Information ===
+				before all sorts of great things happen. Like your being able to use YNAB
+				Joining me for a quick demo will be the fastest and most efficient way for
+				thanks for requesting a demo.
+				and log in with your member number.
+				Hello! Quick note to let you know that your email needs to be confirmed
+				== You need a budget, and your email needs confirmation. ==
+				Your Enterprise Plus member number and user name is HYFYF4W.
+				Did any of the times on our website work for you and if so, were you able
+				below:
+				if you need additional help there's a link to
+				to schedule a demo okay?
+				bask in it.
+				Username: sgfdg
+				Powered by gvcnvqnijg 
+				In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+				If not, just let me know and we'll find something else.
+				Site ID: fwh
+				Dylan Basile
+				everything you need to get started below, and
+				Thanks for signing up, and congratulations
+				Here they are again: 
+				Dear lcTychll rGhEG,
+				My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+				To get the most from your next rental, simply go to 
+				And we're serious about budgeting glory. It's a real thing, and you will
+				Welcome to the Enterprise Plus? membership experience.
+				on your new gvcnvqnijg account! You'll find
+				The YNAB Team
+				--
+Hi dhg,
+				Thanks again!
+				=== Your Account Console ===
+				Hi dfdh,
+				Regards,
+				*Book a demo with me here:*
+				Team gvcnvqnijg
+				Confirm your email
+				Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+				<
+								Your 				Did any of the times on our website work for you and if so, were you able
+				Here they are again: 
+				Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+				>
+				Welcome to the Enterprise Plus? membership experience.
+				to schedule a demo okay?
+				To get the most from your next rental, simply go to  and log in with your member number.
+				thanks for requesting a demo.
+				In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+				Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+Hi o22446nkaVx51557265LHDR1564661dBy2619YLgD1284,
+				My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+								Joining me for a quick demo will be the fastest and most efficient way for
+Enterprise Plus member number and user name is HYFYF4W.
+				you to see what the software is capable of.
+Dear reillygerald931 vlyrv,
+				If not, just let me know and we'll find something else.
+			</table>
+		</center>
+	</body>
+</html>
+
+
+--000000000000B0MNRUNyYR84HR9b--
+--000000000000B0MNRUNyYR84HR9a--
+--000000000000SGCNuB7Qm6umj710elBSQB--

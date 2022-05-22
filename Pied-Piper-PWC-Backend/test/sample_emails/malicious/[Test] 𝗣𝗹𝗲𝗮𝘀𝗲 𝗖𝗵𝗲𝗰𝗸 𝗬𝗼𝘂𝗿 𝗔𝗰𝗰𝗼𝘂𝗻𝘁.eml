@@ -1,0 +1,1069 @@
+Delivered-To: tornben@gmail.com
+Received: by 2002:a05:7000:3536:0:0:0:0 with SMTP id t22csp1463296mav;
+        Sat, 12 Mar 2022 19:02:58 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJwIeVbiinBaQj/8t4uDSQtJJ604xOY/ZNaDcMEILnLImlFi5mEmu1UlTItPzO62GdGwHlNK
+X-Received: by 2002:a05:651c:1594:b0:247:dce8:b0ec with SMTP id h20-20020a05651c159400b00247dce8b0ecmr10412177ljq.404.1647140578044;
+        Sat, 12 Mar 2022 19:02:58 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1647140578; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=lni13XQHAmM9nVI8vRa7WYPXqbOI1idtogFrw2xh2WifTf2phPFtYAYBfDDvdb0v1Z
+         g1OxeXrHbdlUiFwoabLm2cClD5HywZ0nzxFXdyjBLQi4mVLXji0FfziBgCa3OEpKXXaj
+         zvgeE79o6uBMoyOAqXktOJiDtPOwCoUJ+NGRKwAG4bdT9yUjr0vKGHBqya1b6Tj4/RyE
+         BeADpRdMKIXVhLh4FgTdLy/HPh5y8sr2TvHRWY6OcO/l3jyhX3hhH6I6FoJfpQvu9uII
+         jFCZ8ODZKPbpA3eye6Qi9IiC8FPYI+CSzupWUTs6FtbNY0vFeb5Gq7CtxSpGMDiXctGO
+         k5+w==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:list-id:feedback-id:message-id:date:to
+         :reply-to:from:dkim-signature:dkim-signature:delivered-to
+         :domainkey-signature:dkim-signature;
+        bh=Lnxmoc802fBHkN4wxbUoGMs2loGIwyPIcX+PUcbqk2I=;
+        b=yB5qPLk7BKrmvNBhc+TPWKPbs6D7jq+WKmFBwqMz6iJjKRhPLqGkrOeLX5zlzghWDY
+         lFG8sgfKNo221DaHUnfhgJoUHOXN78S+ccWpCTBfrnJfJNnxZPjdxzZ96d5lduDj1Ic5
+         RV1FA9xYEdoYMTxttfWXsjGVpLdfSrbxIdiRl5s6WQVlYQiaAqtBouYfAMsuLAXTFmgX
+         B20RatjFLbgXIivzL6QjzOuioNP7/DoBcUuf+1eur7DLLYP/LRS12Tk+HrjfmA6D3s15
+         VoT9WSC+Y70/5AC9BS3dZUUrDp/md1JCBjO1TxQPgydoNA8Ue2+92bMX1VXI/ko1xypU
+         Pvuw==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=temperror (no key for signature) header.i=@gmail.com header.s=smtp header.b=oTPr1rdh;
+       dkim=pass header.i=@mcc.mcsv.net header.s=k1 header.b=EFf3sh5M;
+       dkim=pass header.i=@mailchimpapp.net header.s=k3 header.b=g26Ce2jf;
+       arc=pass (i=1 spf=pass spfdomain=mail252.sea51.mcsv.net dkim=pass dkdomain=mcc.mcsv.net dkim=pass dkdomain=mailchimpapp.net);
+       spf=fail (google.com: domain of return@dasoertliche.de does not designate 78.108.87.59 as permitted sender) smtp.mailfrom=return@dasoertliche.de;
+       dmarc=fail (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <return@dasoertliche.de>
+Received: from dasoertliche.de (mhlw.site. [78.108.87.59])
+        by mx.google.com with ESMTP id h38-20020a0565123ca600b004484d88e57csi12573335lfv.217.2022.03.12.19.02.57
+        for <tornben@gmail.com>;
+        Sat, 12 Mar 2022 19:02:58 -0800 (PST)
+Received-SPF: fail (google.com: domain of return@dasoertliche.de does not designate 78.108.87.59 as permitted sender) client-ip=78.108.87.59;
+Authentication-Results: mx.google.com;
+       dkim=temperror (no key for signature) header.i=@gmail.com header.s=smtp header.b=oTPr1rdh;
+       dkim=pass header.i=@mcc.mcsv.net header.s=k1 header.b=EFf3sh5M;
+       dkim=pass header.i=@mailchimpapp.net header.s=k3 header.b=g26Ce2jf;
+       arc=pass (i=1 spf=pass spfdomain=mail252.sea51.mcsv.net dkim=pass dkdomain=mcc.mcsv.net dkim=pass dkdomain=mailchimpapp.net);
+       spf=fail (google.com: domain of return@dasoertliche.de does not designate 78.108.87.59 as permitted sender) smtp.mailfrom=return@dasoertliche.de;
+       dmarc=fail (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp; d=gmail.com;
+ h=From:Reply-To:To:Date:Message-ID:List-ID:Subject:Content-Type:MIME-Version; i=gahninohassan45621@gmail.com;
+ bh=g/lYOF/vRPRxKumJ+kG9juTN3Tw=;
+ b=oTPr1rdhSN/gfrZWWLvjhy50XoJydrBwCh9MA5xuXnVUHBEDo4uJiUnhhyc+V3nomkaCEuBHG6qU
+   h1cVgWCWB0hXtCy6TNgBpq1whqlimrOF+2T2IsySUglaiZM8VG6KDlBooFVy5/L7DRYdPQZCsQmu
+   hKKdkqWdoRNUVFPibyo=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp; d=gmail.com;
+ b=tVfjHADye6IwLer7ze+LXZzwGBP6GbdmGAhstwwxsaEXUnBU8IBKNUu+aeV6CzcUmLdvkhQpb8vA
+   9W3KbPEhROgoA2DlGni4PtdiEg+ou8bA5ottRpi4U3otTzQs4svSIiPzw06rtJufPoa7oMM6C7VX
+   CaDkNxjKX7IkERb0TM8=;
+Delivered-To: redouanbobo42@gmail.com
+Received: by 2002:ab3:704a:0:0:0:0:0 with SMTP id j10csp1299981ltd;
+        Sat, 12 Mar 2022 07:31:37 -0800 (PST)
+X-Received: by 2002:a63:91c1:0:b0:37f:eeee:6692 with SMTP id l184-20020a6391c1000000b0037feeee6692mr12901291pge.603.1647099097146;
+        Sat, 12 Mar 2022 07:31:37 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1647099097; cv=none;
+        d=google.com; s=arc-20160816;
+        b=isT06H+LEKAMuNMaC8kQ0hRObMqwatf9q0MKIlwtvqQHL8KDHqYMbC5TmVXpbAosM6
+         Jrabh/LmDeTD4MIkzVkHg0E4SErWeOMJJSCnyiyYkLndgUyfK+Q101WIIdiMUZ9YIl81
+         XVyQ3XpdIJYUNLvzSWnGOlk6IBShNwv8ieaPuzwQYBvh+a+BwF04ScNxSaSZGrOiNRYX
+         5gSwop65hJsvq09XF0f8JDCTeUVdj8oJxHcmjkBiBFyHmBnYm6UtbNNmcefkfDFdw45b
+         b/d/33cEpVaWy47/I1+ucV8vrMbxn4PbIfTshwRJRhHB9wmFitKwZsJYqFo08Uxi9iHG
+         WR/w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:list-id:feedback-id:message-id:date:to
+         :reply-to:from:dkim-signature:dkim-signature;
+        bh=Lnxmoc802fBHkN4wxbUoGMs2loGIwyPIcX+PUcbqk2I=;
+        b=fcalIn8o8dSy3vCR1vJPHCh82NAyq65+TX06rEwDv7ZLhByHnq+XCDQWe5ZlbxCRad
+         //W741C7EE0XBVc2mF+4zdsHzK0iAkEOnr6LP71w5WuEM8VTCwaV+aEiRLW51ckRr5AR
+         8LdLeI8t/gWSZnQa0yLdgPL7Vi31w9ASEmPCG2iP9dZTTTODcXCyJ/PuFtjO4CJl0ESU
+         85nrxd/Kx/7nxqojNmPGqpPBXfjr00CJfn67drqfM5nfDycGqywFLRHvUgz/vQplTr9W
+         fWva7yTLdfvnz9IA9Sx/6lFEhmbNFNXPeFJurLDr15E2bXIQU6cnEGynHHKTf/9PZEIc
+         vMKg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mcc.mcsv.net header.s=k1 header.b=EFf3sh5M;
+       dkim=pass header.i=@mailchimpapp.net header.s=k3 header.b=g26Ce2jf;
+       spf=pass (google.com: domain of bounce-mc.us14_171817017.8997679-__test_email__@mail252.sea51.mcsv.net designates 148.105.13.252 as permitted sender) smtp.mailfrom=bounce-mc.us14_171817017.8997679-__test_email__@mail252.sea51.mcsv.net;
+       dmarc=fail (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <bounce-mc.us14_171817017.8997679-__test_email__@mail252.sea51.mcsv.net>
+Received: from mail252.sea51.mcsv.net (mail252.sea51.mcsv.net. [148.105.13.252])
+        by mx.google.com with ESMTPS id b11-20020a170902650b00b0015008ce963dsi11406151plk.112.2022.03.12.07.31.36
+        for <redouanbobo42@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 12 Mar 2022 07:31:37 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce-mc.us14_171817017.8997679-__test_email__@mail252.sea51.mcsv.net designates 148.105.13.252 as permitted sender) client-ip=148.105.13.252;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mcc.mcsv.net; s=k1;
+	t=1647099096; x=1647401496;
+	bh=Lnxmoc802fBHkN4wxbUoGMs2loGIwyPIcX+PUcbqk2I=;
+	h=From:Reply-To:To:Date:Message-ID:Feedback-ID:List-ID:Subject:
+	 Content-Type:MIME-Version:CC:Date:Subject;
+	b=EFf3sh5MtG/jt1IwR4LTD6AvMiQFrwOD3P1YYR1C14Zxi095zFzr11W9ZLkdtw6fC
+	 QjQlq4J9+urxP4QIRo9uv3KPcfFoQ2kgWMG530VmN4R75qnRrwRviz9pYNirGThLcS
+	 spj/l3PRQ6ShRT257HARQdjAWCoO8WcDuVjqCN0xlS2HGOgaGzA/bbLPlg5/FgDyZv
+	 It7TN1Jf46J1st8dd6CPxZahksPellrge9QERoG98H+UXDHgABVQemsXzI69RNnwmj
+	 ssEx7NDVrxZBg6FZEOzDbhmyaa0wuctFMKfMSN22rNH/TMdwFAYuIKSauWAe9hpEPW
+	 Rx9JLS5Qu/0aA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailchimpapp.net;
+	s=k3; t=1647099096; x=1647401496;
+	i=gahninohassan45621=3Dgmail.com@mailchimpapp.net;
+	bh=Lnxmoc802fBHkN4wxbUoGMs2loGIwyPIcX+PUcbqk2I=;
+	h=From:Reply-To:To:Date:Message-ID:List-ID:Subject:Content-Type:
+	 MIME-Version:CC:Date:Subject;
+	b=g26Ce2jfMxqWuPyKgxBqWO7C0PCQdjSf27vbE0gxDsN/Zbxgdq+YfwoamCJNF8di2
+	 o/Du8RwGjdl2mKT5PsS10gcPV+T8a7rsS+brx/WsK1u6RkjYtA0U9obxNjp9bnZ21K
+	 ACQougTN1uwot0hcSeeydSqy+K2bQj0+2WtZ/KFnOhGqAyJMbRW5v2cggltWjp/iPN
+	 WNwVQfEEPxTtJROJUWwN/MXkIEy0H9Yw/aKPihzwkesmpw2p8xEYG4LWTN+/1cYkHY
+	 eofrGgxWL0KfBArVUpyrF74i0/XQn+wxFOd9dTB/Q1KrEsGL6TB9ntIXK9F5A3Dd/T
+	 t5i7+cA7/H/Vg==
+Received: from localhost (localhost [127.0.0.1])
+	by mail252.sea51.mcsv.net (Mailchimp) with ESMTP id 4KG6Gc67kQzS69vD5
+	for <redouanbobo42@gmail.com>; Sat, 12 Mar 2022 15:31:36 +0000 (GMT)
+From: =?utf-8?Q?Wo=20Casino?= <gahninohassan45621@gmail.com>
+Reply-To:  <us14-8c68e87f4e-6bc96e8bbb@inbound.mailchimp.com>
+To: <redouanbobo42@gmail.com>
+Date: Sat, 12 Mar 2022 15:31:36 +0000
+Message-ID: <623dd0fb7967d174ee0aa4132.__test_email__.20220312153133.cbf5a14b69.62edc11f@mail252.sea51.mcsv.net>
+X-Mailer: Mailchimp Mailer - **CIDcbf5a14b69=5F=5Ftest=5Femail=5F=5F**
+X-Campaign: mailchimp623dd0fb7967d174ee0aa4132.cbf5a14b69
+X-campaignid: mailchimp623dd0fb7967d174ee0aa4132.cbf5a14b69
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=623dd0fb7967d174ee0aa4132&id=cbf5a14b69&e==5F=5Ftest=5Femail=5F=5F
+X-MC-User: 623dd0fb7967d174ee0aa4132
+Feedback-ID: 171817017:171817017.8997679:us14:mc
+List-ID: 623dd0fb7967d174ee0aa4132mc list <623dd0fb7967d174ee0aa4132.0.list-id.mcsv.net>
+X-Accounttype: ff
+x-istest: yes
+Subject: =?utf-8?Q?=5BTest=5D=20=F0=9D=97=A3=F0=9D=97=B9=F0=9D=97=B2=F0=9D=97=AE=F0=9D=98=80=F0=9D=97=B2=20=F0=9D=97=96=F0=9D=97=B5=F0=9D=97=B2=F0=9D=97=B0=F0=9D=97=B8=20=F0=9D=97=AC=F0=9D=97=BC=F0=9D=98=82=F0=9D=97=BF=20=F0=9D=97=94=F0=9D=97=B0=F0=9D=97=B0=F0=9D=97=BC=F0=9D=98=82=F0=9D=97=BB=F0=9D=98=81?=
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1443272100"
+MIME-Version: 1.0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1443272100
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+=2E (https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057VPVS5969)
+
+-This message was sent from a trusted sender.
+
+e-mail: ********@gmail.com bonus: $25 800.00 (https://bit.ly/3sybrDM#c6725=
+2upWBY0RPcf0kjB25057VPVS5969) Withdraw the bonus (https://bit.ly/3sybrDM#c=
+67252upWBY0RPcf0kjB25057VPVS5969)
+------------------------------------------------------------
+
+Wo Csino (https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057VPVS5969)
+
+Transaction Details:
+Payout
+USA-#6493
+Transaction:
+twenty-five thousand eight hundred dollars
+To: ************@gmail.com
+$25=2C800=2C00 (https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057VPVS5969)
+5408-323-62 Thu=2C27 Jan-2022
+
+
+** Claim Your Reward with
+The best favorite welcome bonus
+------------------------------------------------------------
+
+
+** 400% WELCOME BONUS
++ Up to $25 800.00 FREE
+
+------------------------------------------------------------
+
+
+** WELCOME CASINO PACKAGE
+------------------------------------------------------------
+
+
+** EXCLUSIVELY FOR YOU! (https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057V=
+PVS5969)
+------------------------------------------------------------
+https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057VPVS5969
+
+Play for free and win for real!
+Name: redouanbobo42
+Invitation : USA|RB-96870279
+Member ID : #84u-imylx
+
+Yes=2C Confirm (https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057VPVS5969)
+
+------------------------------------------------------------
+
+You may (https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057VPVS5969) Unsubsc=
+ribe (https://bit.ly/3sybrDM#u67252ZPoPs0vDjQ0tUy25057hnfc5969) at any tim=
+e
+
+https://bit.ly/3sybrDM#u67252ZPoPs0vDjQ0tUy25057hnfc5969
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+This email was sent to redouanbobo42@gmail.com (mailto:redouanbobo42@gmail.com)
+why did I get this? (*|ABOUT_LIST|*)     unsubscribe from this list (*|UNS=
+UB|*)     update subscription preferences (*|UPDATE_PROFILE|*)
+*|LIST_ADDRESSLINE_TEXT|*
+
+Email Marketing Powered by Mailchimp
+http://www.mailchimp.com/email-referral/?utm_source=3Dfreemium_newsletter&=
+utm_medium=3Demail&utm_campaign=3Dreferral_marketing&aid=3D623dd0fb7967d17=
+4ee0aa4132&afl=3D1
+--_----------=_MCPart_1443272100
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-micros=
+oft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+    <head>
+        <!-- NAME: SELL PRODUCTS -->
+        <!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+        <meta charset=3D"UTF-8">
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial=
+-scale=3D1">
+        <title>=F0=9D=97=A3=F0=9D=97=B9=F0=9D=97=B2=F0=9D=97=AE=F0=9D=98=
+=80=F0=9D=97=B2 =F0=9D=97=96=F0=9D=97=B5=F0=9D=97=B2=F0=9D=97=B0=F0=9D=97=
+=B8 =F0=9D=97=AC=F0=9D=97=BC=F0=9D=98=82=F0=9D=97=BF =F0=9D=97=94=F0=9D=97=
+=B0=F0=9D=97=B0=F0=9D=97=BC=F0=9D=98=82=F0=9D=97=BB=F0=9D=98=81</title>
+
+    <style type=3D"text/css">
+=09=09p{
+=09=09=09margin:10px 0;
+=09=09=09padding:0;
+=09=09}
+=09=09table{
+=09=09=09border-collapse:collapse;
+=09=09}
+=09=09h1=2Ch2=2Ch3=2Ch4=2Ch5=2Ch6{
+=09=09=09display:block;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09img=2Ca img{
+=09=09=09border:0;
+=09=09=09height:auto;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09body=2C#bodyTable=2C#bodyCell{
+=09=09=09height:100%;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100%;
+=09=09}
+=09=09.mcnPreviewText{
+=09=09=09display:none !important;
+=09=09}
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09-ms-interpolation-mode:bicubic;
+=09=09}
+=09=09table{
+=09=09=09mso-table-lspace:0pt;
+=09=09=09mso-table-rspace:0pt;
+=09=09}
+=09=09.ReadMsgBody{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass{
+=09=09=09width:100%;
+=09=09}
+=09=09p=2Ca=2Cli=2Ctd=2Cblockquote{
+=09=09=09mso-line-height-rule:exactly;
+=09=09}
+=09=09a[href^=3Dtel]=2Ca[href^=3Dsms]{
+=09=09=09color:inherit;
+=09=09=09cursor:default;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09p=2Ca=2Cli=2Ctd=2Cbody=2Ctable=2Cblockquote{
+=09=09=09-ms-text-size-adjust:100%;
+=09=09=09-webkit-text-size-adjust:100%;
+=09=09}
+=09=09.ExternalClass=2C.ExternalClass p=2C.ExternalClass td=2C.ExternalCla=
+ss div=2C.ExternalClass span=2C.ExternalClass font{
+=09=09=09line-height:100%;
+=09=09}
+=09=09a[x-apple-data-detectors]{
+=09=09=09color:inherit !important;
+=09=09=09text-decoration:none !important;
+=09=09=09font-size:inherit !important;
+=09=09=09font-family:inherit !important;
+=09=09=09font-weight:inherit !important;
+=09=09=09line-height:inherit !important;
+=09=09}
+=09=09.templateContainer{
+=09=09=09max-width:600px !important;
+=09=09}
+=09=09a.mcnButton{
+=09=09=09display:block;
+=09=09}
+=09=09.mcnImage=2C.mcnRetinaImage{
+=09=09=09vertical-align:bottom;
+=09=09}
+=09=09.mcnTextContent{
+=09=09=09word-break:break-word;
+=09=09}
+=09=09.mcnTextContent img{
+=09=09=09height:auto !important;
+=09=09}
+=09=09.mcnDividerBlock{
+=09=09=09table-layout:fixed !important;
+=09=09}
+=09=09h1{
+=09=09=09color:#222222;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:40px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:150%;
+=09=09=09letter-spacing:normal;
+=09=09=09text-align:center;
+=09=09}
+=09=09h2{
+=09=09=09color:#222222;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:34px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:150%;
+=09=09=09letter-spacing:normal;
+=09=09=09text-align:left;
+=09=09}
+=09=09h3{
+=09=09=09color:#444444;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:22px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:150%;
+=09=09=09letter-spacing:normal;
+=09=09=09text-align:left;
+=09=09}
+=09=09h4{
+=09=09=09color:#949494;
+=09=09=09font-family:Georgia;
+=09=09=09font-size:20px;
+=09=09=09font-style:italic;
+=09=09=09font-weight:normal;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:normal;
+=09=09=09text-align:left;
+=09=09}
+=09=09#templateHeader{
+=09=09=09background-color:#F7F7F7;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:45px;
+=09=09=09padding-bottom:45px;
+=09=09}
+=09=09.headerContainer{
+=09=09=09background-color:transparent;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:0;
+=09=09=09padding-bottom:0;
+=09=09}
+=09=09.headerContainer .mcnTextContent=2C.headerContainer .mcnTextContent=
+ p{
+=09=09=09color:#757575;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:16px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.headerContainer .mcnTextContent a=2C.headerContainer .mcnTextConten=
+t p a{
+=09=09=09color:#007C89;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateBody{
+=09=09=09background-color:#FFFFFF;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:36px;
+=09=09=09padding-bottom:45px;
+=09=09}
+=09=09.bodyContainer{
+=09=09=09background-color:transparent;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:0;
+=09=09=09padding-bottom:0;
+=09=09}
+=09=09.bodyContainer .mcnTextContent=2C.bodyContainer .mcnTextContent p{
+=09=09=09color:#757575;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:16px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.bodyContainer .mcnTextContent a=2C.bodyContainer .mcnTextContent p=
+ a{
+=09=09=09color:#007C89;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateFooter{
+=09=09=09background-color:#333333;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:45px;
+=09=09=09padding-bottom:63px;
+=09=09}
+=09=09.footerContainer{
+=09=09=09background-color:transparent;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:0;
+=09=09=09padding-bottom:0;
+=09=09}
+=09=09.footerContainer .mcnTextContent=2C.footerContainer .mcnTextContent=
+ p{
+=09=09=09color:#FFFFFF;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:12px;
+=09=09=09line-height:150%;
+=09=09=09text-align:center;
+=09=09}
+=09=09.footerContainer .mcnTextContent a=2C.footerContainer .mcnTextConten=
+t p a{
+=09=09=09color:#FFFFFF;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09@media only screen and (min-width:768px){
+=09=09.templateContainer{
+=09=09=09width:600px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-webkit-text-size-adjust:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body{
+=09=09=09width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnRetinaImage{
+=09=09=09max-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImage{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCartContainer=2C.mcnCaptionTopContent=2C.mcnRecContentContainer=
+=2C.mcnCaptionBottomContent=2C.mcnTextContentContainer=2C.mcnBoxedTextCont=
+entContainer=2C.mcnImageGroupContentContainer=2C.mcnCaptionLeftTextContent=
+Container=2C.mcnCaptionRightTextContentContainer=2C.mcnCaptionLeftImageCon=
+tentContainer=2C.mcnCaptionRightImageContentContainer=2C.mcnImageCardLeftT=
+extContentContainer=2C.mcnImageCardRightTextContentContainer=2C.mcnImageCa=
+rdLeftImageContentContainer=2C.mcnImageCardRightImageContentContainer{
+=09=09=09max-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer{
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupContent{
+=09=09=09padding:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCaptionLeftContentOuter .mcnTextContent=2C.mcnCaptionRightConten=
+tOuter .mcnTextContent{
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardTopImageContent=2C.mcnCaptionBottomContent:last-child .=
+mcnCaptionBottomImageContent=2C.mcnCaptionBlockInner .mcnCaptionTopContent=
+:last-child .mcnTextContent{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardBottomImageContent{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockInner{
+=09=09=09padding-top:0 !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockOuter{
+=09=09=09padding-top:9px !important;
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnTextContent=2C.mcnBoxedTextContentColumn{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardLeftImageContent=2C.mcnImageCardRightImageContent{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcpreview-image-uploader{
+=09=09=09display:none !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h1{
+=09=09=09font-size:30px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h2{
+=09=09=09font-size:26px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h3{
+=09=09=09font-size:20px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h4{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer .mcnTextContent=2C.mcnBoxedTextContent=
+Container .mcnTextContent p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.headerContainer .mcnTextContent=2C.headerContainer .mcnTextContent=
+ p{
+=09=09=09font-size:16px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.bodyContainer .mcnTextContent=2C.bodyContainer .mcnTextContent p{
+=09=09=09font-size:16px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.footerContainer .mcnTextContent=2C.footerContainer .mcnTextContent=
+ p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}</style></head>
+    <body style=3D"height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+        <!--
+-->
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border=
+-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;pad=
+ding: 0;width: 100%;">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"border-collapse: collapse;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+                            <tr>
+                                <td align=3D"center" valign=3D"top" id=3D"=
+templateHeader" data-template-container=3D"" style=3D"background:#F7F7F7 n=
+one no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adj=
+ust: 100%;-webkit-text-size-adjust: 100%;background-color: #F7F7F7;backgro=
+und-image: none;background-repeat: no-repeat;background-position: center;b=
+ackground-size: cover;border-top: 0;border-bottom: 0;padding-top: 45px;pad=
+ding-bottom: 45px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wi=
+dth=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContain=
+er" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-wid=
+th: 600px !important;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"he=
+aderContainer" style=3D"background:transparent none no-repeat center/cover=
+;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;background-color: transparent;background-image: none;backgr=
+ound-repeat: no-repeat;background-position: center;background-size: cover;=
+border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" id=3D"=
+templateBody" data-template-container=3D"" style=3D"background:#FFFFFF non=
+e no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;backgroun=
+d-image: none;background-repeat: no-repeat;background-position: center;bac=
+kground-size: cover;border-top: 0;border-bottom: 0;padding-top: 36px;paddi=
+ng-bottom: 45px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wi=
+dth=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContain=
+er" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-wid=
+th: 600px !important;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"bo=
+dyContainer" style=3D"background:transparent none no-repeat center/cover;m=
+so-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-=
+adjust: 100%;background-color: transparent;background-image: none;backgrou=
+nd-repeat: no-repeat;background-position: center;background-size: cover;bo=
+rder-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table cla=
+ss=3D"mcnCodeBlock" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+>
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td class=3D"mcnTextBlockInner" valign=3D"top" style=3D"mso-li=
+ne-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+
+<a style=3D"display: none;mso-line-height-rule: exactly;-ms-text-size-adju=
+st: 100%;-webkit-text-size-adjust: 100%;" href=3D"https://bit.ly/3sybrDM#c=
+67252upWBY0RPcf0kjB25057VPVS5969">.</a>
+<div style=3D"background-color: #F1F9F2;"><div class=3D"adM">
+      </div><div style=3D"width: 5px;min-height: 30px;background-color: #5=
+6A659;"><div class=3D"adM">
+        </div><p style=3D"font-size: 13px;font-family: wf_segoe-ui_normal=
+=2CSegoe UI=2CSegoe WP=2CTahoma=2CArial=2Csans-serif;width: 500px;font-wei=
+ght: normal;color: black;padding-bottom: 5px;padding-top: 5px;padding-left=
+: 15px;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;">
+          -This message was sent from a trusted sender.</p>
+      </div></div>
+
+    <center><div> <a href=3D"https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25=
+057VPVS5969" style=3D"text-decoration: none;color: black;mso-line-height-r=
+ule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+      <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspa=
+ce: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+        <tbody><tr>
+          <td align=3D"center" style=3D"mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+ <div style=3D"margin: 0;width: 620px;background: linear-gradient(to botto=
+m=2C#CFCECE=2Crgb(255=2C 255=2C 255));">
+              <table style=3D"text-align: left;border-collapse: collapse;m=
+so-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;">
+                <tbody><tr style=3D"font-variant: small-caps;font-size: 18=
+px;">
+                  <td width=3D"80px" align=3D"right" style=3D"mso-line-hei=
+ght-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100=
+%;">e-mail:</td>
+                  <td width=3D"520px" style=3D"mso-line-height-rule: exact=
+ly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><i>  ******=
+**@gmail.com</i></td>
+                </tr>
+                <tr>
+                  <td align=3D"right" style=3D"mso-line-height-rule: exact=
+ly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">bonus:</td>
+                  <td style=3D"mso-line-height-rule: exactly;-ms-text-size=
+-adjust: 100%;-webkit-text-size-adjust: 100%;"><b style=3D"color: green;">=
+  $25 800.00</b></td>
+                </tr>
+                <tr>
+                  <td align=3D"right" style=3D"mso-line-height-rule: exact=
+ly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"></td> <td s=
+tyle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">  </td>
+                </tr>
+              </tbody></table><br>
+              </div></td></tr></tbody></table></a><a href=3D"https://bit.l=
+y/3sybrDM#c67252upWBY0RPcf0kjB25057VPVS5969" style=3D"font-family: sans-se=
+rif;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;"><i>Withdraw the
+                  bonus</i></a>
+              <hr>
+            </div>
+            <div style=3D"margin: 0;width: 680px;background: linear-gradie=
+nt(0.25turn=2C #f0f0e6=2C#000000=2C#000000=2C #f0f0e6);">
+              <a href=3D"https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057V=
+PVS5969" style=3D"text-decoration: none;color: black;mso-line-height-rule:=
+ exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">   <d=
+iv style=3D"background: linear-gradient(to right bottom=2C#e0e0e0=2C#fffff=
+f=2C#d3d3cc);width: 600px;padding-bottom: 3px;">
+                  <span style=3D"font-size:34px;color: #fff;font-family: s=
+ans-serif;font-weight: 800;"><span style=3D"background-color:#ffbf17;color=
+: black ;border-radius: 20px 0 0 0 ;">Wo </span><span style=3D"background:=
+ #2c2c2c;border-radius: 0 0 20px 0 ;letter-spacing:4px"> Csino</span></spa=
+n><br>
+                  <div style=3D"letter-spacing: 1px;line-height: 20px;colo=
+r: #fff;height: 20px;margin-top: 5px;">
+
+                  </div><br>
+                </div>
+              </a>
+            </div>
+            <div style=3D"width: 680px;background: linear-gradient(0.25tur=
+n=2C #f0f0e6=2C#000000=2C#000000=2C #f0f0e6);">
+              <div style=3D"background: linear-gradient(to right bottom=2C=
+#02243D=2C#014A6A=2C#014A6A=2C#02243D);width:600px;padding:15px 0 50px 0">
+                <div style=3D"text-align: left;width: 450px;color: #D6D3A6=
+;letter-spacing: 1px;"><b>Transaction
+                    Details:</b></div>
+                <div style=3D"background: linear-gradient(217deg=2C #f0f0e=
+6=2C #b0b4db 70.71%)=2C
+                  linear-gradient(157deg=2C #bd0c0c=2C #bd0c0c 70.71%)=2C
+                  linear-gradient(386deg=2C rgba(112=2C 82=2C 82=2C 0.8)=
+=2C #7e71b9 70.71%) ;color: black;width: 550px;border: 2px dashed black;bo=
+rder-radius:10px 0 10px 0 ;border-left: 4px dotted black;border-right: 4px=
+ dotted black;">
+                  <br>
+                  <div style=3D"display: flex;width: 540px;">
+                    <div style=3D"width: 250px;text-align: left;">Payout</=
+div>
+                    <div style=3D"text-align: right;letter-spacing: 1px;co=
+lor: #3b3b3b;">USA-#6493</div>
+                  </div>
+                  <div style=3D"line-height: 25px;letter-spacing: 1px;colo=
+r: #444444;"><b>Transaction</b>:</div>
+                  <div style=3D" line-height: 18px;padding-left: 15px;widt=
+h: 580px;text-align: left;font-family: Arial=2C Helvetica=2C sans-serif;">
+                    <span><span style=3D"text-decoration: underline ;font-=
+family:  'Franklin Gothic Medium'=2C 'Arial Narrow'=2C Arial=2C sans-serif=
+;letter-spacing: 1px;color: #444444;">twenty-five
+                        thousand eight hundred      </span> <b style=3D"le=
+tter-spacing: 2px;color: #4B4949;font-variant: small-caps;">dollars</b></s=
+pan>
+                  </div>
+                  <div style=3D"width: 480px;text-align: right;font-family=
+: Arial=2C Helvetica=2C sans-serif;display: flex;">
+                    <div style=3D"line-height: 30px;width: 280px;text-alig=
+n: left;color: #444444;"><b>To: </b> <i>************@gmail.com</i></div>
+                    <div>
+                      <span><b style=3D"font-size: 22px;color:#3b3b3b">$</=
+b><b style=3D"border-bottom: 1px dotted black;font-size: 24px;"><a href=3D=
+"https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057VPVS5969" style=3D"text-d=
+ecoration: none;color: #3b3b3b;mso-line-height-rule: exactly;-ms-text-size=
+-adjust: 100%;-webkit-text-size-adjust: 100%;">25=2C800=2C00</a></b></span=
+>
+                    </div>
+                  </div>
+                  <div style=3D"text-align: left;width: 540px;color: #2c2c=
+2c;font-size: 12px;line-height: 40px;">      <i>5408-323-62</i><span> Thu=
+=2C27 Jan-2022</span>
+                  </div>
+                </div>
+                <h1 style=3D"color: #fff;font-size: 50px;line-height: 35px=
+;display: block;margin: 0;padding: 0;font-family: Helvetica;font-style: no=
+rmal;font-weight: bold;letter-spacing: normal;text-align: center;">Claim Y=
+our Reward with
+                  <br><b style=3D"font-size:25px;font-family: 'Lucida Sans=
+'=2C 'Lucida Sans Regular'=2C 'Lucida Grande'=2C 'Lucida Sans Unicode'=2C=
+ Geneva=2C Verdana=2C sans-serif;">
+                    The best favorite welcome bonus</b>
+                </h1>
+                <h1 style=3D"color: #ffbf17;display: block;margin: 0;paddi=
+ng: 0;font-family: Helvetica;font-size: 40px;font-style: normal;font-weigh=
+t: bold;line-height: 150%;letter-spacing: normal;text-align: center;">400%=
+ WELCOME BONUS<br>+ Up to <span style=3D"background-color: #f0f0e6;border:=
+ 1px solid black;border-radius: 10px 0 10px 0;color: black;"> $25
+                    800.00 </span> FREE<br>
+                  </h1>
+                <h1 style=3D"color: #fff;display: block;margin: 0;padding:=
+ 0;font-family: Helvetica;font-size: 40px;font-style: normal;font-weight:=
+ bold;line-height: 150%;letter-spacing: normal;text-align: center;"><span=
+ style=3D"font-size: 40px">WELCOME CASINO PACKAGE
+                  </span></h1>
+                <h1 style=3D"color: white;font-size: 25px;display: block;m=
+argin: 0;padding: 0;font-family: Helvetica;font-style: normal;font-weight:=
+ bold;line-height: 150%;letter-spacing: normal;text-align: center;">
+                  <a href=3D"https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25=
+057VPVS5969" style=3D"text-decoration: none;color: #f0f0e6;mso-line-height=
+-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+> <span style=3D"background:linear-gradient(to right=2C#fa411c=2C#de0607=
+=2C#de0607=2C#fa411c);border-radius:10px 10px 0px 0 ;"> EXCLUSIVELY
+                      FOR YOU! </span>
+                </a></h1><a href=3D"https://bit.ly/3sybrDM#c67252upWBY0RPc=
+f0kjB25057VPVS5969" style=3D"text-decoration: none;color: #f0f0e6;mso-line=
+-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                </a>
+              </div>
+              <div style=3D"background: linear-gradient(#eeeeee=2C#d6d6d6=
+=2C#d6d6d6 80%=2C #aaaaaa);;width: 600px;">
+                <center>
+                  <table class=3D"320DEV" width=3D"600" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" style=3D"border-collapse: collapse;mso-tab=
+le-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;">
+                    <tbody>
+                      <tr>
+                        <td class=3D"devpad" style=3D"font-family: Helveti=
+ca=2C Arial=2C sans-serif;font-weight: 25 800.00;font-size: 13px;line-heig=
+ht: 19px;text-align: left;padding: 20px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top">
+                          <span style=3D"letter-spacing: 2px;font-family:=
+ Helvetica=2C Arial=2C sans-serif;font-weight: 25 800.00;padding: 0;margin=
+: 0;color: #444444;font-weight: 25 800.00;line-height: 110%;font-size: 30p=
+x;text-transform: uppercase;font-family: 'Ultra'=2C sans-serif;">
+                            Play for free and win for real!</span><br>
+                          Name: <b style=3D"color: #2B5A78;text-decoration=
+:underline;">redouanbobo42</b> <br>
+                          Invitation : <b style=3D"color: #2B5A78;text-dec=
+oration:underline;">USA|RB-96870279</b><br>
+                          Member ID : <b class=3D"DRB-BR" style=3D"color:=
+ #2B5A78;text-decoration:underline;">#84u-imylx
+                          </b><br>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </center>
+              <center>  <a href=3D"https://bit.ly/3sybrDM#c67252upWBY0RPcf=
+0kjB25057VPVS5969" style=3D"text-decoration: none;color: #f0f0e6;mso-line-=
+height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                  <div style=3D"background:linear-gradient(to right=2C#fa4=
+11c=2C#de0607=2C#de0607=2C#fa411c);width:300px;font-size:28px;font-weight:=
+ bold;border-radius: 20px 0 20px 0;">
+                    <span style=3D"color: #fff;">Yes=2C Confirm</span>
+                  </div>
+                </a></center><br>
+                <hr>
+              </div>
+            </div>
+
+    </center></td>
+    </tr>
+    </tbody></table>
+    <a href=3D"https://bit.ly/3sybrDM#c67252upWBY0RPcf0kjB25057VPVS5969" s=
+tyle=3D"text-decoration: none;color: black;mso-line-height-rule: exactly;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace=
+: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+      <tbody><tr>
+        <td align=3D"center" style=3D"mso-line-height-rule: exactly;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+          <div style=3D"font-size: 12px;">
+=09=09  <p style=3D"color: grey;margin: 10px 0;padding: 0;mso-line-height-=
+rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">=
+You may </p></div></td></tr></tbody></table></a><a href=3D"https://bit.ly/=
+3sybrDM#u67252ZPoPs0vDjQ0tUy25057hnfc5969" style=3D"color: #000000;mso-lin=
+e-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;">Unsubscribe</a> at any time<br><br>
+            <p style=3D"margin: 10px 0;font-size: 10px;line-height: 14px;t=
+ext-align: center;color: #000;padding: 0;mso-line-height-rule: exactly;-ms=
+-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><span style=3D"fo=
+nt-size: 10px; line-height: 12px;">
+
+            </span></p>
+
+
+<a href=3D"https://bit.ly/3sybrDM#u67252ZPoPs0vDjQ0tUy25057hnfc5969" style=
+=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;">
+=09=09=09<img src=3D"" style=3D"border: 0;height: auto;outline: none;text-=
+decoration: none;-ms-interpolation-mode: bicubic;">
+=09=09</a>
+=09=09<br>
+=09
+
+
+
+
+
+</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" id=3D"=
+templateFooter" data-template-container=3D"" style=3D"background:#333333 n=
+one no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adj=
+ust: 100%;-webkit-text-size-adjust: 100%;background-color: #333333;backgro=
+und-image: none;background-repeat: no-repeat;background-position: center;b=
+ackground-size: cover;border-top: 0;border-bottom: 0;padding-top: 45px;pad=
+ding-bottom: 63px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wi=
+dth=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContain=
+er" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-wid=
+th: 600px !important;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"fo=
+oterContainer" style=3D"background:transparent none no-repeat center/cover=
+;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;background-color: transparent;background-image: none;backgr=
+ound-repeat: no-repeat;background-position: center;background-size: cover;=
+border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+                <center>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" id=3D"canspamBarWrapper" style=3D"background-color:#FFFFFF; b=
+order-top:1px solid #E5E5E5;">
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng-top:20px; padding-bottom:20px;">
+                            <table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" id=3D"canspamBar">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top" st=
+yle=3D"color:#606060; font-family:Helvetica=2C Arial=2C sans-serif; font-s=
+ize:11px; line-height:150%; padding-right:20px; padding-bottom:5px; paddin=
+g-left:20px; text-align:center;">
+                                        This email was sent to <a href=3D"=
+mailto:redouanbobo42@gmail.com" target=3D"_blank" style=3D"color:#404040 !important;">=
+redouanbobo42@gmail.com</a>
+                                        <br />
+                                        <a href=3D"*|ABOUT_LIST|*" target=
+=3D"_blank" style=3D"color:#404040 !important;"><em>why did I get this?</e=
+m></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"*|UNSUB|*" style=3D"color:#404040=
+ !important;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a hre=
+f=3D"*|UPDATE_PROFILE|*" style=3D"color:#404040 !important;">update subscr=
+iption preferences</a>
+                                        <br />
+                                        *|LIST:ADDRESSLINE|*
+                                        <br />
+                                        <br />
+                                        <a href=3D"http://www.mailchimp.co=
+m/email-referral/?utm_source=3Dfreemium_newsletter&utm_medium=3Demail&utm_=
+campaign=3Dreferral_marketing&aid=3D623dd0fb7967d174ee0aa4132&afl=3D1"><im=
+g src=3D"https://cdn-images.mailchimp.com/monkey_rewards/grow-business-ban=
+ner-2.png" border=3D"0" alt=3D"Email Marketing Powered by Mailchimp" title=
+=3D"Mailchimp Email Marketing" width=3D"435" height=3D"64" style=3D"max-wi=
+dth: 100%; height: auto;"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <style type=3D"text/css">
+                    @media only screen and (max-width: 480px){
+                        table#canspamBar td{font-size:14px !important;}
+                        table#canspamBar td a{display:block !important; ma=
+rgin-top:10px !important;}
+                    }
+                </style>
+            </center></body>
+</html>
+--_----------=_MCPart_1443272100--
+
+

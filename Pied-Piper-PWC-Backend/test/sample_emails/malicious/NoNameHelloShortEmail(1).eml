@@ -1,0 +1,79 @@
+Delivered-To: jasonthany@gmail.com
+Received: by 2002:a05:7000:3e95:0:0:0:0 with SMTP id bx21csp700187mab;
+        Fri, 11 Mar 2022 18:12:04 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw3Hdv5LGtm0ZPZ8FI53KMFSy1LZWAmmXKvMOtbMFiytwRdJKhq7gLmoQ+rO55CMJ36vDeu
+X-Received: by 2002:a2e:3602:0:b0:249:22dd:8b4e with SMTP id d2-20020a2e3602000000b0024922dd8b4emr1892422lja.299.1647051124252;
+        Fri, 11 Mar 2022 18:12:04 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1647051124; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kfPw5i/IVkY1qsc1CsGGnyfMdcfDZ68OSZn9/j/b3bgTS5iOG5r99UN2HtV9Hazw62
+         UKnWjelmsOeZ2bzh0dVr7YPicK7TuLt0n4NveQ0Uv3j5+SlQ/WYq0jV1diJZpDTfQQ+1
+         1IABTOmm5ZzQ8dceUN+i6blbIOC4LhMn4IpQH1v372pFChe/6Fhs/TV7VLmPIeObkpRE
+         CdBKaDDpUsHgNwRRRFwK/KcvfgORt0nGGp7BAeJ+yWv05L4A9T2lsq74fu9re33E7bS0
+         /owX+lLog8UCGOe4R1MP23gt9YIYn48Ukta9vzn08KfepJfELElYV22XIhPjSxC/hsDi
+         mvkQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:date:subject:to:from:reply-to:message-id;
+        bh=A0jH5GcL5W6WeCchRVBou52yXKH7BPRb0L02FcUtFvI=;
+        b=z2OV/az/UOU+4UYA9ivzTurqH2PDKmWc7kKPFymUIcJxJHEsKTy1mD5urX96SJ1O+l
+         oibh3ibQslfa0a2frnvEIZjAAmYYV0Gzt3XwEAjM300a6ciyQiNsHqteN/mTzSLuaOLU
+         wGRVI/lVCdKuWd+ToiDuWaSVKPZaU+1lOPEztrWn5SFezmF0fTIgO8A0U470QPu7Pi8A
+         bQIudkwhGHqMGt19L6F+U4D9mTapyfkop3FT+d6GruAf/oIoXVvaWKP2DiDz/COXQcqs
+         tCJm5LJP7clOjvO8V1q6eGqlSRx3a/Y7+KWQiiZ9Zy4CFwi/qyXRwFrg4Be4WCtbUydZ
+         nnaQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of santangelo@tim.it designates 82.57.200.125 as permitted sender) smtp.mailfrom=santangelo@tim.it
+Return-Path: <santangelo@tim.it>
+Received: from smtp220t-alice.alice.it (smtp220t.alice.it. [82.57.200.125])
+        by mx.google.com with ESMTPS id e13-20020a2e9e0d000000b002463880b322si7118490ljk.469.2022.03.11.18.12.03
+        for <jasonthany@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 11 Mar 2022 18:12:04 -0800 (PST)
+Received-SPF: pass (google.com: domain of santangelo@tim.it designates 82.57.200.125 as permitted sender) client-ip=82.57.200.125;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of santangelo@tim.it designates 82.57.200.125 as permitted sender) smtp.mailfrom=santangelo@tim.it
+X-RazorGate-Vade: gggruggvucftvghtrhhoucdtuddrgedvvddruddvfedggeduucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecuvffgnffgvefqoffkvfetnffktedpqfgfvfenuceurghilhhouhhtmecufedtudenucenucfjughrpefkrhfhvffuffggtgesrgdtreertddtjeenucfhrhhomheplfhirghnucevhhgrnhhguceoshgrnhhtrghnghgvlhhosehtihhmrdhitheqnecuggftrfgrthhtvghrnhepieefvdffvdeiheefveeludefgeeigeevjeduvedvteeufeegteeiheeigfeukeegnecukfhppedukeehrddvhedvrddvvdefrdefnecuvehluhhsthgvrhfuihiivgepudegudelnecurfgrrhgrmhephhgvlhhopehqfhhgshdpihhnvghtpedukeehrddvhedvrddvvdefrdefpdhmrghilhhfrhhomhepoeeffeehudegvdejtdeikeesthhimhdrihhtqedpnhgspghrtghpthhtohepuddprhgtphhtthhopeeojhgrshhonhhthhgrnhihsehgmhgrihhlrdgtohhmqe
+X-RazorGate-Vade-Verdict: clean 0
+X-RazorGate-Vade-Classification: clean
+Received: from qfgs (185.252.223.3) by smtp220t-alice.alice.it (5.8.604.04) (authenticated as santangelo@tim.it)
+        id 61ACC02B09368974 for jasonthany@gmail.com; Sat, 12 Mar 2022 03:12:03 +0100
+Message-ID: <0e5a5493679c95381bb54ce713d7ed163584c61148@tim.it>
+Reply-To: Jian Chang <58339268@inbox.lv>
+From: Jian Chang <santangelo@tim.it>
+To: jasonthany@gmail.com
+Subject: Re:
+Date: Sat, 12 Mar 2022 02:11:01 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="02541d895e3c16198a2069c226123828214b61"
+
+--02541d895e3c16198a2069c226123828214b61
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Is it con=CE=BDenient for me to =D1=A1rite you thro=CF=85gh this email?,=C2=
+=A0 Kindly get back to me for the p=CF=85rpose of this email.
+
+=E1=8E=A1egards,
+Mr Jian Chang
+
+--02541d895e3c16198a2069c226123828214b61
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+</head>
+<body bgColor=3D"#ffffff">
+<div><font face=3DGeorgia>Hello,</font></div>
+<div><font face=3DGeorgia></font>&nbsp;</div>
+<div><font face=3DGeorgia>Is it con=CE=BDenient for me to =D1=A1rite you =
+thro=CF=85gh this email?,&nbsp; Kindly get back to me for the p=CF=85rpos=
+e of this email.</font></div>
+<div><font face=3DGeorgia></font>&nbsp;</div>
+<div><font face=3DGeorgia>=E1=8E=A1egards,<br>Mr Jian Chang</font></div><=
+/body></html>
+
+--02541d895e3c16198a2069c226123828214b61--

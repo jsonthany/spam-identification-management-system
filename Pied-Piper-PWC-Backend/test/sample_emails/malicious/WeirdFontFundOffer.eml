@@ -1,0 +1,271 @@
+Delivered-To: jasonthany@gmail.com
+Received: by 2002:a05:7000:648b:0:0:0:0 with SMTP id o11csp6860506mal;
+        Fri, 25 Mar 2022 23:13:29 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwkmZcibYUTQzEolIlAKdUW3GviyBvCpcFedkI2gEmaR0Rwz9rHL38gU8EhLx+0Fk6QIPmT
+X-Received: by 2002:a17:90b:1c8e:b0:1bf:364c:dd7a with SMTP id oo14-20020a17090b1c8e00b001bf364cdd7amr16609089pjb.103.1648275209462;
+        Fri, 25 Mar 2022 23:13:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648275209; cv=none;
+        d=google.com; s=arc-20160816;
+        b=mEefReBfO92CeouC6tsJXHAQr8Nwar88lMnJbEN6BW84kdt4g8hnfZVHRxVuncTcg0
+         W47xWzCwzkLPZ6pM8mMa0O8Tqh/yDqnaTg1NqIiz8W5jByEPMfMsA24ahXveggTGLz8j
+         +zFgjbmHxGYPLHHpXxZVYilF6vZ/0Hhh3FMKdNSWYhK8kMa0Lka7XowklxFUhzNIJg7r
+         4XQ5zEaP89yHK6EqTrj6Hg7IIBsPG9DOQd9sZj7mmBhsiLFalK7TzGcNIalPrxjtr7qh
+         k2DIcZ4mrD3lp/3oaWeqg++TBsQT4ZEUkX+LVoAqzrvcp883Yqwz7dUlGLcxZrLqZyvy
+         i6uA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=priority:subject:content-language:date:message-id:reply-to:from
+         :mime-version;
+        bh=skjkN/Zi/OFmnlT9d5py8WpbIMXqVaJ2DqgoDhlCLFI=;
+        b=fApupV9KAS5KOiqcuDTvb9mrpJjz/skL+BS88Hms1rSpBhfH2MWr2tGOtGawkzbVyA
+         4qDx51NrM/303EhTKkSBgjyb2mJ3pLLX5GBI2Rqv2/yk354lMyQC7o5mni1jq8strTHa
+         f44838PlespOk3I5RNnrwx+cSrXGr0D4xplcthP8zs1OqdsIOjzhIHtia7RgUyAC2JNt
+         Vygk9ZunNX4BCoFILHnWKORM8sFsC+CB17Kyrl0oPSwxyaM67kQ3mYG6pXthWbBTiWMV
+         UMFIX+m7I7QKl8MXbZbGqsmPi4bQWFsiXgOmttXAH11oAeMkL/ViYkZmJe2+PnbOIDqT
+         bnww==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of the_smart@qatar.net.qa designates 82.148.101.77 as permitted sender) smtp.mailfrom=the_smart@qatar.net.qa
+Return-Path: <the_smart@qatar.net.qa>
+Received: from smtp.qatar.net.qa (bram2.qatar.net.qa. [82.148.101.77])
+        by mx.google.com with ESMTP id y9-20020a655a09000000b003816043f09bsi4357174pgs.656.2022.03.25.23.13.28
+        for <jasonthany@gmail.com>;
+        Fri, 25 Mar 2022 23:13:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of the_smart@qatar.net.qa designates 82.148.101.77 as permitted sender) client-ip=82.148.101.77;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of the_smart@qatar.net.qa designates 82.148.101.77 as permitted sender) smtp.mailfrom=the_smart@qatar.net.qa
+Received: from mail.qatar.net.qa ([192.168.0.212])
+	by   with SMTP
+	id Y09znPi248UgZY09znwlRM; Sat, 26 Mar 2022 09:44:27 +0300
+X-CM-Analysis: v=2.3 cv=bK843s2Z c=1 sm=2 tr=0 a=Q4FtoxnLoHi6W6Mixv9A6A==:117
+ a=3tGtIb61/OR+uSyugKfjuQ==:17 a=9cW_t1CCXrUA:10 a=_dGJpjPx5LkA:10
+ a=o8Y5sQTvuykA:10 a=x7bEGLp0ZPQA:10 a=r77TgQKjGQsHNAKrUKIA:9 a=pGLkceISAAAA:8
+ a=brYEJRYAE-zfrqR8OggA:9 a=CjuIK1q_8ugA:10 a=QRsZS0lmzZoA:10
+ a=v3DAuxnxF7kIzz4j:21 a=vYCd1UaBZa0maYF69SrO:22
+X-CMAE-Score: 0.00
+MIME-version: 1.0
+Content-type: multipart/alternative;
+ boundary="Boundary_(ID_zrphBI92cBB34udwr9HxWQ)"
+Received: from qatar.net.qa ([192.168.0.212])
+ by mail-vip.qatar.net.qa (Oracle Communications Messaging Server 7.0.5.31.0
+ 64bit (built May  5 2014))
+ with ESMTPA id <0R9B0092893UD1W0@mail-vip.qatar.net.qa>; Fri,
+ 25 Mar 2022 20:11:54 +0300 (AST)
+Received: from [82.148.101.111] (Forwarded-For: 102.219.103.123)
+ by mail-vip.qatar.net.qa (mshttpd); Fri, 25 Mar 2022 20:11:54 +0300
+From: the_smart the_smart <the_smart@qatar.net.qa>
+Bcc:
+Reply-to: bvf5qj0kx3808vae@yahoo.co.jp
+Message-id: <72a0e2f4e5106.623e220a@qatar.net.qa>
+Date: Fri, 25 Mar 2022 20:11:54 +0300
+X-Mailer: Oracle Communications Messenger Express 7.0.5.31.0 64bit (built May
+ 5 2014)
+Content-language: en
+Subject: COMPENSATION FUNDS
+X-Accept-Language: en
+Priority: normal
+X-CMAE-Envelope: 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
+ V1E=
+
+This is a multi-part message in MIME format.
+
+--Boundary_(ID_zrphBI92cBB34udwr9HxWQ)
+Content-type: text/plain; CHARSET=US-ASCII
+Content-transfer-encoding: quoted-printable
+Content-disposition: inline
+
+
+
+-- =
+
+FINANCIAL INTELLIGENCE CENTER (FIC)
+Attn=3A Dear Fund Beneficiary=2C
+COMPENSATION FUNDS PAYMENT ORDER VIA ATM CARD
+
+This is to inform you that=2C We have been working towards the eradicati=
+on of fraudsters and scam Artists in Africa with the help of the Organiz=
+ation of African Unity (OAU) United Nations (UN)=2C European Union (EU) =
+and the International Monetary Fund (IMF) and FBI=2E We have been able t=
+o track down so many of this scam artist in various parts of African cou=
+ntries which includes (Nigeria=2C Republic of Benin=2C Ghana=2C Cameroon=
+ and Senegal) and they are all in Government custody now=2C they will ap=
+pear at International Criminal Court (ICC) Hague (Netherlands) soon for =
+Criminal/Fraud Justice=2E During the course of our investigation=2C we h=
+ave been able to recover so much money from these scam artists=2E The Un=
+ited Nations Anti-Crime Commission and the International Monetary Fund (=
+IMF) have ordered the money recovered from the Scammers to be shared amo=
+ng 100 Lucky people around the World for compensation=2E This Email/Lett=
+er is been directed to you because your email address was found in one o=
+f the Scam Artists file and computer hard-disk during our investigation=2C=
+ maybe you have been scammed or not=2C you are therefore being compensat=
+ed with the sum of =24=2C1=2E500=2C000=2E00USD(One Million Five Hundred =
+Thousand United State Dollars)=2E
+
+We have also arrested some of those who claim that they are barristers=2C=
+ bank officials=2C Lottery Agents who have been sending you SMS on your =
+phone that you have won a lottery which does not exist=2E Since your ema=
+il address appeared among the lucky beneficiaries who will receive compe=
+nsation funds=2C we have arranged your payment to be paid to you through=
+ ATM VISA CARD=2E An ATM Visa Card will be issued in your name and your =
+=241=2C500=2C000=2E00 USD will be loaded into it=2C and delivered to you=
+r postal address with the Pin Number=2C to enable you withdraw your fund=
+s from any Bank ATM Machine worldwide=2E
+To issue the ATM Visa Card=2C you are therefore advised to contact the A=
+ccountant in Charge of your payment=2C this is because the United Nation=
+s Anti-Crime Commission and the International Monetary Fund (IMF) and th=
+e Government has chosen them to payout all the compensation funds to the=
+ 100 Lucky beneficiaries=2C because the ATM Visa Card is a global paymen=
+ts technology that enables consumers=2C businesses=2C financial institut=
+ions and governments to use digital currency instead of cash and checks=2E=
+ Kindly contact the ATM Card Issuance Department now with the below cont=
+act details=3A
+
+ATM CARD DEPARTMENT
+CONTACT PERSON=3A DR=2E FRANCISCO ADROA
+UGANDA
+Email=3A atmvisacardpayingcenters=40gmail=2Ecom
+Tel=3A +256 706055410
+
+Contact him now for the delivery of your ATM Card=2E As soon as you esta=
+blish a contact with him=2C an ATM card will be issued to you immediatel=
+y which you can use to withdraw your funds in any Bank ATM Machine=2C bu=
+t the maximum daily limit is =2415=2C000=2E00 per day because the Card h=
+as been upgraded=2E So if you like to receive your funds through this me=
+ans you=27re advised to contact (DR=2E FRANCISCO ADROA) with the followi=
+ng information as stated below=3A
+
+1=2E Your Full Name=3A
+2=2E Address Where You Want the your ATM Card to be delivered to or (P=2E=
+O=2EBox)
+3=2E Your Age=3A
+4=2E Occupation=3A
+5=2E Cell/Mobile Number=3A
+
+The IMF (International Monetary Fund) has also concluded every legal cos=
+t from all the various financial offices to enable a successful delivery=
+ of your ATM card without any hitch or delay based on the agreement made=
+=2C every beneficiary is mandated to bear the fixed cost of delivery =24=
+120 of their ATM card to their designated address through =7BDHL or FedE=
+x=7D delivery and based on the fact that your ATM Card has already been =
+activated for instant use=2C you have only FIVE working days to send thi=
+s =24120 US dollars for the delivering of your card=2C if we don=27t hea=
+r from you with the payment information=3B the Provincial Government wil=
+l cancel the card for security purpose and your payment will be withdraw=
+n=2E
+
+Please Be Warned=2C as The United Nations Anti-Crime Commission and the =
+International Monetary Fund (IMF) does not instruct any other Bank or ag=
+ent in this payment except (DR=2E FRANCISCO ADROA)=2C whom we can only g=
+ive attention to=2C and from now=2C we advise you to stop all the commun=
+ications you are having with any other Agent or bank officials in Europe=
+=2C Asia and Africa regarding your payment=2E
+
+Thanks for your understanding as you follow instructions=2E
+YOURS IN SERVICES=2E
+MRS=2E AMANDA LINCOLN
+PUBLIC INFORMATION
+OFFICER=2E(FIC)
+
+--Boundary_(ID_zrphBI92cBB34udwr9HxWQ)
+Content-type: text/html; CHARSET=US-ASCII
+Content-transfer-encoding: quoted-printable
+Content-disposition: inline
+
+=3Cbr /=3E=3Cbr /=3E-- =3Cbr signature=3D=22separator=22 /=3E=3Cfont fac=
+e=3D=22=27Comic Sans MS=27=22 size=3D=222=22=3EFINANCIAL INTELLIGENCE CE=
+NTER (FIC)=3Cbr /=3EAttn=3A Dear Fund Beneficiary=2C=3Cbr /=3ECOMPENSATI=
+ON FUNDS PAYMENT ORDER VIA ATM CARD=3Cbr /=3E=3Cbr /=3EThis is to inform=
+ you that=2C We have been working towards the eradication of fraudsters =
+and scam Artists in Africa with the help of the Organization of African =
+Unity (OAU) United Nations (UN)=2C European Union (EU) and the Internati=
+onal Monetary Fund (IMF) and FBI=2E We have been able to track down so m=
+any of this scam artist in various parts of African countries which incl=
+udes (Nigeria=2C Republic of Benin=2C Ghana=2C Cameroon and Senegal) and=
+ they are all in Government custody now=2C they will appear at Internati=
+onal Criminal Court (ICC) Hague (Netherlands) soon for Criminal/Fraud Ju=
+stice=2E During the course of our investigation=2C we have been able to =
+recover so much money from these scam artists=2E The United Nations Anti=
+-Crime Commission and the International Monetary Fund (IMF) have ordered=
+ the money recovered from the Scammers to be shared among 100 Lucky peop=
+le around the World for compensation=2E This Email/Letter is been direct=
+ed to you because your email address was found in one of the Scam Artist=
+s file and computer hard-disk during our investigation=2C maybe you have=
+ been scammed or not=2C you are therefore being compensated with the sum=
+ of =24=2C1=2E500=2C000=2E00USD(One Million Five Hundred Thousand United=
+ State Dollars)=2E=3Cbr /=3E=3Cbr /=3EWe have also arrested some of thos=
+e who claim that they are barristers=2C bank officials=2C Lottery Agents=
+ who have been sending you SMS on your phone that you have won a lottery=
+ which does not exist=2E Since your email address appeared among the luc=
+ky beneficiaries who will receive compensation funds=2C we have arranged=
+ your payment to be paid to you through ATM VISA CARD=2E An ATM Visa Car=
+d will be issued in your name and your =241=2C500=2C000=2E00 USD will be=
+ loaded into it=2C and delivered to your postal address with the Pin Num=
+ber=2C to enable you withdraw your funds from any Bank ATM Machine world=
+wide=2E=3Cbr /=3ETo issue the ATM Visa Card=2C you are therefore advised=
+ to contact the Accountant in Charge of your payment=2C this is because =
+the United Nations Anti-Crime Commission and the International Monetary =
+Fund (IMF) and the Government has chosen them to payout all the compensa=
+tion funds to the 100 Lucky beneficiaries=2C because the ATM Visa Card i=
+s a global payments technology that enables consumers=2C businesses=2C f=
+inancial institutions and governments to use digital currency instead of=
+ cash and checks=2E Kindly contact the ATM Card Issuance Department now =
+with the below contact details=3A=3Cbr /=3E=3Cbr /=3EATM CARD DEPARTMENT=
+=3Cbr /=3ECONTACT PERSON=3A DR=2E FRANCISCO ADROA=3Cbr /=3EUGANDA=3Cbr /=
+=3EEmail=3A atmvisacardpayingcenters=40gmail=2Ecom=3Cbr /=3ETel=3A +256 =
+706055410=3Cbr /=3E=3Cbr /=3EContact him now for the delivery of your AT=
+M Card=2E As soon as you establish a contact with him=2C an ATM card wil=
+l be issued to you immediately which you can use to withdraw your funds =
+in any Bank ATM Machine=2C but the maximum daily limit is =2415=2C000=2E=
+00 per day because the Card has been upgraded=2E So if you like to recei=
+ve your funds through this means you=27re advised to contact (DR=2E FRAN=
+CISCO ADROA) with the following information as stated below=3A=3Cbr /=3E=
+=3Cbr /=3E1=2E Your Full Name=3A=3Cbr /=3E2=2E Address Where You Want th=
+e your ATM Card to be delivered to or (P=2EO=2EBox)=3Cbr /=3E3=2E Your A=
+ge=3A=3Cbr /=3E4=2E Occupation=3A=3Cbr /=3E5=2E Cell/Mobile Number=3A=3C=
+br /=3E=3Cbr /=3EThe IMF (International Monetary Fund) has also conclude=
+d every legal cost from all the various financial offices to enable a su=
+ccessful delivery of your ATM card without any hitch or delay based on t=
+he agreement made=2C every beneficiary is mandated to bear the fixed cos=
+t of delivery =24120 of their ATM card to their designated address throu=
+gh =7BDHL or FedEx=7D delivery and based on the fact that your ATM Card =
+has already been activated for instant use=2C you have only FIVE working=
+ days to send this =24120 US dollars for the delivering of your card=2C =
+if we don=27t hear from you with the payment information=3B the Provinci=
+al Government will cancel the card for security purpose and your payment=
+ will be withdrawn=2E=3Cbr /=3E=3Cbr /=3EPlease Be Warned=2C as The Unit=
+ed Nations Anti-Crime Commission and the International Monetary Fund (IM=
+F) does not instruct any other Bank or agent in this payment except (DR=2E=
+ FRANCISCO ADROA)=2C whom we can only give attention to=2C and from now=2C=
+ we advise you to stop all the communications you are having with any ot=
+her Agent or bank officials in Europe=2C Asia and Africa regarding your =
+payment=2E=3Cbr /=3E=3Cbr /=3EThanks for your understanding as you follo=
+w instructions=2E=3Cbr /=3EYOURS IN SERVICES=2E=3Cbr /=3EMRS=2E AMANDA L=
+INCOLN=3Cbr /=3EPUBLIC INFORMATION=3Cbr /=3EOFFICER=2E(FIC)=3C/font=3E
+
+--Boundary_(ID_zrphBI92cBB34udwr9HxWQ)--

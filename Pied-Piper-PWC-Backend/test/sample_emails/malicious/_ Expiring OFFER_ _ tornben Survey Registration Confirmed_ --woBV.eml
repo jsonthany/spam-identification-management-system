@@ -1,0 +1,840 @@
+Delivered-To: tornben@gmail.com
+Received: by 2002:a05:7000:3536:0:0:0:0 with SMTP id t22csp2930480mav;
+        Mon, 14 Mar 2022 14:38:49 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzh4jHpVjirMxKhy0GAnWxaG4Za7Nz6gC51/R/U+oPg72tbnjqVFuMJBxKnNlmEoyNod4bk
+X-Received: by 2002:a05:651c:3da:b0:247:ff8b:e965 with SMTP id f26-20020a05651c03da00b00247ff8be965mr15165042ljp.87.1647293929753;
+        Mon, 14 Mar 2022 14:38:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1647293929; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xRzYJqkQ9ZROjQxDRkLE41T64lW0nXVOQiBt9RmCGmExOOeSUiFLUL/9jRhYu/Pw1x
+         c0Z7yYGkV4O9YiqIUDt+jX5qLg/lLFUHEL8WhYFs/LYjXLRbSHgTjeXe1PqabcdKBbMh
+         ViaNL/L77vQUxkm+DeO2vh+EP1car1XQ6nAmXEMqc+K8bA3QhzmqYBLWrzg/2igv7FHR
+         I08nBWlTTMKGZ5LaVD1QLU6JlfpQWwm11KZXu6kIWEw6gNr2NsmLgyzVG7ZnjFtP8vLd
+         EgJRQDd+Xm3YUI+pDRRbeJ3Oo2hra5+ZuVq3Q6kNRO3hpun8KclTngtl8CymLDSvdOrP
+         cr6g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-archive:list-owner:list-subscribe:list-unsubscribe:list-help
+         :precedence:to:subject:from:sender:reply-to:date:message-id
+         :mime-version:dkim-signature:domainkey-signature:dkim-signature;
+        bh=prDxF1MOtsytlVHuSOSVGLyFMhTgqPUPm+HyO9YzYYI=;
+        b=eyqcDi3MnDNSTKS3ki2QIC3dtArTl8FMdkuW9dnKk9nHEFxnptCDiNVEfPT5egfEOi
+         KFHz5r55dW0LMIuDG1e5XP0Ui0OaXBKkV5piS6b2zXbHAVBlUdELbn0FtPlKi6nI6O1M
+         K9BpnvinU/660h2AA3PKQzhb/H5XbaYG67gwwFeLrs5QjKUWwjcK0Ea8ViJtV6DSWz1S
+         I70JS8WXG81ZQVfQ4BitMtzQu8RRB6kH0vNNFdV7nKjNbi5wvIiXVYFnR5c5WxKxc0N+
+         mvlaZowX6ukt6+i5dE+F0zwINhsv0rkTRIq6rjGMBk13rpaETTbY7Vin+7gNsYv5GfLU
+         WXsw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@olpjg.co.in header.s=mail header.b=07VQmfsA;
+       dkim=neutral (body hash did not verify) header.i=@nih.gov header.s=NIH header.b=dh4wsT3B;
+       spf=pass (google.com: domain of support-nzi@triovest.com designates 94.177.180.38 as permitted sender) smtp.mailfrom=Support-nZi@triovest.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=triovest.com
+Return-Path: <Support-nZi@triovest.com>
+Received: from olpjg.co.in (olpjg.co.in. [94.177.180.38])
+        by mx.google.com with ESMTP id k19-20020a05651239d300b0044875b3e713si8783299lfu.450.2022.03.14.14.38.49
+        for <tornben@gmail.com>;
+        Mon, 14 Mar 2022 14:38:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of support-nzi@triovest.com designates 94.177.180.38 as permitted sender) client-ip=94.177.180.38;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@olpjg.co.in header.s=mail header.b=07VQmfsA;
+       dkim=neutral (body hash did not verify) header.i=@nih.gov header.s=NIH header.b=dh4wsT3B;
+       spf=pass (google.com: domain of support-nzi@triovest.com designates 94.177.180.38 as permitted sender) smtp.mailfrom=Support-nZi@triovest.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=triovest.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=olpjg.co.in;
+ h=Mime-Version:Content-Type:Message-Id:Date:Reply-To:Sender:From:Subject:To:List-Help:List-Unsubscribe:List-Subscribe:List-Owner:List-Archive; i=contact@olpjg.co.in;
+ bh=FWdTrq0eM4/HOQQgPnh6bEiDe/A=;
+ b=07VQmfsAQuFLKPb4yW3EA1i8qZjQmsIznASmtxB+dg9l1oGcJB/jBRfLmTxVu2/J1aJSxcw3Bbsb
+   hgUiyKQa8YpM6zbJ8veGa9VQYqxXk+B9+v9T81IlIAB8GnYX9yKkw7OevzjUsbcOoaIizQ3so7P8
+   3+hRD+sAB91woFPT3IQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail; d=olpjg.co.in;
+ b=L3trl4KQHLcdXLJ/reKBrr9bPzI2D2dV3r7nSGwUtYCyK5KY5eO4HnsrTxI+r95HcosOPl8RniSt
+   rabMni/9g5+DgrM9FavKJTbHTeoEveE513Gsuzan242509eq48kkhqn8l9NQLmnhnLUdcKjNhZyb
+   f/D5v+IlTaA0+57V/n8=;
+Received: from olpjg.co.in (olpjg.co.in. [94.177.180.38])
+        by mx.google.com with ESMTPS id l16-20020ac848d0000000b002e0631de82csi6522454qtr.756.2022.03.14.08.57.06
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 14 Mar 2022 08:57:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of owner-niceatm-l@list.nih.gov designates 94.177.180.38 as permitted sender) client-ip=94.177.180.38;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+  d=nih.gov; i=@nih.gov; q=dns/txt; s=NIH; t=1647273439;
+  x=1678809439;
+  h=mime-version:message-id:date:reply-to:sender:from:
+   subject:to:list-help:list-unsubscribe:list-subscribe:
+   list-owner:list-archive;
+  bh=K56qYT5awhjo6fu/aWpv6qc7IOdn/g9ct0b2t5jyur4=;
+  b=dh4wsT3BTRk4IsJBqUSntONw1CFr9K9qpoM3/ZUOI4uS3ubpCu7l3w9p
+   9VOCDolt2Tq5Ukhh1aS2A8N+El9T1U/zrrpBtBW9FOyT9vtAH+M/N+XtQ
+   v5pjtEpO2l0LHxOohZoN9TfIrssnX+tu8qIeOgBH7EGSDGBG+djM6tCg6
+   0n6zOeTQo6O3pM1Kgyz1JcRgu6LrkC7uUK6bo+GPnvi4SMxoI2iFUGdUy
+   gf2JD7N+hvPB6ooa46aTzRJZ7Qs9BH2DWhClchMRyLvZPQHSUUbVOrb/t
+   eVRqjiMbXYsvJcqygCtzoiWRfJpqX9meguro1M2c/KPyLYtfc/cbpCsnW
+   g==;
+X-SBRS-Extended: Low
+X-IronPortListener: non-ces-out
+X-IronPortListener: non-ces-out
+Received: from msg-b12-ltm1_v9.hub.nih.gov (HELO UCCListservProd) ([94.177.180.38])
+  by olpjg.co.in with ESMTP; 14 Mar 2022 11:56:04 -0400
+Received: by LIST.NIH.GOV (LISTSERV-TCP/IP release 16.5) with spool id 55023831
+          for NICEATM-L@LIST.NIH.GOV; Mon, 14 Mar 2022 11:55:40 -0400
+Received: from nihsmtpxway2.hub.nih.gov (nihsmtpxway2.hub.nih.gov
+          [128.231.90.104]) by NIH.GOV (SMTPL release 1.1d) (envelope-from
+          <niceatmnews@olpjg.co.in>) for NICEATM-L@list.nih.gov with TCP; Mon,
+          14 Mar 2022 11:55:40 -0500
+X-SBRS-Extended: Low
+X-IronPortListener: non-ces-out
+X-IronPortListener: non-ces-out
+Received: from msg-b12-ltm1_v9.hub.nih.gov (HELO UCCListservProd)
+          ([94.177.180.38]) by nihsmtpxway2.hub.nih.gov with ESMTP; 14 Mar 2022
+          11:55:41 -0400
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="part-ReIm2MZcHkBAXVNBsAu3NoAUqCA7TdCeG2UhEdaoAHmsn"
+Message-Id: <=?UTF-8?B?8J+MuPCfjI3wn6SX8J+SjvCfmILwn4628J+Nk/CfmI3wn46n8J+nofCfjLzwn5i7?=.ZF3lf1bGTw-Ct-Y9ADdPKuzGeyNBtkHVDwslcIPQLFHg-94.177.180.38@ismtpd0003p1iad1.sendgrid.net>
+Date: Mon, 14 Mar 2022 22:31:18 +0100
+Reply-To: NICEATM News <tornben@gmail.com>
+Sender: "NICEATM News: NTP Interagency Center for the Evaluation of Alternative Toxicological Methods"<contact@olpjg.co.in>
+From: SHOPPER/SAVINGS. <Support-nZi@triovest.com>
+Subject: " Expiring OFFER" : tornben Survey Registration Confirmed?  --woBV
+To: <tornben@gmail.com>
+Precedence: list
+List-Help: <http://list.nih.gov/cgi-bin/wa.exe?LIST=NICEATM-L>,
+           <mailto:LISTSERV@LIST.NIH.GOV?body=INFO%20NICEATM-L>
+List-Unsubscribe: <mailto:NICEATM-L-unsubscribe-request@LIST.NIH.GOV>
+List-Subscribe: <mailto:NICEATM-L-subscribe-request@LIST.NIH.GOV>
+List-Owner: <mailto:NICEATM-L-request@LIST.NIH.GOV>
+List-Archive: <http://list.nih.gov/cgi-bin/wa.exe?LIST=NICEATM-L>
+
+--part-ReIm2MZcHkBAXVNBsAu3NoAUqCA7TdCeG2UhEdaoAHmsn
+Content-Type: multipart/parallel; boundary="_-------POMLKHGFTYSUWNBQHFSR7896541235pmaqbhgfdsqertyuiopm=_:"
+
+--_-------POMLKHGFTYSUWNBQHFSR7896541235pmaqbhgfdsqertyuiopm=_:
+Content-Type: multipart/alternative; boundary="_----------=KOLMpouhgtsrGHYbhsnwmpo"
+
+
+
+--_----------=KOLMpouhgtsrGHYbhsnwmpo
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: Hexa
+
+
+
+--_----------=ompouytreRFgbhnjklmpbnwhxtsghjklm
+Content-Type: text/html; charset=utf-8
+
+<style><title>
+<style><title>
+
+
+nZi--EBvxy--woBV---------------------------------------nZi--EBvxy--woBV
+
+nZi--EBvxy--woBV---------------------------------------nZi--EBvxy--woBV
+nZi--EBvxy--woBV---------------------------------------nZi--EBvxy--woBV
+
+nZi--EBvxy--woBV---------------------------------------nZi--EBvxy--woBV
+
+
+--_----------=ompouytreRFgbhnjklmpbnwhxtsghjklm
+Content-Type: text/html; charset=utf-8
+
+
+
+--_----------=KOLMpouhgtsrGHYbhsnwmpo
+Content-Type: text/html; charset=utf-8
+
+<style><title>
+<style><title>
+
+nZi--EBvxy--woBV---------------------------------------nZi--EBvxy--woBV
+
+nZi--EBvxy--woBV---------------------------------------nZi--EBvxy--woBV
+
+--_----------=KOLMpouhgtsrGHYbhsnwmpo--
+--_-------POMLKHGFTYSUWNBQHFSR7896541235pmaqbhgfdsqertyuiopm=_:--
+
+
+
+
+
+--part-ReIm2MZcHkBAXVNBsAu3NoAUqCA7TdCeG2UhEdaoAHmsn
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+########################################################################
+
+NICEATM News - 2022 Issue 10: March 14
+
+########################################################################
+
+
+In this Newsletter:
+
+* Slides and Video Available for ICCVAM Webinar
+* March 17 Webinar to Focus on Chip Models for Lung and Skin
+* Opportunity for Displaced Ukrainian Scientist at CAAT
+
+########################################################################
+
+* Slides and Video Available for ICCVAM Webinar *
+
+Slides and video from the January 25 ICCVAM Communities of Practice Webin=
+ar on "New Approach Methodologies to Assess (Developmental) Neurotoxicity=
+" are now available at https://ntp.niehs.nih.gov/go/commprac-2022. In thi=
+s webinar, two speakers from the U.S. federal research and regulatory age=
+ncies described key issues and ongoing activities in alternatives to anim=
+al testing to predict chemical effects on the developing and adult nervou=
+s system.=20
+
+Please mark your calendar for Thursday and Friday, May 26-27, when ICCVAM=
+ will present its annual Public Forum. At this virtual event, representat=
+ives of ICCVAM member agencies will describe activities to advance new ap=
+proaches to safety testing of chemicals and medical products and to reduc=
+e the amount of testing required. Registration and other information will=
+ be posted at https://ntp.niehs.nih.gov/go/iccvamforum-2022 when availabl=
+e.
+
+* March 17 Webinar to Focus on Chip Models for Lung and Skin *
+
+The American Society for Cellular and Computational Toxicology and the Eu=
+ropean Society for Toxicology In Vitro are hosting a webinar, March 17 fr=
+om 9-10:30 am (EDT), "Maturing three-dimensional toxicology models of the=
+ barrier organs: Examples from lung and skin." Information about the webi=
+nar can be found at https://www.ascctox.org/upcoming-webinar/88; visit ht=
+tps://us06web.zoom.us/webinar/register/WN_sxz8YFYbR0qOb4Q1VtQuYw to regis=
+ter.
+
+=E2=80=A2       Patrician Zoio, Institute of Chemical and Biological Tech=
+nology, will present, "Full-thickness skin-on-a-chip model for in vitro d=
+rug testing and disease modelling." Zoio will describe use of a reconstru=
+cted human skin model as a tool for drug discovery, disease modeling, and=
+ basic research. His innovative low-cost skin-on-a-chip model with integr=
+ated electrodes could provide a new in vitro tissue system compatible wit=
+h long-term studies of skin diseases for evaluating the safety and effica=
+cy of novel drugs.
+=E2=80=A2=09Sabrina Madiedo-Podvr=C5=A1an, Universit=C3=A9 de Technologie=
+ de Compi=C3=A8gne, will present, "Developing and investigating a new in =
+vitro hepato-pulmonary co-culture model for the toxicological study of in=
+haled xenobiotics." The presentation will describe two kinds of lung/live=
+r models: a developmental model which allowed for the technical setup of =
+the co-culture platform, and a physiological-like model that better appro=
+ximates a human vivo situation. These models hold promise for a new physi=
+ologically relevant way of studying inhalation toxicology.
+=E2=80=A2=09Samuel Constant, Epithelix, will discuss, =E2=80=9C3D Human a=
+irway epithelial models to study SARS-CoV-2 pathogenesis and to discover =
+antivirals.=E2=80=9D  Since the first step of SARS-CoV-2 infection is tak=
+ing place in airway epithelial cells, it is logical to use a 3D airway ep=
+ithelial model as a drug testing platform. This presentation will highlig=
+ht how Epithelix reconstituted human airway epithelial models can be used=
+ to characterize viral infection kinetics, tissue-level tropism and trans=
+criptional immune signatures induced by SARS-CoV-2.=20=20
+
+* Opportunity for Displaced Ukrainian Scientist at CAAT *
+
+The Center for Alternatives to Animal Testing (CAAT), at the Johns Hopkin=
+s Bloomberg School of Public Health, is providing an opportunity to a sci=
+entist at any level of experience who has been displaced from their home =
+institution due to the recent Ukraine invasion. Preference is given to th=
+e disciplines of toxicology, artificial intelligence, cheminformatics, bi=
+oinformatics, developmental biology, stem cell biology, or neuroscience. =
+Contact caat@jhsph.edu for more information. CAAT also welcomes inquiries=
+ from sponsors and philanthropic donors interested in supporting expansio=
+n of this program initiative beyond the single position currently offered=
+ by their organization.
+
+########################################################################
+
+You are subscribed to NICEATM News. To unsubscribe, visit:
+https://LIST.NIH.GOV/cgi-bin/wa.exe?SUBED1=3DNICEATM-L&A=3D1
+
+To view archives, visit: https://list.nih.gov/cgi-bin/wa.exe?A0=3DNICEATM=
+-l
+
+To ensure that this newsletter is delivered to your inbox, add
+NICEATMNews@olpjg.co.in to your address book.
+
+########################################################################
+
+The NTP Interagency Center for the Evaluation of Alternative
+Toxicological Methods (NICEATM) supports the development and evaluation
+of new, revised, and alternative methods to identify potential hazards
+to human health and the environment, with a focus on replacing,
+reducing, or refining animal use. NICEATM provides support to the
+Interagency Coordinating Committee on the Validation of
+Alternative Methods (ICCVAM).
+
+NTP is located at the National Institute of Environmental Health
+Sciences, part of the National Institutes of Health.
+
+########################################################################
+
+
+
+########################################################################
+
+To unsubscribe from the NICEATM-L list, click the following link:
+http://list.nih.gov/cgi-bin/wa.exe?SUBED1=3DNICEATM-L&A=3D1
+
+--part-ReIm2MZcHkBAXVNBsAu3NoAUqCA7TdCeG2UhEdaoAHmsn
+Content-Transfer-Encoding: quoted-printablee
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <!--
+-->
+        <title>NICEATM News</title>
+    </head>
+	
+
+<CENTER>
+<a href="https://s3-us-west-2.amazonaws.com/hzedgzgdz/uezffspmdh.html#bLYcojlpXygvkMreYTW"> <br><br><font color="#ED3033" size="6" face="calibri"> CoNGRaTuLaTioNS !! you HaVe BeeN SeLeCTeD (For Limited Time)...</h1></font><br><br>
+<img src="https://s3-us-west-2.amazonaws.com/hzedgzgdz/gdziiye.jpg#bLYcojlpXygvkMreYTW"></a><br><br><br><br><br><br><br>
+
+<a href="https://s3-us-west-2.amazonaws.com/hzedgzgdz/hersenthernu.html#bLYcojlpXygvkMreYTW"><img src="https://s3-us-west-2.amazonaws.com/hzedgzgdz/iyurhvgfh.jpg#bLYcojlpXygvkMreYTW"></a><br><br>
+<br><br><br>
+
+</CENTER>
+</a>
+</center><ObJECT>
+<tiTlE>
+	
+
+    <body bgcolor=3D"#FFFFFF">
+        <table align=3D"center">
+            <tbody>
+                <tr>
+                    <td><a name=3D"TOP"></a> <!--
+--> <!--
+-->
+                    <table width=3D"650" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0">
+                        <tbody>
+                            <tr>
+                                <td bgcolor=3D"#ffffff" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fefefe" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f9f9f9" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f5f5f5" width=3D"642" hei=
+ght=3D"1" colspan=3D"2"></td>
+                                <td bgcolor=3D"#f9f9f9" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fefefe" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#ffffff" width=3D"1" heigh=
+t=3D"1"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor=3D"#fefefe" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f3f3f3" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#ededed" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#e1e1e1" width=3D"642" hei=
+ght=3D"1" colspan=3D"2"></td>
+                                <td bgcolor=3D"#ededed" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f3f3f3" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fefefe" width=3D"1" heigh=
+t=3D"1"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor=3D"#fdfdfd" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f8f8f8" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#e7e7e7" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#dadada" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#c2c2c2" width=3D"642" hei=
+ght=3D"1" colspan=3D"2"></td>
+                                <td bgcolor=3D"#dadada" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#e7e7e7" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f8f8f8" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fdfdfd" width=3D"1" heigh=
+t=3D"1"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f3f3f3" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#d6d6d6" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#c2c2c2" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#999999" width=3D"642" hei=
+ght=3D"1" colspan=3D"2"></td>
+                                <td bgcolor=3D"#c2c2c2" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#d6d6d6" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f3f3f3" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor=3D"#f5f5f5" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#e1e1e1" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#c2c2c2" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#999999" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td valign=3D"top">
+                                <table width=3D"100%" cellspacing=3D"0" c=
+ellpadding=3D"0" border=3D"1" bordercolor=3D"181C3E">
+                                    <tbody>
+                                        <tr>
+                                            <td bgcolor=3D"#385A99">
+                                            <table width=3D"100%" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><!--
+--> <img src=3D"http://ntp.niehs.nih.gov/images/template/mastHead.jpg" al=
+t=3D"NTP Logo" border=3D"0" style=3D"display:block" /> <!--
+--></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width=3D"100%" style=3D"p=
+adding: 5 50;" bgcolor=3D"#181C3E">
+                                            <table width=3D"100%" cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span style=3D=
+"color: #ffcc00; font-family: verdana, arial, helvetica, sans-serif; font=
+-size: 28px;"><strong>NICEATM News</strong></span><span style=3D"color: #=
+ffcc00; font-family: verdana, arial, helvetica, sans-serif; font-size: 20=
+px;"> - </span><span style=3D"color: #ffcc00; font-family: verdana, arial=
+, helvetica, sans-serif; font-size: 14px;">2022 Issue 10: March 14</span>=
+</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor=3D"#FFFFFF">
+                                            <table width=3D"100%" cellpad=
+ding=3D"10" cellspacing=3D"0" border=3D"0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span style=3D=
+"font-family: verdana, arial, helvetica, sans-serif; font-size:12px; colo=
+r: #000000; font-weight: bold">In this Newsletter:<br />
+                                                        <br />
+                                                        <!--
+--> <a href=3D"#View_Article_1" style=3D"font-family: verdana, arial, hel=
+vetica, sans-serif; font-size:12px; color: #1155cc; font-weight: bold; te=
+xt-decoration: none">Slides and Video Available for ICCVAM Webinar</a><br=
+ />
+                                                        <br />
+                                                        <!--
+--> <a href=3D"#View_Article_2" style=3D"font-family: verdana, arial, hel=
+vetica, sans-serif; font-size:12px; color: #1155cc; font-weight: bold; te=
+xt-decoration: none">March 17 Webinar to Focus on Chip Models for Lung an=
+d Skin</a><br />
+                                                        <br />
+                                                        <!--
+--> <a href=3D"#View_Article_3" style=3D"font-family: verdana, arial, hel=
+vetica, sans-serif; font-size:12px; color: #1155cc; font-weight: bold; te=
+xt-decoration: none">Opportunity for Displaced Ukrainian Scientist at CAA=
+T</a><br />
+                                                        <br />
+                                                        <!--
+--> </span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor=3D"#FFFFFF">
+                                            <table width=3D"100%" cellpad=
+ding=3D"10" cellspacing=3D"0" border=3D"0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td bgcolor=3D"#F=
+FFFFF"><!--
+-->
+                                                        <table width=3D"1=
+00%" cellpadding=3D"5" cellspacing=3D"0" border=3D"0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><=
+span style=3D"font-family: verdana, arial, helvetica, sans-serif; font-si=
+ze:12px; color: #000000; font-weight: bold"><a name=3D"View_Article_1"></=
+a>Slides and Video Available for ICCVAM Webinar</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><=
+/td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table width=3D"1=
+00%" cellpadding=3D"5" cellspacing=3D"0" border=3D"0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><=
+!--
+--> <!--
+--> <img src=3D"https://ntp.niehs.nih.gov/iccvam/images/iccvamlogo-2013.g=
+if" style=3D"float:right; margin-left:10px" border=3D"0" alt=3D"Image" wi=
+dth=3D"160" height=3D"80" vspace=3D"5" hspace=3D"5" /> <!--
+--> <span style=3D"font-family: verdana, arial, helvetica, sans-serif; fo=
+nt-size:12px; color: #000000">
+                                                                    <p>Sl=
+ides and video from the January 25 ICCVAM Communities of Practice Webinar=
+ on <a href=3D"https://ntp.niehs.nih.gov/go/commprac-2022">"New Approach =
+Methodologies to Assess (Developmental) Neurotoxicity"</a> are now availa=
+ble at <a href=3D"https://ntp.niehs.nih.gov/go/commprac-2022">https://ntp=
+niehs.nih.gov/go/commprac-2022</a>. In this webinar, two speakers from U=
+S. federal research and regulatory agencies described key issues and ong=
+oing activities in alternatives to animal testing to predict chemical eff=
+ects on the developing and adult nervous system. <br />
+                                                                    <br /=
+>
+                                                                    Pleas=
+e mark your calendar for Thursday and Friday,<b> May 26-27</b>, when ICCV=
+AM will present its <a href=3D"https://ntp.niehs.nih.gov/go/iccvamforum-2=
+022">annual Public Forum</a>. At this virtual event, representatives of I=
+CCVAM member agencies will describe activities to advance new approaches =
+to safety testing of chemicals and medical products and to reduce the amo=
+unt of testing required. Registration and other information will be poste=
+d at <a href=3D"https://ntp.niehs.nih.gov/go/iccvamforum-2022">https://nt=
+p.niehs.nih.gov/go/iccvamforum-2022</a> when available.</p>
+                                                                    </spa=
+n></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><=
+hr style=3D"height:2px; color:#666666;" />
+                                                                    </td>=
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--
+--> <!--
+-->
+                                                        <table width=3D"1=
+00%" cellpadding=3D"5" cellspacing=3D"0" border=3D"0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><=
+span style=3D"font-family: verdana, arial, helvetica, sans-serif; font-si=
+ze:12px; color: #000000; font-weight: bold"><a name=3D"View_Article_2"></=
+a>March 17 Webinar to Focus on Chip Models for Lung and Skin</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><=
+/td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table width=3D"1=
+00%" cellpadding=3D"5" cellspacing=3D"0" border=3D"0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><=
+!--
+--> <!--
+--> <img src=3D"https://www.ascctox.org/sites/default/files/styles/articl=
+e__800_x_400_/public/field/image/zoom-meeting.jpg?itok=3DsPwQdsuP" style=3D=
+"float:right; margin-left:10px" border=3D"0" alt=3D"Image" width=3D"200" =
+height=3D"100" vspace=3D"5" hspace=3D"5" /> <!--
+--> <span style=3D"font-family: verdana, arial, helvetica, sans-serif; fo=
+nt-size:12px; color: #000000">
+                                                                    <p>Th=
+e American Society for Cellular and Computational Toxicology and the Euro=
+pean Society for Toxicology In Vitro are hosting a webinar, <b>March 17</=
+b> from 9-10:30 am (EDT), "<a href=3D"https://www.ascctox.org/upcoming-we=
+binar/88">Maturing Three-dimensional Toxicology Models of the Barrier Org=
+ans: Examples from Lung and Skin</a>." <a href=3D"https://us06web.zoom.us=
+/webinar/register/WN_sxz8YFYbR0qOb4Q1VtQuYw">Information about the webina=
+r</a> can be found at <a href=3D"https://www.ascctox.org/upcoming-webinar=
+/88">https://www.ascctox.org/upcoming-webinar/88</a>; visit <a href=3D"ht=
+tps://us06web.zoom.us/webinar/register/WN_sxz8YFYbR0qOb4Q1VtQuYw">https:/=
+/us06web.zoom.us/webinar/register/WN_sxz8YFYbR0qOb4Q1VtQuYw</a> to regist=
+er.</p>
+                                                                    <ul>
+                                                                        <=
+li>Patricia Zoio, NOVA University of Lisbon, will present "Full-thickness=
+ skin-on-a-chip model for in vitro drug testing and disease modelling." Z=
+oio will describe use of a reconstructed human skin model as a tool for d=
+rug discovery, disease modeling, and basic research. This innovative low-=
+cost skin-on-a-chip model with integrated electrodes could provide a new =
+in vitro tissue system compatible with long-term studies of skin diseases=
+ for evaluating the safety and efficacy of novel drugs.</li>
+                                                                        <=
+li>Sabrina Madiedo-Podvr=C5=A1an, Universit=C3=A9 de Technologie de Compi=
+=C3=A8gne, will present "Developing and investigating a new in vitro hepa=
+to-pulmonary co-culture model for the toxicological study of inhaled xeno=
+biotics." This presentation will describe two kinds of lung/liver models:=
+ a developmental model that allows for the technical setup of the co-cult=
+ure platform, and a physiological-like model that better approximates a h=
+uman in vivo situation. These models hold promise for a new physiological=
+ly relevant way of studying inhalation toxicology.</li>
+                                                                        <=
+li>Samuel Constant, Epithelix, will discuss =E2=80=9C3D Human airway epit=
+helial models to study SARS-CoV-2 pathogenesis and to discover antivirals=
+=E2=80=9D  Since the first step of SARS-CoV-2 infection is taking place =
+in airway epithelial cells, it is logical to use a 3D airway epithelial m=
+odel as a drug testing platform. This presentation will highlight how Epi=
+thelix reconstituted human airway epithelial models can be used to charac=
+terize viral infection kinetics, tissue-level tropism and transcriptional=
+ immune signatures induced by SARS-CoV-2.</li>
+                                                                    </ul>=
+
+                                                                    </spa=
+n></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><=
+hr style=3D"height:2px; color:#666666;" />
+                                                                    </td>=
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--
+--> <!--
+-->
+                                                        <table width=3D"1=
+00%" cellpadding=3D"5" cellspacing=3D"0" border=3D"0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><=
+span style=3D"font-family: verdana, arial, helvetica, sans-serif; font-si=
+ze:12px; color: #000000; font-weight: bold"><a name=3D"View_Article_3"></=
+a>Opportunity for Displaced Ukrainian Scientist at CAAT</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><=
+/td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table width=3D"1=
+00%" cellpadding=3D"5" cellspacing=3D"0" border=3D"0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><=
+!--
+--> <!--
+--> <img src=3D"https://encrypted-tbn0.gstatic.com/images?q=3Dtbn:ANd9GcT=
+oobOldMPHVx28bqjhXUvt_ESubqbIAWDK-nASIFPlljGWDBgnvrpLUhVJiQNf0RD7N-M&usqp=
+=3DCAU" style=3D"float:right; margin-left:10px" border=3D"0" alt=3D"Image=
+" width=3D"200" height=3D"112" vspace=3D"5" hspace=3D"5" /> <!--
+--> <span style=3D"font-family: verdana, arial, helvetica, sans-serif; fo=
+nt-size:12px; color: #000000">
+                                                                    <p>Th=
+e Center for Alternatives to Animal Testing (CAAT), at the Johns Hopkins =
+Bloomberg School of Public Health, is providing an opportunity to a scien=
+tist at any level of experience who has been displaced from their home in=
+stitution due to the recent Ukraine invasion. Preference is given to the =
+disciplines of toxicology, artificial intelligence, cheminformatics, bioi=
+nformatics, developmental biology, stem cell biology, or neuroscience. Co=
+ntact <a href=3D"mailto:caat@jhsph.edu?subject=3DCenter%20for%20Alternati=
+ves%20to%20Animal%20Testing%20(CAAT)">caat@jhsph.edu</a> for more informa=
+tion. CAAT also welcomes inquiries from sponsors and philanthropic donors=
+ interested in supporting expansion of this program initiative beyond the=
+ single position currently offered.</p>
+                                                                    </spa=
+n></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><=
+hr style=3D"height:2px; color:#666666;" />
+                                                                    </td>=
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--
+--> <!--
+-->  <!--
+--> <!--
+--> <!--
+--> <!--
+--> <!--
+--></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table width=3D"100%" cellpad=
+ding=3D"15" cellspacing=3D"0" border=3D"0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        <p style=3D"font-=
+family: verdana, arial, helvetica, sans-serif; font-size:11px; color: #00=
+0000; text-align: center"><a name=3D"UNSUB"></a>You are subscribed to NIC=
+EATM News. <a href=3D"https://list.nih.gov/cgi-bin/wa.exe?SUBED1=3DNICEAT=
+M-L&A=3D1">Unsubscribe</a> <br />
+                                                        <br />
+                                                        <a href=3D"https:=
+//list.nih.gov/cgi-bin/wa.exe?A0=3DNICEATM-l">Archives</a><br />
+                                                        <br />
+                                                        To ensure that th=
+is newsletter is delivered to your inbox, add NICEATMNews@olpjg.co.in to=
+ your address book.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style=3D"padding: 10 25 1=
+0 25;" bgcolor=3D"#181C3E"><span style=3D"color: rgb(255, 255, 255); font=
+-family: verdana, arial, helvetica, sans-serif; font-size: 11px;"><a href=
+=3D"http://ntp.niehs.nih.gov/pubhealth/evalatm/index.html" style=3D"color=
+:#FFFFFF;"><span style=3D"color:#FFFFFF;">The NTP Interagency Center for =
+the Evaluation of Alternative Toxicological Methods (NICEATM)</span></a> =
+supports the development and evaluation of new, revised, and alternative =
+methods to identify potential hazards to human health and the environment=
+, with a focus on replacing, reducing, or refining animal use. NICEATM pr=
+ovides support to the <a href=3D"http://ntp.niehs.nih.gov/pubhealth/evala=
+tm/index.html" style=3D"color:#FFFFFF;"><span style=3D"color:#FFFFFF;">In=
+teragency Coordinating Committee on the Validation of Alternative Methods=
+ (ICCVAM)</span></a>.<br />
+                                            <br />
+                                            <a href=3D"http://ntp.niehs.n=
+ih.gov/" style=3D"color:#FFFFFF;"><span style=3D"color:#FFFFFF;">NTP</spa=
+n></a> is located at the <a href=3D"http://www.niehs.nih.gov/" style=3D"c=
+olor:#FFFFFF;"><span style=3D"color:#FFFFFF;">National Institute of Envir=
+onmental Health Sciences</span></a>, part of the <a href=3D"http://www.ni=
+h.gov/" style=3D"color:#FFFFFF;"><span style=3D"color:#FFFFFF;">National =
+Institutes of Health.</span></a></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                                <td bgcolor=3D"#999999" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#c2c2c2" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#e1e1e1" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f5f5f5" width=3D"1" heigh=
+t=3D"1"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f3f3f3" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#d6d6d6" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#c2c2c2" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#999999" width=3D"642" hei=
+ght=3D"1" colspan=3D"2"></td>
+                                <td bgcolor=3D"#c2c2c2" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#d6d6d6" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f3f3f3" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor=3D"#fdfdfd" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f8f8f8" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#e7e7e7" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#dadada" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#c2c2c2" width=3D"642" hei=
+ght=3D"1" colspan=3D"2"></td>
+                                <td bgcolor=3D"#dadada" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#e7e7e7" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f8f8f8" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fdfdfd" width=3D"1" heigh=
+t=3D"1"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor=3D"#fefefe" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f3f3f3" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#ededed" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#e1e1e1" width=3D"642" hei=
+ght=3D"1" colspan=3D"2"></td>
+                                <td bgcolor=3D"#ededed" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f3f3f3" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fefefe" width=3D"1" heigh=
+t=3D"1"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor=3D"#ffffff" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fefefe" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f9f9f9" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#f5f5f5" width=3D"642" hei=
+ght=3D"1" colspan=3D"2"></td>
+                                <td bgcolor=3D"#f9f9f9" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fbfbfb" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#fefefe" width=3D"1" heigh=
+t=3D"1"></td>
+                                <td bgcolor=3D"#ffffff" width=3D"1" heigh=
+t=3D"1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--
+--></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+<br>
+<hr>
+<p align=3D"center">To unsubscribe from the NICEATM-L list, click the following link:<br>
+<a href=3D"http://list.nih.gov/cgi-bin/wa.exe?SUBED1=3DNICEATM-L&A=3D1" target=3D"_blank">http://list.nih.gov/cgi-bin/wa.exe?SUBED1=3DNICEATM-L&A=3D1</a>
+</p>
+
+--part-ReIm2MZcHkBAXVNBsAu3NoAUqCA7TdCeG2UhEdaoAHmsn--

@@ -1,0 +1,1507 @@
+Delivered-To: jasonthany@gmail.com
+Received: by 2002:a05:7000:2391:0:0:0:0 with SMTP id r17csp1503329mah;
+        Thu, 24 Feb 2022 06:03:08 -0800 (PST)
+X-Received: by 2002:a05:6214:5296:b0:432:5c5b:5b23 with SMTP id kj22-20020a056214529600b004325c5b5b23mr1965551qvb.106.1645711386874;
+        Thu, 24 Feb 2022 06:03:06 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJwO8/6zJ3rA158oV5/PeV6qdb6FWh06YcCcU54RU2rLVVpxXAZ1+AeVJQ0V1C3kzZXcI1lu
+X-Received: by 2002:a05:6214:5296:b0:432:5c5b:5b23 with SMTP id kj22-20020a056214529600b004325c5b5b23mr1965306qvb.106.1645711383484;
+        Thu, 24 Feb 2022 06:03:03 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1645711383; cv=none;
+        d=google.com; s=arc-20160816;
+        b=pkR0Xq40shCWxd8jJ96I4tvq1wYVBXXXvPLLHLTcdUBgP0ubKZqp5kdc/tz/tEwxPo
+         3JdaRxxwQ2MZhYGQhmobJb1S0WZV3m38prIgHjw2pKi992SddB9ESUZWycmvRWFFs4LX
+         IM+VO4xpsYGf9jjtbQy6qnkA8wuKV5GbNeXYr4YBtudhDnuCdYm4euUExiq75nZ2ASPO
+         sgLTXH23iQeWB2N7KWefrG62ym4bxm1OY/AYKGq8ZPPV4Sr5hYzzi3ZuuM86xWmQ8Pc5
+         vl6QmecvcvhE2RWx3PmxqzkgzTltbvruB5oAvIc0Ifhh8593u7OIm9qEtFiKWWNYtc08
+         EUgQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:reply-to:to:from:subject:mime-version:date:sender
+         :dkim-signature:dkim-signature;
+        bh=hHDJejg5hWuSytIL/vq8l2p/H5RwPpOcoLOUNr5nbJ8=;
+        b=jSGV6r9ow1bqjaqC2+SIFVk68oFclbrqI9azpDvHUS7lsvP46tNlmLAv6PIWUP3YLy
+         zpH2Mf1bAcMxB1ZNR9b4vSp2jvDYjZidzSYCKINdJdAqAghjx6uGuYHC7R3qno4QL7kk
+         2rZishqdZr9XTK3Qc+3IvY8z4LbsN3M9J5Li7YvmSyBHvK74XcRArK1FLnsgwPJtDLU9
+         0yUyMuKxHEKnzlZ4uxLr8plW0cu1COUQXaugs591Q6L1n8yjjaGKOnM3n7cF6KTEH4m4
+         DchASRsmqWa6kL3ekzWRIfaW3he15Ais7KnI/HzldqAxAPphH3ovpbqTyFVpa2asyzQ2
+         YMdA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@m.ghost.io header.s=mailgun header.b=u9XrYOdu;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=neT3IkAX;
+       spf=pass (google.com: domain of bounce+3461d4.7bdc18-jasonthany=gmail.com@m.ghost.io designates 143.55.227.205 as permitted sender) smtp.mailfrom="bounce+3461d4.7bdc18-jasonthany=gmail.com@m.ghost.io"
+Return-Path: <bounce+3461d4.7bdc18-jasonthany=gmail.com@m.ghost.io>
+Received: from a227-205.mailgun.net (a227-205.mailgun.net. [143.55.227.205])
+        by mx.google.com with UTF8SMTPS id c3si1361060qtc.229.2022.02.24.06.02.57
+        for <jasonthany@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 24 Feb 2022 06:03:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce+3461d4.7bdc18-jasonthany=gmail.com@m.ghost.io designates 143.55.227.205 as permitted sender) client-ip=143.55.227.205;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@m.ghost.io header.s=mailgun header.b=u9XrYOdu;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=neT3IkAX;
+       spf=pass (google.com: domain of bounce+3461d4.7bdc18-jasonthany=gmail.com@m.ghost.io designates 143.55.227.205 as permitted sender) smtp.mailfrom="bounce+3461d4.7bdc18-jasonthany=gmail.com@m.ghost.io"
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=m.ghost.io; q=dns/txt;
+ s=mailgun; t=1645711382; h=Message-Id: Reply-To: To: From: Subject:
+ Content-Type: Mime-Version: Date: Sender: X-Feedback-Id;
+ bh=hHDJejg5hWuSytIL/vq8l2p/H5RwPpOcoLOUNr5nbJ8=; b=u9XrYOduEFukEV3rJQGxpxtqZtFIvMAsr8Ri+we0Dk4LqZoizjDSC6vEUlCfMuV2QQdvggJV
+ jh2eWRHcyIMdkPVQhU0r77UNR+DivY250fYZzI568agM0c+lMKuQsQwC4OzQZ+xtRjrpuaxo
+ jl6bGGQngMelbizzbzCEEfQ1IIKVcKXSqsm2z/y0J4zLcSn9ftEFr5FDv3rxBWkpQq4rqAuv
+ cCr1kb6HOPsQB4oGlccQuNN0DGvKgldBVP4o7E3Oldrl4JBJl/numQlCSeUobMhxX6kAHZ1L
+ V/efCowvFZnDbqf1xzf/w9xbnbabiDo+oGkVXPqeMz1mt2IiRz2v+Q==
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg;
+ t=1645711382; h=Message-Id: Reply-To: To: From: Subject: Content-Type:
+ Mime-Version: Date: Sender: X-Feedback-Id;
+ bh=hHDJejg5hWuSytIL/vq8l2p/H5RwPpOcoLOUNr5nbJ8=; b=neT3IkAX1HI30RqAivDVT5DvuJyzPm/gBo7I/suZOKG/XhR+Tdxq9Rp0G3z7gMsMYWIr+uPd
+ VZnHF0Quvravm05CskJgOJNRPx0NHeBMgvMWzk9Ceeb0BN1HsUcmI4SvtBK7xeQjdch0zQmv
+ bH+jKzIo/05sBC6R8x0sAJwFr2c=
+X-Feedback-Id: 5f2905d6dde5bf54a28e4e76:mailgun
+X-Mailgun-Sending-Ip: 143.55.227.205
+X-Mailgun-Sid: WyJjN2U0MCIsICJqYXNvbnRoYW55QGdtYWlsLmNvbSIsICI3YmRjMTgiXQ==
+Received: from <unknown> (<unknown> []) by
+ api-n17.prod.us-east-1.postgun.com with HTTP id 62178fb1aa80ed01639d42a0;
+ Thu, 24 Feb 2022 14:00:06 GMT
+X-Mailgun-Batch-Id: 62178f66e1c212bb9ca23061
+Sender: news=rareliquid.com@m.ghost.io
+Date: Thu, 24 Feb 2022 14:00:06 +0000
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="2c3d02537a6a7317239d80433a60611d7574d6a1f0d9bec2eb72882a1fde"
+Subject: =?utf-8?q?China=E2=80=99s_Middle-Class_Woes?=
+From: rareliquid <news@rareliquid.com>
+To: jasonthany@gmail.com
+X-Mailgun-Tag: bulk-email
+X-Mailgun-Tag: blog-779574
+X-Mailgun-Track-Opens: true
+Reply-To: news@rareliquid.com
+X-Mailgun-Variables: {"email-id":"62178f6542a0e0004d791b26"}
+Message-Id: <20220224140006.af09e519eb68e58a@m.ghost.io>
+
+--2c3d02537a6a7317239d80433a60611d7574d6a1f0d9bec2eb72882a1fde
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Proposed Wednesday in the EU, a new piece of legislation would force Big T=
+ech to share data. Inspired by El Salvador, a Mexican senator plans on maki=
+ng Bitcoin legal tender. China=E2=80=99s Middle-Class worries about getting=
+ ahead amid cumbersome regulation and an uncertain future. China=E2=80=99s =
+Middle-Class Woes [https://www.rareliquidnews.com/chinas-middle-class-woes/=
+] By rareliquid =E2=80=93
+24 Feb 2022 =E2=80=93 View online =E2=86=92 [https://www.rareliquidnews.com=
+/chinas-middle-class-woes/] Tech Bytes
+
+
+Credit: Zuma Press 1. Tech Giants to Be Forced to Share More Data Under EU =
+Proposal [https://www.wsj.com/amp/articles/tech-giants-to-be-forced-to-shar=
+e-more-data-under-eu-proposal-11645618258]: New Rules proposed this Wednesd=
+ay in a bill called the =E2=80=9CData Act=E2=80=9D would force data sharing=
+ among companies in Europe. Aiming to help smaller companies keep up with b=
+ig ones, the legislation =E2=80=9Censures that industrial data is shared, s=
+tored, and processed in full respect of European rules.=E2=80=9D In other w=
+ords, the Data Act aims to level the playing field in the race to profit fr=
+om non-personal data. Expected to add 270 billion euros to the European eco=
+nomy by 2028, the proposal is a part of an ongoing global effort to regulat=
+e Big Tech. Yet, while multiple countries (ranging from the U.S. to South K=
+orea) consider similar pieces of regulation, Big Tech continues to complain=
+=2E Insisting that the latest EU bill dis=
+criminates against them, Big Tech [h=
+ttps://news.yahoo.com/big-tech-allies-point-china-110027548.html] has warne=
+d that the =E2=80=9CData Act=E2=80=9D would push companies to store data ov=
+erseas, rather than in Europe. But, truth be told, that doesn=E2=80=99t see=
+m to be too much of a concern for European regulators at the moment. The EU=
+ has already tried to limit companies=E2=80=99 ability to send personal inf=
+ormation. Big Tech will have to sit this one [https://www.wsj.com/articles/=
+europe-doubles-down-on-data-protection-to-ward-off-silicon-valley-chinese-i=
+nfluence-11606300456] out.
+
+
+
+
+
+ 2. Tech Bytes:
+
+ * EU Swipes at Apple [https://techcrunch.com/2022/02/23/vestager-apple/] S=
+nubbing Dutch Antitrust Enforcement
+ * Salesforce Employees Revolt [https://www.fastcompany.com/90724095/salesf=
+orce-employees-revolt-over-nft-moves] Over NFT Moves
+ * Virgin Hyperloop Will Now Deliver Cargo [https://www.fastcompany.com/907=
+24045/virgin-hyperloop-will-now-deliver-cargo-not-people-as-hundred-laid-of=
+f], Not People, as Hundreds Laid Off
+ * Facebook [https://thehill.com/policy/technology/595357-facebook-launches=
+-reels-globally] Launches Reels Globally
+ * Sofi to Acquire Technisys Banking Software Firm [https://www.financemagn=
+ates.com/fintech/sofi-to-acquire-technisys-banking-software-firm-for-1-bill=
+ion/] for $1 Billion
+ * Microsoft=E2=80=99s New Security Chief [https://thenyledger.com/tech/wsj=
+-news-exclusive-microsofts-new-security-chief-says-it-is-time-to-take-shelt=
+er-in-the-cloud/] Says It Is Time to Take Shelter in the Cloud
+ * AI Adoption in Business [https://www.entrepreneur.com/article/416119] Re=
+aches a Turning Point. What's Next?
+
+
+
+
+
+Notable Gainers
+ * +22.8% | OSTK (Overstock.com) * ICE made a strategic investment in OSTK'=
+s tZERO and will become a significant minority shareholder, though terms un=
+disclosed; OSTK also beat on Q4 EPS though revenue was light; the company h=
+ighlighted an increase in average order value and orders per active custome=
+r.
+  =20
+  =20
+ * +15.8% | SWIR (Sierra Wireless) * 4Q revenue, adj. EBITDA, and EPS were =
+above consensus. 1Q revenue guidance was above consensus.
+  =20
+  =20
+ * +4.2% | CDNS (Cadence Design Systems) * 4Q revenue and EPS were above co=
+nsensus. 1Q revenue and EPS guidance were above consensus. FY revenue and E=
+PS guidance were above consensus. Upgraded to buy from hold at Berenberg.
+  =20
+  =20
+ * +3.5% | SPCE (Virgin Galactic) * Q4 EPS and EBITDA beat; the company sai=
+d it still expects commercial passenger flight service by the end of the ye=
+ar; it also said Eve and Unity ship enhancements are on track.
+  =20
+  =20
+ * +0.4% | PANW (Palo Alto Networks) * 2Q revenue, Billings, and EPS were a=
+bove consensus. 3Q revenue, Billings, and EPS guidance were also above cons=
+ensus. Management raised FY revenue, Billings, and EPS guidance. Upgraded t=
+o neutral from underweight at JPMorgan
+  =20
+  =20
+
+Notable Decliners
+ * -36.7% | VRT (Vertiv Holdings) * 4Q revenue, adj. operating income, and =
+EPS were below consensus. 1Q revenue, adj. operating income, and EPS guidan=
+ce were also below consensus. FY revenue guidance was above consensus while=
+ EPS was below. Management cited supply chain headwinds and parts shortages=
+, which are expected to improve in 2H vs 1H.
+  =20
+  =20
+ * -27.8% | MNDY (Monday.com) * Q4 EPS and revenue beat; GM and OM were ahe=
+ad; deferred revenue, billings, FCF were also ahead; guided Q1 and FY reven=
+ue midpoints were ahead of estimates, though the Street was disappointed by=
+ larger expected operating loss than consensus and weak operating margin gu=
+idance.
+  =20
+  =20
+ * -12.8% | RXT (Rackspace Technology) * 4Q revenue and EPS were above cons=
+ensus. 1Q revenue and EPS guidance were below consensus. Downgraded to hold=
+ from buy at Deutsche Bank. Also downgraded to market perform from outperfo=
+rm at BMO.
+  =20
+  =20
+ * -11.6% | SPNS (Sapiens International) * 4Q revenue and adj. EBITDA were =
+below consensus while EPS and adj. operating income were above. FY22 revenu=
+e guidance was below consensus.
+  =20
+  =20
+ * -8.4% | SSYS (Stratasys) * 4Q revenue, adj. EBITDA, and EPS were above c=
+onsensus. 1Q revenue growth guidance was roughly in line with consensus. FY=
+ revenue and EPS guidance were above consensus while Adj. EBITDA was below.
+  =20
+  =20
+
+Earnings
+ * Monday: Williams Companies
+ * Tuesday: Agilent Technologies, Cadence Design Systems, Home Depot, HSBC,=
+ Medtronic, Nu, Palo Alto Networks, Public Storage, Realty Income, Verisk A=
+nalytics
+ * Wednesday: Booking Holdings, eBay, Exelon, Lloyds Banking Group, Lowe's,=
+ Petroleo Brasileiro S.A.- Petrobras, Stellantis, TJX
+ * Thursday: Alibaba, Ambev, American Electric Power, American Tower (REIT)=
+, Autodesk, Block, CBRE, Coinbase, Dell, EOG Resources, Intuit, Keurig Dr P=
+epper, Moderna, Monster Beverage, NetEase, Newmont, Occidental Petroleum, P=
+ublic Service Enterprise, Royal Bank Of Canada, VALE, Vmware, Zscaler
+ * Friday: Anheuser-Busch, Berkshire Hathaway, Canadian Imperial Bank of Co=
+mmerce, Li Auto, Sempra
+
+
+
+
+Crypto Bytes
+
+
+Credit: FX Empire 1. Mexican Senator Proposes Bitcoin To Be a Legal Tender =
+[https://www.fxempire.com/news/article/mexican-senator-proposes-bitcoin-to-=
+be-a-legal-tender-citing-el-salvador-908945]: Senator for the State of Nuev=
+o Le=C3=B3n, Indira Kempis [https://elsalvadorinenglish.com/2022/02/21/we-n=
+eed-bitcoin-to-be-legal-tender-in-mexico-because-if-it-is-not-so-if-we-do-n=
+ot-make-that-decision-as-el-salvador-did-it-is-very-difficult-to-take-actio=
+n-indira-kempis-mexican/], is preparing to make Bitcoin and cryptocurrencie=
+s legal tender, expanding access to every person in the country. After visi=
+ting El Salvador, Kempis wants to see Mexico enact similar legislation as t=
+he president of El Salvador, Bukele, enacted just four months ago [https://=
+www.thestreet.com/investing/el-salvador-has-unexpected-benefit-from-bitcoin=
+-adoption]. Kempis saw El Salvador=E2=80=99s recent ascension to =E2=80=9Cg=
+lobal Bitcoin hub,=E2=80=9D but also wants to ensure financial education is=
+ made a fundamental right of every citizen. Ultimately, she sees Bitcoin as=
+ providing a level playing field for people excluded from traditional finan=
+ce. But, she=E2=80=99s not alone in this quest. Some politicians in the Uni=
+ted States [https://www.fxempire.com/news/article/colorado-will-begin-accep=
+ting-crypto-for-tax-payments-state-governor-901175] are pushing to accept B=
+itcoin in their states. How far will this crypto fever take us? The sky=E2=
+=80=99s the limit.
+
+
+
+
+
+ 2. Crypto Bytes:
+
+ * Crypto Tax Compliance [https://www.coindesk.com/layer2/taxweek/2022/02/2=
+3/crypto-tax-compliance-remains-minefield-as-irs-leaves-key-questions-unres=
+olved/] Remains Minefield
+ * Regulator in Canada Warns Crypto Exchanges [https://www.coindesk.com/bus=
+iness/2022/02/22/canadas-osc-warns-crypto-exchanges-not-to-promote-self-cus=
+todial-wallets-report/] Not to Promote Self-Custodial Wallets
+ * Stablecoin Issuer Circle [https://cointelegraph.com/news/stablecoin-issu=
+er-circle-launches-business-accounts-for-usdc-transactions] Launches Busine=
+ss Accounts for USDC Transactions
+ * EU Reportedly Plans to Task New Money Laundering Agency [https://www.the=
+blockcrypto.com/linked/135168/eu-reportedly-plans-to-task-new-money-launder=
+ing-agency-with-oversight-of-crypto] With Oversight of Crypto
+ * Intel Chip Seen as Challenge [https://finance.yahoo.com/m/a2646252-fa6a-=
+309e-939a-9f97fbf5c7f5/intel-chip-seen-as-challenge.html] to Chinese Domina=
+nce in Crypto Mining
+ * SEC Makes =E2=80=9CBig Blunder [https://dailyhodl.com/2022/02/20/sec-mak=
+es-big-blunder-in-xrp-lawsuit-according-to-crypto-legal-expert-jeremy-hogan=
+/]=E2=80=9D in XRP Lawsuit
+ * Japan=E2=80=99s Largest Bank [https://www.theblockcrypto.com/linked/1351=
+94/japans-largest-bank-set-to-abandon-blockchain-payment-network-project] S=
+et to Abandon Blockchain Payment Network Project
+
+
+
+
+
+Notable Gainers
+ * Terra (LUNA) +6.36%
+ * Waves (WAVES) +4.95%
+ * UNUS SED LEO (LEO) +4.70%
+ * Ethereum Classic (ETC) +0.40%
+ * Binance USD (BUSD) +0.12%
+
+Notable Decliners
+ * Gala (GALA) -7.63%
+ * Hedera (HBAR) -7.43%
+ * Convex Finance (CVX) -7.06%
+ * Helium (HNT) -6.61%
+ * Theta Network (THETA) -6.54%
+
+
+
+
+Econ Bytes
+
+
+Credit: Bloomberg 1. China=E2=80=99s Middle-Class Worries About the Future =
+[https://www.scmp.com/economy/china-economy/article/3168082/chinas-middle-c=
+lass-worries-about-future-under-xi-jinpings]: China=E2=80=99s main developm=
+ent objective is to reduce the wealth gap [https://www.scmp.com/economy/chi=
+na-economy/article/3164291/chinas-wealth-inequality-has-worsened-pandemic-h=
+ighlighting], but middle-class citizens are worried about their livelihoods=
+=2E While President Xi Jinping=E2=80=99s=20=
+=E2=80=9Ccommon prosperity=E2=80=9D =
+initiative hopes to expand the nation=E2=80=99s middle class, expansive reg=
+ulation has some people worried. In addition to crackdowns on the private t=
+utoring industry [https://www.scmp.com/business/china-business/article/3146=
+644/whats-end-game-chinas-crackdown-private-tutoring-beijing], Beijing has =
+imposed restrictions on the tech, gaming, and property sectors. On top of a=
+ll this, surveys show both the employment expectation index and income conf=
+idence index at low levels, suggesting a general level of economic anxiety.=
+ In response, China announced it would extend some personal income tax cuts=
+ till 2023, but economists are still hoping for more substantial reforms of=
+ the Chinese tax system. China prides itself on its economic stability and =
+any reforms would certainly undercut these efforts. I remain optimistic abo=
+ut China=E2=80=99s long-term economic potential [https://www.msn.com/en-us/=
+money/companies/ray-dalio-e2-80-99s-bridgewater-boosts-its-bets-on-china/ar=
+-AATRZmF], but there are of course serious problems [https://www.scmp.com/e=
+conomy/economic-indicators/article/3163614/china-gdp-economy-beats-2021-gro=
+wth-target-slowdown] to deal with in the meantime.
+
+
+
+
+
+ 2. Econ Bytes:
+
+ * Ukraine Declares State of Emergency [https://www.msn.com/en-gb/news/worl=
+d/ukraine-declares-state-of-emergency-summons-citizens-home-from-russia/ar-=
+AAUc9Ar], Summons Citizens Home From Russia
+ * Twitter Sells $1 Billion In Junk Bonds [https://www.zerohedge.com/market=
+s/twitter-sells-1-billion-junk-bonds-pay-stock-buyback] To Pay For Stock Bu=
+yback
+ * Stocks Tumble As Ukraine Reports Major Cyberattack [https://www.zerohedg=
+e.com/geopolitical/stocks-slide-ukraine-reports-major-cyberattack-multiple-=
+ministry-websites-down], Multiple Ministry Websites Down
+ * JPMorgan Now Expects the Federal Reserve to Hike Interest Rates [https:/=
+/www.msn.com/en-us/money/markets/jpmorgan-now-expects-the-federal-reserve-t=
+o-hike-interest-rates-for-9-straight-meetings-posing-a-major-risk-to-market=
+s/ar-AAU7zZg] for 9 Straight Meetings
+ * Elon Musk Cheers on Justice Department [https://www.cnbc.com/2022/02/23/=
+elon-musk-cheers-on-justice-department-probe-of-short-sellers.html] Probe o=
+f Short Sellers
+ * London Bankers [https://finance.yahoo.com/news/london-bankers-seen-prime=
+d-bigger-080001455.html] Seen to Be Primed for Bigger Bonuses After Brexit
+ * ECB Could Raise Rates in Summer [https://www.investing.com/news/economy/=
+ecb-could-hike-rates-in-summer-before-ending-bond-buys-holzmann-2769811] Be=
+fore Ending Bond Buys
+ * Trudeau Revokes Emergency Powers [https://www.zerohedge.com/geopolitical=
+/trudeau-set-revoke-emergency-powers-report] Act
+
+
+
+
+
+Datapoints
+ * U.S. equities finished lower in Wednesday trading, extending Tuesday=E2=
+=80=99s slide. Treasuries weaker, and oil increased, shrugging off some ear=
+lier weakness. * Dow -1.38%, S&P 500 -1.84%, Nasdaq -2.57%, Russell 2000 -1=
+=2E82%
+    * 10-year treasury yields: +4 bps to 1.98%
+    * DXY: +0.22 to 96.23
+    * WTI Crude (Mar 22): +$0.45 or +0.49% to $92.36
+  =20
+  =20
+
+
+
+
+
+
+rareliquid
+[https://bit.ly/3DYaaIu]Thank you to our sponsor The Daily Upside [https://=
+bit.ly/3DYaaIu]! Check out their daily newsletter for a polished take on in=
+teresting business news. I personally read it every day and it has been a v=
+aluable resource in keeping up with the latest trends.
+
+ * Share [https://www.rareliquidnews.com/#/portal/signup] the rareliquid Da=
+ily with your friends!
+ * In case you missed it, check out my latest investing videos! * The ULTIM=
+ATE 2022 Crypto Tax Guide! (DeFi, Staking, Airdrops, NFTs, and More!) [http=
+s://youtu.be/FWLff79HHF8] and The 7 BEST Ways You Can LEGALLY Avoid Crypto =
+Taxes! [https://youtu.be/-UNVXV_2lkc]
+    * Is Shopify Stock a Buy? DCF Model Built By Ex-JP Morgan Banker [https=
+://youtu.be/6Ui-wpBt8RY]
+    * Meta / Facebook DCF Valuation Analysis! (Built By Ex-JP Morgan Banker=
+) [https://youtu.be/ucJfe5Q3bpk]
+  =20
+  =20
+ * Affiliate Referrals * Financial Edge [https://bit.ly/3pUCPIY]: Get 25% O=
+FF Financial Edge (Use Code RARELIQUID25). This is the best resource to dev=
+elop your technical investment skills!
+    * Moomoo [https://j.moomoo.com/005RTE]: Download the app to earn free s=
+tocks!
+  =20
+  =20
+
+
+
+
+
+
+[rareliquidnews.com] [https://www.youtube.com/c/rareliquid/featured] [https=
+://www.instagram.com/rareliquid/] [https://twitter.com/rareliquid] [https:/=
+/www.tiktok.com/@rareliquid] [https://www.twitch.tv/rareliquidx]=20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rareliquid =C2=A9 2022 =E2=80=93 Unsubscribe [https://www.rareliquidnews.co=
+m/unsubscribe/?uuid=3D37ea6d54-4c66-446c-ba05-16c33a0edcc6]
+--2c3d02537a6a7317239d80433a60611d7574d6a1f0d9bec2eb72882a1fde
+Content-Type: text/html; charset="ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html>
+
+<head>
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<title>China&#x2019;s Middle-Class Woes</title>
+<style>
+=2Epost-title-link {
+  color: #15212A;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+=2Epost-title-link-left {
+  text-align: left;
+}
+=2Eview-online-link {
+  word-wrap: none;
+  white-space: nowrap;
+  color: #15212A;
+}
+=2Ekg-nft-link {
+  display: block;
+  text-decoration: none !important;
+  color: #15212A !important;
+  font-family: inherit !important;
+  font-size: 14px;
+  line-height: 1.3em;
+  padding-top: 4px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 4px;
+}
+=2Ekg-twitter-link {
+  display: block;
+  text-decoration: none !important;
+  color: #15212A !important;
+  font-family: inherit !important;
+  font-size: 15px;
+  padding: 8px;
+  line-height: 1.3em;
+}
+@media only screen and (max-width: 620px) {
+  table.body {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  table.body p,
+table.body ul,
+table.body ol,
+table.body td,
+table.body span {
+    font-size: 16px !important;
+  }
+
+  table.body pre {
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+  }
+
+  table.body .wrapper,
+table.body .article {
+    padding: 0 10px !important;
+  }
+
+  table.body .content {
+    padding: 0 !important;
+  }
+
+  table.body .container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  table.body .main {
+    border-left-width: 0 !important;
+    border-radius: 0 !important;
+    border-right-width: 0 !important;
+  }
+
+  table.body .btn table {
+    width: 100% !important;
+  }
+
+  table.body .btn a {
+    width: 100% !important;
+  }
+
+  table.body .img-responsive {
+    height: auto !important;
+    max-width: 100% !important;
+    width: auto !important;
+  }
+
+  table.body .site-icon img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  table.body .site-url a {
+    font-size: 14px !important;
+    padding-bottom: 15px !important;
+  }
+
+  table.body .post-meta {
+    white-space: normal !important;
+    font-size: 12px !important;
+    line-height: 1.5em;
+  }
+
+  table.body .view-online-link,
+table.body .footer,
+table.body .footer a {
+    font-size: 12px !important;
+  }
+
+  table.body .post-title a {
+    font-size: 32px !important;
+    line-height: 1.15em !important;
+  }
+
+  table.body .kg-bookmark-card {
+    width: 90vw !important;
+  }
+
+  table.body .kg-bookmark-thumbnail {
+    display: none !important;
+  }
+
+  table.body .kg-bookmark-metadata span {
+    font-size: 13px !important;
+  }
+
+  table.body .kg-embed-card {
+    max-width: 90vw !important;
+  }
+
+  table.body h1 {
+    font-size: 32px !important;
+    line-height: 1.3em !important;
+  }
+
+  table.body h2 {
+    font-size: 26px !important;
+    line-height: 1.22em !important;
+  }
+
+  table.body h3 {
+    font-size: 21px !important;
+    line-height: 1.25em !important;
+  }
+
+  table.body h4 {
+    font-size: 19px !important;
+    line-height: 1.3em !important;
+  }
+
+  table.body h5 {
+    font-size: 16px !important;
+    line-height: 1.4em !important;
+  }
+
+  table.body h6 {
+    font-size: 16px !important;
+    line-height: 1.4em !important;
+  }
+
+  table.body blockquote {
+    font-size: 17px;
+    line-height: 1.6em;
+    margin-bottom: 0;
+    padding-left: 15px;
+  }
+
+  table.body blockquote.kg-blockquote-alt {
+    border-left: 0 none !important;
+    margin: 0 0 2.5em 0 !important;
+    padding: 0 50px 0 50px !important;
+    font-size: 1.2em;
+  }
+
+  table.body blockquote + * {
+    margin-top: 1.5em !important;
+  }
+
+  table.body hr {
+    margin: 2em 0 !important;
+  }
+
+  table.body figcaption,
+table.body figcaption a {
+    font-size: 13px !important;
+  }
+}
+@media all {
+  .ExternalClass {
+    width: 100%;
+  }
+
+  .ExternalClass,
+=2EExternalClass p,
+=2EExternalClass span,
+=2EExternalClass font,
+=2EExternalClass td,
+=2EExternalClass div {
+    line-height: 100%;
+  }
+
+  .apple-link a {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    text-decoration: none !important;
+  }
+
+  #MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  .btn-primary table td:hover {
+    background-color: #34495e !important;
+  }
+
+  .btn-primary a:hover {
+    background-color: #34495e !important;
+    border-color: #34495e !important;
+  }
+}
+</style>
+</head>
+
+<body style=3D"background-color: #fff; font-family: -apple-system, BlinkMac=
+SystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;=
+Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;=
+; -webkit-font-smoothing: antialiased; font-size: 18px; line-height: 1.4; m=
+argin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:=
+ 100%; color: #15212A;">
+    <span class=3D"preheader" style=3D"color: transparent; display: none; h=
+eight: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hi=
+de: all; visibility: hidden; width: 0;">Proposed Wednesday in the EU, a new=
+ piece of legislation would force Big Tech to share data. Inspired by El Sa=
+lvador, a Mexican senator plans on making Bitcoin legal tender. China&#x201=
+9;s Middle-Class worries about getting ahead amid cumbersome regulation and=
+ an uncertain future. </span>
+    <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"body" width=3D"100%" style=3D"border-collapse: separate; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; width: =
+100%;" bgcolor=3D"#fff">
+
+        <!-- Outlook doesn't respect max-width so we need an extra centered=
+ table -->
+        <!--[if mso]>
+        <tr>
+            <td>
+                <center>
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"600">
+        <![endif]-->
+
+        <tr>
+            <td style=3D"font-family: -apple-system, BlinkMacSystemFont, &#=
+39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Em=
+oji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 1=
+8px; vertical-align: top; color: #15212A;" valign=3D"top">&#xA0;</td>
+            <td class=3D"container" style=3D"font-family: -apple-system, Bl=
+inkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif,=
+ &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbo=
+l&#39;; font-size: 18px; vertical-align: top; color: #15212A; display: bloc=
+k; max-width: 600px; margin: 0 auto;" valign=3D"top">
+                <div class=3D"content" style=3D"box-sizing: border-box; dis=
+play: block; margin: 0 auto; max-width: 600px;">
+
+                    <!-- START CENTERED WHITE CONTAINER -->
+                    <table role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"main" width=3D"100%" style=3D"border-coll=
+apse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background: #=
+ffffff; border-radius: 3px; width: 100%;">
+
+                        <!-- START MAIN CONTENT AREA -->
+                        <tr>
+                            <td class=3D"wrapper" style=3D"font-family: -ap=
+ple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Aria=
+l, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;=
+Segoe UI Symbol&#39;; font-size: 18px; vertical-align: top; color: #15212A;=
+ box-sizing: border-box; padding: 0 20px;" valign=3D"top">
+                                <table role=3D"presentation" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse:=
+ separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+
+                                   =20
+
+
+                                   =20
+
+
+                                    <tr>
+                                        <td class=3D"post-title  " style=3D=
+"font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto=
+, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI =
+Emoji&#39;, &#39;Segoe UI Symbol&#39;; vertical-align: top; color: #15212A;=
+ padding-bottom: 10px; font-size: 42px; line-height: 1.1em; font-weight: 60=
+0; text-align: center;" valign=3D"top" align=3D"center">
+                                            <a href=3D"https://www.rareliqu=
+idnews.com/chinas-middle-class-woes/" class=3D"post-title-link " style=3D"t=
+ext-decoration: none; color: #15212A; display: block; text-align: center; m=
+argin-top: 50px; overflow-wrap: anywhere;" target=3D"_blank">China&#x2019;s=
+ Middle-Class Woes</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"font-family: -apple-sy=
+stem, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, san=
+s-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe =
+UI Symbol&#39;; font-size: 18px; vertical-align: top; color: #15212A;" vali=
+gn=3D"top">
+                                            <table role=3D"presentation" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"bord=
+er-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width:=
+ 100%;">
+                                                <tr>
+                                                    <td class=3D"post-meta =
+" style=3D"font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#3=
+9;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39=
+;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; vertical-align: top; paddi=
+ng-bottom: 50px; white-space: nowrap; color: #738a94; font-size: 13px; lett=
+er-spacing: 0.2px; text-transform: uppercase; text-align: center;" valign=
+=3D"top" align=3D"center">
+                                                        By rareliquid &#x20=
+13;
+                                                        24 Feb 2022 &#x2013=
+;
+                                                        <a href=3D"https://=
+www.rareliquidnews.com/chinas-middle-class-woes/" class=3D"view-online-link=
+" style=3D"text-decoration: none; word-wrap: none; white-space: nowrap; col=
+or: #15212A; overflow-wrap: anywhere;" target=3D"_blank">View online &#x219=
+2;</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                   =20
+                                   =20
+                                    <tr>
+                                        <td class=3D"post-content-sans-seri=
+f" style=3D"font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#=
+39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#3=
+9;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; vertical-align: top; font=
+-size: 17px; line-height: 1.5em; color: #23323D; padding-bottom: 20px; bord=
+er-bottom: 1px solid #e5eff5; max-width: 600px;" valign=3D"top">
+                                            <!-- POST CONTENT START -->
+                                            <!--kg-card-begin: markdown--><=
+h1 id=3D"tech-bytes" style=3D"margin-top: 0; font-family: -apple-system, Bl=
+inkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif,=
+ &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbo=
+l&#39;; line-height: 1.15em; text-rendering: optimizeLegibility; margin: 1.=
+5em 0 0.5em 0; font-size: 42px; font-weight: 600;">Tech Bytes</h1>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><img src=3D"https://w=
+ww.rareliquidnews.com/content/images/2022/02/2022_02_23-TECH-eu-data.jpg" a=
+lt=3D"2022_02_23-TECH-eu-data" loading=3D"lazy" style=3D"border: none; -ms-=
+interpolation-mode: bicubic; max-width: 100%;"></p>
+<div class=3D"inline" ; style=3D"text-align:right;">
+Credit: Zuma Press
+</div>
+<ol style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: decimal; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;"><a href=3D"https://www.wsj.com/amp/article=
+s/tech-giants-to-be-forced-to-share-more-data-under-eu-proposal-11645618258=
+" style=3D"overflow-wrap: anywhere; color: #000000; text-decoration: underl=
+ine;" target=3D"_blank">Tech Giants to Be Forced to Share More Data Under E=
+U Proposal</a></strong>: New Rules proposed this Wednesday in a bill called=
+ the &#x201C;Data Act&#x201D; would force data sharing among companies in E=
+urope. Aiming to help smaller companies keep up with big ones, the legislat=
+ion &#x201C;ensures that industrial data is shared, stored, and processed i=
+n full respect of European rules.&#x201D; In other words, the Data Act aims=
+ to level the playing field in the race to profit from non-personal data. E=
+xpected to add 270 billion euros to the European economy by 2028, the propo=
+sal is a part of an ongoing global effort to regulate Big Tech. Yet, while =
+multiple countries (ranging from the U.S. to South Korea) consider similar =
+pieces of regulation, Big Tech continues to complain. Insisting that the la=
+test EU bill discriminates against them, <a href=3D"https://news.yahoo.com/=
+big-tech-allies-point-china-110027548.html" style=3D"overflow-wrap: anywher=
+e; color: #000000; text-decoration: underline;" target=3D"_blank">Big Tech<=
+/a> has warned that the &#x201C;Data Act&#x201D; would push companies to st=
+ore data overseas, rather than in Europe. But, truth be told, that doesn&#x=
+2019;t seem to be too much of a concern for European regulators at the mome=
+nt. The EU has already tried to limit companies&#x2019; ability to send per=
+sonal information. Big Tech will have to sit <a href=3D"https://www.wsj.com=
+/articles/europe-doubles-down-on-data-protection-to-ward-off-silicon-valley=
+-chinese-influence-11606300456" style=3D"overflow-wrap: anywhere; color: #0=
+00000; text-decoration: underline;" target=3D"_blank">this one</a> out.</li=
+>
+</ol>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><br><br></p>
+<ol start=3D"2" style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-l=
+eft: 1.3em; padding-right: 1.5em; list-style: decimal; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">Tech Bytes:</strong></li>
+</ol>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://techcrunch.com/2022/02/23/vestager-apple/" style=3D"overflo=
+w-wrap: anywhere; color: #000000; text-decoration: underline;" target=3D"_b=
+lank">EU Swipes at Apple</a> Snubbing Dutch Antitrust Enforcement</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.fastcompany.com/90724095/salesforce-employees-revolt-ov=
+er-nft-moves" style=3D"overflow-wrap: anywhere; color: #000000; text-decora=
+tion: underline;" target=3D"_blank">Salesforce Employees Revolt</a> Over NF=
+T Moves</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.fastcompany.com/90724045/virgin-hyperloop-will-now-deli=
+ver-cargo-not-people-as-hundred-laid-off" style=3D"overflow-wrap: anywhere;=
+ color: #000000; text-decoration: underline;" target=3D"_blank">Virgin Hype=
+rloop Will Now Deliver Cargo</a>, Not People, as Hundreds Laid Off</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://thehill.com/policy/technology/595357-facebook-launches-reel=
+s-globally" style=3D"overflow-wrap: anywhere; color: #000000; text-decorati=
+on: underline;" target=3D"_blank">Facebook</a> Launches Reels Globally</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.financemagnates.com/fintech/sofi-to-acquire-technisys-b=
+anking-software-firm-for-1-billion/" style=3D"overflow-wrap: anywhere; colo=
+r: #000000; text-decoration: underline;" target=3D"_blank">Sofi to Acquire =
+Technisys Banking Software Firm</a> for $1 Billion</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://thenyledger.com/tech/wsj-news-exclusive-microsofts-new-secu=
+rity-chief-says-it-is-time-to-take-shelter-in-the-cloud/" style=3D"overflow=
+-wrap: anywhere; color: #000000; text-decoration: underline;" target=3D"_bl=
+ank">Microsoft&#x2019;s New Security Chief</a> Says It Is Time to Take Shel=
+ter in the Cloud</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.entrepreneur.com/article/416119" style=3D"overflow-wrap=
+: anywhere; color: #000000; text-decoration: underline;" target=3D"_blank">=
+AI Adoption in Business</a> Reaches a Turning Point. What&#39;s Next?</li>
+</ul>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><br><br></p>
+<h2 id=3D"notable-gainers" style=3D"margin-top: 0; font-family: -apple-syst=
+em, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-=
+serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI=
+ Symbol&#39;; font-weight: 600; text-rendering: optimizeLegibility; margin:=
+ 1.5em 0 0.5em 0; font-size: 32px; line-height: 1.22em;">Notable Gainers</h=
+2>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">+22.8%</strong> | <em>OSTK</em> (Overstock=
+=2Ecom)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">ICE=
+ made a strategic investment in OSTK&#39;s tZERO and will become a signific=
+ant minority shareholder, though terms undisclosed; OSTK also beat on Q4 EP=
+S though revenue was light; the company highlighted an increase in average =
+order value and orders per active customer.</li>
+</ul>
+</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">+15.8%</strong> | <em>SWIR</em> (Sierra Wi=
+reless)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">4Q =
+revenue, adj. EBITDA, and EPS were above consensus. 1Q revenue guidance was=
+ above consensus.</li>
+</ul>
+</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">+4.2%</strong> | <em>CDNS</em> (Cadence De=
+sign Systems)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">4Q =
+revenue and EPS were above consensus. 1Q revenue and EPS guidance were abov=
+e consensus. FY revenue and EPS guidance were above consensus. Upgraded to =
+buy from hold at Berenberg.</li>
+</ul>
+</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">+3.5%</strong> | <em>SPCE</em> (Virgin Gal=
+actic)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Q4 =
+EPS and EBITDA beat; the company said it still expects commercial passenger=
+ flight service by the end of the year; it also said Eve and Unity ship enh=
+ancements are on track.</li>
+</ul>
+</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">+0.4%</strong> | <em>PANW</em> (Palo Alto =
+Networks)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">2Q =
+revenue, Billings, and EPS were above consensus. 3Q revenue, Billings, and =
+EPS guidance were also above consensus. Management raised FY revenue, Billi=
+ngs, and EPS guidance. Upgraded to neutral from underweight at JPMorgan</li=
+>
+</ul>
+</li>
+</ul>
+<h2 id=3D"notable-decliners" style=3D"margin-top: 0; font-family: -apple-sy=
+stem, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, san=
+s-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe =
+UI Symbol&#39;; font-weight: 600; text-rendering: optimizeLegibility; margi=
+n: 1.5em 0 0.5em 0; font-size: 32px; line-height: 1.22em;">Notable Decliner=
+s</h2>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">-36.7%</strong> | <em>VRT</em> (Vertiv Hol=
+dings)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">4Q =
+revenue, adj. operating income, and EPS were below consensus. 1Q revenue, a=
+dj. operating income, and EPS guidance were also below consensus. FY revenu=
+e guidance was above consensus while EPS was below. Management cited supply=
+ chain headwinds and parts shortages, which are expected to improve in 2H v=
+s 1H.</li>
+</ul>
+</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">-27.8%</strong> | <em>MNDY</em> (Monday.co=
+m)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Q4 =
+EPS and revenue beat; GM and OM were ahead; deferred revenue, billings, FCF=
+ were also ahead; guided Q1 and FY revenue midpoints were ahead of estimate=
+s, though the Street was disappointed by larger expected operating loss tha=
+n consensus and weak operating margin guidance.</li>
+</ul>
+</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">-12.8%</strong> | <em>RXT</em> (Rackspace =
+Technology)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">4Q =
+revenue and EPS were above consensus. 1Q revenue and EPS guidance were belo=
+w consensus. Downgraded to hold from buy at Deutsche Bank. Also downgraded =
+to market perform from outperform at BMO.</li>
+</ul>
+</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">-11.6%</strong> | <em>SPNS</em> (Sapiens I=
+nternational)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">4Q =
+revenue and adj. EBITDA were below consensus while EPS and adj. operating i=
+ncome were above. FY22 revenue guidance was below consensus.</li>
+</ul>
+</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">-8.4%</strong> | <em>SSYS</em> (Stratasys)
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">4Q =
+revenue, adj. EBITDA, and EPS were above consensus. 1Q revenue growth guida=
+nce was roughly in line with consensus. FY revenue and EPS guidance were ab=
+ove consensus while Adj. EBITDA was below.</li>
+</ul>
+</li>
+</ul>
+<h2 id=3D"earnings" style=3D"margin-top: 0; font-family: -apple-system, Bli=
+nkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, =
+&#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol=
+&#39;; font-weight: 600; text-rendering: optimizeLegibility; margin: 1.5em =
+0 0.5em 0; font-size: 32px; line-height: 1.22em;">Earnings</h2>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Mon=
+day: Williams Companies</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Tue=
+sday: Agilent Technologies, Cadence Design Systems, Home Depot, HSBC, Medtr=
+onic, Nu, Palo Alto Networks, Public Storage, Realty Income, Verisk Analyti=
+cs</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Wed=
+nesday: Booking Holdings, eBay, Exelon, Lloyds Banking Group, Lowe&#39;s, P=
+etroleo Brasileiro S.A.- Petrobras, Stellantis, TJX</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Thu=
+rsday: Alibaba, Ambev, American Electric Power, American Tower (REIT), Auto=
+desk, Block, CBRE, Coinbase, Dell, EOG Resources, Intuit, Keurig Dr Pepper,=
+ Moderna, Monster Beverage, NetEase, Newmont, Occidental Petroleum, Public =
+Service Enterprise, Royal Bank Of Canada, VALE, Vmware, Zscaler</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Fri=
+day: Anheuser-Busch, Berkshire Hathaway, Canadian Imperial Bank of Commerce=
+, Li Auto, Sempra</li>
+</ul>
+<!--kg-card-end: markdown--><hr style=3D"position: relative; display: block=
+; width: 100%; margin: 3em 0; padding: 0; height: 1px; border: 0; border-to=
+p: 1px solid #e5eff5;"><!--kg-card-begin: markdown--><h1 id=3D"crypto-bytes=
+" style=3D"margin-top: 0; font-family: -apple-system, BlinkMacSystemFont, &=
+#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color E=
+moji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; line-height=
+: 1.15em; text-rendering: optimizeLegibility; margin: 1.5em 0 0.5em 0; font=
+-size: 42px; font-weight: 600;">Crypto Bytes</h1>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><img src=3D"https://w=
+ww.rareliquidnews.com/content/images/2022/02/2022_02_23-CRYPTO-mexico.jpg" =
+alt=3D"2022_02_23-CRYPTO-mexico" loading=3D"lazy" style=3D"border: none; -m=
+s-interpolation-mode: bicubic; max-width: 100%;"></p>
+<div class=3D"inline" ; style=3D"text-align:right;">
+Credit: FX Empire
+</div>
+<ol style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: decimal; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;"><a href=3D"https://www.fxempire.com/news/a=
+rticle/mexican-senator-proposes-bitcoin-to-be-a-legal-tender-citing-el-salv=
+ador-908945" style=3D"overflow-wrap: anywhere; color: #000000; text-decorat=
+ion: underline;" target=3D"_blank">Mexican Senator Proposes Bitcoin To Be a=
+ Legal Tender</a></strong>: Senator for the State of Nuevo Le&#xF3;n, <a hr=
+ef=3D"https://elsalvadorinenglish.com/2022/02/21/we-need-bitcoin-to-be-lega=
+l-tender-in-mexico-because-if-it-is-not-so-if-we-do-not-make-that-decision-=
+as-el-salvador-did-it-is-very-difficult-to-take-action-indira-kempis-mexica=
+n/" style=3D"overflow-wrap: anywhere; color: #000000; text-decoration: unde=
+rline;" target=3D"_blank">Indira Kempis</a>, is preparing to make Bitcoin a=
+nd cryptocurrencies legal tender, expanding access to every person in the c=
+ountry. After visiting El Salvador, Kempis wants to see Mexico enact simila=
+r legislation as the president of El Salvador, Bukele, <a href=3D"https://w=
+ww.thestreet.com/investing/el-salvador-has-unexpected-benefit-from-bitcoin-=
+adoption" style=3D"overflow-wrap: anywhere; color: #000000; text-decoration=
+: underline;" target=3D"_blank">enacted just four months ago</a>. Kempis sa=
+w El Salvador&#x2019;s recent ascension to &#x201C;global Bitcoin hub,&#x20=
+1D; but also wants to ensure financial education is made a fundamental righ=
+t of every citizen. Ultimately, she sees Bitcoin as providing a level playi=
+ng field for people excluded from traditional finance. But, she&#x2019;s no=
+t alone in this quest. <a href=3D"https://www.fxempire.com/news/article/col=
+orado-will-begin-accepting-crypto-for-tax-payments-state-governor-901175" s=
+tyle=3D"overflow-wrap: anywhere; color: #000000; text-decoration: underline=
+;" target=3D"_blank">Some politicians in the United States</a> are pushing =
+to accept Bitcoin in their states. How far will this crypto fever take us? =
+The sky&#x2019;s the limit.</li>
+</ol>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><br><br></p>
+<ol start=3D"2" style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-l=
+eft: 1.3em; padding-right: 1.5em; list-style: decimal; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">Crypto Bytes</strong>:</li>
+</ol>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.coindesk.com/layer2/taxweek/2022/02/23/crypto-tax-compl=
+iance-remains-minefield-as-irs-leaves-key-questions-unresolved/" style=3D"o=
+verflow-wrap: anywhere; color: #000000; text-decoration: underline;" target=
+=3D"_blank">Crypto Tax Compliance</a> Remains Minefield</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.coindesk.com/business/2022/02/22/canadas-osc-warns-cryp=
+to-exchanges-not-to-promote-self-custodial-wallets-report/" style=3D"overfl=
+ow-wrap: anywhere; color: #000000; text-decoration: underline;" target=3D"_=
+blank">Regulator in Canada Warns Crypto Exchanges</a> Not to Promote Self-C=
+ustodial Wallets</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://cointelegraph.com/news/stablecoin-issuer-circle-launches-bu=
+siness-accounts-for-usdc-transactions" style=3D"overflow-wrap: anywhere; co=
+lor: #000000; text-decoration: underline;" target=3D"_blank">Stablecoin Iss=
+uer Circle</a> Launches Business Accounts for USDC Transactions</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.theblockcrypto.com/linked/135168/eu-reportedly-plans-to=
+-task-new-money-laundering-agency-with-oversight-of-crypto" style=3D"overfl=
+ow-wrap: anywhere; color: #000000; text-decoration: underline;" target=3D"_=
+blank">EU Reportedly Plans to Task New Money Laundering Agency</a> With Ove=
+rsight of Crypto</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://finance.yahoo.com/m/a2646252-fa6a-309e-939a-9f97fbf5c7f5/in=
+tel-chip-seen-as-challenge.html" style=3D"overflow-wrap: anywhere; color: #=
+000000; text-decoration: underline;" target=3D"_blank">Intel Chip Seen as C=
+hallenge</a> to Chinese Dominance in Crypto Mining</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">SEC=
+ Makes &#x201C;<a href=3D"https://dailyhodl.com/2022/02/20/sec-makes-big-bl=
+under-in-xrp-lawsuit-according-to-crypto-legal-expert-jeremy-hogan/" style=
+=3D"overflow-wrap: anywhere; color: #000000; text-decoration: underline;" t=
+arget=3D"_blank">Big Blunder</a>&#x201D; in XRP Lawsuit</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.theblockcrypto.com/linked/135194/japans-largest-bank-se=
+t-to-abandon-blockchain-payment-network-project" style=3D"overflow-wrap: an=
+ywhere; color: #000000; text-decoration: underline;" target=3D"_blank">Japa=
+n&#x2019;s Largest Bank</a> Set to Abandon Blockchain Payment Network Proje=
+ct</li>
+</ul>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><br><br></p>
+<h2 id=3D"notable-gainers" style=3D"margin-top: 0; font-family: -apple-syst=
+em, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-=
+serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI=
+ Symbol&#39;; font-weight: 600; text-rendering: optimizeLegibility; margin:=
+ 1.5em 0 0.5em 0; font-size: 32px; line-height: 1.22em;">Notable Gainers</h=
+2>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Ter=
+ra (LUNA) <strong style=3D"font-weight: 700;">+6.36%</strong></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Wav=
+es (WAVES) <strong style=3D"font-weight: 700;">+4.95%</strong></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">UNU=
+S SED LEO (LEO) <strong style=3D"font-weight: 700;">+4.70%</strong></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Eth=
+ereum Classic (ETC) <strong style=3D"font-weight: 700;">+0.40%</strong></li=
+>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Bin=
+ance USD (BUSD) <strong style=3D"font-weight: 700;">+0.12%</strong></li>
+</ul>
+<h2 id=3D"notable-decliners" style=3D"margin-top: 0; font-family: -apple-sy=
+stem, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, san=
+s-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe =
+UI Symbol&#39;; font-weight: 600; text-rendering: optimizeLegibility; margi=
+n: 1.5em 0 0.5em 0; font-size: 32px; line-height: 1.22em;">Notable Decliner=
+s</h2>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Gal=
+a (GALA) <strong style=3D"font-weight: 700;">-7.63%</strong></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Hed=
+era (HBAR) <strong style=3D"font-weight: 700;">-7.43%</strong></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Con=
+vex Finance (CVX) <strong style=3D"font-weight: 700;">-7.06%</strong></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Hel=
+ium (HNT) <strong style=3D"font-weight: 700;">-6.61%</strong></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">The=
+ta Network (THETA) -<strong style=3D"font-weight: 700;">6.54%</strong></li>
+</ul>
+<!--kg-card-end: markdown--><hr style=3D"position: relative; display: block=
+; width: 100%; margin: 3em 0; padding: 0; height: 1px; border: 0; border-to=
+p: 1px solid #e5eff5;"><!--kg-card-begin: markdown--><h1 id=3D"econ-bytes" =
+style=3D"margin-top: 0; font-family: -apple-system, BlinkMacSystemFont, &#3=
+9;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emo=
+ji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; line-height: =
+1.15em; text-rendering: optimizeLegibility; margin: 1.5em 0 0.5em 0; font-s=
+ize: 42px; font-weight: 600;">Econ Bytes</h1>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><img src=3D"https://w=
+ww.rareliquidnews.com/content/images/2022/02/2022_02_23-ECON-chna-middlecla=
+ss.jpg" alt=3D"2022_02_23-ECON-chna-middleclass" loading=3D"lazy" style=3D"=
+border: none; -ms-interpolation-mode: bicubic; max-width: 100%;"></p>
+<div class=3D"inline" ; style=3D"text-align:right;">
+Credit: Bloomberg
+</div>
+<ol style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: decimal; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;"><a href=3D"https://www.scmp.com/economy/ch=
+ina-economy/article/3168082/chinas-middle-class-worries-about-future-under-=
+xi-jinpings" style=3D"overflow-wrap: anywhere; color: #000000; text-decorat=
+ion: underline;" target=3D"_blank">China&#x2019;s Middle-Class Worries Abou=
+t the Future</a></strong>: China&#x2019;s main development objective is to =
+<a href=3D"https://www.scmp.com/economy/china-economy/article/3164291/china=
+s-wealth-inequality-has-worsened-pandemic-highlighting" style=3D"overflow-w=
+rap: anywhere; color: #000000; text-decoration: underline;" target=3D"_blan=
+k">reduce the wealth gap</a>, but middle-class citizens are worried about t=
+heir livelihoods. While President Xi Jinping&#x2019;s &#x201C;common prospe=
+rity&#x201D; initiative hopes to expand the nation&#x2019;s middle class, e=
+xpansive regulation has some people worried. In addition to crackdowns on <=
+a href=3D"https://www.scmp.com/business/china-business/article/3146644/what=
+s-end-game-chinas-crackdown-private-tutoring-beijing" style=3D"overflow-wra=
+p: anywhere; color: #000000; text-decoration: underline;" target=3D"_blank"=
+>the private tutoring industry</a>, Beijing has imposed restrictions on the=
+ tech, gaming, and property sectors. On top of all this, surveys show both =
+the employment expectation index and income confidence index at low levels,=
+ suggesting a general level of economic anxiety. In response, China announc=
+ed it would extend some personal income tax cuts till 2023, but economists =
+are still hoping for more substantial reforms of the Chinese tax system. Ch=
+ina prides itself on its economic stability and any reforms would certainly=
+ undercut these efforts. I remain optimistic about <a href=3D"https://www.m=
+sn.com/en-us/money/companies/ray-dalio-e2-80-99s-bridgewater-boosts-its-bet=
+s-on-china/ar-AATRZmF" style=3D"overflow-wrap: anywhere; color: #000000; te=
+xt-decoration: underline;" target=3D"_blank">China&#x2019;s long-term econo=
+mic potential</a>, but there are of course <a href=3D"https://www.scmp.com/=
+economy/economic-indicators/article/3163614/china-gdp-economy-beats-2021-gr=
+owth-target-slowdown" style=3D"overflow-wrap: anywhere; color: #000000; tex=
+t-decoration: underline;" target=3D"_blank">serious problems</a> to deal wi=
+th in the meantime.</li>
+</ol>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><br><br></p>
+<ol start=3D"2" style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-l=
+eft: 1.3em; padding-right: 1.5em; list-style: decimal; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">Econ Bytes</strong>:</li>
+</ol>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.msn.com/en-gb/news/world/ukraine-declares-state-of-emer=
+gency-summons-citizens-home-from-russia/ar-AAUc9Ar" style=3D"overflow-wrap:=
+ anywhere; color: #000000; text-decoration: underline;" target=3D"_blank">U=
+kraine Declares State of Emergency</a>, Summons Citizens Home From Russia</=
+li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.zerohedge.com/markets/twitter-sells-1-billion-junk-bond=
+s-pay-stock-buyback" style=3D"overflow-wrap: anywhere; color: #000000; text=
+-decoration: underline;" target=3D"_blank">Twitter Sells $1 Billion In Junk=
+ Bonds</a> To Pay For Stock Buyback</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.zerohedge.com/geopolitical/stocks-slide-ukraine-reports=
+-major-cyberattack-multiple-ministry-websites-down" style=3D"overflow-wrap:=
+ anywhere; color: #000000; text-decoration: underline;" target=3D"_blank">S=
+tocks Tumble As Ukraine Reports Major Cyberattack</a>, Multiple Ministry We=
+bsites Down</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.msn.com/en-us/money/markets/jpmorgan-now-expects-the-fe=
+deral-reserve-to-hike-interest-rates-for-9-straight-meetings-posing-a-major=
+-risk-to-markets/ar-AAU7zZg" style=3D"overflow-wrap: anywhere; color: #0000=
+00; text-decoration: underline;" target=3D"_blank">JPMorgan Now Expects the=
+ Federal Reserve to Hike Interest Rates</a> for 9 Straight Meetings</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.cnbc.com/2022/02/23/elon-musk-cheers-on-justice-departm=
+ent-probe-of-short-sellers.html" style=3D"overflow-wrap: anywhere; color: #=
+000000; text-decoration: underline;" target=3D"_blank">Elon Musk Cheers on =
+Justice Department</a> Probe of Short Sellers</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://finance.yahoo.com/news/london-bankers-seen-primed-bigger-08=
+0001455.html" style=3D"overflow-wrap: anywhere; color: #000000; text-decora=
+tion: underline;" target=3D"_blank">London Bankers</a> Seen to Be Primed fo=
+r Bigger Bonuses After Brexit</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.investing.com/news/economy/ecb-could-hike-rates-in-summ=
+er-before-ending-bond-buys-holzmann-2769811" style=3D"overflow-wrap: anywhe=
+re; color: #000000; text-decoration: underline;" target=3D"_blank">ECB Coul=
+d Raise Rates in Summer</a> Before Ending Bond Buys</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.zerohedge.com/geopolitical/trudeau-set-revoke-emergency=
+-powers-report" style=3D"overflow-wrap: anywhere; color: #000000; text-deco=
+ration: underline;" target=3D"_blank">Trudeau Revokes Emergency Powers</a> =
+Act</li>
+</ul>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><br><br></p>
+<h2 id=3D"datapoints" style=3D"margin-top: 0; font-family: -apple-system, B=
+linkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif=
+, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symb=
+ol&#39;; font-weight: 600; text-rendering: optimizeLegibility; margin: 1.5e=
+m 0 0.5em 0; font-size: 32px; line-height: 1.22em;">Datapoints</h2>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">U.S=
+=2E equities finished lower in Wednesday=20=
+trading, extending Tuesday&#x2019;s =
+slide. Treasuries weaker, and oil increased, shrugging off some earlier wea=
+kness.
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Dow=
+ <strong style=3D"font-weight: 700;">-1.38%</strong>, S&amp;P 500 <strong s=
+tyle=3D"font-weight: 700;">-1.84%</strong>, Nasdaq <strong style=3D"font-we=
+ight: 700;">-2.57%</strong>, Russell 2000 <strong style=3D"font-weight: 700=
+;">-1.82%</strong></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">10-=
+year treasury yields: <strong style=3D"font-weight: 700;">+4 bps</strong> t=
+o 1.98%</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">DXY=
+: <strong style=3D"font-weight: 700;">+0.22</strong> to 96.23</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">WTI=
+ Crude (Mar 22): <strong style=3D"font-weight: 700;">+$0.45</strong> or <st=
+rong style=3D"font-weight: 700;">+0.49%</strong> to $92.36</li>
+</ul>
+</li>
+</ul>
+<!--kg-card-end: markdown--><p style=3D"margin: 0 0 1.5em 0; line-height: 1=
+=2E6em;"></p><hr style=3D"position: relat=
+ive; display: block; width: 100%; ma=
+rgin: 3em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid #e5e=
+ff5;"><!--kg-card-begin: markdown--><h1 id=3D"rareliquid" style=3D"margin-t=
+op: 0; font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, =
+Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Seg=
+oe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; line-height: 1.15em; text-rend=
+ering: optimizeLegibility; margin: 1.5em 0 0.5em 0; font-size: 42px; font-w=
+eight: 600;">rareliquid</h1>
+<a href=3D"https://bit.ly/3DYaaIu" style=3D"overflow-wrap: anywhere; color:=
+ #000000; text-decoration: underline;" target=3D"_blank">
+<img src=3D"https://www.rareliquidnews.com/content/images/2022/01/tdubanner=
+2b.jpeg" width=3D"1000" height=3D"180" style=3D"border: none; -ms-interpola=
+tion-mode: bicubic; max-width: 100%;">
+    </a>
+<p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"><strong style=3D"font=
+-weight: 700;">Thank you to our sponsor <a href=3D"https://bit.ly/3DYaaIu" =
+style=3D"overflow-wrap: anywhere; color: #000000; text-decoration: underlin=
+e;" target=3D"_blank">The Daily Upside</a>! Check out their daily newslette=
+r for a polished take on interesting business news. I personally read it ev=
+ery day and it has been a valuable resource in keeping up with the latest t=
+rends.</strong></p>
+<ul style=3D"margin: 0 0 1.5em 0; line-height: 1.6em; padding-left: 1.3em; =
+padding-right: 1.5em; list-style: disc; max-width: 100%;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://www.rareliquidnews.com/#/portal/signup" style=3D"overflow-w=
+rap: anywhere; color: #000000; text-decoration: underline;" target=3D"_blan=
+k">Share</a> the rareliquid Daily with your friends!</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><st=
+rong style=3D"font-weight: 700;">In case you missed it, check out my latest=
+ investing videos!</strong>
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://youtu.be/FWLff79HHF8" style=3D"overflow-wrap: anywhere; col=
+or: #000000; text-decoration: underline;" target=3D"_blank">The ULTIMATE 20=
+22 Crypto Tax Guide! (DeFi, Staking, Airdrops, NFTs, and More!)</a> and <a =
+href=3D"https://youtu.be/-UNVXV_2lkc" style=3D"overflow-wrap: anywhere; col=
+or: #000000; text-decoration: underline;" target=3D"_blank">The 7 BEST Ways=
+ You Can LEGALLY Avoid Crypto Taxes!</a></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://youtu.be/6Ui-wpBt8RY" style=3D"overflow-wrap: anywhere; col=
+or: #000000; text-decoration: underline;" target=3D"_blank">Is Shopify Stoc=
+k a Buy? DCF Model Built By Ex-JP Morgan Banker</a></li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://youtu.be/ucJfe5Q3bpk" style=3D"overflow-wrap: anywhere; col=
+or: #000000; text-decoration: underline;" target=3D"_blank">Meta / Facebook=
+ DCF Valuation Analysis! (Built By Ex-JP Morgan Banker)</a></li>
+</ul>
+</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;">Aff=
+iliate Referrals
+<ul style=3D"line-height: 1.6em; padding-left: 1.3em; padding-right: 1.5em;=
+ list-style: disc; max-width: 100%; margin: 0.5em 0 1em;">
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://bit.ly/3pUCPIY" style=3D"overflow-wrap: anywhere; color: #0=
+00000; text-decoration: underline;" target=3D"_blank">Financial Edge</a>: G=
+et 25% OFF Financial Edge (Use Code RARELIQUID25). This is the best resourc=
+e to develop your technical investment skills!</li>
+<li style=3D"margin: 0.5em 0; padding-left: 0.3em; line-height: 1.6em;"><a =
+href=3D"https://j.moomoo.com/005RTE" style=3D"overflow-wrap: anywhere; colo=
+r: #000000; text-decoration: underline;" target=3D"_blank">Moomoo</a>: Down=
+load the app to earn free stocks!</li>
+</ul>
+</li>
+</ul>
+<!--kg-card-end: markdown--><hr style=3D"position: relative; display: block=
+; width: 100%; margin: 3em 0; padding: 0; height: 1px; border: 0; border-to=
+p: 1px solid #e5eff5;"><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;=
+"></p><div class=3D"kg-card kg-image-card" style=3D"margin: 0 0 1.5em; padd=
+ing: 0;"><a href=3D"rareliquidnews.com" style=3D"overflow-wrap: anywhere; c=
+olor: #000000; text-decoration: underline;" target=3D"_blank"><img src=3D"h=
+ttps://www.rareliquidnews.com/content/images/size/w1600/2021/06/Banner---ma=
+in-6.jpeg" class=3D"kg-image" alt loading=3D"lazy" width=3D"600" height=3D"=
+156" style=3D"border: none; -ms-interpolation-mode: bicubic; max-width: 100=
+%; display: block; margin: 0 auto; width: auto; height: auto;"></a></div><!=
+--kg-card-begin: html--><div class=3D"inline" ; style=3D"text-align:center;=
+">
+  <button style=3D"background-color:transparent; border:none; outline:none"=
+>=20
+    <a href=3D"https://www.youtube.com/c/rareliquid/featured" style=3D"over=
+flow-wrap: anywhere; color: #000000; text-decoration: underline;" target=3D=
+"_blank"><img src=3D"https://www.rareliquidnews.com/content/images/2021/06/=
+Youtube.png" alt=3D"rareliquid youtube" style=3D"border: none; -ms-interpol=
+ation-mode: bicubic; max-width: 100%; width: 24px; height: 24px;" width=3D"=
+24" height=3D"24"></a>
+    </button>
+  <button style=3D"background-color:transparent; border:none; outline:none"=
+>
+      <a href=3D"https://www.instagram.com/rareliquid/" style=3D"overflow-w=
+rap: anywhere; color: #000000; text-decoration: underline;" target=3D"_blan=
+k"><img src=3D"https://www.rareliquidnews.com/content/images/2021/06/instag=
+ram-1.png" alt=3D"rareliquid instagram" style=3D"border: none; -ms-interpol=
+ation-mode: bicubic; max-width: 100%; width: 24px; height: 24px;" width=3D"=
+24" height=3D"24"></a>
+    </button>
+  <button style=3D"background-color:transparent; border:none; outline:none"=
+>
+      <a href=3D"https://twitter.com/rareliquid" style=3D"overflow-wrap: an=
+ywhere; color: #000000; text-decoration: underline;" target=3D"_blank"><img=
+ src=3D"https://www.rareliquidnews.com/content/images/2021/06/Twitter.png" =
+alt=3D"rareliquid twitter" style=3D"border: none; -ms-interpolation-mode: b=
+icubic; max-width: 100%; width: 22px; height: 22px;" width=3D"22" height=3D=
+"22"></a>
+    </button>
+  <button style=3D"background-color:transparent; border:none; outline:none"=
+>
+      <a href=3D"https://www.tiktok.com/@rareliquid" style=3D"overflow-wrap=
+: anywhere; color: #000000; text-decoration: underline;" target=3D"_blank">=
+<img src=3D"https://www.rareliquidnews.com/content/images/2021/06/tiktok-1.=
+png" alt=3D"rareliquid tiktok" style=3D"border: none; -ms-interpolation-mod=
+e: bicubic; max-width: 100%; width: 24px; height: 24px;" width=3D"24" heigh=
+t=3D"24"></a>
+    </button>
+  <button style=3D"background-color:transparent; border:none; outline:none"=
+>
+      <a href=3D"https://www.twitch.tv/rareliquidx" style=3D"overflow-wrap:=
+ anywhere; color: #000000; text-decoration: underline;" target=3D"_blank"><=
+img src=3D"https://www.rareliquidnews.com/content/images/2021/06/twitch.png=
+" alt=3D"rareliquid twitch" style=3D"border: none; -ms-interpolation-mode: =
+bicubic; max-width: 100%; width: 24px; height: 24px;" width=3D"24" height=
+=3D"24"></a>
+    </button>
+
+</div>
+<!--kg-card-end: html--><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em=
+;"></p><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"></p><p style=
+=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"></p><p style=3D"margin: 0 0 1=
+=2E5em 0; line-height: 1.6em;"></p><p sty=
+le=3D"margin: 0 0 1.5em 0; line-heig=
+ht: 1.6em;"></p><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"></p><=
+p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"></p><p style=3D"margin=
+: 0 0 1.5em 0; line-height: 1.6em;"></p><p style=3D"margin: 0 0 1.5em 0; li=
+ne-height: 1.6em;"></p><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;=
+"></p><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"></p><p style=3D=
+"margin: 0 0 1.5em 0; line-height: 1.6em;"></p><p style=3D"margin: 0 0 1.5e=
+m 0; line-height: 1.6em;"></p><p style=3D"margin: 0 0 1.5em 0; line-height:=
+ 1.6em;"></p><p style=3D"margin: 0 0 1.5em 0; line-height: 1.6em;"></p>
+                                            <!-- POST CONTENT END -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- END MAIN CONTENT AREA -->
+
+                        <tr>
+                            <td class=3D"wrapper" align=3D"center" style=3D=
+"font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto=
+, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI =
+Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 18px; vertical-align: top=
+; color: #15212A; box-sizing: border-box; padding: 0 20px;" valign=3D"top">
+                                <table role=3D"presentation" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse:=
+ separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; paddi=
+ng-top: 40px; padding-bottom: 30px;">
+                                   =20
+                                    <tr>
+                                        <td class=3D"footer" style=3D"font-=
+family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helv=
+etica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&=
+#39;, &#39;Segoe UI Symbol&#39;; vertical-align: top; color: #738a94; margi=
+n-top: 20px; text-align: center; font-size: 13px; padding-bottom: 10px; pad=
+ding-top: 10px; padding-left: 30px; padding-right: 30px; line-height: 1.5em=
+;" valign=3D"top" align=3D"center">rareliquid &#xA9; 2022 &#x2013; <a href=
+=3D"https://www.rareliquidnews.com/unsubscribe/?uuid=3D37ea6d54-4c66-446c-b=
+a05-16c33a0edcc6" style=3D"overflow-wrap: anywhere; color: #738a94; text-de=
+coration: underline;" target=3D"_blank">Unsubscribe</a></td>
+                                    </tr>
+
+                                   =20
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <!-- END CENTERED WHITE CONTAINER -->
+                </div>
+            </td>
+            <td style=3D"font-family: -apple-system, BlinkMacSystemFont, &#=
+39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Em=
+oji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 1=
+8px; vertical-align: top; color: #15212A;" valign=3D"top">&#xA0;</td>
+        </tr>
+
+    <!--[if mso]>
+                    </table>
+                </center>
+            </td>
+        </tr>
+    <![endif]-->
+
+    </table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.m.ghost.io/o=
+/eJwdjkEOgyAQRU9TdpJhHEAWHIZhQGlVkmoXvX21ydv8l_zkSfQs2UyqRQS8IUMA4HSqEIo1ob=
+Cbip3Sg2DT89KPU7euliginAVGE5iqq2MxgAE5BcIMxKze8ZmOvp9L2r_Xed5SW3Xumzojf9bXU=
+G5xj7XPg_fBelJ_NzSJDo2fqrOECcrVQ-KDYXQ_sjwz-w"></body>
+
+</html>
+--2c3d02537a6a7317239d80433a60611d7574d6a1f0d9bec2eb72882a1fde--

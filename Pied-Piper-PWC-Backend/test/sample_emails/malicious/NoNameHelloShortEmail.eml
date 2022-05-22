@@ -1,0 +1,58 @@
+Delivered-To: jasonthany@gmail.com
+Received: by 2002:a05:7000:648b:0:0:0:0 with SMTP id o11csp592204mal;
+        Sat, 19 Mar 2022 15:53:43 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy8P/Vxz7ISJZJcnh2PI1Xn5KPoWKy5VYv+foEjwDD6zaiJ5FVNUpzdKtD4de1J3aFeYL/s
+X-Received: by 2002:a63:eb4a:0:b0:382:8e7:9023 with SMTP id b10-20020a63eb4a000000b0038208e79023mr11003501pgk.308.1647730423211;
+        Sat, 19 Mar 2022 15:53:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1647730423; cv=none;
+        d=google.com; s=arc-20160816;
+        b=JExGEJzTyt3Y0XwSe03ZCuCTm37CqYw/uX0nPoxssrWu72z27ZVv8x8Ih6kz1Oxedh
+         wvRjmn5NQLLYlvdeAeEvZ809sadMP1co6mznvJbSjJW3pTUJMcrQ/lyVgkb+RFaHR25d
+         zNi9vT8Y9nc2EJGp3gPlrQ0dDsnPKL38DVW2+pEqGMuY4tNp+cXejIBhJaL8MYj5/Phu
+         DhT8SQN+khnmHAxD85gNRTb0G/cymZGZ8LZGkfY/kEBn3mLqpdigxILzBzyHZZnw4AWq
+         lKywiUiSKsaAcFgEcOnZ7A7vfnxnR6RjeGfQakhzxz5jmXsWr4EvAL59L7cu+fgXAyFP
+         GwVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:message-id:date:subject:to
+         :from;
+        bh=id5H+IBXHQq4IDnMWRYI8GDw2V4IHHZQTq0e2vC0bbc=;
+        b=glcn5zR4jQiDt0MiPtcVcDkPFda1+0mLJVbCQqBW0ha8ruAIzbLkyDXCzsHQ22MYEf
+         PJZTv3MmkZ3S5S69rp4ZXB5OFQo+OEE7oPNTbv9q1FNz2mEGk+Stjxk04wate/j6f9/L
+         jAxJra+vqsvEmTJcsaEgMwtoSpCxo+0Wlk1LofbeLXe81RCOPDDr+WNi5QtbkUEYMvkt
+         1Zzk5/chI+/2Yig+3vOjAnFnU0qlf/fqAwW/b1ZQzOi69ma3gJoLuda+rtM1cZGEsGJJ
+         9UjehUTv/Mv2K5EmBJjN1JP23bJvfdRMBeEGdzC/rHFv2APWtWzzH+VrN9TDgAv4rmE5
+         /KCA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of rob.card2011@alice.it designates 82.57.200.124 as permitted sender) smtp.mailfrom=rob.card2011@alice.it;
+       dmarc=fail (p=QUARANTINE sp=QUARANTINE dis=QUARANTINE) header.from=inbox.lv
+Return-Path: <rob.card2011@alice.it>
+Received: from smtp219t-alice.alice.it (smtp219t.alice.it. [82.57.200.124])
+        by mx.google.com with ESMTPS id c12-20020a17090a8d0c00b001c6a67af0e4si6144602pjo.96.2022.03.19.15.53.42
+        for <jasonthany@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 19 Mar 2022 15:53:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of rob.card2011@alice.it designates 82.57.200.124 as permitted sender) client-ip=82.57.200.124;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of rob.card2011@alice.it designates 82.57.200.124 as permitted sender) smtp.mailfrom=rob.card2011@alice.it;
+       dmarc=fail (p=QUARANTINE sp=QUARANTINE dis=QUARANTINE) header.from=inbox.lv
+X-RazorGate-Vade: gggruggvucftvghtrhhoucdtuddrgedvvddrudefledgtdegucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecuvffgnffgvefqoffkvfetnffktedpqfgfvfenuceurghilhhouhhtmecufedtudenucenucfjughrpefhvffufffkgggtgfesthhqfedttddtjeenucfhrhhomhepfdeuohgssgihucghihhllhhirghmucdfuceosghosggshiifihhllhhirghmsehinhgsohigrdhlvheqnecuggftrfgrthhtvghrnheptdeivedvfeduhedugefgueeffeelleejteeigeeigeetffekfefghfevueekhfejnecukfhppedvfedruddtiedriedvrddujeejnecuufhprghmkfhppfgvthifohhrkhepvdefrddutdeirdeivddrudejjeenucevlhhushhtvghrufhiiigvpeduuddttddunecurfgrrhgrmhephhgvlhhopehmrghilhdrphhoshhtrgdrthhimhdrihhtpdhinhgvthepvdefrddutdeirdeivddrudejjedpmhgrihhlfhhrohhmpeeorhhosgdrtggrrhguvddtuddusegrlhhitggvrdhitheqpdhnsggprhgtphhtthhopedupdhrtghpthhtohepoehjrghsohhnthhhrghnhiesghhmrghilhdrtghomheq
+X-RazorGate-Vade-Verdict: clean 0
+X-RazorGate-Vade-Classification: clean
+Received: from mail.posta.tim.it (23.106.62.177) by smtp219t-alice.alice.it (5.8.604.04) (authenticated as rob.card2011@alice.it)
+        id 620ECEE7051C0C8E for jasonthany@gmail.com; Sat, 19 Mar 2022 23:53:41 +0100
+From: "Bobby William " <bobbywilliam@inbox.lv>
+To: jasonthany@gmail.com
+Subject: hello 
+Date: 20 Mar 2022 06:53:42 +0800
+Message-ID: <20220320065342.C3ECC621057A1E0E@inbox.lv>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+=20
+I sent you two emails you did not reply back?. 
+=20
+Regards,
+Mr Bobby William=20

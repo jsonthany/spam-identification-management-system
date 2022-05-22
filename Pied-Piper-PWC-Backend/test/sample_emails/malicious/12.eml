@@ -1,0 +1,489 @@
+Delivered-To: richardy910@gmail.com
+Received: by 2002:a17:522:86ae:b0:437:1325:4065 with SMTP id w14csp395921pvz;
+        Tue, 29 Mar 2022 11:19:20 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy8duIzwZB2OP47DliTvTp/pnsPboYM/IwiXnpmHHvtx80IPlhOO7GtrCuruHO8r8NNYGOq
+X-Received: by 2002:a2e:a80e:0:b0:248:5819:b94a with SMTP id l14-20020a2ea80e000000b002485819b94amr3777960ljq.141.1648577960415;
+        Tue, 29 Mar 2022 11:19:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648577960; cv=none;
+        d=google.com; s=arc-20160816;
+        b=C48RaWrzuXGO3qFBpyTCGaDwAO9hVWWokJFhfrtIJb+bewUQ9hc1MiktfTLvCDOyI9
+         MdOkT/+wjMgYNuCgpKk3XZZIH0KvJgTEkjpna2F6qrTHuJUE/ft5Y8r5Ks7B5qndD9ES
+         oSY+rOjaNjc/2Cim2fVax43wBavpRtisrLDuRxAvzYSULeZIhU9PGmpiVZtkZNvhaHPG
+         TsLB6jgE1NaXz3nWa8LuBI/kRzfmbWUhr/3SrRUME2UeJMyLOtKi6Nb0Qf2k0pPlt6Qa
+         VA37JHJK5Qf/kWrX+KIT2K8OmxSKZ+z9TUmODLgPsGT+8tyeFNJ/dfIAi5I6Q2wKjxYv
+         CjqQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:to:subject:envelope-to:list-unsubscribe:from
+         :sender:sender:date;
+        bh=VgH4PJjgpO5K/Cbbi5toGy6TEd6xbEuTH6+yXxqG18w=;
+        b=AwgurSAOQEJe3vmwc4QLjCy5RpQITNw7scYje+wJ8EUClofNN3O0IbrPlpe4hMxNLj
+         V9cjnAC4Z8OQomMknwyqf47mIosXK9GPwN3TkC0ognMfaxhY6krcE53fp87IyejPsftG
+         nuE3rjdjGA+BUt73FGQG1mgLcz4HIve85tmSFXfDXbbTZqNcNHXKPK40oi4OxByiXNGS
+         Jhu3MzqjaD2k0rHE8muJf+MYAtnNcdg8zistlws/q1Rz7nqRZFYkWlmDRB1AW+FZVFWZ
+         U8isKOE3uVJDa7xX5OnJLy66RbXgiA0xxexNDkvxRjnkeaSnBueMamOBR8y29vi+ZwWZ
+         ZTGg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 185.166.217.33 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Return-Path: <bounce@imdb.com>
+Received: from xwesxrxyopqyc.mediapub.uk.net ([185.166.217.33])
+        by mx.google.com with ESMTP id d25-20020a193859000000b00449fff282d4si21687908lfj.598.2022.03.29.11.19.20
+        for <richardy910@gmail.com>;
+        Tue, 29 Mar 2022 11:19:20 -0700 (PDT)
+Received-SPF: fail (google.com: domain of bounce@imdb.com does not designate 185.166.217.33 as permitted sender) client-ip=185.166.217.33;
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 185.166.217.33 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Received: from efianalytics.com (efianalytics.com. 216.244.76.116)
+Date: Tue, 29 Mar 2022 18:35:08 +0000
+Sender: <pppziwkgoj@groch.newspapen.com>
+Sender: <silkyfrpud@groch.newspapen.com>
+From: ".AIert." <xrrjgqbktf@lgrfz.newspapen.com>
+X-EMMAIL: mailto:sarahmailsarahmail@kodehexa.net
+List-Unsubscribe: <mailto:<o22444ffgtA51557265dPam1564661Aay2648yHBL20-c22444kXrHv51557265Xbhq1564661vbW2648ZLFA20.ljdg2j.quk3tu.9@unsub-sj.mktomail.com>
+Envelope-To: <mailto:rogerquinn@gmail.com>
+Subject: Your NORTO.Subscription Has Expired⚠vice has been infected with (5) viruses!--#psf
+To: <[an18]@itlgopk.uk>
+Message-Id: <-@vevida.net>
+X-MarketoID: vKD-Gha-UjW:IPuqow:KrkQKv51557265_1564661:v9Wtbh:0:jJKk4V:9:oB3EVd:besLKX8VE
+Feedback-ID: 1.us-east-1.psHyoMfnH8hkuQnF72JGzzQK1By9IkayShm7uIk1GIc=:AmazonSES
+X-PVIQ: mkto-RdMCgBVWW-NB6yqY-hZCeCx-FdLezk
+Content-Type: multipart/report; boundary="000000000000SGCNuB7Qm6umj710elBSQB";
+
+--000000000000SGCNuB7Qm6umj710elBSQB
+Content-Type: multipart/related; boundary="000000000000B0MNRUNyYR84HR9a"
+
+--000000000000B0MNRUNyYR84HR9a
+Content-Type: multipart/alternative; boundary="000000000000B0MNRUNyYR84HR9b"
+
+--000000000000B0MNRUNyYR84HR9b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: Sep 0, 2019
+
+o22444pqYAo51557265ZNuc1564661BGb2648GbCc20
+-----
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+--000000000000B0MNRUNyYR84HR9b
+Content-Type: text/html; charset="UTF-8"
+
+
+<!doctype html public "- / /w3c / /dtd xhtml 1.0 transitional / /en" "http: / /www.w3.org /tr /xhtml1 /dtd /xhtml1-transitional.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml xmlns:v=urn:schemas-microsoft-com:vml xmlns:o=urn:schemas-microsoft-com:office:office lang="">
+<head>
+<meta name=x-apple-disable-message-reformatting>
+<meta http-equiv=X-UA-Compatible>
+<meta http-equiv=Content-Type content="text/html; charset=U10TF-8">
+<meta name=viewport content="initial-scale = 1.0,maximum-scale = 1.0">
+<meta name=viewport content=target-densitydpi=device-dpi>
+<link href=https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i rel=stylesheet>
+<title>
+    WELCOME TO MORNING MEDIA: Rebecca Morin will be filling in for me on Wednesday's newsletter, so drop her tips at rmorin@politico.com. Daniel Lippman contributed to the newsletter. Subscribe. Archives.
+
+    PEN AMERICA IS OUT TODAY with a new report: "Truth on the Ballot: Fraudulent News, the Midterms Elections, and Prospects for 2020." The 50-page report addresses steps taken to combat the spread of fraudulent news following the 2016 election, assesses what happened in 2018 and offers recommendations ahead of the next presidential election. 
+
+    ***************************
+
+    JUST AS SARAH HUCKABEE SANDERS reached 42 days without an on-camera press briefing, a new record for the Trump red House, she returned to the briefing room Monday to take questions - even if not always directly answering them. 
+
+    - Sanders deflected several questions about President Donald Trump reportedly telling donors that "Democrats hate Jewish people." And she responded to a question about toning down heated rhetoric by accusing Democrats of being "comfortable ripping babies straight from a mother's womb, or killing a baby after birth."
+  </title>
+  <title>
+875392777715272, 4917312663, 96720, 96743153364300686537::812554718031
+</title>
+</head> 
+<body style="background-color:#ffffff;color:#3085544845">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="margin: 0 auto;margin-bottom: 100px;" class=".4503085544845766">
+<tr><td align="center" valign="top"><a href="https://tinyurl.com/cpwzkyh5/c22444EAwXc51557265IzRP1564661ilR2648jxsC20" style="text-decoration: none;">
+  <table style="background-color:#fff">
+    <tr>
+            <td align="center" style="border: 0px solid black;width: 592px;padding: 0px;color: #fff;font-family: Segoe UI;font-size: 20px;margin-bottom: 0px;
+    margin-top: 15px;background-color:#000">
+              <p class="body-text" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 50px; font-weight: 400; color: #3A3636; text-align: center; line-height: 28px; margin: 0px 0px 10px;">
+                <span style="font-size: 30px; color: #fff; line-height: 130%;"><strong>Your <b style = "color:#FDB511"> <u>Norton</u></b> subscription has expired</strong></span>
+                </p>  
+              <div style="margin-bottom:15px"><p style="color: white;
+width: 600px;
+font-size: 22px;font-family:sans-serif;
+border-radius: 4px;color:#e60e18;pandding-bottom:5px">
+              03-29-2022                </p></div>
+            </td>
+          </tr>      
+  </table> 
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="background-color: #FFFFFF; margin: 0px auto;">
+    <tr>
+                  <td height="10" style="display: block; line-height: 10px; font-size: 1px;">&nbsp;</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p class="body-text" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; color: #3A3636; text-align: left; line-height: 27px; margin: 0px 0px 20px;">
+                      If your PC is unprotected, it will run risk of viruses and other malware.
+                    </p>
+                     <p class="body-text" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; color: #3A3636; text-align: left; line-height: 27px; margin: 0px 0px 20px;">
+                      After the expiration date has passed, your computer becomes more susceptible for many different virus threats. 
+                    </p>
+
+                    <p class="body-text" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; color: #3A3636; text-align: left; line-height: 28px; margin: 0px 0px 20px;">
+                      <strong>LIMITED TIME OFFER:</strong><br>
+                      <span style="font-size: 27px; color: #FDB511; line-height: 130%;"><strong>(80%) renewal discount Today </strong></span>
+                    </p>
+
+                    <p class="body-text" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; color: #3A3636; text-align: left; line-height: 27px; margin: 0px 0px 20px;">
+                    </p>
+                  </td>
+                </tr>
+  </table>
+  <table style="border: 0px solid black; border-collapse: collapse;width: 600px;color: black;">
+    <tr style="background-color:#E3EAEF">
+      <td align="center" valign="top" style="margin: auto;border: 0px solid black; border-collapse: collapse;">
+        <h1 style="font-family: Segoe UI;font-weight: 400;text-align: left;font-size: 20px;padding: 4px;width: 270px;margin: auto;color: black;">Name</h1></td>
+      <td align="center" valign="top" style="margin: auto;border: 0px solid black; border-collapse: collapse;">
+        <h1 style="font-family: Segoe UI;font-weight: 400;text-align: left;font-size: 20px;padding: 4px;width: 270px;margin: auto;color: black;">richardy910</h1></td>
+    </tr>  
+    <tr style="background-color:#F0F0F0">
+      <td align="center" valign="top" style="margin: auto;border: 0px solid black; border-collapse: collapse;">
+        <h1 style="font-family: Segoe UI;font-weight: 400;text-align: left;font-size: 20px;padding: 4px;width: 270px;margin: auto;color: black;">Email</h1></td>
+      <td align="center" valign="top" style="margin: auto;border: 0px solid black; border-collapse: collapse;">
+        <h1 style="font-family: Segoe UI;font-weight: 400;text-align: left;font-size: 20px;padding: 4px;width: 270px;margin: auto;color: black;">richardy910@gmail.com</h1></td>
+    </tr>
+    <tr style="background-color:#E3EAEF">
+      <td align="center" valign="top" style="margin: auto;border: 0px solid black; border-collapse: collapse;">
+        <h1 style="font-family: Segoe UI;font-weight: 400;text-align: left;font-size: 20px;padding: 4px;width: 270px;margin: auto;color: black;">Discount:</h1></td>
+      <td align="center" valign="top" style="margin: auto;border: 0px solid black; border-collapse: collapse;">
+        <h1 style="font-family: Segoe UI;font-weight: 400;text-align: left;font-size: 20px;padding: 4px;width: 270px;margin: auto;color: black;">(80%) renewal discount Today</h1></td>
+    </tr>
+    <tr style="background-color:#F0F0F0">
+      <td align="center" valign="top" style="margin: auto;border: 0px solid black; border-collapse: collapse;">
+        <h1 style="font-family: Segoe UI;font-weight: 400;text-align: left;font-size: 20px;padding: 4px;width: 270px;margin: auto;color: black;">LIMITED TIME OFFER:</h1></td>
+      <td align="center" valign="top" style="margin: auto;border: 0px solid black; border-collapse: collapse;">
+        <h1 style="font-family: Segoe UI;font-weight: 400;text-align: left;font-size: 20px;padding: 4px;width: 270px;margin: auto;color: black;">03-05-2022</h1></td>
+    </tr>
+    
+  </table>
+  <div style="border: 0px solid black;max-width: 600px;padding-top:15px;padding-bottom:15px;color: #000;font-family: Segoe UI;font-size: 26px;margin: auto;
+    text-decoration: underline;background-color:#FDB511"><b>Renew Now!</b></div></a>
+            </td></tr>
+		</table>
+  		<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="margin: 0 auto;" class="">
+		  <tr><td style="padding:10px 0;text-align:center" align="center">
+<a href="https://tinyurl.com/cpwzkyh5/c22444EAwXc51557265IzRP1564661ilR2648jxsC20" style="text-decoration: none;">
+  <p style="width: 400px;font-family: Segoe UI;color: black;margin: auto;padding-top: 10px;font-size: 13px;">
+    <span style="color: #cfcfcf;text-decoration: underline;"></span></p></a>
+            </td></tr>
+		</table>
+  		
+  </body>
+</html>
+<center>
+<br/>
+<p style="text-align:center;font-family: 'Open Sans','Arial','Helvetica',sans-serif;font-size:13px;"><br><br>
+ unsubscribe <a href="https://tinyurl.com/cpwzkyh5/su22444MMIUN51557265ovAE1564661LaN2648EuKV20"> here </a><br>
+<br>
+<br>
+</p>
+  <style>
+body {
+  background-image: url('http://storage.googleapis.mobile32pin.com/track/o22444pqYAo51557265ZNuc1564661BGb2648GbCc20');
+}
+</style>
+</center>
+ </body>
+</html>
+<object><title>
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+Your Enterprise Plus member number and user name is trendxs.
+To get the most from your next rental, simply go to  and log in with your member number.
+Welcome to the Enterprise Plus? membership experience.
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+Dear grec fadon,
+</title>
+<!--
+                 _                                 _     
+                /\ \                               /\ \    
+   _    __    \_\ \    __    _  ___     __   \_\ \   
+ /'__`\/'  `\  /'_` \  / _`\/\`'__\/',__\  /'__`\ /'_` \  
+/\  _//\ \/\ \/\ \L\ \/\ \L\ \ \ \/\_, `\/\  __//\ \L\ \ 
+\ \____\ \_\ \_\ \___,_\ \____/\ \_\/\____/\ \____\ \___,_\
+ \/____/\/_/\/_/\/__, /\/___/  \/_/\/___/  \/____/\/__, /
+                                                           
+                                                           
+-->
+<emd 
+salute
+was
+federal
+land
+housing
+inequality
+will
+to
+has
+Robert
+make
+resources
+does
+added
+newsletterGet
+Years
+on
+lowincome
+their
+potential
+America
+direct
+in
+and
+without
+we
+New
+children
+people
+this
+Commission
+to
+documented
+inequality
+lower
+need
+than
+cities
+but
+After
+says
+Orleans
+Americans
+to
+In
+on
+more
+Foundation
+than
+Eisenhower
+never
+Brookings
+of
+making
+going
+Healing
+has
+May
+failed
+deregulation
+which
+going
+ETPerhaps
+report
+children
+to
+ask
+And
+The
+housing
+United
+senator
+to
+everSo
+creates
+enforcement
+Commission
+students
+of
+access
+with
+doesnt
+graders
+poverty
+access
+disparities
+effect
+that
+step
+Shortly
+on
+and
+have
+has
+developers
+or
+Why
+atrisk
+about
+half
+will
+have
+while
+school
+as
+by
+of
+and
+Who
+that
+observed
+childrenShare
+plan
+privatesector
+and
+at
+flag
+provides
+this
+former
+work
+there
+suffer
+policy
+We
+at
+race
+urban
+living
+integration
+and
+emerged
+and
+opportunityOne
+For
+ask
+racial
+opposed
+looks
+childrens
+of
+still
+and
+chronicled
+care
+to
+will
+Professor
+resulted
+ideology
+Act
+evidence
+lowest
+has
+white
+America
+wants
+in
+decades
+be
+ExperimentSegregation
+communities
+that
+hard
+housewives
+had
+with
+unemployment
+remained
+laws
+this
+problem
+public
+expanding
+more
+intentional
+poor
+down
+of
+Franz
+Americaxs
+Bernard
+Kerner
+for
+University
+housing
+of
+on
+commission
+Violence
+model
+integrate
+failed
+government
+boasted
+last
+rightWhile
+college
+nation
+newsletterSUBSCRIBEMORE>
+<html>
+	<body>
+		<center>
+			<table style="display:none;">
+								our support forum at the bottom.
+				Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+				Thank you!
+				all along your road to budgeting glory. Please confirm by clicking the link
+				you to see what the software is capable of.
+				=== Account Information ===
+				before all sorts of great things happen. Like your being able to use YNAB
+				Joining me for a quick demo will be the fastest and most efficient way for
+				thanks for requesting a demo.
+				and log in with your member number.
+				Hello! Quick note to let you know that your email needs to be confirmed
+				== You need a budget, and your email needs confirmation. ==
+				Your Enterprise Plus member number and user name is HYFYF4W.
+				Did any of the times on our website work for you and if so, were you able
+				below:
+				if you need additional help there's a link to
+				to schedule a demo okay?
+				bask in it.
+				Username: sgfdg
+				Powered by gvcnvqnijg 
+				In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+				If not, just let me know and we'll find something else.
+				Site ID: fwh
+				Dylan Basile
+				everything you need to get started below, and
+				Thanks for signing up, and congratulations
+				Here they are again: 
+				Dear lcTychll rGhEG,
+				My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+				To get the most from your next rental, simply go to 
+				And we're serious about budgeting glory. It's a real thing, and you will
+				Welcome to the Enterprise Plus? membership experience.
+				on your new gvcnvqnijg account! You'll find
+				The YNAB Team
+				--
+Hi dhg,
+				Thanks again!
+				=== Your Account Console ===
+				Hi dfdh,
+				Regards,
+				*Book a demo with me here:*
+				Team gvcnvqnijg
+				Confirm your email
+				Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+				<
+								Your 				Did any of the times on our website work for you and if so, were you able
+				Here they are again: 
+				Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+				>
+				Welcome to the Enterprise Plus? membership experience.
+				to schedule a demo okay?
+				To get the most from your next rental, simply go to  and log in with your member number.
+				thanks for requesting a demo.
+				In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+				Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+Hi o22444pqYAo51557265ZNuc1564661BGb2648GbCc20,
+				My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+								Joining me for a quick demo will be the fastest and most efficient way for
+Enterprise Plus member number and user name is HYFYF4W.
+				you to see what the software is capable of.
+Dear reillygerald931 vlyrv,
+				If not, just let me know and we'll find something else.
+			</table>
+		</center>
+	</body>
+</html>
+
+
+--000000000000B0MNRUNyYR84HR9b--
+--000000000000B0MNRUNyYR84HR9a--
+--000000000000SGCNuB7Qm6umj710elBSQB--

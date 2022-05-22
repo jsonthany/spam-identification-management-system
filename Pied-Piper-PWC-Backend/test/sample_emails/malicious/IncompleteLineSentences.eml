@@ -1,0 +1,62 @@
+Delivered-To: jasonthany@gmail.com
+Received: by 2002:a05:7000:648b:0:0:0:0 with SMTP id o11csp5802037mal;
+        Fri, 25 Mar 2022 01:10:28 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy+dJzrWZcGBNdvbOq9xc4OjRmVI6aBs1ItagBJNNq2Y9ATEuum9OjwjySVQ57VYy9UBqwI
+X-Received: by 2002:ac2:549c:0:b0:44a:384a:9196 with SMTP id t28-20020ac2549c000000b0044a384a9196mr6612483lfk.147.1648195828436;
+        Fri, 25 Mar 2022 01:10:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648195828; cv=none;
+        d=google.com; s=arc-20160816;
+        b=0gtKjrD6NEmdipmICXuSt/ZpAGqyfIm5PWzSAegvlCN6W8fXsnw9eG/SLahKPr38Hi
+         7U6IabzWOfWmfz6RbXRSMFuXl1vzm8wXPIJmkAq4qFVPtRW4827yTUHBzg4rjUp+nxM2
+         1T7oAK8GpUYUES0afjOZgRnWQ5iXUeOHCSYCHdkTmG/yOL18h08O+D0G4QL5dYuz5xYo
+         pUveIMoT6z8nOHNrTMG3QPa7raWZgE8NJbnfSs9APaiP5ExeKHqw9EOO9phyLC/h3isc
+         y3fzbrviDTp9RSBbG/mD25D4HM1EjzU/qwKokyN3cmsT0x3Og0TFIiO8XvhgnuNWAcd4
+         Zwgg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:message-id:date:subject:to
+         :from;
+        bh=talnXam5Vgsrubcneoc+zUV22vbm+kiy/4/F7jPJgT0=;
+        b=SANo4roOR38fH3JwDxS+ocmkzyVFlWQoMKoKQNMukKGKxHO5sY5kE6LCepHqFgzuWv
+         QNbSxC3w+MUpfRym1M997gdQDu1Y94XiBR4BU9sWqitdBoWK3Eh1z+P3nHQceObxdffR
+         VoqLPqVRN1C7YPX7eNN1aNoC6LngU1T0CpN+xmWOv2yJGu/oFH3kJYdIaCD/vdwPmJOI
+         WaJ5QBPiV+U6eGHUDm3u3rzo5mJHAWVY8G6GaX+SZrx1ETK1Ez57Fv1d8JhHAWlinIiW
+         p4ILhp6pyhGwedvZxV9PdjUbO1YqvV4YXycF2JK97Choj3fsKNEzcm9HAuypZWvmbOLw
+         KJPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of chiccablue@alice.it designates 82.57.200.124 as permitted sender) smtp.mailfrom=chiccablue@alice.it;
+       dmarc=fail (p=QUARANTINE sp=QUARANTINE dis=QUARANTINE) header.from=inbox.lv
+Return-Path: <chiccablue@alice.it>
+Received: from smtp219t-alice.alice.it (smtp219t.alice.it. [82.57.200.124])
+        by mx.google.com with ESMTPS id i10-20020a198c4a000000b0044a0d13937asi2068949lfj.184.2022.03.25.01.10.27
+        for <jasonthany@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 25 Mar 2022 01:10:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of chiccablue@alice.it designates 82.57.200.124 as permitted sender) client-ip=82.57.200.124;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of chiccablue@alice.it designates 82.57.200.124 as permitted sender) smtp.mailfrom=chiccablue@alice.it;
+       dmarc=fail (p=QUARANTINE sp=QUARANTINE dis=QUARANTINE) header.from=inbox.lv
+X-RazorGate-Vade: gggruggvucftvghtrhhoucdtuddrgedvvddrudehtddgudduvdcutefuodetggdotefrodftvfcurfhrohhfihhlvgemucfvgffngfevqffokffvtefnkfetpdfqfgfvnecuuegrihhlohhuthemuceftddunecunecujfgurhephffvufffkfggtgfgsehtqheftddttdejnecuhfhrohhmpedftehlvgigucfjihhllhcufdcuoegtohifvghlvdehiedvsehinhgsohigrdhlvheqnecuggftrfgrthhtvghrnhepgfekheejhfeiieejtedvudetgfeifefggeehjeetiefgjefhuddvvdekfefgvdeinecukfhppedvfedruddtiedriedvrddujeejnecuufhprghmkfhppfgvthifohhrkhepvdefrddutdeirdeivddrudejjeenucevlhhushhtvghrufhiiigvpedugeeknecurfgrrhgrmhephhgvlhhopehmrghilhdrphhoshhtrgdrthhimhdrihhtpdhinhgvthepvdefrddutdeirdeivddrudejjedpmhgrihhlfhhrohhmpeeotghhihgttggrsghluhgvsegrlhhitggvrdhitheqpdhnsggprhgtphhtthhopedupdhrtghpthhtohepoehjrghsohhnthhhrghnhiesghhmrghilhdrtghomheq
+X-RazorGate-Vade-Verdict: clean 0
+X-RazorGate-Vade-Classification: clean
+Received: from mail.posta.tim.it (23.106.62.177) by smtp219t-alice.alice.it (5.8.604.04) (authenticated as chiccablue@alice.it)
+        id 620ECEE706027BDF for jasonthany@gmail.com; Fri, 25 Mar 2022 09:10:27 +0100
+From: "Alex Hill " <cowel2562@inbox.lv>
+To: jasonthany@gmail.com
+Subject: Best loan offer
+Date: 25 Mar 2022 16:10:27 +0800
+Message-ID: <20220325161026.06AF7909B20FE96C@inbox.lv>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear=20=20
+Are you still interested in our loan offer? We offer=20
+personal,investment and business loans at 2%. If you are in need=20
+of a loan kindly contact us.=20
+
+
+
+
+Dr. Alex Hill
+=20=20

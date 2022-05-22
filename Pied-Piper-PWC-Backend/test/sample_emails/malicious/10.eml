@@ -1,0 +1,386 @@
+Delivered-To: richardy910@gmail.com
+Received: by 2002:a17:522:86ae:b0:437:1325:4065 with SMTP id w14csp419973pvz;
+        Tue, 29 Mar 2022 11:49:18 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyZmAu5QGiXs8j6r20actppOUofxf7TQVUVt856STnjY98JIrQG8QrEXa3CZ/WfowPJfC4o
+X-Received: by 2002:a05:6e02:20c6:b0:2c9:d552:20de with SMTP id 6-20020a056e0220c600b002c9d55220demr1951062ilq.137.1648579758352;
+        Tue, 29 Mar 2022 11:49:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648579758; cv=none;
+        d=google.com; s=arc-20160816;
+        b=SRp2HjKtUEnBShUQw97k40eiWHD2JV+5JFJPX/DP8zjiCxqeXHAGTnmnwIccOkxMBy
+         M3+xVQXJcBJ59ACv9DbHx4VIyytdPeXCcZYoO3JBJwL+PCftKB+U5a3xuJXPXZKVUgPF
+         8SCXhYnP5ksLPpdCoqgECtY0OwF46X+ZrLPCVZ6zwAujsCydD9Bj9imu9Zxxa/mV4pe2
+         OPi62oh4IM9V+cG/E9zO+scM21WYqtW9ttzH+x0vROCRRy9Y9/0NSpBYq2EXH2bMrd4G
+         N/Pn0BREZSUaKnMhJ26TBRiNW1+UZhONNere5eJW5wio7N+JbYpIZeSllO8zk1Sj45uz
+         jD+g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=from:references:to:date:message-id:cc:mime-version:feedback-id
+         :subject;
+        bh=ZDnuVHARXLkI3jZecPUeJUPxo61CHH4TTmCQE2YE8kI=;
+        b=aaN2W4UtV0ubE6ouihVeB7ZsCkb+R+ZatHT10BnDdCT2VZm77PyIlAWqOXty0+AEHR
+         2Tl5MBPFdGCqGn+MNp7MkAdryVAbly4L4qOVOVFiqgslFtTWhHOUPdyQJuCV1BLOxtCY
+         qB3EIB5b3Bk7a3qERconlHfcVd2/po5GhJ4jY0IYllEQqstR6ObUbx9yOp2fcMTbzr7B
+         XpN8gbDpwujos9b4mzNas6FeMuFQlVctIym7bqKs9tMEKkpl7kfzfVQ3uYv8qto0cuUj
+         KciFEw6MrsWAcdvBlIRAcaToz3SXmmif+tOwIhGCNeRqMrCg6OXdJfzZI6wYL51EhrA4
+         KajA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 216.238.71.222 is neither permitted nor denied by best guess record for domain of afzyka8igac1i7x6ct9vqkcwzv40ysa9h@z34koro7l.ausezb7imxahezcdk.com) smtp.mailfrom=afZYKA8IgAc1i7x6ct9vQkcWZv40YSa9H@z34koro7l.ausezb7imxahezcdk.com
+Return-Path: <afZYKA8IgAc1i7x6ct9vQkcWZv40YSa9H@z34koro7l.ausezb7imxahezcdk.com>
+Received: from mencap.org.uk ([216.238.71.222])
+        by mx.google.com with ESMTP id 13-20020a056e020cad00b002c83bfcb134si13734838ilg.53.2022.03.29.11.49.18
+        for <richardy910@gmail.com>;
+        Tue, 29 Mar 2022 11:49:18 -0700 (PDT)
+Received-SPF: neutral (google.com: 216.238.71.222 is neither permitted nor denied by best guess record for domain of afzyka8igac1i7x6ct9vqkcwzv40ysa9h@z34koro7l.ausezb7imxahezcdk.com) client-ip=216.238.71.222;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 216.238.71.222 is neither permitted nor denied by best guess record for domain of afzyka8igac1i7x6ct9vqkcwzv40ysa9h@z34koro7l.ausezb7imxahezcdk.com) smtp.mailfrom=afZYKA8IgAc1i7x6ct9vQkcWZv40YSa9H@z34koro7l.ausezb7imxahezcdk.com
+Received: from NCBE-EX16-A.ncbex.org (10.10.11.11) by NCBE-EX16-A.ncbex.org (10.10.11.11) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.1713.5; Fri, 28 Jun 2019 06:55:59 -0500
+Received: from ip-10-0-2-116.us-west-2.compute.internal (10.0.2.116) by NCBE-EX16-A.ncbex.org (10.10.11.11) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.1713.5 via Frontend Transport; Fri, 28 Jun 2019 06:55:58 -0500
+Received: from ip-10-0-2-116.us-west-2.compute.internal (localhost [127.0.0.1]) by ip-10-0-2-116.us-west-2.compute.internal (8.14.4/8.14.4) with ESMTP id x5SBtwSR031689 for <nillsonmandilla@gmail.com>; Fri, 28 Jun 2019 06:55:58 -0500
+Subject:confirmation
+Feedback-ID: 325-anexp#nret-fa:account-notifier
+MIME-Version: 2.0
+CC:<richardy910@aol.com>
+Message-ID: <=?UTF-8?q?=E1=9C=8A==E2=8F=9C==E5=8C=89==E1=B5=A0==E9=82=A8==E8=8B=90=?=.ZF3lf1bGTw-Ct-Y9ADdPckgR6D5JDoYTHg-216.238.71.222@7PLWrGeNreFn.italmold.com>
+Date: Tue, 29 Mar 2022 18:40:29 +0000 CET
+Content-Type:teXt/html
+X-Channel-ID: 20e5e118-6b1a-11e2-8242-88e46088709b
+To: <richardy910@aol.com>
+References: <@mail-yyQHVDigjJyy.YXxbr9BJ4Yv4.org.io>
+X-Account-Notification-Type: 325-anexp#nret-fa
+From:richardy910<info_4Oxqw2MXcSBW@3CVj8t2u7PUa.a5YvZWHZYcVp.italmold.com>
+X-MSMail-Priority: Normal
+
+<ceNTEr>
+<a HRef="https://s3.us-east-1.amazonaws.com/asdqlkpnbwvm/aswfc,vkpolnm.html#/t/7g535x09p/r5a610755x537x84579x80720192x2641894x75961429x2738348"><H1>CBD.!:Stop.Pain._Now!<br><imG SrC="https://s3.us-east-1.amazonaws.com/asdqlkpnbwvm/aswfc,vkpolnm.png"  /></a><br>
+
+<tiTLE>
+
+
+
+
+Dear Ms. McBvoy:
+I am writing to inf'orm you that the Centers for Medicare &Medicaid Services (CMS) is granting Connecticut
+final approval of its Statewide Transition Plan (STP) to bring settings into compliance with the f'edefal home
+and community-based services (FICBS) regulations found at 42 CFR Section aa1.301(c)(aX5) and Section
+aal.710(a)(l)(2). Upon receiving initial approval for conrpletion of its systemic assessmeÌìt and outline of
+systemic remediation activities on October 21, 2016,fhe state worked diligentìy in making a series of technical
+changes requested by CMS in order to achieve frnal approval.
+Final approval is granted to the state after completing the following activities: . Conducted a comprehensive site-specific assessment and validation ofall settings set'ving individuals
+receiving Medicaid-funded HCBS, and included in the STP the outcomes of these activities and
+proposed remediation strategies to rectify any issues uncovered through the site specific assessurent and
+validation processes by the end of the transition period'
+o Outlined a detailed plan for identifying settings that are presumed to have institutional characteÍistics,
+including qualities that isolate HCBS beneficiaries, as well as the proposed pl'ocess for evaluating these
+settings and preparing for submission to CMS 1'or review under heightened scrutiny;
+o Developed a process for communicating with beneficiaries who are currently receiving services in
+settings that the state has determined cannot or will not come into compliance with the home and
+community-based settings criteria by March 17, 2022; and
+¡ Established ongoing monitoring and quality assurance processes that will ensure all settings providing
+HCBS continue to remain fully compliant with the rule in the future'
+After reviewing the STP submitted by the state on June 21,2019, CMS provided additional fèedback on July 3,
+2019 and July 16, 2019 and requested technical changes be made to the STP in order for the state to receive
+frnal approval. These changes did not necessitate another public comment period. The state subsequently
+addressed all issues and resubmitted an updated version on July 18,2019, A summary ofthe technical changes
+made by the state is atlached.
+The state is encouraged to work collaboratively with CMS to identify any areas that may need strengtheuing
+with respect to the state's remediation and heightened scrutiny processes as the state implernents each ofthese
+key elements of the transition plan. Optional quarterly reports through the milestone tracking systern, designed
+to assist states to track their transition processes, will focus on four key areas:
+1. Reviewing progress made to-date in the state's completion of its proposed milestones;
+2. Discussing challenges and potential strategies for addressing issues that may arise during the state's
+remediation processes;
+3. Adjusting the state's process as needed to assure that all sites meeting the regulation's categories of
+presumed institutional settingsl have been identified, reflects how the state has assessed settings based
+on each of the three categories and the state's progress in preparing submissions to CMS for a
+heightened scrutiny review; and
+4. Providing feedback to CMS on the status of implementation, including noting any challenges with
+respect to capacity building efforts and technical support needs.
+It is important to note that CMS' approval of a STP solely addresses the state's compliance with the applicable
+Medicaid authorities. CMS' approval does not address the state's independent and separate obligations under
+the Americans with Disabilities Act, Section 504 of the Rehabilitation Act or the Supreme Cotttl's Olmstead v.
+IC decision. Guidance from the Depaftment of Justice concerning compliance with the Americans with
+Disabilities Act and the Olmstead decision is available at
+
+yr0--M6UfJ--1ttn---------------------------------------EDl--sUZej--tB7R
+t2i--bfftz--H8Sv---------------------------------------Uae--uE9q3--AJW3
+3bL--ZSq5F--nyLK---------------------------------------5OW--V3BVA--Svyw
+Hi [Name],
+It’s been a while since you left your shopping bag. Come back and show it some love. A simple click will do, and it’s all yours.
+
+[cart details]
+
+GET MY BAG
+
+Here are some recommendations. Just for you.
+
+[personalized product recommendations]
+
+Having trouble checking out? Email us at [email address] or give us a call at [phone number].
+This letter does not convey approval ofany settings submitted to CMS for heightened scrutiny review, but does
+convey approval ofthe state's process for addressing that issue. Any settings that have been or will be
+submitted by the state under heightened scrutiny will be reviewed and a detennination made, separate and
+distinct from the final STP approval.
+Thank you for your work on this STP. CMS appreciates the state's effort in completing this work and
+congratulates the state for continuing to rnake progress on its transition to ensure all settings are in compliance
+with the federal home and community-based services regulations.
+Sincerely, \ , . t ,.(-'', I ./ ,/ /./. ,. /., í "¡'t¿ 7 /'\ - ¿"t t Ralph F. Lollar, Director
+Division of Long Term Seruices and Supports
+1 CMS describes heightened scr.utiny as being requ ired for three types of presumed institutional sett¡ngs: I ) Seltings located in a
+buìlding that is also ã publicly or privately oferated facility thatprovides inpatient jnstitutionaltreatrnent;.2) Settillgs in a building on
+t¡e groín¿s of, o, immediateiy ad¡acent tô, á public institution; 3) Any other setting that has the effect ofisolat¡rrg individuals
+recJiving Medicaid HCBS fron the broader community of individuals not receiving Medicaid HCBS
+<//////////////////////////mHAnCFI6a16rNuTS8fV\\\\\\\\\\\\\\\\\\\\\\\>
+<//////////////////////////03Z0YAr8WYW5ATWOLuF\\\\\\\\\\\\\\\\\\\\\\\>
+
+5. Q8n4R 50626 - a6IZBovjYf Wegb7
+5. g7We5 50626 - h2hO5UbN7t XTaig
+Dear Director
+2019 Funding and Requirements
+The Department will be providing core funding of up to €50,000 to each local 
+authority in 2019 towards the cost of its PPN, provided this is supplemented by a 
+minimum of €30,000 from the authority’s own resources.
+An initial payment of €30,000 from the Department’s commitment will be made to 
+each local authority, subject to compliance with certain conditions outlined below, 
+to ensure PPNs have access to funding as early as possible. The Department requests 
+that your authority’s contribution would be made available from the outset in 2019 
+to the PPN so as to maximise the total budget available to the PPN. 
+The Department’s contribution in 2019 will be subject to two conditions, the first is 
+the receipt of written confirmation from each local authority that a clear 
+Memorandum of Understanding has been signed between the local authority and 
+PPN in respect of 2019. In this regard, the MOU should outline in a clear and 
+unambiguous manner the roles and responsibilities of the local authority and PPN 
+with regard to the delivery of the PPN Programme during the year including, as far 
+as practical, an indication of how agreed funding in 2019 is intended to be spent.
+In agreeing the MOU, Local Authorities and PPNs are asked to consider the 
+recommendations in the 2017 PPN Annual Report and in particular those around 
+supports, value and recognition of the role of PPNs
+Dear Director
+2019 Funding and Requirements
+The Department will be providing core funding of up to €50,000 to each local 
+authority in 2019 towards the cost of its PPN, provided this is supplemented by a 
+minimum of €30,000 from the authority’s own resources.
+An initial payment of €30,000 from the Department’s commitment will be made to 
+each local authority, subject to compliance with certain conditions outlined below, 
+to ensure PPNs have access to funding as early as possible. The Department requests 
+that your authority’s contribution would be made available from the outset in 2019 
+to the PPN so as to maximise the total budget available to the PPN. 
+The Department’s contribution in 2019 will be subject to two conditions, the first is 
+the receipt of written confirmation from each local authority that a clear 
+Memorandum of Understanding has been signed between the local authority and 
+PPN in respect of 2019. In this regard, the MOU should outline in a clear and 
+unambiguous manner the roles and responsibilities of the local authority and PPN 
+with regard to the delivery of the PPN Programme during the year including, as far 
+as practical, an indication of how agreed funding in 2019 is intended to be spent.
+In agreeing the MOU, Local Authorities and PPNs are asked to consider the 
+recommendations in the 2017 PPN Annual Report and in particular those around 
+supports, value and recognition of the role of PPNs
+1BF--y1v0p--zl9i---------------------------------------Ek3--O8DHW--PC0v
+798--bLoYy--DTIo---------------------------------------VxJ--v9qm4--lYyh
+8Hz--lIkzt--aF2f---------------------------------------RZg--TKJIp--VPGZ
+
+----pKqmr910;Tf4ufv----yYKAeXQE;vtzRZ6
+The Department has allocated €25,700 to each PPN for this purpose which is 
+intended to cover the salary and associated costs of employment of a Support Worker. 
+As advised, this additional funding was to be paid in two instalments - €22,500 of 
+which was paid in December 2018, with the balance of the Departments contribution 
+- €3,200 - to be paid in early 2019, at the same time as payment of the first tranche 
+of 2019 funding. If not already done so, the funding paid in December 2018 in respect 
+of your PPN, should be made available immediately to the PPN. 
+Continuing the partnership funding model in place for the funding of PPNs, the 
+Department has, as you are aware, requested authorities to provide an additional 
+financial contribution of €5,000 in 2019 towards the engagement of a Support 
+Worker. This combined potential additional funding of €30,700, inclusive of all 
+associated Employer costs will provide a significant boost to the operation of PPNs.
+PPN Representative Expenses
+In relation to the payment of PPN representative expenses, the Department wishes 
+to remind local authorities and PPNs that the costs incurred by PPN representatives 
+participating on local authority boards and committees is to be met by the local 
+authority – these costs are not to be met from the core funding of €80,000 available 
+to the PPN from the Department/local authority
+Inequality in society causes lots of problems which affects everyone. Nowadays we
+know that the key driver of crime for instance, is not poverty, but inequality. The
+bigger the cleavage between the rich and the poor in this country, the more
+wealthy people have to hide between walls and spend more and more money on
+private security. The higher the inequality, the more difficult it is to achieve social
+cohesion due to the fact that in unequal societies rich and poor tend to be spatially
+segregated. Another example is schooling, transport or the health sector. In
+economic unequal societies like South Africa or in many Latin American countries
+the upper and the middle class can afford private schools for their children, a car or
+a private health insurance, while the poor have to rely on poor public services. On
+the contrary, societies with high levels of equality provide better public services so
+the rich and the poor equally benefit from them.
+I think most people agree that inequality affects everyone negatively and that the
+government has to do lots of efforts in order to counterbalance it. A common recipe
+is redistributive policies. Especially the political left is pursuing this kind of policy,
+which to a certain extent can have a positive effect. Nevertheless it always depends
+on the degree of redistribution. The South African tax system already imposes a
+great burden on the middle and upper class. I rather would state that the best way
+to focus on equality is on social empowerment of the poor. Particularly education
+plays a significant role – may it be primary, secondary or tertiary e
+----qrgB16tZ;EIF5Hs----SE1RlwHX;pYE1We
+----Q6ApFJlz;p9U7Xj----uAoQKYn2;azfrlG
+Dear Director Rodriguez:
+On behalf of the Center for Non-Profits, a 501(c)(3) umbrella organization serving New Jersey’s
+charities through advocacy, education, management and compliance assistance and other services, I
+thank you for the opportunity to submit comments in response to the above-referenced proposal. PRN
+2018-125 would require organizations registered with the Division of Consumer Affairs, Charities
+Registration Section, to annually provide to the Division a list of contributors of cash or property
+totaling $5,000 or more, if the organization does not already provide such information to the IRS as part
+of its Form 990 filing in Schedule B.
+The Center has a long history of working cooperatively with the Legislature, the Division of Consumer
+Affairs and the Executive Branch to promote policies that will protect donors, charities and the public
+while minimizing the administrative burdens of compliance with the law. We offer our comments in the
+spirit of continuing this open, constructive communication.
+It is our understanding that this rule is intended to counter the IRS’ July 2018 announcement (Rev. Proc.
+2018-38) that, beginning with returns for fiscal years ending on or after December 31, 2018, non501(c)(3) organizations will no longer be required to disclose their donors in their Form 990 filings to
+the IRS. The Division’s stated intent is to maintain the donor disclosure requirements for any entity to
+whom they applied prior to the IRS’ action. While we can appreciate the intention behind this proposal,
+we believe that in current form it goes beyond merely restoring the previous requirements. It could
+prove confusing and burdensome for covered organizations, and could inadvertently impose new and
+onerous requirements for some 501(c)(3) organizations which have not previously been required to
+provide any such information to the IRS. Our questions and concerns follow.
+The Division’s proposal could cause unintended problems for non-profit organizations,
+including some which have heretofore not been subject to the disclosure requirements.
+As you know, federal regulations permit most exempt organizations whose gross receipts are normally
+$50,000 or less to file the Form 990-N e-Postcard rather than a full Form 990 or 990-EZ. The epostcard is a greatly simplified filing that requires only eight items of basic information and has never
+required the submission of contributor information. Under PRN 2018-125, proposed N.J.A.C. 13:48-
+4.3(a)(9) and N.J.A.C. 13:48-5.3(b)(5) would require filers that did not file Form 990 Schedule B to
+essentially recreate the Schedule B information in a new filing with the Division. Unfortunately, because
+the Division’s proposal makes no allowances for the size of the non-profit, any organization that is
+eligible to file the IRS Form 990-N would now be required to submit extra information to the Division
+that has not previously been needed, thereby undermining the intent of the e-Postcard
+----S7KSXrq7;tc3e5U----PiO2cdC5;1n0mtW
+----trn6NDSQ;h5dXNK----E3oSsR8Z;f2mcep
+However, this overly broad and imprecise “charity” label has become increasingly confusing over time,
+and can be especially problematic in the context of this regulatory proposal. While the Division may
+have a public interest in regulating the solicitation activities of a wide array of entities, there are crucial
+differences between 501(c)(3) organizations and the civic leagues, fraternal organizations, social welfare
+organizations and others also covered by the Charitable Registration and Investigation Act. Using the
+word “charity” interchangeably with an organization that is not tax-exempt under IRC Section 501(c)(3)
+perpetuates misunderstanding by regulated entities, policy makers, media and the public. The Division’s
+intended focus may be those entities that are newly exempt from the federal filing, but the liberal use of
+the word “charity” may cause 501(c)(3) organizations to mistakenly believe that they must now comply
+with a new filing requirement, or to submit their donor information in a new, duplicative format.
+When the Charitable Registration and Investigation Act is re-examined in the future, we plan to
+recommend that the terminology be updated in a more precise manner in order to address these
+broader concerns. In the meantime, to facilitate compliance and clarity of interpretation and to foster a
+more accurate understanding of the non-profit universe and 501(c)(3) subset, we urge the Division to
+3
+revise these regulations to reserve the specific term “charity” or “charitable organization” for actual
+501(c)(3) organizations, and instead utilize a term such as “regulated organization,” “registrant
+organization,” “covered organization” or similar phrase to refer to the broad array of groups covered by
+the Division’s regulations.
+While the Center for Non-Profits focuses primarily on issues and concerns related to 501(c)(3)
+organizations, our review of the proposed regulation gave rise to other questions, including but not
+limited to the following:
+• What does the Division do with the donor information it already receives, and how will it use the
+information provided under this proposal? Will the information be retained internally or shared
+with other state departments or agencies, and under what circumstances will it be shared?
+• What steps are, and will be, taken to protect the information from hacking or other security
+breaches?
+• To what extent is this information subject to, or exempt from, Freedom of Information Act (FOIA)
+or Open Public Records Act (OPRA) inquiries?
+• Does this proposal conflict with other portions of New Jersey statute regarding donor disclosure by
+non-profit entities, particularly non-(c)(3) organizations? As an example, since New Jersey statute
+does not require independent groups to disclose their donors to the Election Law Enforcement
+Commission except under specific conditions, it’s unclear whether the Division could by regulation
+require such a disclosure to an organization that falls under the broad definition of “charity” in the
+Charitable Registration and Investigation Act
+----ydj2tYWl;Cwmuhh----WIzMNw9v;bXWssK
+<063///////////NmtiXBI6Ic9Xxir505h\\\\335581\\>
+<063///////////6xOStLgAYRYP6wo06Lf\\\\335581\\>
+Hey [Name],
+Your shopping cart is about to expire. Still thinking about purchasing these items?
+
+[Cart details]
+
+RETURN TO CHECKOUT
+
+If you still can’t decide, check out some reviews from recent purchasers:
+
+[Review 1]
+[Review 2]
+[Review 3]
+[More reviews]
+
+Questions? Concerns? Please don’t hesitate to contact us!
+12 January, 2019
+Dear Speaker O’Sullivan,
+This past Thursday, I called for a Board of Directors Emergency Meeting for this morning, January
+12th, 2019 to approve the December 21st, 2018 Emergency Meeting minutes. The Board of Directors
+has approved the attached public minutes, to which I have affixed by signature as evidence of the
+same in accordance with §288 and §299(2) of the Ontario Corporations Act, R.S.O. 1990.
+Thank you for your attention. Please do not hesitate to contact myself at chair@feds.ca with any
+further comments, questions, or concerns.
+Yours sincerely,
+Seneca J. Velling
+Chair of the Board of Directo
+#5eVLyNQC86gOpygMSocY8s7##//////\\\\\\#5UGMIpZ2XAxgEMXYHEm6qLM#######
+#80a6oMRxzXpYoV5AxAA362p##//////\\\\\\#3yU5p8JhoDMQnvqHU7DfKv2#######
+#nwg5WGZtNDm9eK4oy7sz70I##//////\\\\\\#8J7bgWE67NUekySeb5XnCuj#######
+Dear PFCCS Course Director Candidate:
+Thank you very much for your interest in becoming a Course Director in the Society of Critical Care
+Medicine’s Pediatric Fundamental Critical Care Support (PFCCS) program. The PFCCS Program
+Committee appreciates your commitment to improving patient care through this course. The criteria for
+PFCCS Course Director status require that the candidate:
+ Be an SCCM-approved PFCCS Instructor in good standing
+ Have taught at least two approved PFCCS courses in the two previous years
+ Have served as Course Director with the mentorship of an PFCCS Consultant for at least one
+approved PFCCS course
+ Submit a completed PFCCS Course Director application via attached online form
+ Submit a PFCCS Course Director Letter of Recommendation via attached form
+The Course Director, with the assistance of the Course Coordinator, has the responsibility for planning,
+organizing, and conducting the PFCCS course. These responsibilities include selecting faculty,
+organizing course logistics, securing appropriate equipment, establishing participant registration
+processes, requesting necessary course resources, and providing CE/CME credits (if desired).
+The criteria to maintain the role of Course Director require that the candidate:
+ Continue certification, special/added qualification, or practice ratio in critical care
+ Offer mentorship and guidance to Instructors and Coordinators
+ Evaluate the process, venue, and attitude of course faculty
+Thank you again for your interest in supporting the PFCCS program as a PFCCS Course Director.
+Sincerely,
+PFCCS Program Subcommittee
+Hey [Name],
+This is [Name] from [Company]. How’s it going?
+
+I saw you left some products in your cart but didn’t put the order through. Did you need any assistance?
+
+By the way, I really like [item/ items a customer picked], great choice!
+
+If you need anything – let me know, I’m happy to help. Just shoot me an email. You can return to your cart by clicking the button below:
+
+RETURN TO MY CART
+
+I hope this helps.
+[YOUR SIGNATURE]
+
+----5jo92z6k;nn
+----cyvnvlkk;adrvfe
+----gh9rdaun;tyq7rd
+Dear PFCCS Course Consultant:
+The Society of Critical Care Medicine appreciates all of your efforts and time on behalf of the Pediatric
+Fundamental Critical Care Support (PFCCS) program.
+As the PFCCS Course Consultant, please indicate that you have reviewed and determined that this
+applicant has the met the requirements for the role of PFCCS Course Director. You have determined this
+individual should be permitted to act as a Course Director without supervision. Course Director
+requirements / criteria that must be met require that the candidate has:
+ Been an SCCM-approved PFCCS Instructor in good standing
+ Served as Course Director with mentorship of a PFCCS Consultant for at least one approved
+PFCCS Course
+ Assured that the PFCCS Course is consistently taught with goals, objectives, and vision of SCCM
+ Demonstrated independently the Course Director roles and functions (eg, is present and available
+during entire course; selects PFCCS Instructors based on their knowledge level and instructor
+status; designs and maintains the course schedule; selects the venue and obtains equipment
+appropriate to the PFCCS course / skill station needs; completes and forwards PFCCS materials to
+participants and faculty in a timely manner; provides participants with adequate meal time and
+convenient lodging; and completes PFCCS administrative responsibilities)
+ Demonstrated presentation responsibilities (eg, evidences clear understanding of PFCCS content
+[medical knowledge]; gives adequate briefing/mentoring to Instructors; introduces PFCCS
+accurately and with enthusiasm; explains evaluation process and administers that process)
+I recommend that should be permitted to
+manage PFCCS courses as Course Director without National Course Consultant supervision.
+Recommendation made by .
+(Print name of PFCCS National Consultant)
+Date:
+Sincerely,
+PFCCS Program Subcommittee
+P

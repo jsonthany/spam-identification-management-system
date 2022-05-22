@@ -1,0 +1,1425 @@
+Delivered-To: jasonthany@gmail.com
+Received: by 2002:a05:7000:648b:0:0:0:0 with SMTP id o11csp5066788mal;
+        Thu, 24 Mar 2022 08:07:09 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyngxz1LcblPC+uMsEUsAoHZq2F69MqVHZ1Wd2EGFtwJrAC7lay+NlfOX02gRqro8aGdstd
+X-Received: by 2002:ad4:4d44:0:b0:440:f857:c9d with SMTP id m4-20020ad44d44000000b00440f8570c9dmr4405809qvm.81.1648134429797;
+        Thu, 24 Mar 2022 08:07:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648134429; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vcJnS/qJeZHQZw3An0tRGMz4UNWxVhGMSlzIKL1108DQjJT5amFXi7GndAS+3KMyl8
+         +esvKxliDfP+nz2XTdczzT+IXqw2hxX1AFzWrHNCatZEBvleVEkmKetcv14KUlVWnylP
+         XDRleHnFTLsrISdAApoAvjQKLr/Z6c7Tgz7QrxjXWkL5GlXnvJMAU+xG4pY3h4/Tli1Q
+         TVRN6wLQgbChxoNhAoDTSKjHNbIVbEoeKb72ZSGWW0tZPMiSRfbOE8YgXd1YFdQ/l9OU
+         R69yGbvuNaDZtZJiE3pzAut76iHTkjRN0SMLH+rX7+iOScAGporQXfe9RzDwtrH1Hjag
+         TZxQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:to:reply-to:message-id:subject:mime-version:from
+         :date:dkim-signature:dkim-signature;
+        bh=s/pk4+A9405b7nG9+BVFwQw2KMmBKS9VteW3KqYFeRY=;
+        b=St/EjLnK2xYnVz27Uw3wlv8o/UdgUqlsDsa3pp6MSi0B4gUByqHS0+Co7Q7APGvDsR
+         UeL6AJaQ1k/OS5YFB1thW8i04lJ/t37VLh3M2Y3cXfay28AHlmWiI4DpA/efEWZ0fnBB
+         gfbNO2BS9Ud4UMOUfjvJ63Ey4cIsju0rXbUr36GbJq4QQG1Ry2rVQb3vb3nbcz7viBas
+         6PhcIPmV1UBZhTYaY4+7NqTflxhE5uc3BP4Ot2X+VTXD3Zl+/9f9EjWeC8tUzEwCnKlY
+         XAlXheWbXQR1CykO7X37Z1PnKq9ZU1YHE6Tw+zb9gQfdUX4eHrP33fN3SMHaXi8qeZBH
+         c66Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newton.co header.s=s1 header.b=KlQ92ZSy;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=GdG2JXuD;
+       spf=pass (google.com: domain of bounces+8263219-f773-jasonthany=gmail.com@em3066.newton.co designates 149.72.157.120 as permitted sender) smtp.mailfrom="bounces+8263219-f773-jasonthany=gmail.com@em3066.newton.co";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=newton.co
+Return-Path: <bounces+8263219-f773-jasonthany=gmail.com@em3066.newton.co>
+Received: from wrqvwdtv.outbound-mail.sendgrid.net (wrqvwdtv.outbound-mail.sendgrid.net. [149.72.157.120])
+        by mx.google.com with ESMTPS id x18-20020ac87012000000b002e1fbf3bfeasi5246343qtm.475.2022.03.24.08.07.08
+        for <jasonthany@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 24 Mar 2022 08:07:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+8263219-f773-jasonthany=gmail.com@em3066.newton.co designates 149.72.157.120 as permitted sender) client-ip=149.72.157.120;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newton.co header.s=s1 header.b=KlQ92ZSy;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=GdG2JXuD;
+       spf=pass (google.com: domain of bounces+8263219-f773-jasonthany=gmail.com@em3066.newton.co designates 149.72.157.120 as permitted sender) smtp.mailfrom="bounces+8263219-f773-jasonthany=gmail.com@em3066.newton.co";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=newton.co
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=newton.co;
+	h=content-type:from:mime-version:subject:reply-to:x-feedback-id:to:
+	list-unsubscribe;
+	s=s1; bh=s/pk4+A9405b7nG9+BVFwQw2KMmBKS9VteW3KqYFeRY=;
+	b=KlQ92ZSycFovTJLnxNnyK052SSfAvPC7rsmpXiYkaOQaz6nMf77PFgJB+Vqr0hUr+nlB
+	v27kjwAM1KCbJPoTn/9E6gNYV1BadoW62BlDI4r44u17B8EHwiHIEuAbDLHvtwORqWUfYQ
+	5V1hHeWBt1rxvKKX5cCOGLFFVc0MmeDdOiJ7f3NORdmrJWC7SQ1zs5upp8WZC/4MVHl4mG
+	qdn4235en1A13enkT935MCT0IINq31xt84Tt2nrmnW1jcwH4Ktc5v2VQZztvZw/YnAkcLo
+	NWAoyrgD5uqLOvYYF5wdsK9/ZqZEEz7adWahVW3FPpS/VeyKfF24SXRo4nNt8BsQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=content-type:from:mime-version:subject:reply-to:x-feedback-id:to:
+	list-unsubscribe;
+	s=smtpapi; bh=s/pk4+A9405b7nG9+BVFwQw2KMmBKS9VteW3KqYFeRY=;
+	b=GdG2JXuDNUrpbZlzOas6u09/sJrVRBQr0GuPY19HpZKNI3U8Y+5oZJQizkp8kvbFKf3u
+	kiGx2o+4A3UVjeqnhvKXs+Z/CZG3kdu5OHdmOkrQ8aP8KwrUYRvqIFkwqxyopnN9V5ceCi
+	wj2dgBavfvQDntpc9Czo6WXv+GS7eCRbo=
+Content-Type: multipart/alternative; boundary=9a3d9ec69d0e3f5eae30a31a2bb355fb56dc0420d6f31189e2d62722d540
+Date: Thu, 24 Mar 2022 15:07:07 +0000 (UTC)
+From: Newton <noreply@newton.co>
+Mime-Version: 1.0
+Subject: =?UTF-8?B?8J+mjQ==?= Get ApeCoin (APE) On Newton
+Message-ID: <5lA80F9sRu67pmsgy0fPDg@geopod-ismtpd-3-1>
+Reply-To: noreply@newton.co
+X-Feedback-ID: 8263219:SG
+X-SG-EID: 
+ =?us-ascii?Q?NGNfl5FGGSU6Yi2D8OZMDQAGA=2FWjhw20adar=2FIaCpu+QXTE9+Yf0=2FUcUtFfTOn?=
+ =?us-ascii?Q?qm=2FEEYERn0WY+u1EbH8fr0xPQWmK2HzJDhIqYa1?=
+ =?us-ascii?Q?rFOXUb8SclmvHwiu38gyUFO27xiVRj1xbVTTglk?=
+ =?us-ascii?Q?iy0yZP3mAemK1Cz4i4PpyI5R14Lha2GYmgLN4oe?=
+ =?us-ascii?Q?G0ZnU2nOp7MsZ+qAftJjmBP=2Fkadwh6uhE3UCOb1?=
+ =?us-ascii?Q?WCsnrhWzJILooeZhRCXaH5p1IAfN1SyzsIbdwR?=
+X-SG-ID: 
+ =?us-ascii?Q?3Pj6BAFONQhe5xn5MQIS2KczxW=2FIBhoJJ7Dji+g2eXiyiaRMwjcJZ+Kt+qEi2G?=
+ =?us-ascii?Q?1A3Nwgk3l6Nod6IIIz93KgUgZXQa97VE94R=2FjxF?=
+ =?us-ascii?Q?MQALtbNVgw0FBIaRYQeggGBnfV1aGD5G436cWc6?=
+ =?us-ascii?Q?gZ+MydxSaKRQuqjq=2F1pdmHalF=2FrBQq2j2GV8St8?=
+ =?us-ascii?Q?5x6liXKpYr1+7fuXo=2F0SvRIT2tHQ42KPTFg=3D=3D?=
+To: jasonthany@gmail.com
+X-Entity-ID: JfyXASz1tqIsKVmp7aJp8Q==
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Cmailto=3Aunsubscribe=40em3066=2Enewton=2Eco=3Fsubject=3D8263219=2EWZoWUtmZn?=
+ =?us-ascii?Q?o8JTQqmIVbT10aplOoi=5FgfH14kybmkq0PSnzsv4?=
+ =?us-ascii?Q?fgZiNyHK3JEStVWLc2MWqaLXvmR=5FILCibBaJUv5?=
+ =?us-ascii?Q?DhP=5FzTTe7FfaQ11unkeVykAdmu-t-hg34lxVHU4?=
+ =?us-ascii?Q?CRkef29tKQmIMCFTop4hJ-dUwh-vbAoW2EcS7-s?=
+ =?us-ascii?Q?b-YSDc=3D=2EgtHDNSEEj=5Feyy-9ZXrMUVakpkgpG3F2?=
+ =?us-ascii?Q?MVNUsYKkoDthlt6n0LrAfw8J701VcJPE6GH9s5p?=
+ =?us-ascii?Q?LEj=5FkYHITPoZBVZrU=5Fl--6EukNjfss96cnD5dyT?=
+ =?us-ascii?Q?G-Tk-00bqgwdYiT2US01=5FrrSyMEqFBHKG-E6C0P?=
+ =?us-ascii?Q?gL56sqmA2W1kL4dyNS7mg9jcIXGmqzNi429-jEd?=
+ =?us-ascii?Q?qbp-OQPJGeUyT=5FVzAudt4eE6LESulyBNA5ELqrH?=
+ =?us-ascii?Q?0LaOnKaDh9dNVMDQAqYmJXpp4dqy57K33i20av-?=
+ =?us-ascii?Q?J-=5FXyv-eW5a0XkESuqAayjD-uiSBBk5NbJseI-M?=
+ =?us-ascii?Q?uQgxDXGxRlurXfOJTDZyCI3WU8CJMSoIazJHOIp?=
+ =?us-ascii?Q?-YHxU=5FQolgsnYcegCFDOFqwJEq8m8OrRlSbeheg?=
+ =?us-ascii?Q?TdlHnZTJX8VYlE0RKZCjAGoC81Fwx6d7N9X7QDu?=
+ =?us-ascii?Q?HPWn6FqrRW45cQG1x=5FC7rFRmNSr=3E?=
+
+--9a3d9ec69d0e3f5eae30a31a2bb355fb56dc0420d6f31189e2d62722d540
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0
+
+New Coin Alert!
+
+You Asked, We Delivered.
+
+ApeCoin is now available for funding and trading with Newton! We=E2=80=99ve=
+ added ApeCoin to our ever-growing coin list to bring you an accessible, lo=
+w-cost trading experience for your favourite coins. Check it out in your we=
+b or mobile app.
+
+LOG IN =E2=86=92 https://web.newton.co/login=20
+
+Want to be the first to hear about new coins? Follow us on Twitter https://=
+twitter.com/newton_crypto and join our community on Reddit. https://www.red=
+dit.com/r/newtonco/=20
+
+A Friendly Reminder: We recommend doing your own research when it comes to =
+funding and trading cryptocurrencies. This content is not intended to be in=
+vestment advice.
+
+We're Hiring!=20
+Newton is growing! We're on the hunt for talented people like you to join o=
+ur team. Apply today.=20
+View Jobs =E2=86=92 https://www.newton.co/careers
+
+Refer a friend, get $25.=20
+Tell a friend about Newton, and you both make $25 when they trade over $100=
+.
+Get Code Now =E2=86=92 https://web.newton.co/login
+
+http://instagram.com/newton_crypto=20
+
+https://www.twitter.com/newton_crypto=20
+
+https://www.facebook.com/newtoncrypto=20
+
+http://www.linkedin.com/in/newton-crypto=20
+
+https://www.youtube.com/channel/UCirQhCb7PM1UgdR2u8Qcs0A=20
+
+reddit.com/r/newtonco/=20
+
+https://discord.com/invite/newtoncrypto=20
+
+If you have questions or need help, don't hesitate to contact our support t=
+eam! #=20
+
+=C2=A9 2022 Newton Crypto Ltd. All rights reserved.=20
+FINTRAC#: M19607029.=20
+
+900, 517 10 Avenue SW, Calgary AB T2R 0A8=20
+
+Terms & Conditions https://www.newton.co/terms-of-use -=20
+
+Privacy Policy https://www.newton.co/privacy -=20
+
+Unsubscribe http://url7809.newton.co/asm/unsubscribe/?user_id=3D8263219&dat=
+a=3DtA2T_wJABlI5c0UkxLbcEREYeYcqGTulCmJedV4SDmLFsKNfmqLmnmVqxedaZaPgoyh-Hdk=
+-3SJf2rRycisSuMdRwNv6GKbCkv3h-gHhnj2XYIOEkAT_xoOcNaibVJIsgiZPNu5rYuVUmur6C4=
+YrZBYR-jW0y06bIYggu22NCawX-pmMq6ZHQJmpr7lyQLhjLJ9a__wC9WabwUCNLXkRo3FHUs0QA=
+HE6LJVXEWjiWKhm-6GierI2WSKRZG4TpChOBowwD_sYveRXrdn4Ppej24-NmzOBG_IONpOD56OP=
+FWCO1eWF-oI469jH5xsCb1L4rUMcqT06132tIrj2X6IhY34JYT7QzLxEEvpCOyoPyovItukgsmU=
+XTcycR4vBiEAaYBAXC1bBieBMGq5JEPbdYVF_S_yOpbNJbiGZqMMoOL_NEPzSwJi9ktLoiXKiVL=
+SGYTC5hgdWOVjDleVIk1W7C3LfG_fjzojT5ICoD61arRak_acq6ZUV4HwzxVRmExWTpY-HNA487=
+iIt7URJDGhhIaS_7V4to8jIkcGyQjcLXyuhuJWGc1BSoect9SfmcQihJvZ7d4HMdWBUUOXYzvhz=
+Cg=3D=3D - Unsubscribe Preferences http://url7809.newton.co/asm/?user_id=3D=
+8263219&data=3DZ0A2ogz1mbLMw1Mhc1-swL2r5epoG-3_yb99eEEpArd4RfHr5IXKmOvEe7Bh=
+6YnYFZDVsprT2Z5XXWEm1OdeGnSQSVcc-xpe-wOBrRC0Ki1LNlU_tFQByGQh4fSnOgZEB0WIXFN=
+2Gj2KlFHxgIDVzA40BmPpVzJqkFXCI_ovT2imLF9ZM5YRFOaozzBs7wlM_T2xvvxB_o4JsjXOa6=
+k1Bbxzqi30gicTvIaHwio73QOjwYpQo8sOb-2KISdknpfwMnFlfp3W4qidOC10ehPi1JKGOrqEA=
+9NZbpnmI3JsWSUByyZLVrkyaDhu5em2rcejStcMnRVxAkFcTApHRuvXyCQ-t6G4a2j-vSWRuYiy=
+kEXSi2_gcRxKkde_XXWnQwBHrQomqUQILb6vBad47peIhnVusw7MiaXlguTew8VhuM_vXRwbKdN=
+ZlP0MevKU4Ajn1LhdNaXjum4ERBbDzu7CRz9Dmbzsyd_SdoZSYW8tugbW10c4ImGB5gWDSk2ZYf=
+wIBKr6HjbIEqcCmlIrG-9jxTXMj0YVuNTDLDm5R6ap2Ylr8xomneJHlFbNMGPvSH80
+--9a3d9ec69d0e3f5eae30a31a2bb355fb56dc0420d6f31189e2d62722d540
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:sch=
+emas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"=
+>
+<head>
+<!--[if gte mso 9]><xml>
+  <o:OfficeDocumentSettings>
+   <o:AllowPNG/>
+   <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+  <title></title>
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+  <meta name=3D"x-apple-disable-message-reformatting">
+<meta name=3D"color-scheme" content=3D"only">
+  <meta name=3D"generator" content=3D"RED 5.0.1960">
+  <style id=3D"vendor_styles">
+    :root {
+      color-scheme: light only;
+    }
+   =20
+    html {
+      -ms-overflow-y: auto !important;
+    }
+   =20
+    body {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+   =20
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+   =20
+    table.radius td {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+    }
+   =20
+    table.round td {
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+    }
+   =20
+    table.columns td.element_connector,
+    td.element_connector {
+      width: 100% !important;
+      width: calc(100%) !important;
+      width: -webkit-calc(100%) !important;
+    }
+   =20
+    div, p, a, li, td { -webkit-text-size-adjust: none; }
+   =20
+    @media screen {
+      img {
+        width: 100% !important;
+      }
+    }
+ =20
+    @media screen and (max-device-width: 898px), screen and (max-width: 898=
+px) {
+      table.body center { min-width: 0px !important; }
+      table.body .container { max-width: 600px; width: 100% !important; }
+      table.body .container > tbody > tr > td:not(.wrapper) { min-width: 0p=
+x !important; }
+      table.body .row { width: 100% !important; display: block !important; =
+}
+      table.body .row > tbody > tr > td:not(.wrapper) { min-width: 0px !imp=
+ortant; }
+      table.body .row::after { content: " "; display: table; height: 0px; c=
+lear: both; visibility: hidden; }
+      table.row > tbody > tr > td.align-center { padding: 0px !important; }
+      table.body .wrapper { display: block !important; float: none !importa=
+nt; }
+      table.body .wrapper, table.body .wrapper-stack { min-width: 0px !impo=
+rtant; }
+      table.body .columns, table.body .column { max-width: 600px !important=
+; table-layout: fixed !important; float: left !important; padding-right: 0p=
+x !important; padding-left: 0px !important; }
+      table.body .columns td.element_connector, table.body .column td.eleme=
+nt_connector { width: 100% !important; min-width: 0px !important; }
+      table.body .twelve { width: 100% !important; }
+      table.body table.image-component > tbody > tr > td.element, table.bod=
+y table.image-component-right > tbody > tr > td.element, table.body table.i=
+mage-table > tbody > tr > td.element, table.body table.link-image-table > t=
+body > tr > td.element { width: auto; }
+      table.body table td.social-image-cell { width: auto; }
+    }
+    @media screen and (max-width:898px) {
+    	table.image-table.image-1 {
+    border-top-left-radius: 18px 18px !important;
+    border-top-right-radius: 18px 18px !important;
+    border-bottom-right-radius: 18px 18px !important;
+    border-bottom-left-radius: 18px 18px !important;
+    }
+    table.image-table.image-1 > tbody > tr > td.element {
+    border-top-left-radius: 18px 18px !important;
+    border-top-right-radius: 18px 18px !important;
+    border-bottom-right-radius: 18px 18px !important;
+    border-bottom-left-radius: 18px 18px !important;
+    }
+    table.paragraph.paragraph-1 > tbody > tr > td.element > * {
+    color: rgba(41, 31, 108, 1) !important;
+    }
+   =20
+    }
+   =20
+    @media screen and (max-width:735px) {
+    =09
+    }
+   =20
+    @media screen and (max-width:701px) {
+    	table.paragraph > tbody > tr > td.element > * {
+    font-size: 16px !important;
+    }
+   =20
+    }
+  </style>
+</head>
+<body class=3D"body-1" style=3D"min-width:100%;margin:0px;padding:0px;width=
+:100%;border:none;max-width:none;position:relative;mso-font-alt: Times;font=
+-family:Georgia, Times, 'Times New Roman', serif;text-size-adjust:100%;back=
+ground-color:#ecebf1;background-image:none;background-repeat:repeat-y;backg=
+round-size:cover;background-origin:content-box;background-attachment:scroll=
+;background-position:center 0%;margin-top:0px;" bgcolor=3D"#FFEFD7">
+  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"body" st=
+yle=3D"height:100%;width:100%;">
+    <tbody>
+      <tr>
+        <td class=3D"align-center" align=3D"center" valign=3D"top"  style=
+=3D"text-size-adjust:none;text-align:center; display:none !important;backgr=
+ound-image:none;background-repeat:repeat-y;background-size:cover;background=
+-origin:content-box;background-attachment:scroll;background-position:center=
+ 0%;" ><!--[if !mso]> <!-- --><td class=3D"align-center" align=3D"center" v=
+align=3D"top"  style=3D"text-size-adjust:none;text-align:center;background-=
+color:#024bd9;background-image:none;background-repeat:repeat-y;background-s=
+ize:cover;background-origin:content-box;background-attachment:scroll;backgr=
+ound-position:center 0%;" bgcolor=3D"#024bd9"><!--<![endif]-->
+          <center class=3D"grid_selector" style=3D"width:100%;">
+            <!--[if gte mso 9]><table cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0" class=3D"container container-fluid" style=3D"margin:0px auto;te=
+xt-align:inherit;display:none; mso-hide: none;" width=3D"600"><![endif]--><=
+!--[if !mso]> <!-- --><table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" class=3D"container container-fluid" style=3D"max-width:600px;width:100%;=
+margin:0px auto;text-align:inherit;width:600px;"><!--<![endif]-->
+              <tbody>
+                <tr>
+                  <td style=3D"text-size-adjust:none;">
+                    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ class=3D"row" style=3D"width:100%;position:relative;margin-bottom:24px;">
+                      <tbody>
+                        <tr>
+                          <td style=3D"width:600px;">
+                            <!--[if gte mso 9]><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" class=3D"columns twelve column-1" style=3D"marg=
+in:0px auto;text-align:left;table-layout:fixed;display:none; mso-hide: none=
+;" align=3D"left" width=3D"600"><![endif]--><!--[if !mso]> <!-- --><table c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"columns twelve col=
+umn-1" style=3D"margin:0px auto;text-align:left;table-layout:fixed;max-widt=
+h:600px;width:100%;width:600px;" align=3D"left"><!--<![endif]-->
+                              <tbody>
+                                <tr>
+                                  <td class=3D"expander" style=3D"text-size=
+-adjust:none;padding-left:16px;width:0.01px;"></td>
+                                  <td class=3D"element_connector" style=3D"=
+text-size-adjust:none;padding:0px;width:100%;background-color:transparent;h=
+eight:800px;" bgcolor=3D"#24253d">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" class=3D"container-red main-content" style=3D"margin-top:0=
+px;min-width:10px;display:table;width:100%;text-align:left;">
+                                      <tbody>
+                                        <tr>
+                                          <td class=3D"margin-top" style=3D=
+"text-size-adjust:none;line-height:0;font-size:0px;padding-top:32px;">&nbsp=
+;</td>
+                                        </tr>
+                                        <tr>
+                                          <td class=3D"element container-co=
+nnector" style=3D"text-size-adjust:none;text-align:left;vertical-align:top;=
+height:100px;box-shadow:none;background-color:transparent;padding:30px 32px=
+;background-image:none;background-size:cover;" valign=3D"top" bgcolor=3D"#F=
+FE6C2">
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"image-table header-icon" align=3D"center"=
+ style=3D"text-align:left;margin-left:0px;margin-right:0px;float:none;width=
+:100%;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;height:auto;overflow:hidden;pad=
+ding-left:0px;"> <!--[if gte mso 9]><img alt=3D"Newton" src=3D"https://mark=
+eting-image-production.s3.amazonaws.com/uploads/54c2d9ef6379f489a07e373758b=
+c7a90ec2270ca3b8dc7ecdc9555da5d4063920360124aee5ed0822d09226183be0402733f0b=
+d1acd1985b1f8ce5dbff39dae6.png" style=3D"outline: none; text-decoration: no=
+ne; display: block;clear:none;margin-left:0px;margin-right:0px;float:none;d=
+isplay:none; mso-hide: none;" align=3D"center" width=3D"100"><![endif]--><!=
+--[if !mso]> <!-- --><img alt=3D"Newton" src=3D"http://cdn.mcauto-images-pr=
+oduction.sendgrid.net/461c731ac3cda70e/0de9807c-5ef8-4687-8d4e-5dac975f5188=
+/192x40.png" style=3D"outline: none; text-decoration: none; display: block;=
+clear:none;height:auto;width:100%;margin-left:0px;margin-right:0px;float:no=
+ne;max-width:100px;width:100px;" align=3D"center"><!--<![endif]--> </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-botto=
+m" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-botto=
+m:20px;">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                           =20
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"image-table image-1" align=3D"left" style=
+=3D" text-align: left;margin-left:0px;margin-right:0px;float:left;width:100=
+%;border-radius:20px;">
+                                              <tbody>
+                                               =20
+                                                <tr>
+                                                    <td class=3D"element" s=
+tyle=3D"text-size-adjust:none;text-align:left;height:auto;overflow:hidden;b=
+order-radius:20px;"> <!--[if gte mso 9]><img alt=3D"New coins dropped!" src=
+=3D"https://legacy-image-prod.s3.amazonaws.com/uploads/2d0ec59e87048ecfbe24=
+37522825de677bd7c01b6a8c3d986425f7a31ed4b2ca457f28c49b4b608c81e0470b6d26e34=
+faf7f473dfe06b464eabf18bc30fbe9ef.gif" style=3D"outline: none; text-decorat=
+ion: none; display: block; clear: none;    margin-left: 0px; margin-right: =
+0px; float: left;display:none; mso-hide: none;" align=3D"left" width=3D"600=
+"><![endif]--><!--[if !mso]> <!-- --><img alt=3D"New coins dropped!" src=3D=
+"https://legacy-image-prod.s3.amazonaws.com/uploads/2d0ec59e87048ecfbe24375=
+22825de677bd7c01b6a8c3d986425f7a31ed4b2ca457f28c49b4b608c81e0470b6d26e34faf=
+7f473dfe06b464eabf18bc30fbe9ef.gif" style=3D"outline: none; text-decoration=
+: none; display: block; clear: none; height: auto; width: 100%; max-width: =
+600px; margin-left: 0px; margin-right: 0px; float: left;width:600px; border=
+-radius: 16px" align=3D"left"><!--<![endif]--> </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-botto=
+m" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-botto=
+m:40px;">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"heading1 heading-1" style=3D"width:100%;t=
+ext-align:left;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;">
+                                                    <h1 style=3D"padding:0p=
+x;text-align:left;word-break:normal;margin:0px 0px 5px;mso-font-alt: Helvet=
+ica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;text-renderi=
+ng:optimizelegibility;font-weight:700;font-size:48px;color:#FFFFFF;line-hei=
+ght:1.03;">New Coin Alert!</h1>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"heading2 heading-2" style=3D"width:100%;t=
+ext-align:left;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;padding-top:24px;">
+                                                    <h2 style=3D"padding:0p=
+x;text-align:left;word-break:normal;margin:0px 0px 24px;mso-font-alt: Helve=
+tica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;text-render=
+ing:optimizelegibility;font-size:28px;font-weight:700;line-height:1.35;colo=
+r:#FFFFFF;">You Asked, We Delivered.</h2>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"paragraph-1" style=3D"width:100%;text-ali=
+gn:left;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;padding-top:10px;">
+                                                    <p style=3D"mso-font-al=
+t: Helvetica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;fon=
+t-weight:normal;padding:0px;text-align:left;margin:0px 0px 1.35em;text-size=
+-adjust:none;font-size:16px;letter-spacing:0px;line-height:1.75;color:#FFFF=
+FF;"><b>ApeCoin</b> is now available for funding and trading with Newton! W=
+e=E2=80=99ve added ApeCoin to our ever-growing coin list to bring you an ac=
+cessible, low-cost trading experience for your favourite coins. Check it ou=
+t in your web or mobile app.</p>
+                                                   =20
+                                                   =20
+                                                     </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"paragraph paragraph-1" style=3D"width:100=
+%;text-align:left;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;padding-top:10px;">
+                                                    <p style=3D"mso-font-al=
+t: Helvetica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;fon=
+t-weight:normal;padding:0px;text-align:left;margin:0px 0px 1.35em;text-size=
+-adjust:none;font-size:18px;letter-spacing:0px;line-height:1.75;color:#1431=
+52;"
+                                   =20
+                                                <tr>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:center;border-width:2px;border-style=
+:solid;color:#ffffff;border-collapse:separate;padding:24px 32px;border-radi=
+us:48px;background-color:#ffffff;border-color:#ffffff;" bgcolor=3D"#ffffff"=
+> <a href=3D"http://url7809.newton.co/ls/click?upn=3DTb5R3j8ZzyAKvssbvAFM2l=
+xH-2BrHHp099-2FxmQSUExUea66IXRoUII6cLZCW837u4qV4bF_xyeOGspX4spFudbXSAeBdEpe=
+WmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk15DMlmrsfGu7F1RVfF1KPTd7j-2FgB73wK9BtD1D=
+o56hs055Gf21xb-2FktNLy-2FIktF1rXV332ekuvJPaL-2FpbcoKYEhz6oMfJkpK5q3Pr-2FWcl=
+N2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YHscKiDWijid1YgCZNV-2B0r-2Fgj8bG2CUpf9FFg1=
+JwNDgRP6BQ2TU2s-2Brl2AguFrIoT1VAHoq6lEtw4EMUPlU2-2BU0oO21eecF8S6rHZCfL9x7sD=
+RxquoUAoepWzO34sy7Ly8mpyC77dMfevjtLTWjGFHxCcjgFZXEIlcivZ3inzUJkNs92oNYFlAXx=
+7cV-2FqjhrwyEjszLQ3qKamKqluZRbaNsTJ60VuH3XjC0oUKY0ZwInRaWyKmqSDa7QoptQN-2Bc=
+Cw" style=3D"text-size-adjust:none;text-decoration:none;mso-font-alt: Helve=
+tica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;color:#ffff=
+ff;font-size:16px;display:block;height:100%;text-align:center;width:auto;fo=
+nt-weight:700;text-transform:uppercase;letter-spacing:3px;"><span class=3D"=
+button-text-1" style=3D"color:#143152;">LOG IN =E2=86=92</span></a> </td>
+                                                </tr>
+                                              </tbody>
+                                            </table><span class=3D"paragrap=
+h-text-7"><span class=3D"paragraph-text-10"><span class=3D"paragraph-text-1=
+3"></span></span><span class=3D"paragraph-text-10"></span></span><span clas=
+s=3D"paragraph-text-7"></span>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"paragraph-1" style=3D"width:100%;text-ali=
+gn:left;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;padding-top:32px;">
+                                                    <p style=3D"mso-font-al=
+t: Helvetica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;fon=
+t-weight:normal;padding:0px;text-align:left;margin:0px 0px 1.35em;text-size=
+-adjust:none;font-size:16px;letter-spacing:0px;line-height:1.75;color:#FFFF=
+FF;"> <b>Want to be the first to hear about new coins? </b>Follow us on <sp=
+an class=3D"paragraph-text-2 Link"><a title=3D"" href=3D"http://url7809.new=
+ton.co/ls/click?upn=3DTb5R3j8ZzyAKvssbvAFM2tNPB0pmPXCjk5imfYwEW4RklURhHNo8y=
+hDYlHWyIbKRCEMV_xyeOGspX4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk=
+15DMlmrsfGu7F1RVfF1KPTd7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rXV33=
+2ekuvJPaL-2FpbcoKYEhz6oMfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YH=
+scKiDWijid1YgCZNV-2B0r-2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoT-2F5yd=
+AI8PU30u-2F3INksnsV9vM5Y0IvsqtmdaisgK4hegD8wkswYXU2UpLyMi2SShcCcmAScENRgE5s=
+-2FgJ-2BGQ4CLE4gO-2FNrgCKIcc-2BPYQ2hGRnw-2F-2Bj2nbM8R5fMm3L-2BJF64w0T5CtN5t=
+lG-2B9v-2FttgvEi3YYKRxYFtwLa0flTCGqCEUKiDLBapLZHLAaTToNQiy" class=3D"paragr=
+aph-text-5" style=3D"text-size-adjust:none;font-weight:600;color:#FFFFFF;te=
+xt-decoration:underline;">Twitter</a></span> and join our community on <spa=
+n class=3D"paragraph-text-2 Link"><a title=3D"" href=3D"http://url7809.newt=
+on.co/ls/click?upn=3DTb5R3j8ZzyAKvssbvAFM2sCHay6icOoyOkSmLweBQTFTm1OlzEWyEC=
+gYv0OD7zS6W4Cs_xyeOGspX4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk1=
+5DMlmrsfGu7F1RVfF1KPTd7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rXV332=
+ekuvJPaL-2FpbcoKYEhz6oMfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YHs=
+cKiDWijid1YgCZNV-2B0r-2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoTRIi12a9=
+Bl7ShErQbmEX2ZFXQAJbbkHJX1SLV-2B-2Fx7p3J3ZN4PpP4KvsTsB6SQAv5cnD3xGlnosFcVhz=
+VT-2BvUUcDy2Jfvs2IQnJxe87WeS6FQcDYV56EgR6gIOdshErJIb9kO5-2BtxZQ-2BNGuzMV5s2=
+YIG7GspArjCcb-2BNwZSTmhU6j3JldQSNT02guc79D6mYBX" class=3D"paragraph-text-5"=
+ style=3D"text-size-adjust:none;font-weight:600;color:#FFFFFF;text-decorati=
+on:underline;">Reddit.</a></span> </p>
+                                                    <p style=3D"mso-font-al=
+t: Helvetica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;fon=
+t-weight:normal;padding:0px;text-align:left;margin:0px 0px 1.35em;text-size=
+-adjust:none;font-size:16px;letter-spacing:0px;line-height:1.75;color:#FFFF=
+FF;font-style:italic">A Friendly Reminder: We recommend doing your own rese=
+arch when it comes to funding and trading cryptocurrencies. This content is=
+ not intended to be investment advice.</a></span></p>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                       =20
+                                           =20
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td class=3D"expander" style=3D"text-size=
+-adjust:none;padding-left:16px;width:0.01px;"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=
+=3D"row Footer" style=3D"width:100%;position:relative;background-color:#202=
+233;margin-top:0px;margin-bottom:0px;background-image:none;" bgcolor=3D"#20=
+2233">
+              <tbody>
+                <tr>
+                  <td class=3D"align-center" align=3D"center" style=3D"text=
+-size-adjust:none;text-align:center;">
+                    <center style=3D"width:100%;">
+                      <!--[if gte mso 9]><table cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0" class=3D"container container-fluid" style=3D"margin:0=
+px auto;text-align:inherit;display:none; mso-hide: none;" width=3D"600"><![=
+endif]--><!--[if !mso]> <!-- --><table cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" class=3D"container container-fluid" style=3D"max-width:600px;w=
+idth:100%;margin:0px auto;text-align:inherit;width:600px;"><!--<![endif]-->
+                        <tbody>
+                          <tr>
+                            <td class=3D"wrapper-stack" style=3D"min-width:=
+600px;">
+                              <!--[if gte mso 9]><table cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" class=3D"columns twelve column-2" style=3D"ma=
+rgin:0px auto;text-align:left;table-layout:fixed;display:none; mso-hide: no=
+ne;" align=3D"left" width=3D"600"><![endif]--><!--[if !mso]> <!-- --><table=
+ cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"columns twelve c=
+olumn-2" style=3D"margin:0px auto;text-align:left;table-layout:fixed;max-wi=
+dth:600px;width:100%;width:600px;" align=3D"center"><!--<![endif]-->
+                                <tbody>
+                                  <tr>
+                                    <td class=3D"expander" style=3D"text-si=
+ze-adjust:none;padding-left:16px;width:0.01px;"></td>
+                                    <td class=3D"element_connector" style=
+=3D"text-size-adjust:none;height:35px;width:100%;padding:50px 32px;vertical=
+-align:middle;background-position:center top;" valign=3D"middle">
+                                      <table cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" class=3D"container-red footer-container" style=3D"margi=
+n-top:0px;min-width:10px;width:100%;text-align:left;">
+                                        <tbody>
+                                          <tr>
+                                            <td class=3D"element container-=
+connector" style=3D"text-size-adjust:none;text-align:left;height:35px;">
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" class=3D"paragraph white" style=3D" text-align: =
+left;width:100%;margin-left:0px;margin-right:0px;">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class=3D"element" s=
+tyle=3D"text-size-adjust:none;text-align:left;padding-top:10px;padding-left=
+:0px;">
+                                                      <p style=3D"mso-font-=
+alt: Helvetica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;f=
+ont-weight:normal;padding:0px;text-align:left;margin:0px 0px 1.35em;text-si=
+ze-adjust:none;font-size:18px;letter-spacing:0px;color:#ffffff;line-height:=
+1.5;"><span class=3D"paragraph-text-4" style=3D"font-size:16px;line-height:=
+1.74;"><span class=3D"paragraph-text-12" style=3D"font-weight:700;">We're H=
+iring! </span><br><span class=3D"paragraph-text-14" style=3D"color:#c6c6d4;=
+">Newton is growing! We're on the hunt for talented people like you to join=
+ our team. Apply today. </span><br><a title=3D"Open Positions" href=3D"http=
+://url7809.newton.co/ls/click?upn=3DTb5R3j8ZzyAKvssbvAFM2jrU20lz4U1lHrq8SQG=
+3r0jm85h3QTTK0pnXcEe8LxJdkQC7_xyeOGspX4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeH=
+MXnQ9Ww6PlDzbk15DMlmrsfGu7F1RVfF1KPTd7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNL=
+y-2FIktF1rXV332ekuvJPaL-2FpbcoKYEhz6oMfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM=
+-2FR-2BP7NG5YHscKiDWijid1YgCZNV-2B0r-2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2=
+AguFrIoTkR9JwIdBAcRaFOXzlQukjqpgGOpwvgkWySewgAQDJvui47k3kheWizYaF-2BL4MOU2E=
+sN-2FreQx-2FFRvy2ZPUvDl6p6Qc62GZp98X3Sh2dKz9DcUeiAAkImXqoI5a2nYaLVtCOpZi1Uf=
+tUtcnCafAdma15-2BKAZN-2FHYDCzFD1CpQFEW7i5kN-2F7H-2BHh85C0QvLDIra" class=3D"=
+paragraph-text-9" style=3D"text-size-adjust:none;color:#2fe1b9;text-decorat=
+ion:none;">View Jobs =E2=86=92</a></span></p>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class=3D"margin-bot=
+tom" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-bot=
+tom:2px;">&nbsp;</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" class=3D"paragraph white" style=3D" text-align: =
+left;width:100%;margin-left:0px;margin-right:0px;float:right;" align=3D"rig=
+ht">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class=3D"element" s=
+tyle=3D"text-size-adjust:none;text-align:left;padding-top:10px;padding-left=
+:0px;">
+                                                      <p style=3D"mso-font-=
+alt: Helvetica;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;f=
+ont-weight:normal;padding:0px;text-align:left;margin:0px 0px 1.35em;text-si=
+ze-adjust:none;font-size:18px;letter-spacing:0px;color:#ffffff;line-height:=
+1.5;"><span class=3D"paragraph-text-8" style=3D"font-size:16px;line-height:=
+1.74;"><span class=3D"paragraph-text-16" style=3D"font-weight:700;">Refer a=
+ friend, get $25. <br></span><span class=3D"paragraph-text-15" style=3D"col=
+or:#c6c6d4;">Tell a friend about Newton, and you both make $25 when they tr=
+ade over $100.<br></span><span class=3D"paragraph-text-11" style=3D"color:#=
+2fe1b9;"><a title=3D"" href=3D"http://url7809.newton.co/ls/click?upn=3DTb5R=
+3j8ZzyAKvssbvAFM2lxH-2BrHHp099-2FxmQSUExUea66IXRoUII6cLZCW837u4q2qW6_xyeOGs=
+pX4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk15DMlmrsfGu7F1RVfF1KPT=
+d7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rXV332ekuvJPaL-2FpbcoKYEhz6=
+oMfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YHscKiDWijid1YgCZNV-2B0r=
+-2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoTcSVsfZ6YMZVLfTbkwbSMQmD5klrR=
+jQVA-2B64DrYu9e-2FJJTxTOgYi58jEyWVp2EbF9b-2B4mH5eIgmagky1kvgCjy6onS6bkT2rH3=
+HfI9QFskBB-2FtTk6riyKp86v-2FM1zbt5yqbKgDEAKHVD7PCj8ZDZlUi-2FkL44mwge2cBDN0K=
+M4DbCXUKDc7e-2BjQVZhqYX2n8lB" class=3D"paragraph-text-1" style=3D"text-deco=
+ration:none;text-size-adjust:none;color:#2fe1b9;">Get Code Now =E2=86=92</a=
+></span></span></p>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class=3D"margin-bot=
+tom" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-bot=
+tom:2px;">&nbsp;</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" class=3D"rule horizontal-rule-1" style=3D"width:=
+ 100%; text-align: left;margin-left:0px;margin-right:0px;float:left;" align=
+=3D"left">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class=3D"margin-top=
+" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-top:32=
+px;">&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class=3D"element" s=
+tyle=3D"text-size-adjust:none;text-align:left;padding:5px 0px;">
+                                                      <hr style=3D"color:#d=
+9d9d9;background-color:#d9d9d9;height:1px;border:none;margin:0px;background=
+-color:#c6c6d4;background-color:rgba(198, 198, 212, 0.2);color:#c6c6d4;colo=
+r:rgba(198, 198, 212, 0.2);" bgcolor=3D"#c6c6d4">
+                                                    </td>
+                                                  </tr>
+                                                 =20
+                                                </tbody>
+                                              </table>
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" class=3D"container container-fluid" style=3D"max=
+-width:600px;width:100%;margin:0px auto;text-align:inherit;width:600px;"><!=
+--<![endif]-->
+              <tbody>
+                <tr>
+                  <td style=3D"text-size-adjust:none;">
+                   =20
+            <!--[if gte mso 9]><table cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0" class=3D"container container-fluid" style=3D"margin:0px auto;te=
+xt-align:inherit;display:none; mso-hide: none;" width=3D"600"><![endif]--><=
+!--[if !mso]> <!-- --><table cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" class=3D"container container-fluid" style=3D"max-width:600px;width:100%;=
+margin:0px auto;text-align:inherit;width:600px;"><!--<![endif]-->
+              <tbody>
+                <tr>
+                  <td style=3D"text-size-adjust:none;">
+                    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ class=3D"row wide row-dark" style=3D"width:100%;position:relative;backgrou=
+nd-image:none;background-color:#202233;" bgcolor=3D"#202233">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" class=3D"columns twelve full-width column-2 small-twelve" style=3D=
+"margin:0px auto;text-align:left;table-layout:fixed;max-width:100%;width:10=
+0%;" align=3D"left">
+                              <tbody>
+                                <tr>
+                                  <td class=3D"element_connector" style=3D"=
+text-size-adjust:none;padding:0px;height:35px;width:100%;padding-top:32px;p=
+adding-right:0px;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" class=3D"container-red container-1-1" style=3D"margin-top:=
+ 0px; min-width: 10px;width:auto;margin-left:auto;margin-right:auto;float:n=
+one;text-align:left;" align=3D"center">
+                                      <tbody>
+                                        <tr>
+                                          <td class=3D"element container-co=
+nnector" style=3D"text-size-adjust:none;text-align:left;height:35px;">
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"social-icon social-1" align=3D"left" styl=
+e=3D"float:left;margin-left:0px;margin-right:0px;text-align:left;border-rad=
+ius:4px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"margin-top" =
+style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-top:8px;=
+">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-left"=
+ style=3D"text-size-adjust:none;width:2px;display:table-cell;border-width:0=
+;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;border-radius:4px;">
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" class=3D"social-network-element">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td class=3D"soci=
+al-image-container" style=3D"text-size-adjust:none;padding:2px 6px;">
+                                                            <table cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0" class=3D"social-image-table" align=
+=3D"center" style=3D"float:none;margin-left:auto;margin-right:auto;border-r=
+adius:3px;">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td class=
+=3D"social-image-cell" style=3D"text-size-adjust:none;border-radius:3px;bac=
+kground-color:#1f2037;" bgcolor=3D"#1f2037"> <a href=3D"http://url7809.newt=
+on.co/ls/click?upn=3D861msIIRZTu5cikO1PjXkGsfdcmMAnxZGGZfXbKA4nwaTVvvI12xnf=
+3rC1K2-2FlDJ0O6X_xyeOGspX4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzb=
+k15DMlmrsfGu7F1RVfF1KPTd7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rXV3=
+32ekuvJPaL-2FpbcoKYEhz6oMfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5Y=
+HscKiDWijid1YgCZNV-2B0r-2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoTe-2B4=
+rjyA9se5BPhQK2-2Bv5XVqzhYPskds6-2F-2Byx9IDf6OiyccQYFwcP2-2FgMjOKNRLD1C2KTyA=
+1bcXKTjZSAw7Dsr3J5w6dfC8zAWmuJwCS4zdWdjbT1C3xn-2BJxVsiH2HpoxtJxG0UeUc91rHOj=
+1GQ-2BMpyzPvfWePerpfeLR85PoaweSdVwDVYQ-2FUks69VGRa96E" target=3D"_blank" cl=
+ass=3D"social-image-1" style=3D"color:#2ba6cb;text-decoration:none;text-siz=
+e-adjust:none;"><!--[if gte mso 9]><img class=3D"instagram-icon" src=3D"htt=
+ps://newton.coffeecup.com/180%20-%20Activity%2045%20days/socialicons/webico=
+n-instagram.png" alt=3D"Instagram" style=3D"outline: none; text-decoration:=
+ none; display: block;clear:none;float:none;margin-left:auto;margin-right:a=
+uto;border:none;display:none; mso-hide: none;" align=3D"center" width=3D"24=
+"><![endif]--><!--[if !mso]> <!-- --><img class=3D"instagram-icon" src=3D"h=
+ttp://cdn.mcauto-images-production.sendgrid.net/461c731ac3cda70e/77c13b4d-a=
+3af-4f7f-8548-54fd3063b169/48x48.png" alt=3D"Instagram" style=3D"outline: n=
+one; text-decoration: none; display: block;clear:none;float:none;height:aut=
+o;margin-left:auto;margin-right:auto;width:100%;border:none;max-width:24px;=
+width:24px;" align=3D"center"><!--<![endif]--></a> </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td class=3D"margin-right=
+" style=3D"text-size-adjust:none;display:table-cell;width:4px;border-width:=
+0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td=
+>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-botto=
+m" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-botto=
+m:8px;">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"social-icon social-1" align=3D"left" styl=
+e=3D"float:left;margin-left:0px;margin-right:0px;text-align:left;border-rad=
+ius:4px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"margin-top" =
+style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-top:8px;=
+">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-left"=
+ style=3D"text-size-adjust:none;width:02px;display:table-cell;border-width:=
+0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td=
+>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;border-radius:4px;">
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" class=3D"social-network-element">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td class=3D"soci=
+al-image-container" style=3D"text-size-adjust:none;padding:2px 6px;">
+                                                            <table cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0" class=3D"social-image-table" align=
+=3D"center" style=3D"float:none;margin-left:auto;margin-right:auto;border-r=
+adius:3px;">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td class=
+=3D"social-image-cell" style=3D"text-size-adjust:none;border-radius:3px;bac=
+kground-color:#1f2037;" bgcolor=3D"#1f2037"> <a href=3D"http://url7809.newt=
+on.co/ls/click?upn=3DTb5R3j8ZzyAKvssbvAFM2smkB5o45e1fq6gjTJb4abgJZOHBBrIGtO=
+JrKD1oqWOk-BwO_xyeOGspX4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk1=
+5DMlmrsfGu7F1RVfF1KPTd7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rXV332=
+ekuvJPaL-2FpbcoKYEhz6oMfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YHs=
+cKiDWijid1YgCZNV-2B0r-2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoTIZulBn-=
+2BEK3AItuGnIxM2QhpqpuOoHzF1k7ECSxLKHhfAhGDEa2SUma5S2NAjV2P70bYtvNy-2FfMxWtF=
+pOsg8v7MiLw7MkDveK8gPLF5CmOofRPHrBFK6i82upXSDR7JlHgSKey3Da-2FD4xyLb-2F6Vxq3=
+g5TvLcjcTGoUvOazCEGR1Qspr6yeWsz66T2nunEQtah" target=3D"_blank" class=3D"soc=
+ial-image-1" style=3D"color:#2ba6cb;text-decoration:none;text-size-adjust:n=
+one;"><!--[if gte mso 9]><img class=3D"twitter-icon" src=3D"https://newton.=
+coffeecup.com/180%20-%20Activity%2045%20days/socialicons/webicon-twitter.pn=
+g" alt=3D"Twitter" style=3D"outline: none; text-decoration: none; display: =
+block;clear:none;float:none;margin-left:auto;margin-right:auto;border:none;=
+display:none; mso-hide: none;" align=3D"center" width=3D"24"><![endif]--><!=
+--[if !mso]> <!-- --><img class=3D"twitter-icon" src=3D"http://cdn.mcauto-i=
+mages-production.sendgrid.net/461c731ac3cda70e/8108cb9f-955b-4544-88a3-47d0=
+495a422b/48x48.png" alt=3D"Twitter" style=3D"outline: none; text-decoration=
+: none; display: block;clear:none;float:none;height:auto;margin-left:auto;m=
+argin-right:auto;width:100%;border:none;max-width:24px;width:24px;" align=
+=3D"center"><!--<![endif]--></a> </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td class=3D"margin-right=
+" style=3D"text-size-adjust:none;display:table-cell;width:4px;border-width:=
+0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td=
+>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-botto=
+m" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-botto=
+m:8px;">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"social-icon social-1" align=3D"left" styl=
+e=3D"float:left;margin-left:0px;margin-right:0px;text-align:left;border-rad=
+ius:4px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"margin-top" =
+style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-top:8px;=
+">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-left"=
+ style=3D"text-size-adjust:none;width:2px;display:table-cell;border-width:0=
+;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;border-radius:4px;">
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" class=3D"social-network-element">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td class=3D"soci=
+al-image-container" style=3D"text-size-adjust:none;padding:2px 6px;">
+                                                            <table cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0" class=3D"social-image-table" align=
+=3D"center" style=3D"float:none;margin-left:auto;margin-right:auto;border-r=
+adius:3px;">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td class=
+=3D"social-image-cell" style=3D"text-size-adjust:none;border-radius:3px;bac=
+kground-color:#1f2037;" bgcolor=3D"#1f2037"> <a href=3D"http://url7809.newt=
+on.co/ls/click?upn=3DTb5R3j8ZzyAKvssbvAFM2hvg1Itetb2-2FPncCjmS-2F14e1TFWYsZ=
+730TXmkeIUnQ1DNgDB_xyeOGspX4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlD=
+zbk15DMlmrsfGu7F1RVfF1KPTd7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rX=
+V332ekuvJPaL-2FpbcoKYEhz6oMfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG=
+5YHscKiDWijid1YgCZNV-2B0r-2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoToWU=
+WmqiNvo3vYmbUQFEEYfTGi-2BZOSZM3ukFJ0K7ERGtY9yi2SnJPZAlb-2BEUbKapmWRJf3dHWhi=
+q-2BKctAkAT10OWfCdDR1Xz8TGxGCS-2BXqQPL0KWicxXqao12tyaJtBOubD8suXT28bH4la8kO=
+QuAIsb6vV4BLYOrw7bFE6Qoj2pNW3qbVGTld8GBvTv5leD4" target=3D"_blank" class=3D=
+"social-image-1" style=3D"color:#2ba6cb;text-decoration:none;text-size-adju=
+st:none;"><!--[if gte mso 9]><img class=3D"facebook-icon" src=3D"https://ne=
+wton.coffeecup.com/180%20-%20Activity%2045%20days/socialicons/webicon-faceb=
+ook.png" alt=3D"Facebook" style=3D"outline: none; text-decoration: none; di=
+splay: block;clear:none;float:none;margin-left:auto;margin-right:auto;borde=
+r:none;display:none; mso-hide: none;" align=3D"center" width=3D"24"><![endi=
+f]--><!--[if !mso]> <!-- --><img class=3D"facebook-icon" src=3D"http://cdn.=
+mcauto-images-production.sendgrid.net/461c731ac3cda70e/f9376be6-132c-4348-b=
+a93-5bcbc32b6002/48x48.png" alt=3D"Facebook" style=3D"outline: none; text-d=
+ecoration: none; display: block;clear:none;float:none;height:auto;margin-le=
+ft:auto;margin-right:auto;width:100%;border:none;max-width:24px;width:24px;=
+" align=3D"center"><!--<![endif]--></a> </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td class=3D"margin-right=
+" style=3D"text-size-adjust:none;display:table-cell;width:4px;border-width:=
+0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td=
+>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-botto=
+m" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-botto=
+m:8px;">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"social-icon social-1" align=3D"left" styl=
+e=3D"float:left;margin-left:0px;margin-right:0px;text-align:left;border-rad=
+ius:4px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"margin-top" =
+style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-top:8px;=
+">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-left"=
+ style=3D"text-size-adjust:none;width:2px;display:table-cell;border-width:0=
+;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;border-radius:4px;">
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" class=3D"social-network-element">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td class=3D"soci=
+al-image-container" style=3D"text-size-adjust:none;padding:2px 6px;">
+                                                            <table cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0" class=3D"social-image-table" align=
+=3D"center" style=3D"float:none;margin-left:auto;margin-right:auto;border-r=
+adius:3px;">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td class=
+=3D"social-image-cell" style=3D"text-size-adjust:none;border-radius:3px;bac=
+kground-color:#1f2037;" bgcolor=3D"#1f2037"> <a href=3D"http://url7809.newt=
+on.co/ls/click?upn=3DPxLGN-2F9ejhNjfH-2F8R-2FL33YciDR3OkhiVq4nyGTACWvGg1VVh=
+uw5aTLvaCjgRY3PTAwP4XTBuaGAVIoOX3bre3g-3D-3DP5DM_xyeOGspX4spFudbXSAeBdEpeWm=
+aU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk15DMlmrsfGu7F1RVfF1KPTd7j-2FgB73wK9BtD1Do5=
+6hs055Gf21xb-2FktNLy-2FIktF1rXV332ekuvJPaL-2FpbcoKYEhz6oMfJkpK5q3Pr-2FWclN2=
+SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YHscKiDWijid1YgCZNV-2B0r-2Fgj8bG2CUpf9FFg1Jw=
+NDgRP6BQ2TU2s-2Brl2AguFrIoTHQL-2BdP3ZHmDi65GS4X5ASGXrs6jmc1b84IauEmCEljtf7C=
+ERagYtYEBSkEEjup5Eb4y33t21D8rldVgo-2Bml9ctVR4KayjUUr2caq00UauLmtfp81P2GJMt4=
+69Vz2Af3ey1mpH8tLPnj8sFWr9FZMam5UiAwvwweWW1xMllu7-2Fjv-2B-2BNRJk2y8ZAoRrHB2=
+SqHs" target=3D"_blank" class=3D"social-image-1" style=3D"color:#2ba6cb;tex=
+t-decoration:none;text-size-adjust:none;"><!--[if gte mso 9]><img class=3D"=
+linkedin-icon" src=3D"https://newton.coffeecup.com/180%20-%20Activity%2045%=
+20days/socialicons/webicon-linkedin.png" alt=3D"LinkedIn" style=3D"outline:=
+ none; text-decoration: none; display: block;clear:none;float:none;margin-l=
+eft:auto;margin-right:auto;border:none;display:none; mso-hide: none;" align=
+=3D"center" width=3D"24"><![endif]--><!--[if !mso]> <!-- --><img class=3D"l=
+inkedin-icon" src=3D"http://cdn.mcauto-images-production.sendgrid.net/461c7=
+31ac3cda70e/e2b0fdd0-e62b-4fd5-a305-6fb78b02fc1d/48x48.png" alt=3D"LinkedIn=
+" style=3D"outline: none; text-decoration: none; display: block;clear:none;=
+float:none;height:auto;margin-left:auto;margin-right:auto;width:100%;border=
+:none;max-width:24px;width:24px;" align=3D"center"><!--<![endif]--></a> </t=
+d>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td class=3D"margin-right=
+" style=3D"text-size-adjust:none;display:table-cell;width:4px;border-width:=
+0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td=
+>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-botto=
+m" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-botto=
+m:8px;">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"social-icon social-1" align=3D"left" styl=
+e=3D"float:left;margin-left:0px;margin-right:0px;text-align:left;border-rad=
+ius:4px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"margin-top" =
+style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-top:8px;=
+">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-left"=
+ style=3D"text-size-adjust:none;width:2px;display:table-cell;border-width:0=
+;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;border-radius:4px;">
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" class=3D"social-network-element">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td class=3D"soci=
+al-image-container" style=3D"text-size-adjust:none;padding:2px 6px;">
+                                                            <table cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0" class=3D"social-image-table" align=
+=3D"center" style=3D"float:none;margin-left:auto;margin-right:auto;border-r=
+adius:3px;">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td class=
+=3D"social-image-cell" style=3D"text-size-adjust:none;border-radius:3px;bac=
+kground-color:#1f2037;" bgcolor=3D"#1f2037"> <a href=3D"http://url7809.newt=
+on.co/ls/click?upn=3DTb5R3j8ZzyAKvssbvAFM2g-2FiDskZnx6Eq0zdzkJ6qda1oIYSQ5qa=
+cKlez7ksnWB48YOQztXGt3V2swLrkKWk9z92S-2FCu24V2OQpk50Of824-3DOvGy_xyeOGspX4s=
+pFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk15DMlmrsfGu7F1RVfF1KPTd7j-=
+2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rXV332ekuvJPaL-2FpbcoKYEhz6oMfJ=
+kpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YHscKiDWijid1YgCZNV-2B0r-2Fg=
+j8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoTEuv6vq3-2Ff6MItLNIVXdXdEYIwR39xc=
+JGUbv86kHZge6WXQzMFNdPP3h4IZvLVB9mR-2FePuNpuVSffr5Tie0dmsNEhP6t82xmGeYjyCB8=
+JYl03pXeSrKG3FvPcFWg9NX2BZgAorvIvWzTbGNpSsG-2FfhjjqdbMTOq4Kc4OO1iJbpZoLRT-2=
+B-2BSxphcI-2Ffa2uPnP8X" target=3D"_blank" class=3D"social-image-1" style=3D=
+"color:#2ba6cb;text-decoration:none;text-size-adjust:none;"><!--[if gte mso=
+ 9]><img class=3D"youtube-icon" src=3D"https://newton.coffeecup.com/180%20-=
+%20Activity%2045%20days/socialicons/webicon-youtube.png" alt=3D"YouTube" st=
+yle=3D"outline: none; text-decoration: none; display: block;clear:none;floa=
+t:none;margin-left:auto;margin-right:auto;border:none;display:none; mso-hid=
+e: none;" align=3D"center" width=3D"24"><![endif]--><!--[if !mso]> <!-- -->=
+<img class=3D"youtube-icon" src=3D"http://cdn.mcauto-images-production.send=
+grid.net/461c731ac3cda70e/ca0a3263-b0fa-4ef4-b9ae-20ef77173c57/48x48.png" a=
+lt=3D"YouTube" style=3D"outline: none; text-decoration: none; display: bloc=
+k;clear:none;float:none;height:auto;margin-left:auto;margin-right:auto;widt=
+h:100%;border:none;max-width:24px;width:24px;" align=3D"center"><!--<![endi=
+f]--></a> </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td class=3D"margin-right=
+" style=3D"text-size-adjust:none;display:table-cell;width:4px;border-width:=
+0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td=
+>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-botto=
+m" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-botto=
+m:8px;">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"social-icon social-1" align=3D"left" styl=
+e=3D"float:left;margin-left:0px;margin-right:0px;text-align:left;border-rad=
+ius:4px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"margin-top" =
+style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-top:8px;=
+">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-left"=
+ style=3D"text-size-adjust:none;width:2px;display:table-cell;border-width:0=
+;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;border-radius:4px;">
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" class=3D"social-network-element">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td class=3D"soci=
+al-image-container" style=3D"text-size-adjust:none;padding:2px 6px;">
+                                                            <table cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0" class=3D"social-image-table" align=
+=3D"center" style=3D"float:none;margin-left:auto;margin-right:auto;border-r=
+adius:3px;">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td class=
+=3D"social-image-cell" style=3D"text-size-adjust:none;border-radius:3px;bac=
+kground-color:#1f2037;" bgcolor=3D"#1f2037"> <a href=3D"reddit.com/r/newton=
+co/" target=3D"_blank" class=3D"social-image-1" style=3D"color:#2ba6cb;text=
+-decoration:none;text-size-adjust:none;"><!--[if gte mso 9]><img class=3D"g=
+eneric-icon" src=3D"https://newton.coffeecup.com/180%20-%20Activity%2045%20=
+days/socialicons/webicon-reddit.png" alt=3D"Reddit" style=3D"outline: none;=
+ text-decoration: none; display: block;clear:none;float:none;margin-left:au=
+to;margin-right:auto;border:none;display:none; mso-hide: none;" align=3D"ce=
+nter" width=3D"24"><![endif]--><!--[if !mso]> <!-- --><img class=3D"generic=
+-icon" src=3D"http://cdn.mcauto-images-production.sendgrid.net/461c731ac3cd=
+a70e/88c3c036-d550-4b1a-a1ba-534bb0c40ea2/48x48.png" alt=3D"Reddit" style=
+=3D"outline: none; text-decoration: none; display: block;clear:none;float:n=
+one;height:auto;margin-left:auto;margin-right:auto;width:100%;border:none;m=
+ax-width:24px;width:24px;" align=3D"center"><!--<![endif]--></a> </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td class=3D"margin-right=
+" style=3D"text-size-adjust:none;display:table-cell;width:4px;border-width:=
+0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td=
+>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-botto=
+m" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-botto=
+m:8px;">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" class=3D"social-icon social-1" align=3D"left" styl=
+e=3D"float:left;margin-left:0px;margin-right:0px;text-align:left;border-rad=
+ius:4px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td class=3D"margin-top" =
+style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-top:8px;=
+">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-left"=
+ style=3D"text-size-adjust:none;width:2px;display:table-cell;border-width:0=
+;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td>
+                                                  <td class=3D"element" sty=
+le=3D"text-size-adjust:none;text-align:left;border-radius:4px;">
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" class=3D"social-network-element">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td class=3D"soci=
+al-image-container" style=3D"text-size-adjust:none;padding:2px 6px;">
+                                                            <table cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0" class=3D"social-image-table" align=
+=3D"center" style=3D"float:none;margin-left:auto;margin-right:auto;border-r=
+adius:3px;">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td class=
+=3D"social-image-cell" style=3D"text-size-adjust:none;border-radius:3px;bac=
+kground-color:#1f2037;" bgcolor=3D"#1f2037"> <a href=3D"http://url7809.newt=
+on.co/ls/click?upn=3DTb5R3j8ZzyAKvssbvAFM2lw5vszNmxtioK1dpdtPdbIF8CtkLzNJKW=
+aTlTS6kZvXkWrA_xyeOGspX4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk1=
+5DMlmrsfGu7F1RVfF1KPTd7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rXV332=
+ekuvJPaL-2FpbcoKYEhz6oMfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YHs=
+cKiDWijid1YgCZNV-2B0r-2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoTZtBwel-=
+2BjqzA0-2FNRS2r-2Fwgytm6ywgwPH4YR5MrBVrIABP3NFzoUfqowupgdFuOOomnUmDerWHg7Y3=
+El81sSnvNHHNnd7m9Z7piTBB-2FU4C8YHuhNTqgra5H1xYONr3I8CL-2BVF7lplgSkF3QUSzx2H=
+JibAvCvkCFotf0KONMPUOoiwFzEHeDIzc3-2BdKlR63BRaP" target=3D"_blank" class=3D=
+"social-image-1" style=3D"color:#2ba6cb;text-decoration:none;text-size-adju=
+st:none;"><!--[if gte mso 9]><img class=3D"generic-icon" src=3D"https://new=
+ton.coffeecup.com/180%20-%20Activity%2045%20days/socialicons/discord.png" a=
+lt=3D"Discord" style=3D"outline: none; text-decoration: none; display: bloc=
+k;clear:none;float:none;margin-left:auto;margin-right:auto;border:none;disp=
+lay:none; mso-hide: none;" align=3D"center" width=3D"24"><![endif]--><!--[i=
+f !mso]> <!-- --><img class=3D"generic-icon" src=3D"http://cdn.mcauto-image=
+s-production.sendgrid.net/461c731ac3cda70e/e82bd5c3-abb8-40bf-9b21-ff6e16f6=
+e585/48x48.png" alt=3D"Discord" style=3D"outline: none; text-decoration: no=
+ne; display: block;clear:none;float:none;height:auto;margin-left:auto;margi=
+n-right:auto;width:100%;border:none;max-width:24px;width:24px;" align=3D"ce=
+nter"><!--<![endif]--></a> </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td class=3D"margin-right=
+" style=3D"text-size-adjust:none;display:table-cell;width:4px;border-width:=
+0;padding:0;margin:0;height:0;max-height:0;font-size:0;line-height:0;"></td=
+>
+                                                </tr>
+                                                <tr>
+                                                  <td class=3D"margin-botto=
+m" style=3D"text-size-adjust:none;line-height:0;font-size:0px;padding-botto=
+m:8px;">&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" class=3D"text footer-support-text" align=3D"center" style=
+=3D"margin-left:auto;margin-right:auto;float:none;width:90%;text-align:left=
+;">
+                                      <tbody>
+                                        <tr>
+                                          <td class=3D"element" style=3D"te=
+xt-size-adjust:none;text-align:center;padding-right:0px;padding-left:0px;pa=
+dding-top:16px;"> <span style=3D"line-height:1.5;mso-font-alt: Helvetica;fo=
+nt-family:'Helvetica Neue', Helvetica, Arial, sans-serif;color:#5b5d76;text=
+-align:center;font-size:14px;">If you have questions or need help, don't he=
+sitate to contact <span class=3D"text-link" style=3D"mso-font-alt: Helvetic=
+a;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:1.=
+5;text-decoration:none;color:#8f98b1;"><a title=3D"" href=3D"#" class=3D"te=
+xt-text-1" style=3D"text-decoration:none;text-size-adjust:none;color:#8f98b=
+1;">our support team!</a></span></span> </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" class=3D"text footer-support-text" align=3D"center" style=
+=3D"margin-left:auto;margin-right:auto;float:none;width:90%;text-align:left=
+;">
+                                      <tbody>
+                                        <tr>
+                                          <td class=3D"element" style=3D"te=
+xt-size-adjust:none;text-align:center;padding-right:0px;padding-left:0px;pa=
+dding-top:16px;"> <span style=3D"line-height:1.5;mso-font-alt: Helvetica;fo=
+nt-family:'Helvetica Neue', Helvetica, Arial, sans-serif;color:#5b5d76;text=
+-align:center;font-size:14px;">=C2=A9 2022 Newton Crypto Ltd. All rights re=
+served. <br>FINTRAC#: M19607029. </span> </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" class=3D"text footer-support-text" align=3D"center" style=
+=3D"margin-left:auto;margin-right:auto;float:none;width:90%;text-align:left=
+;">
+                                      <tbody>
+                                        <tr>
+                                          <td class=3D"element" style=3D"te=
+xt-size-adjust:none;text-align:center;padding-right:0px;padding-left:0px;pa=
+dding-top:16px;"> <span style=3D"line-height:1.5;mso-font-alt: Helvetica;fo=
+nt-family:'Helvetica Neue', Helvetica, Arial, sans-serif;color:#5b5d76;text=
+-align:center;font-size:14px;">900, 517 10 Avenue SW, Calgary AB T2R 0A8</s=
+pan> </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td class=3D"empty-expander" style=3D"tex=
+t-size-adjust:none;width:0px;min-width:0px;visibility:hidden;"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--[if gte mso 9]><table cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0" class=3D"container container-fluid" style=3D"margin:0px auto;te=
+xt-align:inherit;display:none; mso-hide: none;" width=3D"600"><![endif]--><=
+!--[if !mso]> <!-- --><table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" class=3D"container container-fluid" style=3D"max-width:600px;width:100%;=
+margin:0px auto;text-align:inherit;width:600px;"><!--<![endif]-->
+              <tbody>
+                <tr>
+                  <td style=3D"text-size-adjust:none;">
+                    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ class=3D"row row-dark" style=3D"width:100%;position:relative;background-im=
+age:none;background-color:#1f2037;" bgcolor=3D"#1f2037">
+                      <tbody>
+                        <tr>
+                          <td style=3D"width:600px;">
+                            <div data-role=3D"element" class=3D"module" rol=
+e=3D"module" data-type=3D"unsubscribe" style=3D"background-color:#1f2037; c=
+olor:#5b5d76; font-size:12px; line-height:20px; padding:16px 16px 32px 16px=
+; text-align:Center;" data-muid=3D"4e838cf3-9892-4a6d-94d6-170e474d21e5"><p=
+ style=3D"font-size:12px; line-height:20px;">
+  =20
+   <a class=3D"element" href=3D"http://url7809.newton.co/ls/click?upn=3DTb5=
+R3j8ZzyAKvssbvAFM2so025fNimXY3Rxe37BMJoitjfnLl6o63bO8LS7zw-2FW4Oblm_xyeOGsp=
+X4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk15DMlmrsfGu7F1RVfF1KPTd=
+7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rXV332ekuvJPaL-2FpbcoKYEhz6o=
+MfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YHscKiDWijid1YgCZNV-2B0r-=
+2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoT6OSir8gS-2BEQQ3I2DJc43LrCx1Jc=
+KLLLln-2BoB0T818H3OgZneuIBOXO3-2FFInqZrHTS63onLJIjGRXfnswCnVwzWXRMf5OcOe-2B=
+t-2FFSxOKSXnCqPD3yC3biVqIxAmDZ-2BwaAQGOO6aY9rxNCjesJ-2FuaDkp2vHmedsfW2weJxA=
+3TomAtyR5h-2BjXK91zjwunEkxkFo" target=3D"_blank" style=3D"text-size-adjust:=
+none;line-height:1.5;mso-font-alt: Helvetica;font-family:'Helvetica Neue', =
+Helvetica, Arial, sans-serif;font-weight:400;font-size:12px;color:#8f98b1;t=
+ext-decoration:none;text-align:center;">Terms & Conditions</a> -=20
+  =20
+      <a class=3D"element" href=3D"http://url7809.newton.co/ls/click?upn=3D=
+Tb5R3j8ZzyAKvssbvAFM2iwPr39Aq6toEIjhJ81ql-2BCmCXCps5KDysFL1NMGIURUTKK-_xyeO=
+GspX4spFudbXSAeBdEpeWmaU5CovZPnD-2FxRvyeHMXnQ9Ww6PlDzbk15DMlmrsfGu7F1RVfF1K=
+PTd7j-2FgB73wK9BtD1Do56hs055Gf21xb-2FktNLy-2FIktF1rXV332ekuvJPaL-2FpbcoKYEh=
+z6oMfJkpK5q3Pr-2FWclN2SPocI7FldOlz4tA9TaM-2FR-2BP7NG5YHscKiDWijid1YgCZNV-2B=
+0r-2Fgj8bG2CUpf9FFg1JwNDgRP6BQ2TU2s-2Brl2AguFrIoTUi3PCJffsd6h2o6OwlsR87aCtw=
+mDvsnYNCQwoAcS2VeSlv8zgbB5dZNQB6eoEE7T94ovJvV3GmyEICogz-2FA-2BaoHrLz001mSzm=
+sGsAmDIwpLrgz6r8c7GrFgVXQxsRI8YjNsPfA4TPywrOriU-2B6aAyp5pNHi6VbCVpEU5vP0oAi=
+-2FVLVHPo0frlExgIEo-2F3Qfd" target=3D"_blank" style=3D"text-size-adjust:non=
+e;line-height:1.5;mso-font-alt: Helvetica;font-family:'Helvetica Neue', Hel=
+vetica, Arial, sans-serif;font-weight:400;font-size:12px;color:#8f98b1;text=
+-decoration:none;text-align:center;">Privacy Policy</a> -=20
+  =20
+
+   <a class=3D"Unsubscribe--unsubscribeLink" href=3D"http://url7809.newton.=
+co/asm/unsubscribe/?user_id=3D8263219&amp;data=3DtA2T_wJABlI5c0UkxLbcEREYeY=
+cqGTulCmJedV4SDmLFsKNfmqLmnmVqxedaZaPgoyh-Hdk-3SJf2rRycisSuMdRwNv6GKbCkv3h-=
+gHhnj2XYIOEkAT_xoOcNaibVJIsgiZPNu5rYuVUmur6C4YrZBYR-jW0y06bIYggu22NCawX-pmM=
+q6ZHQJmpr7lyQLhjLJ9a__wC9WabwUCNLXkRo3FHUs0QAHE6LJVXEWjiWKhm-6GierI2WSKRZG4=
+TpChOBowwD_sYveRXrdn4Ppej24-NmzOBG_IONpOD56OPFWCO1eWF-oI469jH5xsCb1L4rUMcqT=
+06132tIrj2X6IhY34JYT7QzLxEEvpCOyoPyovItukgsmUXTcycR4vBiEAaYBAXC1bBieBMGq5JE=
+PbdYVF_S_yOpbNJbiGZqMMoOL_NEPzSwJi9ktLoiXKiVLSGYTC5hgdWOVjDleVIk1W7C3LfG_fj=
+zojT5ICoD61arRak_acq6ZUV4HwzxVRmExWTpY-HNA487iIt7URJDGhhIaS_7V4to8jIkcGyQjc=
+LXyuhuJWGc1BSoect9SfmcQihJvZ7d4HMdWBUUOXYzvhzCg=3D=3D" target=3D"_blank" st=
+yle=3D"text-size-adjust:none;line-height:1.5;mso-font-alt: Helvetica;font-f=
+amily:'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:400;font-s=
+ize:12px;color:#8f98b1;text-decoration:none;text-align:center;">Unsubscribe=
+</a> - <a href=3D"http://url7809.newton.co/asm/?user_id=3D8263219&amp;data=
+=3DZ0A2ogz1mbLMw1Mhc1-swL2r5epoG-3_yb99eEEpArd4RfHr5IXKmOvEe7Bh6YnYFZDVsprT=
+2Z5XXWEm1OdeGnSQSVcc-xpe-wOBrRC0Ki1LNlU_tFQByGQh4fSnOgZEB0WIXFN2Gj2KlFHxgID=
+VzA40BmPpVzJqkFXCI_ovT2imLF9ZM5YRFOaozzBs7wlM_T2xvvxB_o4JsjXOa6k1Bbxzqi30gi=
+cTvIaHwio73QOjwYpQo8sOb-2KISdknpfwMnFlfp3W4qidOC10ehPi1JKGOrqEA9NZbpnmI3JsW=
+SUByyZLVrkyaDhu5em2rcejStcMnRVxAkFcTApHRuvXyCQ-t6G4a2j-vSWRuYiykEXSi2_gcRxK=
+kde_XXWnQwBHrQomqUQILb6vBad47peIhnVusw7MiaXlguTew8VhuM_vXRwbKdNZlP0MevKU4Aj=
+n1LhdNaXjum4ERBbDzu7CRz9Dmbzsyd_SdoZSYW8tugbW10c4ImGB5gWDSk2ZYfwIBKr6HjbIEq=
+cCmlIrG-9jxTXMj0YVuNTDLDm5R6ap2Ylr8xomneJHlFbNMGPvSH80" target=3D"_blank" c=
+lass=3D"Unsubscribe--unsubscribePreferences" style=3D"text-size-adjust:none=
+;line-height:1.5;mso-font-alt: Helvetica;font-family:'Helvetica Neue', Helv=
+etica, Arial, sans-serif;font-weight:400;font-size:12px;color:#8f98b1;text-=
+decoration:none;text-align:center;">Unsubscribe Preferences</a></p></div><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"module" data=
+-role=3D"module-button" data-type=3D"button" role=3D"module" style=3D"table=
+-layout:fixed;" width=3D"100%" data-muid=3D"b9f19d3c-8a76-428c-ba6c-879509a=
+e59d2">=20
+                                  </td>
+                                  <!--[if !mso]> <!-- -->
+                                  <td class=3D"expander" style=3D"text-size=
+-adjust:none;width:0px;visibility:hidden;padding:0px;"></td><!-- <![endif]-=
+->
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table></td>
+                </tr>
+              </tbody>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<img src=3D"http://url7809.newton.co/wf/open?upn=3Dd-2B3QCi1sgI73ZShxlJ9Pxc=
+InATkiBGk2qiLsPQGghq1GqFkdoyln4SPmXuOYvaLksm3SDvcd-2Fx3bU1h33tHiQbDlAl0LfYK=
+-2FTMf4RxtbOtveNR-2F-2FDja39eSGciNQxEexJQCZ3ZznQISObk84vYX6OfPHPgioULV6gwuT=
+YsGUSRPlcZfQwg8azf0ynznjjADVmbt1z4SzsUYKDZ9GuJUMSNvvz9ggSc0er19HEQOkPcziwlt=
+NNaISF8mBKHjKS4OAKY8EI8rE7FxnYabRUCluRwHISDADlbxxy-2BY-2FaXYuuGm2IXxRr1tazr=
+PKvTZ6EOaYEf-2F62JF9hPXCt4aCS186YC1Xpniqdq1w91I-2BxlKFrDmqwsEreiyPKOmPyQ1cy=
+f0DtXCUBepo6H4-2FbU0HtluOhZeriYKpExJl-2BHZQQ7F9oTeKScosCkCTsrJe4HU-2BWUSZBm=
+11fME4raodCVynEmosyg-3D-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" =
+style=3D"height:1px !important;width:1px !important;border-width:0 !importa=
+nt;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !impor=
+tant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !im=
+portant;padding-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+--9a3d9ec69d0e3f5eae30a31a2bb355fb56dc0420d6f31189e2d62722d540--

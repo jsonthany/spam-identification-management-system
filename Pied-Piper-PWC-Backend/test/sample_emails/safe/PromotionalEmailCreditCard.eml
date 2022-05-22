@@ -1,0 +1,180 @@
+Delivered-To: jasonthany@gmail.com
+Received: by 2002:a05:7000:648b:0:0:0:0 with SMTP id o11csp7724355mal;
+        Sat, 26 Mar 2022 18:44:12 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxMyebfn/YvEVcRFb943AStgXkGls/jRG2v/fPr3CxIXxkiom1874f00lxVL2aNaYvThf67
+X-Received: by 2002:a17:902:e812:b0:154:19ec:538b with SMTP id u18-20020a170902e81200b0015419ec538bmr19433631plg.102.1648345452179;
+        Sat, 26 Mar 2022 18:44:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648345452; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ZARbhvsGReX7Cj+QvlJgr+NreOJ8EjVXvBpMoKLRrzgTez92tplqtMYOOlf+MDy4JK
+         6NFjwojpkZFM8HSPMmbg41MOpllWmYnX/xBqJm+Wx/DV4SdBbxoF900MgwsZLciCWFa9
+         DPYDMMGY3KIWRAC0Z184MOZkWKpTFyls986WbTaWfpUlrfmbpHwl5EKiOrUUatlRX+jq
+         ftSl0zmYJXTJoQ52HatDS9f/0nJ6xxupnrlXh78CcDYPEDZIRFOPcUmmKMUQg+jgCrDn
+         sYYCHlH7rwOZ98SrdD1QkEFAu9GM7b0z1xDMswAzLyNoKgQ3qoWxkBUVQR6ILk1hKMpA
+         gsKQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-id:list-unsubscribe:from:subject:mime-version:date:message-id
+         :to:dkim-signature;
+        bh=BysXL0IrG1pgJsXip77Fu5XiGbw6qHHzsktrc0xHfJI=;
+        b=sLWzfXJv+mrfJ1iowYyauXwQmEnv+ldUpIafdO7p53sWbTjTqa8vjzRpypD0pbV/Mh
+         FJze0ynAP0NTGOg2h5IZRfJPXhtKDyX//GUFzD4iaDwwVXaT4PB0nlnP8dhBKldnreD0
+         dqqaWtcXGt4TvsPK3OTzzcqYSs3qaW8C+HQzu1pyN+Y6CuLyRk3PLUae6Upae9ow4hku
+         BCynu9xnjYQsmdEyM6O9UfeP6dZLxV56scN/zGJcppD+8w5Xl8Qs+Dpd/YhZBZ/IikYK
+         cKG5WbrsTuSmCvYoehgdJKiyueN5i8t3lAeYsxGWVIC/jGD+Gpdz8AhL+rwSv+qfa9kO
+         OPdQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@creditcardgenius.ca header.s=scph0118 header.b=k3Mo0nw3;
+       spf=pass (google.com: domain of msprvs1=19085rzfesenu=bounces-204577@bounces.howtosavemoney.ca designates 147.253.218.172 as permitted sender) smtp.mailfrom="msprvs1=19085rZFesenU=bounces-204577@bounces.howtosavemoney.ca"
+Return-Path: <msprvs1=19085rZFesenU=bounces-204577@bounces.howtosavemoney.ca>
+Received: from mta-218-172.sparkpostmail.com (mta-218-172.sparkpostmail.com. [147.253.218.172])
+        by mx.google.com with ESMTPS id z11-20020a056a001d8b00b004fade8aabdasi6588817pfw.121.2022.03.26.18.44.11
+        for <jasonthany@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 26 Mar 2022 18:44:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of msprvs1=19085rzfesenu=bounces-204577@bounces.howtosavemoney.ca designates 147.253.218.172 as permitted sender) client-ip=147.253.218.172;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@creditcardgenius.ca header.s=scph0118 header.b=k3Mo0nw3;
+       spf=pass (google.com: domain of msprvs1=19085rzfesenu=bounces-204577@bounces.howtosavemoney.ca designates 147.253.218.172 as permitted sender) smtp.mailfrom="msprvs1=19085rZFesenU=bounces-204577@bounces.howtosavemoney.ca"
+X-MSFBL: xqXtZExbQhI91ixdMJyIs3bVOEzWm5XnKzHzTLfcYHk=|eyJyIjoiamFzb250aGF
+	ueUBnbWFpbC5jb20iLCJzdWJhY2NvdW50X2lkIjoiMCIsIm1lc3NhZ2VfaWQiOiI
+	2MjNlNmJjMTNmNjIwZDhlZjI3YiIsImN1c3RvbWVyX2lkIjoiMjA0NTc3IiwidGV
+	uYW50X2lkIjoic3BjIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=creditcardgenius.ca;
+	s=scph0118; t=1648345451; i=@creditcardgenius.ca;
+	bh=BysXL0IrG1pgJsXip77Fu5XiGbw6qHHzsktrc0xHfJI=;
+	h=To:Message-ID:Date:Content-Type:Subject:From;
+	b=k3Mo0nw37kaFvpT2nVaFv2uYUlAhPeJaAYEtd7J9HJvKe0XOdHCgQ+k4r/8CFaaox
+	 cayy8z7q8FYJ2UOP6c3Ybk8rBq3axbKB7k0wShKlfAYsH5lOIPtyEknAhPvaCNrNAf
+	 ujjCykx/2Ld9s2C2hj5NZpInnCkg1/nAF3PsmqrQ=
+To: jasonthany@gmail.com
+Message-ID: <2F.B7.13434.B61CF326@bc.mta1vrest.cc.prd.sparkpost>
+Date: Sun, 27 Mar 2022 01:44:11 +0000
+Content-Type: multipart/alternative; boundary="_----yaZ46j4jiCN+aTIkXigZmw===_0F/B7-13434-B61CF326"
+MIME-Version: 1.0
+Subject: Challenge your friends and grab your referral bonus
+From: "creditcardGenius" <noreply@creditcardgenius.ca>
+List-Unsubscribe: <mailto:unsubscribe@unsub.spmta.com?subject=unsubscribe:0PypTlaC5DOknc1CywdqjcJt3othRJ1ExHUCnBCUpAc~|eyAicmNwdF90byI6ICJqYXNvbnRoYW55QGdtYWlsLmNvbSIsICJ0ZW5hbnRfaWQiOiAic3BjIiwgImN1c3RvbWVyX2lkIjogIjIwNDU3NyIsICJtZXNzYWdlX2lkIjogIjYyM2U2YmMxM2Y2MjBkOGVmMjdiIiwgInN1YmFjY291bnRfaWQiOiAiMCIgfQ~~>
+List-Id: <spc.204577.0.sparkpostmail.com>
+
+--_----yaZ46j4jiCN+aTIkXigZmw===_0F/B7-13434-B61CF326
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+a {=0A        =09color: #4BC1DD;=0A        }=0A=0A=09=09.greenbtn {=0A=09=
+=09=09font-size: 20px;=0A=09=09=09display: inline-block;=0A=09=09=09margin-=
+bottom: 0;=0A=09=09=09text-align: center;=0A=09=09=09vertical-align: middle=
+;=0A=09=09=09cursor: pointer;=0A=09=09=09background-image: none;=0A=09=09=
+=09white-space: nowrap;=0A=09=09=09padding: 6px 12px;=0A=09=09=09line-heigh=
+t: 1.42857143;=0A=09=09=09border-radius: 4px;=0A=09=09=09font-weight: 600;=
+=0A=09=09=09padding: 8px 12px;=0A=09=09=09background-color: #2ECC71;=0A=09=
+=09=09color: white !important;=0A=09=09=09border: 0;=0A=09=09=09text-decora=
+tion: none !important;=0A=09=09}=0A=0A=09=09.greenoutlinebtn {=0A=09=09=09f=
+ont-size: 20px;=0A=09=09=09display: inline-block;=0A=09=09=09margin-bottom:=
+ 0;=0A=09=09=09text-align: center;=0A=09=09=09vertical-align: middle;=0A=09=
+=09=09cursor: pointer;=0A=09=09=09background-image: none;=0A=09=09=09white-=
+space: nowrap;=0A=09=09=09padding: 6px 12px;=0A=09=09=09line-height: 1.4285=
+7143;=0A=09=09=09border-radius: 4px;=0A=09=09=09-webkit-user-select: none;=
+=0A=09=09=09font-weight: 600;=0A=09=09=09padding: 8px 12px;=0A=09=09=09colo=
+r: #2ECC71 !important;=0A=09=09=09border: 1px solid #2ECC71;=0A=09=09=09tex=
+t-decoration: none !important;=0A=09=09}=0A=0A=09=09.border {=0A=09=09=09bo=
+x-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);=0A=09=09=09margin-bottom: 32p=
+x;=0A=09=09=09padding: 16px;=0A=09=09=09border: 1px solid #e5e5e5;=0A=09=09=
+=09border-radius: 16px;=0A=09=09=09max-width: 600px;=0A=09=09=09font-size: =
+16px=0A=09=09}=0A=0A=09=0A=0A=0A=0A=09=0A=09=09=0A=09=09=09=0A=09=09=0A=0A=
+=09=09=0A=0A=0AHey Jason Thany,=0A=0AYou said we found your top card =E2=80=
+=93 why not tell your friends=3F=0A=0AFor every friend you refer who comple=
+tes our challenge, we=E2=80=99ll give you 5 big ones.=0A=0AIf you=E2=80=99r=
+e ready, log in to your dashboard so you can refer:=0A    =0A        by ema=
+il=0A        by Facebook, and=0A        by Twitter=0A    =0A=0A=0AHere=E2=
+=80=99s your unique referral link if you=E2=80=99d prefer to share by text =
+or other ways: https://emailtracking.creditcardgenius.ca/f/a/d4Qu7xaZpxVabP=
+is7BmUBA~~/AAMfIQA~/RgRkIkZrP0Q3aHR0cHM6Ly9jcmVkaXRjYXJkZ2VuaXVzLmNhL2NoYWx=
+sZW5nZS9yZWZlcnJhbC9TRVN0Mkd0d1cDc3BjQgpiPmvBP2INjvJ7UhRqYXNvbnRoYW55QGdtYW=
+lsLmNvbVgEAAAAAA~~=0A=0ATalk soon,=0A=0A=0A=0A=09=09=0A=09=09=09Your credit=
+cardGenius Team=0A=09=09=0A=0A=09=09=0A=0A=09=09=0A=09=09=09PS: Never miss =
+a deal. Click here to join our newsletter and get the latest=0A=09=09=09cre=
+dit card news and tips.=0A=09=09=0A=09=0A=0A=09=0A=09=09This message was se=
+nt to jasonthany@gmail.com.=0A=0A=09=09=0A=09=09=09=0A=09=09=09=09You got t=
+his email because you created an account with creditcardGenius. If you subs=
+cribed to our mailing list, you can=0A=09=09=09=09unsubscribe from account =
+notifications at any time.=0A=09=09=09=0A=09=09=0A=09=0A=0A=0A=09=0A=09=09=
+=0A=09=09=09WeyMedia Inc. =0A=09=09=09 200 Champlain St. Suite 210 =0A=09=
+=09=09 Dieppe, New Brunswick =0A=09=09=09 E1A 1P1
+--_----yaZ46j4jiCN+aTIkXigZmw===_0F/B7-13434-B61CF326
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html>=0A<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml">=
+=0A=0A<head>=0A=09<meta http-equiv=3D"Content-Type" content=3D"text/html ch=
+arset=3DUTF-8" />=0A=09<style type=3D"text/css">=0A=09=09a {=0A        =09c=
+olor: #4BC1DD;=0A        }=0A=0A=09=09.greenbtn {=0A=09=09=09font-size: 20p=
+x;=0A=09=09=09display: inline-block;=0A=09=09=09margin-bottom: 0;=0A=09=09=
+=09text-align: center;=0A=09=09=09vertical-align: middle;=0A=09=09=09cursor=
+: pointer;=0A=09=09=09background-image: none;=0A=09=09=09white-space: nowra=
+p;=0A=09=09=09padding: 6px 12px;=0A=09=09=09line-height: 1.42857143;=0A=09=
+=09=09border-radius: 4px;=0A=09=09=09font-weight: 600;=0A=09=09=09padding: =
+8px 12px;=0A=09=09=09background-color: #2ECC71;=0A=09=09=09color: white !im=
+portant;=0A=09=09=09border: 0;=0A=09=09=09text-decoration: none !important;=
+=0A=09=09}=0A=0A=09=09.greenoutlinebtn {=0A=09=09=09font-size: 20px;=0A=09=
+=09=09display: inline-block;=0A=09=09=09margin-bottom: 0;=0A=09=09=09text-a=
+lign: center;=0A=09=09=09vertical-align: middle;=0A=09=09=09cursor: pointer=
+;=0A=09=09=09background-image: none;=0A=09=09=09white-space: nowrap;=0A=09=
+=09=09padding: 6px 12px;=0A=09=09=09line-height: 1.42857143;=0A=09=09=09bor=
+der-radius: 4px;=0A=09=09=09-webkit-user-select: none;=0A=09=09=09font-weig=
+ht: 600;=0A=09=09=09padding: 8px 12px;=0A=09=09=09color: #2ECC71 !important=
+;=0A=09=09=09border: 1px solid #2ECC71;=0A=09=09=09text-decoration: none !i=
+mportant;=0A=09=09}=0A=0A=09=09.border {=0A=09=09=09box-shadow: 0px 3px 5px=
+ 0px rgba(0, 0, 0, 0.1);=0A=09=09=09margin-bottom: 32px;=0A=09=09=09padding=
+: 16px;=0A=09=09=09border: 1px solid #e5e5e5;=0A=09=09=09border-radius: 16p=
+x;=0A=09=09=09max-width: 600px;=0A=09=09=09font-size: 16px=0A=09=09}=0A=0A=
+=09</style>=0A</head>=0A=0A<body style=3D"font-family: sans-serif; color: #=
+35465F;">=0D=0A<div style=3D"color:transparent;visibility:hidden;opacity:0;=
+font-size:0px;border:0;max-height:1px;width:1px;margin:0px;padding:0px;bord=
+er-width:0px!important;display:none!important;line-height:0px!important;"><=
+img border=3D"0" width=3D"1" height=3D"1" src=3D"https://emailtracking.cred=
+itcardgenius.ca/q/_3YWGTHQmx5XvCB3micRUQ~~/AAMfIQA~/RgRkIkZrPVcDc3BjQgpiPmv=
+BP2INjvJ7UhRqYXNvbnRoYW55QGdtYWlsLmNvbVgEAAAAAA~~" alt=3D""/></div>=0D=0A=
+=0A=09<div class=3D"border">=0A=09=09<center>=0A=09=09=09<img src=3D"https:=
+//media.creditcardgenius.ca/content/img/logo.png" role=3D"presentation">=0A=
+=09=09</center>=0A=0A=09=09=0A=0A=0A<p>Hey Jason Thany,</p>=0A=0A<p>You sai=
+d we found your top card =E2=80=93 why not tell your friends=3F</p>=0A=0A<p=
+>For every friend you refer who completes our challenge, <strong>we=E2=80=
+=99ll give you 5 big ones.</strong></p>=0A=0A<p>If you=E2=80=99re ready, <a=
+ href=3D"https://emailtracking.creditcardgenius.ca/f/a/s06Hh1SfaF3ChevVGy59=
+NQ~~/AAMfIQA~/RgRkIkZrP0QyaHR0cHM6Ly9jcmVkaXRjYXJkZ2VuaXVzLmNhL2Rhc2hib2FyZ=
+D90YWI9cmVmZXJyYWxXA3NwY0IKYj5rwT9iDY7ye1IUamFzb250aGFueUBnbWFpbC5jb21YBAAA=
+AAA~">log in to your dashboard</a> so you can refer:=0A    <ul>=0A        <=
+li>by email</li>=0A        <li>by Facebook, and</li>=0A        <li>by Twitt=
+er</li>=0A    </ul>=0A</p>=0A=0A<p>Here=E2=80=99s your unique referral link=
+ if you=E2=80=99d prefer to share by text or other ways: https://creditcard=
+genius.ca/challenge/referral/SESt2Gtw</p>=0A=0A<p>Talk soon,</p>=0A=0A=0A=
+=0A=09=09<p>=0A=09=09=09<strong>Your creditcardGenius Team</strong>=0A=09=
+=09</p>=0A=0A=09=09=0A=0A=09=09=0A=09=09=09<p>PS: Never miss a deal. Click =
+here to <a href=3D"https://emailtracking.creditcardgenius.ca/f/a/CfOgJe8clk=
+0wUFrgjCAvDw~~/AAMfIQA~/RgRkIkZrP0R9aHR0cHM6Ly9jcmVkaXRjYXJkZ2VuaXVzLmNhL25=
+ld3NsZXR0ZXI_ZW1haWw9amFzb250aGFueSU0MGdtYWlsLmNvbSZoPUl3WXdMQURBaGxBY0JNQl=
+dBcG1BSmhFQWpFSUJtQWJCRmtTRkludkdBY3JmQkFNekpvQ2NpUUFXA3NwY0IKYj5rwT9iDY7ye=
+1IUamFzb250aGFueUBnbWFpbC5jb21YBAAAAAA~">join our newsletter</a> and get th=
+e latest=0A=09=09=09credit card news and tips.</p>=0A=09=09=0A=09</div>=0A=
+=0A=09=0A=09=09<p style=3D"font-size: 13px; margin-bottom:0px; color: #8888=
+88">This message was sent to jasonthany@gmail.com.</p>=0A=0A=09=09=0A=09=09=
+=09<p style=3D"font-size: 13px;  margin-bottom:0px; color: #888888">=0A=09=
+=09=09=09You got this email because you created an account with creditcardG=
+enius. If you subscribed to our mailing list, you can=0A=09=09=09=09<a href=
+=3D"https://emailtracking.creditcardgenius.ca/f/a/rnx4iqvegVQE0usi6pULxQ~~/=
+AAMfIQA~/RgRkIkZrP0SIaHR0cHM6Ly9jcmVkaXRjYXJkZ2VuaXVzLmNhL3VzZXIvdW5zdWJzY3=
+JpYmUtZW1haWw_dD01ZjA2OGYyYTFhOTc3M2ViZDkyZDM2MTU5ZGU3ZDgxMTpkZjM1ZDYwZDY3O=
+WM3N2QzOTZjNTYwYjY5ZDQ1YzgwNWM2Mzc2YmIxN2FmMDNiOGMxMVcDc3BjQgpiPmvBP2INjvJ7=
+UhRqYXNvbnRoYW55QGdtYWlsLmNvbVgEAAAAAA~~">unsubscribe</a> from account noti=
+fications at any time.=0A=09=09=09</p>=0A=09=09=0A=09=0A=0A=0A=09<div style=
+=3D"font-size: 13px; max-width: 600px;">=0A=09=09<p style=3D"font-size: 13p=
+x;  margin-bottom: 0px; color: #888888">=0A=09=09=09WeyMedia Inc. <br/>=0A=
+=09=09=09<span style=3D"color: #888888"> 200 Champlain St. Suite 210</span>=
+ <br/>=0A=09=09=09<span style=3D"color: #888888"> Dieppe, New Brunswick</sp=
+an> <br/>=0A=09=09=09<span style=3D"color: #888888"> E1A 1P1</span>=0A=09=
+=09</p>=0A=09</div>=0A=0D=0A<img border=3D"0" width=3D"1" height=3D"1" alt=
+=3D"" src=3D"https://emailtracking.creditcardgenius.ca/q/ypR3ew2pRu_t5dccis=
+CTuQ~~/AAMfIQA~/RgRkIkZrPlcDc3BjQgpiPmvBP2INjvJ7UhRqYXNvbnRoYW55QGdtYWlsLmN=
+vbVgEAAAAAA~~">=0D=0A</body>=0A=0A</html>
+--_----yaZ46j4jiCN+aTIkXigZmw===_0F/B7-13434-B61CF326--
+

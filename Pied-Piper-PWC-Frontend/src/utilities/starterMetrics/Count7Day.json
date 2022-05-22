@@ -1,0 +1,23 @@
+[
+  {
+    "startTime": "2022-03-20T04:06:07.482Z",
+    "interval": 168,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 16812,
+      "safe": 14427,
+      "suspect": 1720,
+      "quarantinePending": 665,
+      "quarantineDenied": 0,
+      "quarantineAllowed": 0
+    },
+    "totalCounts": {
+      "total": 16812,
+      "safe": 14427,
+      "suspect": 1720,
+      "quarantinePending": 665,
+      "quarantineDenied": 0,
+      "quarantineAllowed": 0
+    }
+  }
+]

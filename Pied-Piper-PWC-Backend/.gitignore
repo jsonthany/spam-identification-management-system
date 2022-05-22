@@ -1,0 +1,11 @@
+# Node
+node_modules/
+coverage/
+dist/
+.nyc_output/
+
+.DS_Store
+*.log
+.terraform*
+.idea
+.env

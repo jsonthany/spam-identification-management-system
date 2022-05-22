@@ -1,0 +1,422 @@
+Delivered-To: richardy910@gmail.com
+Received: by 2002:a17:522:86ae:b0:437:1325:4065 with SMTP id w14csp413766pvz;
+        Tue, 29 Mar 2022 11:41:16 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxHZWKvXnvL2KZbWeJVNe2ojb7Ys0RcSwJRai1q2zXAojLmFT+hkVlYHGrQiRcKB+DkmCFP
+X-Received: by 2002:a2e:a58e:0:b0:249:b31b:f16d with SMTP id m14-20020a2ea58e000000b00249b31bf16dmr3782661ljp.111.1648579276048;
+        Tue, 29 Mar 2022 11:41:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648579276; cv=none;
+        d=google.com; s=arc-20160816;
+        b=yBQLLEaa4Jlxo1VFZftwglz0pQkQ82/68/4uz0AJSMJlixZbmEsj1SHhuMz7IELQkh
+         u3D4ThGPe8c4JtP0JkiePWMJKj4W87UT79oy7x5RD3ZOaMh2yO08KErIjIY7VKshyFYb
+         XbtvdI6VLIRNVC0gnnBhNTpGzvtt2ROgjx9Du3iN11u3DRBnjFVhdjQyTAMiWX5g86DA
+         mEXB5jJxfUkxttyMZBzR4pVgGIQNAslx9v9GFwdA8Rx97BJuyY8GBP8XLg+e7fMpcCP/
+         HNoOEtPrbEhCJV9wEOjmqw4iK7xQcTPowwC6oK5hCcHVZQ1HKA+J6imYQTgN3FfceHGe
+         xtqA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:to:subject:envelope-to:list-unsubscribe:from
+         :sender:sender:date;
+        bh=L0Bb9RTLOOA4FRgPbka/WOqlD7RBjhFfVGMQDNsFRIg=;
+        b=A+uGE5ufvA4xFqPix1qDgvA9dkPBN/E7E2dmYchWy9Zk+CRQB5XF+exlok/TXsAX2b
+         8DBFS7YqqBdFxjTPPVEkuFPnc2czpQisT3ETaTGvsjyCWrpAA4kWcfAZa+e/dYX2ITX4
+         RxoI7ofCJMbxJEqfgNZoRL42faKotymQ0fAlDjaKC5VNw7dF/rrLjRUg5SQOa3kjDIDn
+         73SljVecyOxmz7oQA6hbX68oaFH3cpudJwPbq+An+yg2T/HprfOVARqhwKenlVeZgpNR
+         PvOYfd6w7zTtmGttGFi6+yQEcWosM9NKu3xiOfe975tQIA5Nz1NT5iF0bDE5JjCg5eaQ
+         1IIw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 91.234.35.161 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Return-Path: <bounce@imdb.com>
+Received: from a2ecommerce.com ([91.234.35.161])
+        by mx.google.com with ESMTP id h6-20020a056512054600b00449fff28093si21528708lfl.21.2022.03.29.11.41.15
+        for <richardy910@gmail.com>;
+        Tue, 29 Mar 2022 11:41:16 -0700 (PDT)
+Received-SPF: fail (google.com: domain of bounce@imdb.com does not designate 91.234.35.161 as permitted sender) client-ip=91.234.35.161;
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 91.234.35.161 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Received: from efianalytics.com (efianalytics.com. 216.244.76.116)
+Date: Tue, 29 Mar 2022 18:38:12 +0000
+Sender: <gfcgnnajnk@groch.newspapen.com>
+Sender: <aqyspjnkgj@groch.newspapen.com>
+From: ".Crypto Investor GRM" <qxhtgokmvs@pgvbi.newspapen.com>
+X-EMMAIL: sarahmailsarahmail@kodehexa.net
+List-Unsubscribe: <mailto:<o22447OByNL51557265xtHP1564661Vec2619Lite1285-c22447xMDSJ51557265zYLf1564661GkG2619lplC1285.ljdg2j.quk3tu.9@unsub-sj.mktomail.com>
+Envelope-To: <rogerquinn@gmail.com>
+Subject:Is this the next phase of the great Bitcoin bull market?--#kvm
+To: <[an18]@itlgopk.uk>
+Message-Id: <-@vevida.net>
+X-MarketoID: vKD-Gha-UjW:IPuqow:KrkQKv:v9Wtbh:0:jJKk4V:9:oB3EVd:besLKX8VE
+Feedback-ID: 1.us-east-1.psHyoMfnH8hkuQnF72JGzzQK1By9IkayShm7uIk1GIc=:AmazonSES
+X-PVIQ: mkto-RdMCgBVWW-NB6yqY-hZCeCx-FdLezk
+Content-Type: multipart/report; boundary="000000000000SGCNuB7Qm6umj710elBSQB";
+
+--000000000000SGCNuB7Qm6umj710elBSQB
+Content-Type: multipart/related; boundary="000000000000B0MNRUNyYR84HR9a"
+
+--000000000000B0MNRUNyYR84HR9a
+Content-Type: multipart/alternative; boundary="000000000000B0MNRUNyYR84HR9b"
+
+--000000000000B0MNRUNyYR84HR9b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: Sep 0, 2019
+
+o22447ORlYu51557265Puvn1564661cOc2619nrUW1285
+-----
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+--000000000000B0MNRUNyYR84HR9b
+Content-Type: text/html; charset="UTF-8"
+
+
+
+
+<!------------ START SOCIAL MEDIA ------------>
+
+<!-- IMORTANT NOTES:
+
+    - fill the TARGET URLs
+    - upload images to your server and replace the local links
+    - read the readme.txt file for more informations
+
+-->
+
+
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title></title></head><body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; height: 100% !important; margin: 0 !important; padding: 0; width: 100% !important; !important background-color: #ffffff;" bgcolor="#FFFFFF">
+ 
+ <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Open Sans, Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+ Cryptos: On the cusp of mass acceptance
+ </div>
+ <table border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;"><tr><td align="center" valign="top" width="100%" background="" bgcolor="#FFFFFF" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 3% !important; padding-right: 3% !important; background: #ffffff; background-size: cover; background-attachment: fixed; padding: 0px 15px 0 15px;" class="mobile-padding">
+ 
+ <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; max-width: 600px;"><tr><td align="center" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 0 10px 0;"></td>
+ </tr><tr><td align="left" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 15px; font-family: Open Sans, Helvetica, Arial, sans-serif; border-radius: 3px; border-width: 2px; border-color: #2d2d2d;" bgcolor="#FFFFFF">
+ 
+ <p style="color: #2f2f2f; font-size: 17px; line-height: 26px; margin: 0;">
+ Dear Reader,<br><br>
+ The arrow in the image below shows where the cryptocurrency market is at this time&hellip;<br><br><img border="0"  alt="" style="-ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;"><br><br>
+ Right on the cusp of mass acceptance by mainstream users.<br><br>
+ But two unrelated events are about to make select cryptos household names&hellip; and&hellip; <a href="https://tinyurl.com/3rb8fpke/c22447aKKEs51557265vwDQ1564661MeT2619lVgp1285" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><strong>shower investors with untold fortunes</strong></a>.<br><br>
+ Due to these events more people will flock to cryptocurrencies than ever before and leave fiat money (like the dollar) in the dust.<br><br>
+ In fact, <a href="https://tinyurl.com/3rb8fpke/c22447aKKEs51557265vwDQ1564661MeT2619lVgp1285" is="" already="" in="" the="" action="" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"></a>.<br><br><em>Business Insider</em> says, "As many as 36% of institutional investors in the US and Europe own crypto assets."<br><br>
+ Tom Jessop, president of Fidelity Digital Assets, says there is now "greater interest in and acceptance of digital assets as a new investable asset class."<br><br>
+ And the new surge in demand along with diminishing supplies is about to send select coins to record highs.<br><br><a href="https://tinyurl.com/3rb8fpke/c22447aKKEs51557265vwDQ1564661MeT2619lVgp1285" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><strong>Click here to read this developing story...</strong></a><br><br>
+ Good luck and God bless!<br><br><br>
+ Martin<br><br>
+ P.S. By the way&hellip; certain coins are likely to explode higher in value than others. I'll show you how to get my list of top cryptocurrencies to buy and WHEN to buy them. <a href="https://tinyurl.com/3rb8fpke/c22447aKKEs51557265vwDQ1564661MeT2619lVgp1285" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><strong>All the details are right here.</strong></a>
+ </p>
+ </td>
+ </tr><tr><td height="56" align="center" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: 'Roboto', Verdana, Arial, sans-serif; font-size: 12px; line-height: 18px; color: #797979;">
+ If you no longer wish to receive these emails, you may unsubscribe by clicking <a href="https://tinyurl.com/3rb8fpke/u22447UovkZ51557265BDQu1564661tVF2619ivec1285" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">here</a><br>
+ or by writing to 4400 Northcorp Parkway Palm Beach Gardens Fl 33410 USA
+ </td>
+ </tr></table></td>
+ </tr></table><center>
+<br/>
+<p style="text-align:center;font-family: 'Open Sans','Arial','Helvetica',sans-serif;font-size:13px;"><br><br>
+The advertiser does not manage your subscription. <br>
+If you prefer not to receive further communication please unsubscribe <a href="https://tinyurl.com/3rb8fpke/su22447yFdIT51557265Pprf1564661nNC2619RvqB1285"> here </a><br>
+<br>
+<br>
+</p>
+</center>
+ </body>
+</html>
+
+
+<object><title>
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+Your Enterprise Plus member number and user name is trendxs.
+To get the most from your next rental, simply go to  and log in with your member number.
+Welcome to the Enterprise Plus? membership experience.
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+Dear grec fadon,
+</title>
+<!--
+                 _                                 _     
+                /\ \                               /\ \    
+   _    __    \_\ \    __    _  ___     __   \_\ \   
+ /'__`\/'  `\  /'_` \  / _`\/\`'__\/',__\  /'__`\ /'_` \  
+/\  _//\ \/\ \/\ \L\ \/\ \L\ \ \ \/\_, `\/\  __//\ \L\ \ 
+\ \____\ \_\ \_\ \___,_\ \____/\ \_\/\____/\ \____\ \___,_\
+ \/____/\/_/\/_/\/__, /\/___/  \/_/\/___/  \/____/\/__, /
+                                                           
+                                                           
+-->
+<emd 
+salute
+was
+federal
+land
+housing
+inequality
+will
+to
+has
+Robert
+make
+resources
+does
+added
+newsletterGet
+Years
+on
+lowincome
+their
+potential
+America
+direct
+in
+and
+without
+we
+New
+children
+people
+this
+Commission
+to
+documented
+inequality
+lower
+need
+than
+cities
+but
+After
+says
+Orleans
+Americans
+to
+In
+on
+more
+Foundation
+than
+Eisenhower
+never
+Brookings
+of
+making
+going
+Healing
+has
+May
+failed
+deregulation
+which
+going
+ETPerhaps
+report
+children
+to
+ask
+And
+The
+housing
+United
+senator
+to
+everSo
+creates
+enforcement
+Commission
+students
+of
+access
+with
+doesnt
+graders
+poverty
+access
+disparities
+effect
+that
+step
+Shortly
+on
+and
+have
+has
+developers
+or
+Why
+atrisk
+about
+half
+will
+have
+while
+school
+as
+by
+of
+and
+Who
+that
+observed
+childrenShare
+plan
+privatesector
+and
+at
+flag
+provides
+this
+former
+work
+there
+suffer
+policy
+We
+at
+race
+urban
+living
+integration
+and
+emerged
+and
+opportunityOne
+For
+ask
+racial
+opposed
+looks
+childrens
+of
+still
+and
+chronicled
+care
+to
+will
+Professor
+resulted
+ideology
+Act
+evidence
+lowest
+has
+white
+America
+wants
+in
+decades
+be
+ExperimentSegregation
+communities
+that
+hard
+housewives
+had
+with
+unemployment
+remained
+laws
+this
+problem
+public
+expanding
+more
+intentional
+poor
+down
+of
+Franz
+Americaxs
+Bernard
+Kerner
+for
+University
+housing
+of
+on
+commission
+Violence
+model
+integrate
+failed
+government
+boasted
+last
+rightWhile
+college
+nation
+newsletterSUBSCRIBEMORE>
+<html>
+	<body>
+		<center>
+			<table style="display:none;">
+								our support forum at the bottom.
+				Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+				Thank you!
+				all along your road to budgeting glory. Please confirm by clicking the link
+				you to see what the software is capable of.
+				=== Account Information ===
+				before all sorts of great things happen. Like your being able to use YNAB
+				Joining me for a quick demo will be the fastest and most efficient way for
+				thanks for requesting a demo.
+				and log in with your member number.
+				Hello! Quick note to let you know that your email needs to be confirmed
+				== You need a budget, and your email needs confirmation. ==
+				Your Enterprise Plus member number and user name is HYFYF4W.
+				Did any of the times on our website work for you and if so, were you able
+				below:
+				if you need additional help there's a link to
+				to schedule a demo okay?
+				bask in it.
+				Username: sgfdg
+				Powered by gvcnvqnijg 
+				In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+				If not, just let me know and we'll find something else.
+				Site ID: fwh
+				Dylan Basile
+				everything you need to get started below, and
+				Thanks for signing up, and congratulations
+				Here they are again: 
+				Dear lcTychll rGhEG,
+				My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+				To get the most from your next rental, simply go to 
+				And we're serious about budgeting glory. It's a real thing, and you will
+				Welcome to the Enterprise Plus? membership experience.
+				on your new gvcnvqnijg account! You'll find
+				The YNAB Team
+				--
+Hi dhg,
+				Thanks again!
+				=== Your Account Console ===
+				Hi dfdh,
+				Regards,
+				*Book a demo with me here:*
+				Team gvcnvqnijg
+				Confirm your email
+				Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+				<
+								Your 				Did any of the times on our website work for you and if so, were you able
+				Here they are again: 
+				Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+				>
+				Welcome to the Enterprise Plus? membership experience.
+				to schedule a demo okay?
+				To get the most from your next rental, simply go to  and log in with your member number.
+				thanks for requesting a demo.
+				In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+				Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+Hi o22447ORlYu51557265Puvn1564661cOc2619nrUW1285,
+				My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+								Joining me for a quick demo will be the fastest and most efficient way for
+Enterprise Plus member number and user name is HYFYF4W.
+				you to see what the software is capable of.
+Dear reillygerald931 vlyrv,
+				If not, just let me know and we'll find something else.
+			</table>
+		</center>
+	</body>
+</html>
+
+--000000000000B0MNRUNyYR84HR9b--
+--000000000000B0MNRUNyYR84HR9a--
+--000000000000SGCNuB7Qm6umj710elBSQB--

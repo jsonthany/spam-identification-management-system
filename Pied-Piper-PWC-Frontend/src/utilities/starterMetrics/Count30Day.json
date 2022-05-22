@@ -1,0 +1,23 @@
+[
+  {
+    "startTime": "2022-02-25T04:06:07.482Z",
+    "interval": 720,
+    "intervalUnit": "hour",
+    "newCounts": {
+      "total": 71985,
+      "safe": 61230,
+      "suspect": 7525,
+      "quarantinePending": 3230,
+      "quarantineDenied": 0,
+      "quarantineAllowed": 0
+    },
+    "totalCounts": {
+      "total": 71985,
+      "safe": 61230,
+      "suspect": 7525,
+      "quarantinePending": 3230,
+      "quarantineDenied": 0,
+      "quarantineAllowed": 0
+    }
+  }
+]

@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.loginPage {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-container {
+  background-color: #d8d8d8;
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  width: 80%;
+  padding-top: 25px;
+  margin: auto;
+}
+
+.signinFooter {
+  position: absolute;
+  height: 80px;
+  width: 282px;
+  right: 32px;
+  bottom: 8px;
+  background-size: 100% 100%;
+}
+
+.registrationTitle {
+  margin-bottom: 64px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 46px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.recharts-wrapper {
+  position: absolute;
+}

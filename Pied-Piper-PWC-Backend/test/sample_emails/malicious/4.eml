@@ -1,0 +1,225 @@
+Delivered-To: richardy910@gmail.com
+Received: by 2002:a17:522:86ae:b0:437:1325:4065 with SMTP id w14csp537766pvz;
+        Tue, 29 Mar 2022 16:25:15 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwE0H3+MmQT9MGK0JaFYcfQd2HgdApnzg+TCxHp6KR9g+roiJpPMioQWbiQueCrgTQEjxX3
+X-Received: by 2002:a63:f452:0:b0:382:7af1:6ad6 with SMTP id p18-20020a63f452000000b003827af16ad6mr3699470pgk.500.1648596315351;
+        Tue, 29 Mar 2022 16:25:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648596315; cv=none;
+        d=google.com; s=arc-20160816;
+        b=G/FQMEskRGXwpEIavgb5dctdSu3Cpswtexju56h1F2ZjD3Gkhd3LDl1KrT/2AXm+VF
+         K6CWLXVlhfWIVO/0tt4EKR73onbbb8Yucf4kKPMe95/HKSpX8e0VbL/UYDtEi68KWPtm
+         4pfZX4oA8oK0xVvZDdkqUWDyULLwqY8mYf7pp0ZoOFLqnOboh5uvZ7BCE9yYsgP36j0q
+         fzcwZkaWr6wg2AWgYlbB/vzxmxzn87ZTeQOnRXhjQO5uggrs8NBBi+UdZGEjX1YGlw0S
+         MZpoBhrXr30Czi/XOKKzeuX42DnWoIMt6aSGSKVZhK5T3RlpR5AyQHy8eCQxt7LHJUn3
+         4yjg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:to:subject:envelope-to:list-unsubscribe:from
+         :date;
+        bh=8SjAR7hnrBmCIlgqkCHLfQlIU/gtSXyLSyHxBnVMKhY=;
+        b=ItJf0Sya6wbzl7GAeT0s4sIdgs3Jazd91v7dr9W+wus7u0xnRTTCdd39wH9nFvUZgV
+         b7QGxldgrMNWydntfmJn8pASpbfd7deb5S7L6OevL22/TzjriaxnMc/izP90HthtOznT
+         lfKUT5DMX1JXv11YSx+FHHrO/rMTxCM3MT2fNpQF5/dF/jXjd5vGjOU9gWc3biOjHueZ
+         KquzGHETW1ilfHcFwAh+BSkvUqLXnQxymYInf/sGvflL/t5/et694/MCUBpUgNgiEXph
+         ZNr3qGKL50O6mmv2fAnGgn9tDBrc5hUvlX2wV5LJDMcDP2jezZNz59y4zI7RyyZCqfGX
+         8QrQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of tretertert@low.untrope.com designates 65.49.32.243 as permitted sender) smtp.mailfrom=tretertert@low.untrope.com
+Return-Path: <tretertert@low.untrope.com>
+Received: from low.untrope.com (low.untrope.com. [65.49.32.243])
+        by mx.google.com with ESMTP id t1-20020aa79381000000b004fa63c4434fsi17987597pfe.322.2022.03.29.16.25.15
+        for <richardy910@gmail.com>;
+        Tue, 29 Mar 2022 16:25:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of tretertert@low.untrope.com designates 65.49.32.243 as permitted sender) client-ip=65.49.32.243;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of tretertert@low.untrope.com designates 65.49.32.243 as permitted sender) smtp.mailfrom=tretertert@low.untrope.com
+Received: from efianalytics.com (efianalytics.com. 216.244.76.116)
+Date: Mon, 28 Mar 2022 19:46:15 +0000
+From: "🎁richardy910💰" <ngfq2cplokbl0z7r@kodehexa.net>
+X-EMMAIL: bl5utipvhyp2uoay@kodehexa.net
+List-Unsubscribe: <mailto:<c5bokfflajuljn32-ga6pal1vovwus3pxwdwz.rje.quk3tu.9@unsub-sj.mktomail.com>
+Envelope-To: <[Name]@gmail.com>
+Subject:𝙒𝙄𝙉𝙉𝙄𝙉𝙂 𝙉𝙊𝙏𝙄𝙁𝙄𝘾𝘼𝙏𝙄𝙊𝙉 N°15⭐️⭐️⭐️ richardy910⭐️⭐️💰 💰⭐️⭐️⭐️𝘾𝙃𝙀𝘾𝙆_𝙔𝙊𝙐_𝘼𝘾𝘾𝙊𝙐𝙉𝙏_𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉⭐️⭐️⭐️--Mon, 28 Mar 2022 19:46:15 +0000>>
+To: <[nfx4oep3my6gwwcf@itlgopk.uk>
+Message-Id: <-@vevida.net>
+X-MarketoID: vKD-Gha-UjW:IPuqow:KrkQKv:v9Wtbh:0:jJKk4V:9:oB3EVd:besLKX8VE
+Feedback-ID: 1.us-east-1.psHyoMfnH8hkuQnF72JGzzQK1By9IkayShm7uIk1GIc=:AmazonSES X-PVIQ: mkto-RdMCgBVWW-NB6yqY-hZCeCx-FdLezk
+Content-Type: text/html; charset="UTF-8"
+
+<!------------ START SOCIAL MEDIA ------------>
+
+
+<html > <body style="padding:0px; margin:0px;">  
+  <center><div align="center"><table width="100%" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" style="border:solid 3px #E7E9EB; max-width:640px; "><tr><td align="center" valign="top">    
+	<table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" class="mainsetwidth" height="929"><tr><td align="left" valign="top"><table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" class="setWidth100"><tr><td align="left" valign="top">
+		<p align="center"></td> </tr><center><h1><a href="http://bit.ly/3m1BSOP#/t/uju35x0sr/rffa29325x537x84579x13419092x3173324x75961429x8726348" style="font-size:60px;text-decoration:none;color:#00542C;">
+		𝕋𝕀𝕄𝔼 𝕀𝕊 𝕃𝕀𝕄𝕀𝕋𝔼𝔻 𝕋𝕆 𝔽𝕀𝕃𝔼<br>
+<p align="center"></td> </tr><center><h1><a href="http://bit.ly/3m1BSOP#/t/uju35x0sr/rffa29325x537x84579x13419092x3173324x75961429x8726348" style="text-decoration:none;color:red;">
+𝚕𝚊𝚜𝚝 𝚌𝚑𝚊𝚗𝚌𝚎 <br>
+Mon, 28 Mar 2022 19:46:15 +0000
+
+</a></h1></center>
+  <tr><td align="" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:18px; line-height:22px; color:#000; padding-bottom: 20px; padding-top: 20px;">
+	<p align="center"><br><h2>ℂ𝕠𝕟𝕘𝕣𝕒𝕥𝕦𝕝𝕒𝕥𝕚𝕠𝕟𝕤 richardy910@gmail.com !</h2></td></tr><tr><td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:18px; line-height:22px; color:#000; padding-bottom: 20px;">
+								<p align="center">You've Won uuuser011, <b>
+								$75,849</b>  Please confirm receipt now</td></tr>	 <tr><td align="" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:18px; line-height:22px; color:#000; padding-bottom: 20px;">
+								<p align="center">This transaction may only 
+								appear on your account after validate your info.</td></tr>
+  <table align="center" class="primary" border="0" cellpadding="0" cellspacing="0" width="95%"> <tbody> <tr> <td valign="top" width="100%"> <table border="0" cellpadding="0" cellspacing="0" width="100%"> <tbody> <tr> <td align="center" height="22" style="font-family:Trebuchet MS, Geneva, sans-serif; font-size:12px; text-align:center; color:#319da4; padding-bottom:10px;" width="100%"><br />  </td> </tr> </tbody> </table> <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; background-color:#eaf4fa; border:2px solid #00542C; margin-top:0; margin-bottom:0px;"> <tbody> <tr> <td align="left" class="left-section" width="60%">
+  <h1 class="primary-headline" style="font-size:22px; line-height:28px; font-family:sans-serif; color:#000; margin-top:25px; margin-right:25px; margin-left:25px; margin-bottom:10px;" align="center">
+	Fri, 17 Dec 2021 21:58:26 +0000</h1> 
+	<p class="subheadline" style="font-family:arial, sans-serif; color:#444; text-decoration:none; font-size:14px; font-weight:400; line-height:20px; display:inline-block; margin-top:0; margin-bottom:10px; margin-left:25px;" align="center">
+	Funding For: <span style="font-weight:400; border-bottom:1px solid grey;">
+	richardy910</span></p>  
+	<p class="subheadline" style="font-family:arial, sans-serif; color:#444; text-decoration:none; font-size:14px; font-weight:400; line-height:20px; display:inline-block; margin-top:0; margin-bottom:10px; margin-left:25px;" align="center">
+	Email: <span style="font-weight:400; border-bottom:1px solid grey;">
+	richardy910@gmail.com</span></p>  
+	<p class="subheadline" style="font-family:arial, sans-serif; color:#444; text-decoration:none; font-size:14px; font-weight:bold; line-height:20px; display:inline-block; margin-top:0; margin-bottom:10px; margin-left:25px;" align="center">
+	Balance Amount: <span style="color:#000; font-weight:bold; border-bottom:1px solid grey;font-size:20px;">
+	$75,849</span></p>  
+	<p class="subheadline subhead-end" style="font-family:arial, sans-serif; color:#003543; text-decoration:none; font-size:13px; line-height:18px; display:inline-block; margin-top:5px; margin-bottom:35px; margin-right:35px; margin-left:25px;" align="center"> </p> </td> <td align="center" class="right-section" width="40%"> <h3 class="box-text" style="font-family:arial, sans-serif; font-weight:lighter; font-size:16px; line-height:22px; color:#000; margin-top:0px; margin-bottom:0px; margin-right:0;">
+	Payout:</h3> <h3 class="headline" style="font-family:arial, sans-serif; font-weight:lighter; margin-top:0px; margin-bottom:5px;"> <span class="chosen-amount" style="display:block; font-size:45px; line-height:45px; font-weight:bold; padding:0; margin:0; margin-bottom:10px; margin-right:0;">
+	$75,849</span> <a target="_blank" class="main-button" href="http://bit.ly/3m1BSOP#/t/uju35x0sr/rffa29325x537x84579x13419092x3173324x75961429x8726348" style="font-family:arial, sans-serif; font-weight:bold; color:#fff; background:#00542C; border:2px solid #fff; font-size:23px; text-decoration:none; width:180px; height:50px; line-height:50px; margin-top:0px; margin-right:0; margin-bottom:20px; display:block;">
+	Confirm Here</a> </h3> </td> </tr> </tbody> </table><table width="100%" height="40" border="0" cellspacing="0" cellpadding="0" style="border:2px solid #00542C; border-collapse:collapse; background-color:#00542C; height:50px; font-size:14px; font-family:arial, sans-serif; margin-top:0; margin-bottom:20px;color:#fff;"> <tbody> <tr> <td class="supporting_points" align="center" width="213">
+		Memo <span style="border-bottom:1px solid grey; margin-left:20px; display:inline-block; width:140px;"><i>
+		Payout</i></span></td> <td class="supporting_points" align="center" width="213">
+		Signature <span style="border-bottom:1px solid grey; margin-left:20px; display:inline-block; width:140px;"><i>
+		richardy910</i></span></td> </tr> </tbody> </table> <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;" width="100%"style="background-color:red;"> <tbody> <tr> <td align="center" width="100%">  </td> </tr> <tr><td align="" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:18px; line-height:22px; color:#000; padding-bottom: 20px;">
+		<p align="center">(1) FINAL MESSAGE: Your BONUS is ready to be addressed 
+		in your Name uuuser011&#127873;  </div> </tr>      <center> <a href="https://bit.ly/3eupYIN#/t/uju35x0sr/rffa29325x537x84579x13419092x3173324x75961429x8726348" target="_blank" style="text-decoration:none;"><p><b><span style="font-weight:400"><font face="Impact" color="#00542C" style="font-size: 33pt; font-weight:400">
+		Congratulation!</font></span></b></a></center><br /><center><a hREF="https://bit.ly/3eupYIN#/t/uju35x0sr/rffa29325x537x84579x13419092x3173324x75961429x8726348"><b><span style="font-family:calibri light;line-height:40px"><font color="#00542C" size="6">		
+		&#128276; Get Your FREE Case Evaluation&#128276;</font></span></b></a></p>		<table border="0" width="50%" style="font-family: Gotham, Helvetica Neue Helvetica, Arial, sans-serif; letter-spacing: normal; orphans: 2; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #00542C; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: 2px solid #00542C;">		<tr style="background-color: #00542C;"><td align="left">
+		<p align="center"><font face="Arial Black"> 			&nbsp;&nbsp;DATE :</font></td><td align="center"><font face="Arial Black">
+		Fri, 17 Dec 2021 21:58:26 +0000</font></td></tr>  <tr style="background-color: #fff;"><td height="29" align="left">			
+			<p align="center">			<font face="Arial Black">* NAME :</font></td><td height="29" align="center">			<font face="Arial Black">
+								richardy910</font></td></tr><tr style="background-color: #fff;"><td height="29" align="left">			
+			<p align="center">			<font face="Arial Black">				
+			* Email :</font></td><td height="29" align="center">			<font face="Arial Black">
+			richardy910@gmail.com</font></td></tr><tr style="background-color: #fff;"><td align="left">			
+			<p align="center">			<font face="Arial Black">				
+			* STATUS :</font></td><td align="center"><font color="#FF0000" face="Arial Black">				<a href="https://bit.ly/3eupYIN#/t/uju35x0sr/rffa29325x537x84579x13419092x3173324x75961429x8726348" style="color:#00542C;">
+			&#9888;&#65039; PENDING CONFIRMATION &#9888;&#65039;</a></font></td></tr></table>
+	<p align="center"> </p> 
+	<p align="center"> <a href="http://bit.ly/3m1BSOP#/t/uju35x0sr/rffa29325x537x84579x13419092x3173324x75961429x8726348" style="font: 30px arial black;display: block;text-decoration: none;width: 400px;margin:1%;background:#00542C;padding:1%;color:#fff;font-weight: normal;text-align: center;border-radius:25px;" target="_blank">
+	CONFIRM_NOW</a> <br></p>
+	<p align="center"><a href="http://bit.ly/3m1BSOP#low.untrope.com/t/uju35x0sr/uffa29325x537x84579x13419092x3173324x75961429x8726348">			
+	Unsubscribe		</a>        </p>
+	<br />		</table>  <h6 align="center">If you do not wish to continue 
+		receiving email newsletters<a href="https://bit.ly/3eupYIN#low.untrope.com/t/uju35x0sr/fffa29325x537x84579x13419092x3173324x75961429x8726348" style="color:#404040 !important;text-decoration: underline; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; ">CLICK 
+		HERE</a><br />or send post-mail To 1440 W. Taylor St # 1280,,Chicago, IL 
+		60607</h6></center></body></td></tr></table><div style="display:none;">&nbsp;</div>
+
+
+
+
+<center>
+	<title>
+		
+		<div style="display:none;">
+=======
+The oxygen-transporting protein haemoglobin has under gone repeated adaptations as animals evolved to conquer new environments — from the depths of the oceans1 to high mountain ranges2. These adaptations relied on changes in the long-range interactions between oxygen-binding sites buried in the protein’s subunits, and between these regions and binding sites for a multitude of small effector molecules on the protein’s surface3. How did this complex molecular machine, which can respond so exquisitely to available levels of both oxygen and several other effector molecules, come into being? Writing in Nature, Pillai et al.4 reconstruct the stepwise evolution of haemoglobin from precursors that existed more than 400 million years ago.
+===========
+Almost nothing was previously known about how the four-subunit (tetrameric) form of haemoglobin that is found in modern-day jawed vertebrates evolved from ancient monomers. Tetrameric haemoglobin consists of two &#945;- and two &#946;-subunits. Pillai et al. computationally reconstructed an evolutionary tree to chart the protein’s ancient history, using the amino-acid sequences of a large collection of the closely related vertebrate globin proteins, which exist as either monomers or tetramers. The authors’ tree was constructed taking into account that amino-acid substitutions a given protein shares with close relatives tend to have originated in more-recent common ancestors than have those it shares with more-distant relatives. The reconstructed evolutionary tree indicates that multiple rounds of gene duplication and subsequent divergence gave rise to the globin family and, by way of several ancestral proteins, to tetrameric haemoglobin (Fig. 1).
+A lens combined with an artificial iris is placed at the front of the device, just as in the human eye. The retina at the back combines with a hemispherical shell at the front to form a spherical chamber (the ‘eyeball’); the frontal hemispherical shell is made from aluminium lined with a tungsten film. The chamber is filled with an ionic liquid that mimics the vitreous humour — the gel that fills the space between the lens and the retina in the human eye. This arrangement is necessary for the electrochemical operation of the nanowires. The overall structural similarity between the artificial eye and the human eye confers on Gu and colleagues’ device a wide field of view of 100°. This compares with roughly 130° for the vertical field of view of a static human eye.
+I'm proud to be your boss. Your growth these past few months has shown that you are capable of taking on more responsibility.
+ID030PB5CKCZ8EECJEUB6M522NQRW3ZR8UPM6T0O2DKXIZML2BA0UKTPLV2VO2VX82NS3B6GSIX0RTZTI7XLYF8THY12OZSO55G13F2PW2T7ZOMCMQINOYB31WJRNMTVNPVL2U52JNJHY884 NMTDA4VVWJ0EOOJWO7MDZ985U7PG7UHNWVTB9BM13Z20EMTNBR2XU6WGP38CGBANUMVT32XYNI84WP9KFJ41GYL6S71HDJOTEXJ 
+412504824887133717219432019155899409417715382038576020493121260529251398809725382180042928346934422437769081344365533882575323240271755473692989 679654763511640225056594967223939379459917854270717501803633118365446672047533965753297806738189642 
+HI85GM5R216USXX K949YPI6JO7AQO5D23RG4MJQLWJH0QJYP3VM8IFY8HAAFSE3H9VKQZGDEV3A5RJ21WOPVC6R0HDPBWE9GF6IIT7HZ6097Q4JT0M 
+639089945899966 676092535772292893149271043886588956330322381488003154225541128304094963117310054041119399831351543 
+I am so grateful you were able to come to my wedding and join in on the celebrations.
+ I had so much fun dancing the night away with you. Also, thank you so much for the blender.
+Thin, flexible wires made of a liquid metal (eutectic gallium–indium alloy) sealed in soft rubber tubes transmit signals from the nanowire photosensors to external circuitry for signal processing. These wires mimic the nerve fibres that connect the human eye to the brain. A layer of indium between the liquid-metal wires and nanowires improves electrical contact between the two. The artificial retina is held in place by a socket made from a silicone polymer, to ensure proper alignment between the wires and nanowires.
+ 
+
+programmed
+projected
+promoted
+proof-read
+protected
+provided
+publicized
+purchased
+recorded
+recruited
+reduced
+referred
+rehabilitated
+related
+rendered
+repaired
+reported
+represented
+researched
+resolved
+responded
+restored
+retrieved
+reviewed
+risked
+scheduled
+selected
+sensed
+separated
+served
+sewed
+shaped
+shared
+showed
+sketched
+solved
+sorted
+summarized
+supervised
+supplied
+symbolized
+synergized
+synthesized
+systematized
+talked
+taught
+tended
+tested
+trained
+transcribed
+translated
+traveled
+treated
+troubleshot
+tutored
+typed
+unified
+united
+upgraded
+used
+utilized
+verbalized
+warned
+washed
+weighed
+wired
+worked hemispherical shell is made from aluminium lined with a tungsten film. The chamber is filled with an ionic liquid that mimics the vitreous humour — the gel that fills the space between the lens and the retina in the human eye. This arrangement is necessary for the electrochemical operation of the nanowires. The overall structural similarity between the artificial eye and the human eye confers on Gu and colleagues’ device a wide field of view of 100°. This compares with roughly 130° for the vertical field of view of a static human eye.
+269z94dvm6aeqpodd32ytyjw5cso7sz0hrav386f
+sclais7gfswskhsbrdkd48fa78je9jbdelktknl6
+indtujqljcai1a3atli6hhpqnzp95h9bfirdxksuxvpn0ixtbmivqqijyz8rqavt7txxwie5m5t5xbuy
+bvdfppdq9xa0dmmlkioin7grdiqrapgqukvaoi6lnswuj9mwe0r5f9wmbqdwomufxk8qqtzkoxupza2q
+0xmllrw9kzlyd9mek213nbumrxoinsuwjt85857d  k0gqfgzzfuidbrs8sjulvm1pioinldqgzinxbi1r
+g6fmjl4spc79tcbycvcmur4avkkwardsa3qaeyfi  pxjvgm18tcx9attgxdstbdcocwiqbjvgqmmhwecz
+54kyfbry3vw2rumv5zpayxahabtiltwl9lbpfk3v
+uwypejlhutdhh5trxfc8o3fh1wy2ekrd3hfhhriy  3orlsmfpay0tijxyoxbkvm6mljskqbhj1npmlfb9  1qq3snbkbev6jyimy9sneb4rwwr7csvbjwl3e2qa  ahlct2ynkpfwkouicnxupcftlu6jzocxyhw3dkwo  koicniyu5p3l3xvuu0a2ifxkgz7mw9nvs4iw3zw4
+kgzlcwtjxxrufbgw3zdc6qhp2hr6xhp1vxw0024r  iyw8hzxdztbqg2nhqusdhcacvhhc9yarl4pskyvj
+zxqsms59c3lkzup04ioyrkid9aonlbbebcgalygf  p43gddoojx1aujka8s8vg2bhspxp66lpvyk9s76e  wurnz0jx6djnxrfyhkmysrhrsez5zc3j0kdjv1hr
+kjnobwi0jufyqkcjbptlomxbaqoy19vdzebybrsms8xang9p0kaknw6o3vjihr0r3rsh993pl5dfqcr7
+9yaedsutzo0d2xxhjh6ezf5cttk98mojsouur5cj  88bgt4yrnpgobiilnucgrghksatnrhbhup9cgccq  wiqfig7rjwptngw7tgxdgjyknafbq7rblr1xnfif
+The way you commanded the room at last week's meeting was something else. Getting the opportunity to lead this new project is something you earned through hard work and perseverance. I can't wait to see how great it turns out.
+
+</div>
+	</title>
+</center>
+
+
+
+<!------------ STOP NEGATIVE ------------>
+
+
+
+
+ 

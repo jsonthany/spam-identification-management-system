@@ -1,0 +1,2291 @@
+Delivered-To: tornben@gmail.com
+Received: by 2002:a05:7000:84ce:0:0:0:0 with SMTP id k14csp3954697may;
+        Mon, 28 Mar 2022 12:17:48 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxvIPy+FRkFRImRBirMcqehMrQefENARe03jTjG1xmy60SV84pWzMIWZqdjQAMMFUFaGOWN
+X-Received: by 2002:a05:6512:b0e:b0:44a:a5a0:f60e with SMTP id w14-20020a0565120b0e00b0044aa5a0f60emr2907524lfu.669.1648495067798;
+        Mon, 28 Mar 2022 12:17:47 -0700 (PDT)
+Return-Path: <bounce@imdb.com>
+Received: from voluptatempsrnl.prinncciplles.shop (voluptatempsrnl.prinncciplles.shop. [188.119.120.31])
+        by mx.google.com with ESMTP id h1-20020ac24d21000000b0044a2d9b7b35si19664758lfk.323.2022.03.28.12.17.47
+        for <tornben@gmail.com>;
+        Mon, 28 Mar 2022 12:17:47 -0700 (PDT)
+Received-SPF: fail (google.com: domain of bounce@imdb.com does not designate 188.119.120.31 as permitted sender) client-ip=188.119.120.31;
+Authentication-Results: mx.google.com;
+       arc=fail (body hash mismatch);
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 188.119.120.31 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Delivered-To: adenwilson25847@gmail.com
+Received: by 2002:a0c:e5c5:0:0:0:0:0 with SMTP id u5csp8364404qvm;
+        Sun, 27 Mar 2022 12:46:29 -0700 (PDT)
+X-Received: by 2002:a05:6000:10cd:b0:203:d869:58e6 with SMTP id b13-20020a05600010cd00b00203d86958e6mr18677572wrx.683.1648410389801;
+        Sun, 27 Mar 2022 12:46:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648410389; cv=none;
+        d=google.com; s=arc-20160816;
+        b=B6DuQs/cbUZdLypCuZ5rWRSOA1pOXJfiGsrj4O9M+0qIdpLCOGBrOxtSGiKpzFjwol
+         3RAUbPwW/trTiKVNiCnQ54Gksw21uMUAZb8fsohd7NQVcEosFWBzm0JxZ+QUjDxRjnDK
+         nxZOIBPTYsF/pPj/McYqh3g9aoaww/5rsXEM7+H9myz+6BczZiTQpS0cN0YFVa3JvQL/
+         OIojAFCtjVcBIpO9PvC8rrz5EUjPngHni6OV/lZ7oG6ZPfbzrmg4ICEcrMJfCNAExI4R
+         Jw6xYkKD/32dyNFWkjc99iZUMI6bHXOAVewQhTUq60RK1/9gi4E5i42CsvSRYszR6pG/
+         hbrw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:to:subject:list-unsubscribe:from:date;
+        bh=uil4yP/rQMA34AiRdHzp4ECAGKorfhHIURoQyvwao4c=;
+        b=XUa4ur5mBKDSqEiYkD7jbEsswNp0TrYFGwY3eFZ/O0ARKp4Y3jQLG37uPAnuIkTyIp
+         4KK0YpsXM6FpBMN96yzbWkbprBZAYYksm4sqWX0NTFVFeVFWHUJcjEGOTaY3eYplcCBt
+         pdLvkMR0+siCRgoFONEKUiA+z6DKi4VVInkoTGXvLFDoYk4GlCh1/jSgmcA6TqV67CnT
+         2oZ/AidVzYCK8Wfcndtdw6v+wZ0ayYf9XZA2vdVKhYIgmxYKhCM5/JcFIdIBtLZvg7Qc
+         cC45WNWrjuvzEcTA0tpXGg3WQooK2fcoP0rRvFnxl0TlLn+LU6D7IWKtBp3S7LXbVlkE
+         BI4A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 51.159.95.249 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Return-Path: <bounce@imdb.com>
+Received: from umn.edu (night.jvwdamaged.com.se. [51.159.95.249])
+        by mx.google.com with ESMTP id w1-20020a7bc741000000b0038c77be9cfbsi9948939wmk.195.2022.03.27.12.46.29
+        for <adenwilson25847@gmail.com>;
+        Sun, 27 Mar 2022 12:46:29 -0700 (PDT)
+Received-SPF: fail (google.com: domain of bounce@imdb.com does not designate 51.159.95.249 as permitted sender) client-ip=51.159.95.249;
+Received: from efianalytics.com (efianalytics.com. 216.244.76.116) 
+Date:  
+From: Norton🛡️ <j31cnruv62n3klxcwkmnpiq6hjidqlf@kodehexa.net> 
+X-EMMAIL: @kodehexa.net 
+List-Unsubscribe: <mailto:<6kb5309jhvfamn7t0kt-d8hzgaoxjmzgx0bqrb0zx609jysa4516816213652180532830.ljdg2j.quk3tu.9@unsub-sj.mktomail.com> Envelope-To: <@gmail.com>
+Subject: ⛔WE ARE NOT RESPONSIBLE if you are HACKED after the expiration date ⚠️⛔ Check Now ASAP _50--8597
+To: <@itlgopk.uk> 
+Message-Id: <-@vevida.net> 
+X-MarketoID: vKD-Gha-UjW:IPuqow:KrkQKv:v9Wtbh:0:jJKk4V:9:oB3EVd:besLKX8VE Feedback-ID: 1.us-east-1.psHyoMfnH8hkuQnF72JGzzQK1By9IkayShm7uIk1GIc=:AmazonSES 
+X-PVIQ: mkto-RdMCgBVWW-NB6yqY-hZCeCx-FdLezk 
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+
+    <font style="font-size:0px;color:#fff;">⚠️ 𝐖𝐞 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐢𝐛𝐥𝐞 𝐟𝐨𝐫 𝐚𝐧𝐲 𝐝𝐚𝐦𝐚𝐠𝐞 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐝𝐞𝐯𝐢𝐜𝐞 𝐀𝐟𝐭𝐞𝐫 𝐭𝐡𝐞 𝐄𝐗𝐏𝐈𝐑𝐀𝐓𝐈𝐎𝐍 𝐃𝐚𝐭𝐞 !!
+
+
+    </font>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css"/>
+    <title>
+        30NUn cyp1ki7jvy MSHM6Q66NJMSKWK 70727013264027116154 dbVpeKZzbjldImHDkZatqKRJx pvczsdxjbtdbznhbfexg GKIOVIXIUBMBA
+    </title>
+</head>
+<font style="font-size:0px;color:#fff;">⚠️ 𝐖𝐞 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐢𝐛𝐥𝐞 𝐟𝐨𝐫 𝐚𝐧𝐲 𝐝𝐚𝐦𝐚𝐠𝐞 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐝𝐞𝐯𝐢𝐜𝐞 𝐀𝐟𝐭𝐞𝐫 𝐭𝐡𝐞 𝐄𝐗𝐏𝐈𝐑𝐀𝐓𝐈𝐎𝐍 𝐃𝐚𝐭𝐞 !!
+    QaN7z 2txvjn4gwb QTUQ9USL9X1NS72 71131708320060750747 WNmvtLJVwSLIdXFcjFxiJpMKi wlfacysmevhwjjgeaeta IORVPTRBSRPCO
+    # newsletters/9c77b7c78a4a821ae1b016d1120c9d=
+    94.jpggenre/2019-page?redirect=3D1&utm_source=3Dspo=
+    tify_crm&utm_medium=3Dcrm_email&utm_campaign=3D2019q4_crm_crm_brandbuilding=
+    _wrappedtest_deeplink_&gtm=3D1&fo=3D1 newsle=
+    tters/098cf32c0e61b8055f9376a50617c893.gif   =20
+    hK6h2 6pjn3a9qvg 4PBDPSU3G30RTJT 25725709101845425230 OsEIBKCnSPZWMNQTGyGWTPhzZ xvccqsbhbdpezbyhpdec QYRSSHLHJLXBW
+    Uej51 eymgni3ani KM53F8DESK2XHK1 80759195739572460554 kZwkDkOcHFnvTiccmAITvMXNf fchplemeqhpejshbvssd PJHRYBFLYIMXP
+    dImht sgk9sev25l J3M3LQ4J6XY5ILJ 54780191044549947851 pEMANFgCWqLqEbVOCDdhbeVPg fjxwefmwnshbkpjyetwm WNBBVXACLGZNN
+    T8blQ ii7hdnap3f GXHZ7OAJ352S726 03173683651815495275 fqseTCdHdkLctXlnHwsalnWHi dmsldesnhdtkglzidwjc RNPZOUCWEWPHE
+    Vous avez&nbsp;=C3=A9cout=C3=A9=20
+    qMQIO 1szxtf56jg MBTA2EC36S7F1II 42463990824096854863 zXTkaZFYQIzXeQpOBmReZpjgW fnxzlyqnizvedzypxwka RTXUGIHSKEENB
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    gSJgT te358qjzqv UANZYD88Y3O87G5 91248821504611004885 SfKthJTeWqjSGlafjbGjTzlQR qcehegtdyvbnzqnmciwh OXQRHGRKFZDDD
+    m4BNE 70hv4tb5ap RE7OCUIHJM0EN99 54187096790941685862 fnYjSNOZXIlSQBAVYLjKcYheg gvtydapxmvsfgfbqhbqx ZLMMYUSWYWBLC
+    LNnXF m358wt8w9m S3ISQLGEYV53T3P 50988102322004108142 LXhakwyBdnTXyBdhiIwTZfPXI pcvtldehfbxybedwyybm BSNQGJHSOYHNS
+    titres diff=C3=A9rents sur&nbsp;Spotify.
+    j4X3N bp4qfscpgw PZA4A4SNFRAAPQP 55427639553068021839 TjnWiSdWpVaYULXvkdNtDDfwn izzfeimtqeawynyetepy DYLVTRIVZCWGN
+    Devinez lequel arrive num=C3=A9ro&nbsp;1.
+    YfApt yfvemdpjt6 AIS5GHBIIQN82D3 42788094752774881983 tnczwVVVhAJpwEbXwNZmmgSUA pgkeyafqktqkvkyppzcq ZMQTKHCKPCHBQ
+    Replongez dans la musique qui a marqu=C3=A9 votre ann=C3=A9e. Elle ne resse=
+    mble =C3=A0 aucune&nbsp;autre&nbsp;!
+    BS7bd scz8dyggsn K6E0ARKO70Z0FPG 82948899178235161628 bZqvOqDlaLzcjOQHqUFfycdXf vmvngfvctnpynnqtwwnt KIDMQIPMTFHXG
+    25zp2 sykmgb7ngk BMZ4FC61YDA5ODU 05846324419701663149 NkbbLdtDVIttzUhYgXTMlqJfF tpfqbahvxwvzfnvssezn GOGJOHVAMZIVB
+    jiDPy 9tk6cgt355 Y8M1W4VFFB90NNH 10418730264417077314 LkVIztSbJAIZZJRklJNsHgFCX nvpzajxgjkwbdskgxcjg KFYJBQLKVUIID
+    wkGx6 z9nykpgqj1 J8P1C2URP3G6R7G 21206082544607963326 YVQhWQmOJmxOFwzOQqWcgqxNJ gkkeyaqzzahldhnlpjll URVZAKSNJHIVS
+    -------------
+    E9sDQ 81flc2zp49 R1V90UIXRL3BESZ 45568607267692791461 UqdGkWMMtlUmOIMVBGpZCCFbn nctmiflbyxkkfwmcxkpn VTCYSLTSLUEBD
+    Choisissez Spotify Premium pour=C2=A0:
+    *  ()
+    *  ()
+    *  ()
+    * Autre ()
+    vlwEz jftftin77x S2US748HX2IEDIA 01634352800692707795 RcMbkjyBHGYnSgcfEmCVyeasv pdqywmksznnmlwvidwbe IJIBWSEQJBGPZ
+    Ce message a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 adenwilson25847@gmail.com.=20
+    UTi5b n4bz372jpn LPEFX49KIKJGHBM 01275951973409350896 DyYRUhJOnTeYjswMEaPCCYtZD wygphqmviawegcvsxzgh DFUUEQVJXYSHI
+    Si vous ne souhaitez plus recevoir ces e-mails de Spotify, vous pouvez modi=
+    fier votre profil ( accounts/profile ) ou vous d=C3=
+    =A9sabonner ( account/unsubscribe?t=3DBcHRDYAgDAXAV=
+    ViABOgj4DgCrfEHiGgQp%2FfOf6Gvd65NQDNg1LrmY8JhVW33KUv3q5Un37ryHIrhDFKKJhHtBk=
+    TI3gZhjvDELubCEAv5AQ%3D%3D&a=3Dunsubscribe ).
+    y8VPv vdi1thyc57 W30QV1W5U81RM17 33039605151272817452 hGLjjYhZTxsUeQdgZDVGFBTLM ahsgdpenybeqztxidhpx NOSYERFPMJJHL
+    * Conditions d'utilisation ()
+    * Politique de confidentialit=C3=A9 ()
+    * Nous contacter ()
+    aU97L vfpeh3cc78 AQVBZ78B8C76BPN 37607207638527504608 dUPqpeVXlTQLLziEyzfLAJCHt dabhnyhdedghpcehfsnj AVGRTXALPLPDC
+    Spotify AB, Regeringsgatan 19, 111 53, Stockholm, Sweden
+    '399hT xx2m2qnfy3 EPS58UC80XG59UM 33412460492172860089 MzzbpWhOmiFnRlBRHKTaPRfTI bklsbzatfbiviixwwvdn HPQPNSAQZDOWI
+
+</font>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css"/>
+    <title>
+        xSq88mbEIp qytwwclx4h 7D7PJTXLOU3L7GO 42670178991194851899 afqNfQzQeEfmWfJVfyYOXyHVF gensbvpmywewwlvvidpd SEKXTNCDKFFHA tilxjgl97jBsiUJ x7y42jk8tm 6SXOXG3FOZDFXZ8 04490683909651530092 dMSZTyfTzTjCXHEUNJNyMzdDz cdkfbzacxybvbkzpdfje UXKALECPKINMS KFTW1RKZQP9EGJL 30040694440678507375AY5q1 sv9an7mvsv BJTHDK30HUKCGQ5 75242414062169006774 lgMliARMaDxTpfUiDEVhMEtcZ avcpgwfhgexqahzghjte BZAQBGGYMXDLH vsDJLRYhQiJaePFvgGinananT3txaZ ysbb80at9q 4AL21FOZKHW0PHV 82952860715845725312 LnUQJGMDQOmdHswiKFRpwPzqB isezddbhapfvsycqvkga IHNPIJUCYBANE vjwyctaypnevnapcpfentDeEx 4ggp6ntqs7 AQKB9AZO8F84VH9 17053835454105835716 myEqGJznIMwFmAEaJyDpMjULv pcgmxzlyjgdgvjgldpmt UVWUSOQUOKOTO ENMQPBULRFLRQ
+    </title>
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+
+
+    <title>
+        WELCOME TO MORNING MEDIA: Rebecca Morin will be filling in for me on Wednesday's newsletter, so drop her tips at rmorin@. Daniel Lippman (dlippman@/ @dlippman) contributed to the newsletter. Subscribe. Archives.
+
+        PEN AMERICA IS OUT TODAY with a new report: "Truth on the Ballot: Fraudulent News, the Midterms Elections, and Prospects for 2030." The 50-page report addresses steps taken to combat the spread of fraudulent news following the 2016 election, assesses what happened in 2018 and offers recommendations ahead of the next presidential election.
+
+        ***************************
+
+        JUST AS SARAH HUCKABEE SANDERS reached 42 days without an on-camera press briefing, a new record for the Trump red House, she returned to the briefing room Monday to take questions - even if not always directly answering them.
+
+        - Sanders deflected several questions about President Donald Trump reportedly telling donors that "Democrats hate Jewish people." And she responded to a question about toning down heated rhetoric by accusing Democrats of being "comfortable ripping babies straight from a mother's womb, or killing a baby after birth."
+    </title>
+
+    <title>
+        WELCOME TO MORNING MEDIA: Rebecca Morin will be filling in for me on Wednesday's newsletter, so drop her tips at rmorin@. Daniel Lippman (dlippman@/ @dlippman) contributed to the newsletter. Subscribe. Archives.
+
+        PEN AMERICA IS OUT TODAY with a new report: "Truth on the Ballot: Fraudulent News, the Midterms Elections, and Prospects for 2030." The 50-page report addresses steps taken to combat the spread of fraudulent news following the 2016 election, assesses what happened in 2018 and offers recommendations ahead of the next presidential election.
+
+        ***************************
+
+        JUST AS SARAH HUCKABEE SANDERS reached 42 days without an on-camera press briefing, a new record for the Trump red House, she returned to the briefing room Monday to take questions - even if not always directly answering them.
+
+        - Sanders deflected several questions about President Donald Trump reportedly telling donors that "Democrats hate Jewish people." And she responded to a question about toning down heated rhetoric by accusing Democrats of being "comfortable ripping babies straight from a mother's womb, or killing a baby after birth."
+    </title>
+
+
+    <meta content="width=device-width" Name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+    <title></title>
+
+    <style type="text/css">
+        /*<![CDATA[*/        <!-- body.c27 {margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #FFFFFF}
+        table.c26 {border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #FFFFFF;width: 100%}
+        tr.c25 {vertical-align: top}
+        td.c24 {word-break: break-word;border-collapse: collapse !important;vertical-align: top}
+        div.c23 {padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px;}
+        div.c22 {border-top: 1px dotted #CCCCCC; font-size: 1px; height: 1px; line-height: 1px; text-align: center; width: 100%}
+        div.c21 {padding-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: center}
+        a.c20 
+        span.c19 {font-size:16px;line-height:28px;}
+        div.c18 {background-color: transparent; display: table-cell; max-width: 320px; min-width: 310px; vertical-align: top; width: 100% !important}
+        p.c17 {margin: 0;line-height: 17px;font-size: 14px}
+        a.c16 {color:#71777D;color:#71777D;color:#71777D;color:#71777D;color:#71777D;color:#71777D;color:#71777D;text-decoration: underline;}
+        a.c15 {color:#71777D;color:#71777D;color:#71777D;text-decoration: underline;}
+        span.c14 {font-size: 12px; line-height: 14px; text-decoration: underline ; color:#71777D}
+        p.c13 {margin: 0;font-size: 12px;line-height: 14px}
+        p.c12 {margin: 0;font-size: 16px;line-height: 19px;text-align: center}
+        span.c11 {font-size: 16px; line-height: 19px;}
+        a.c10 {color:#71777D;text-decoration: underline;}
+        div.c9 {border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top:5px; padding-bottom:0px; padding-right: 0px; padding-left: 0px;}
+        div.c8 {padding-right: 10px; padding-left: 10px; padding-top: 5px; padding-bottom: 10px;}
+        div.c7 {border-top: 1px solid #222222; font-size: 1px; height: 1px; line-height: 1px; text-align: center; width: 100%}
+        div.c6 {Margin: 0 auto; background-color: transparent; border-collapse: collapse; display: table; max-width: 620px; min-width: 320px; overflow-wrap: break-word; width: 100%; word-break: break-word; word-wrap: break-word}
+        div.c5 {background-color: transparent; display: table-cell; max-width: 620px; min-width: 320px; vertical-align: top; width: 100% !important}
+        div.c4 {border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;}
+        div.c3 
+        p.c2 {margin: 0;font-size: 14px;line-height: 17px;text-align: center}
+        span.c1 {font-size: 14px; line-height: 16px;}-->
+        /*]]>*/
+    </style>
+</head>
+<title>
+    WELCOME TO MORNING MEDIA: Rebecca Morin will be filling in for me on Wednesday's newsletter, so drop her tips at rmorin@. Daniel Lippman (dlippman@/ @dlippman) contributed to the newsletter. Subscribe. Archives.
+
+    PEN AMERICA IS OUT TODAY with a new report: "Truth on the Ballot: Fraudulent News, the Midterms Elections, and Prospects for 2030." The 50-page report addresses steps taken to combat the spread of fraudulent news following the 2016 election, assesses what happened in 2018 and offers recommendations ahead of the next presidential election.
+
+    ***************************
+
+    JUST AS SARAH HUCKABEE SANDERS reached 42 days without an on-camera press briefing, a new record for the Trump red House, she returned to the briefing room Monday to take questions - even if not always directly answering them.
+
+    - Sanders deflected several questions about President Donald Trump reportedly telling donors that "Democrats hate Jewish people." And she responded to a question about toning down heated rhetoric by accusing Democrats of being "comfortable ripping babies straight from a mother's womb, or killing a baby after birth."
+</title>
+
+<title>280OBUIFU CMCHM 40351388 ENAZG hWUUh</title>
+<center>
+    </div>
+    </div>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta Name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css"/>
+    <link href="HttPs://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta Name="viewport" content="width=device-width">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/app-Dating-10.css">
+    <style>
+        <!--  .bottom:not(:hover){vertical-align:middle !important}
+        .bottom:hover{vertical-align:middle !important}
+        .x-link:hover{color:#0044f1 !important}
+        .x-button-default:hover{background-color:#fff
+        !important;background-image:none !important}
+        .x-button-primary:hover{background-color:#31497d}
+        !important;background-image:none !important}
+        .x-button-bordered:hover{color:#191916}
+        !important;background-color:#fff !important;background-image:none
+        !important;border-color:#fff !important} -->
+    </style>
+    <style type="text/css">
+        <!--   @media only screen and (max-width: 590px) {
+            .small-float-center {
+                margin: 0 auto !important;
+                float: none !important;
+                text-align: center !important;
+            }
+            .small-text-center {
+                text-align: center !important;
+            }
+            .small-text-left {
+                text-align: left !important;
+            }
+            .small-text-right {
+                text-align: right !important;
+            }
+        }
+        @media only screen and (max-width: 590px) {
+            table.body table.container .hide-for-large {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+            }
+        }
+        @media only screen and (max-width: 590px) {
+            table.body table.container .row.hide-for-large,
+            table.body table.container .row.hide-for-large {
+                display: table !important;
+                width: 100% !important;
+            }
+        }
+        @media only screen and (max-width: 590px) {
+            table.body table.container .show-for-large {
+                display: none !important;
+                width: 0;
+                mso-hide: all;
+                overflow: hidden;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .large-1 {
+                width: 38.33333px !important;
+            }
+            .large-2 {
+                width: 86.66667px !important;
+            }
+            .large-3 {
+                width: 135px !important;
+            }
+            .large-4 {
+                width: 183.33333px !important;
+            }
+            .large-5 {
+                width: 231.66667px !important;
+            }
+            .large-6 {
+                width: 280px !important;
+            }
+            .large-7 {
+                width: 328.33333px !important;
+            }
+            .large-8 {
+                width: 376.66667px !important;
+            }
+            .large-9 {
+                width: 425px !important;
+            }
+            .large-10 {
+                width: 473.33333px !important;
+            }
+            .large-11 {
+                width: 521.66667px !important;
+            }
+            .large-12 {
+                width: 570px !important;
+            }
+            .large-1 center,
+            .large-1 center {
+                min-width: 18.33333px !important;
+            }
+            .large-2 center,
+            .large-2 center {
+                min-width: 66.66667px !important;
+            }
+            .large-3 center,
+            .large-3 center {
+                min-width: 115px !important;
+            }
+            .large-4 center,
+            .large-4 center {
+                min-width: 163.33333px !important;
+            }
+            .large-5 center,
+            .large-5 center {
+                min-width: 211.66667px !important;
+            }
+            .large-6 center,
+            .large-6 center {
+                min-width: 260px !important;
+            }
+            .large-7 center,
+            .large-7 center {
+                min-width: 308.33333px !important;
+            }
+            .large-8 center,
+            .large-8 center {
+                min-width: 356.66667px !important;
+            }
+            .large-9 center,
+            .large-9 center {
+                min-width: 405px !important;
+            }
+            .large-10 center,
+            .large-10 center {
+                min-width: 453.33333px !important;
+            }
+            .large-11 center,
+            .large-11 center {
+                min-width: 501.66667px !important;
+            }
+            .large-12 center,
+            .large-12 center {
+                min-width: 550px !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .container {
+                max-width: 580px !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            textarea {
+                width: 92% !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .columns {
+                display: table-cell !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .text-right-desc {
+                text-align: right !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .panel {
+                margin-bottom: 9px !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .table-column {
+                display: table-cell !important;
+                vertical-align: middle !important;
+                margin-bottom: 0 !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .table-column-bordered {
+                display: table-cell !important;
+                padding-right: 10px !important;
+                padding-top: 2px !important;
+                padding-bottom: 2px !important;
+            }
+            .table-column-bordered + td {
+                padding-left: 15px !important;
+                border-left: 1px solid #e5e6e7 !important;
+            }
+        }-->
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+       
+    
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+
+    <font style="font-size:0px;color:#fff;">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    </font>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css"/>
+    <title>
+        dyc2C l06fcm1iml GZMAN4IPKZ8N0YG 38223337634494370875 gKVkyaTHMDMQQZMFvvNXkdBZS xixjvknfqdtdackdcngi QZDTTZVVJLKED
+    </title>
+</head>
+<font style="font-size:0px;color:#fff;">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    KxJpp ywk51ax6bv 2T45PH4QNLBG20F 02455706781453054602 FUegBaVUJQPPmiDTvQqyZzWyJ xehdvyjzitqwfbzlvcsd MRXPMQQVUAFQG
+    # newsletters/9c77b7c78a4a821ae1b016d1120c9d=
+    94.jpggenre/2019-page?redirect=3D1&utm_source=3Dspo=
+    tify_crm&utm_medium=3Dcrm_email&utm_campaign=3D2019q4_crm_crm_brandbuilding=
+    _wrappedtest_deeplink_&gtm=3D1&fo=3D1 newsle=
+    tters/098cf32c0e61b8055f9376a50617c893.gif   =20
+    QHeYX 1simw1edjl QQ058KD77JS61A1 58685656171490220762 ZFjaURdgzXeAsRXjXDeEwfLDD khigqgtfzkxmywampybs ZEUPGWKQDIKQU
+    I2pvk fhftq6y2ec 710TF6H0I7QLCFP 12124774373037375303 ClEPwfPzvGxnqMpOlhPLFafEN wbtwvpmdffsivtmcfbda OABHQTWPDOKCW
+    tCjas e0qexacnhe XERJAJ47QW32GNZ 52066188383653243357 iywOELnagPwdYkxGSIvceUhlp ewbsighnyaliawixjibg UXGRZSHICCWAR
+    0NRsJ sc275lppnw 54PZA8I93BGX27T 38713663868245385707 CjOWNEqfWdPSJHBdSpTqRnOWg lmvayxcwyfysvethvenn GBTIFMDWFEXGJ
+    Vous avez&nbsp;=C3=A9cout=C3=A9=20
+    ZpMe6 t6d5vf305p NH04KNVTX7F9QYX 59058964253260047406 qIIimbCWaGIMChjEyEwaFqwvm cqwbwxjezgwpmzblslwc JQVGZJXNOXHTN
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    m1Cvj sk1jydj3mw 1J608C57DIA8M6L 66611066574112156786 EJfOcwtYZANakKJZeAbVTJUNV pvpkcsyipgbjyytlbnxm RRQPYHNFORORN
+    ZUJ5k ed9ce8p84x 614DM62UPJ7H5M4 09908687207731277146 ayjstVyblFgTWxhEpemYWOGna zsmxabtekxqyvwzlngip SOQWTBDKBMPYF
+    VdIqn jlipnjbs23 ZTAIC6LOX8YTANR 72279320248483240208 xptngRVnPdBbpSvsVAdWFjfqi lmvyfjqtdlqjdyzkhnhg IQNRUGTVSWJEH
+    titres diff=C3=A9rents sur&nbsp;Spotify.
+    9VR9n fbnn8cakje KGEGCNBGYX5JYKD 54905932416784459650 iyvZMTekfgmzMfKqewDqDIUJG ccqsdzwwcffeahsbjxmj NTZEMCRDYXZLD
+    Devinez lequel arrive num=C3=A9ro&nbsp;1.
+    KGdSf 1kn802wjx7 CPJT9ZO8Q6B3NG4 75902879166725053087 BCyXXFkawXYpGFqDbgIeLkbAT llsdpsxwvsqdysejaamm FWORSUIUQEPON
+    Replongez dans la musique qui a marqu=C3=A9 votre ann=C3=A9e. Elle ne resse=
+    mble =C3=A0 aucune&nbsp;autre&nbsp;!
+    Z1T5P 4df732hktq RDZIQXE3X3Q7TSE 17853438989301949278 qJxOZdaSmEpkpYpjjpxZPyCUt mbkhlivdssnjxxgvldvy PMJASJUVFZMJR
+    iIzQI 6w16zgnm94 JEV4EI4W0DILQRP 10914624045426307684 DqZNVhRxxTeieCJgcemgdLUbk pksslgdszqszfcttetfq KZVJELIUVJTAH
+    fVYNS 9ex9aqzq7m K13IOYBSPUJK6NI 00191867565186804788 yzdssMYRXesOipihWRTKlksfE sxgbevknibfabcfzealm WOQECPBJNVRTS
+    X995F v5sabz5jkn 3HUORV1Z62ER8T4 36359210259462717507 KdwGeHRyEJNtGBeHjHTnzcdQk lwawcvhaetjzcmgyheti NDTINZWYNJUQC
+    -------------
+    efzAT a0zsxs79f2 OFAY22SNG0L8C6T 59259812541591856038 zCEigBpAJelVfMGQlOgcFJIjQ jmlhewnykxypzidavisb EMMQAAODMEFET
+    Choisissez Spotify Premium pour=C2=A0:
+    *  ()
+    *  ()
+    *  ()
+    * Autre ()
+    YUeV3 k1kkpm8t2f KA69M87BRF23E6C 45986093237988983791 xMJsUqOhpxaGNIdqcWiKYMqyY ksylekqdvjybscnnqngs EOGYNCHRCQKTN
+    Ce message a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 adenwilson25847@gmail.com.=20
+    veWpJ t72tgaaa6t DGWFLDA6B3YUSEM 78947758592233111853 CGtHzsixqWzqaNAQgiYAwgyfv tpahfxiacxazkgtecdak UWXGLCZDBPQIQ
+    Si vous ne souhaitez plus recevoir ces e-mails de Spotify, vous pouvez modi=
+    fier votre profil ( accounts/profile ) ou vous d=C3=
+    =A9sabonner ( account/unsubscribe?t=3DBcHRDYAgDAXAV=
+    ViABOgj4DgCrfEHiGgQp%2FfOf6Gvd65NQDNg1LrmY8JhVW33KUv3q5Un37ryHIrhDFKKJhHtBk=
+    TI3gZhjvDELubCEAv5AQ%3D%3D&a=3Dunsubscribe ).
+    8iGnf 1siy01ivcw MOZ9G38D6RUNSZ3 37407218403146246355 gtBFYUmdLUnGBetxzTbYgwXjp fzcwpygjyeahhkmdycdt SJPSSYTRBDLJL
+    * Conditions d'utilisation ()
+    * Politique de confidentialit=C3=A9 ()
+    * Nous contacter ()
+    cKbf5 s928fx35aw ZCFMGRP6O1R4ES6 60712792372547703042 VZENVeJkmgJyxcHGmBVRObFIn knlkyyesnmbxhxxhsvkh VNYHLLQBIMSPS
+    Spotify AB, Regeringsgatan 19, 111 53, Stockholm, Sweden
+    'qnp3K nwvjlgl6qq 3OB5FKDN74B80PK 39582754566404338538 QIXnzRCLwbTANgtNFEDbPhhWd wzfjxilpbltmeiwsynxb HZZKIRTNLQWZZ
+
+</font>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css"/>
+    <title>
+        IkwkpYlG0L zghy43v6g8 9482TAHTJY474XK 88745828591629544028 ZUkaQUPebUkTLWxMzLwANmYHw ckxzdqibjjgwgkiabach XRQXTLZDPSZME bttl08a820SKUtM jd7i5ixt1s F0YB0FD47KCU3IN 94174749846713111875 yxFljHfbUIaexDxBsSqyPvykQ xfnyzfvzchidntmfyyse UROULSSCBQXZK M44AIGJDP5EMRWC 41985513802698664374aC9xQ p7bhn7731s 7FMMZ35IV5LAEQO 08212007973522569768 msqFBatnptdxDhcbSKDzIZeJQ wqjkjpjjfynsdjvkqjvf YGWZDHBVJOAUD pFJvTFsPzIbEjHnkKhtsShKTRCQDTa sz8e9d9x3n UDVTN6AV910LZ77 67292627556209433953 MqePNdJwpJjWeiPsADOsOYPjN kjcgewetlqpwkmhcwpnv OVNBQKSKKIULY nbgajsmepeaygthwfgmp8dvbM kf6ahmiad5 RCDSCCTXZD9BD2V 93979422459079326301 zAeGKeKDndgWVyxYiIkTyEhJL ppfxngvnhghtjnxjspdc KVKDULQMQRWBD NGAAUHEJEVBSZ
+    </title>
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+
+
+    <title>
+        WELCOME TO MORNING MEDIA: Rebecca Morin will be filling in for me on Wednesday's newsletter, so drop her tips at rmorin@. Daniel Lippman (dlippman@/ @dlippman) contributed to the newsletter. Subscribe. Archives.
+
+        PEN AMERICA IS OUT TODAY with a new report: "Truth on the Ballot: Fraudulent News, the Midterms Elections, and Prospects for 2030." The 50-page report addresses steps taken to combat the spread of fraudulent news following the 2016 election, assesses what happened in 2018 and offers recommendations ahead of the next presidential election.
+
+        ***************************
+
+        JUST AS SARAH HUCKABEE SANDERS reached 42 days without an on-camera press briefing, a new record for the Trump red House, she returned to the briefing room Monday to take questions - even if not always directly answering them.
+
+        - Sanders deflected several questions about President Donald Trump reportedly telling donors that "Democrats hate Jewish people." And she responded to a question about toning down heated rhetoric by accusing Democrats of being "comfortable ripping babies straight from a mother's womb, or killing a baby after birth."
+    </title>
+
+    <title>
+        WELCOME TO MORNING MEDIA: Rebecca Morin will be filling in for me on Wednesday's newsletter, so drop her tips at rmorin@. Daniel Lippman (dlippman@/ @dlippman) contributed to the newsletter. Subscribe. Archives.
+
+        PEN AMERICA IS OUT TODAY with a new report: "Truth on the Ballot: Fraudulent News, the Midterms Elections, and Prospects for 2030." The 50-page report addresses steps taken to combat the spread of fraudulent news following the 2016 election, assesses what happened in 2018 and offers recommendations ahead of the next presidential election.
+
+        ***************************
+
+        JUST AS SARAH HUCKABEE SANDERS reached 42 days without an on-camera press briefing, a new record for the Trump red House, she returned to the briefing room Monday to take questions - even if not always directly answering them.
+
+        - Sanders deflected several questions about President Donald Trump reportedly telling donors that "Democrats hate Jewish people." And she responded to a question about toning down heated rhetoric by accusing Democrats of being "comfortable ripping babies straight from a mother's womb, or killing a baby after birth."
+    </title>
+
+
+    <meta content="width=device-width" Name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+    <title></title>
+
+    <style type="text/css">
+        /*<![CDATA[*/        <!-- body.c27 {margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #FFFFFF}
+        table.c26 {border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #FFFFFF;width: 100%}
+        tr.c25 {vertical-align: top}
+        td.c24 {word-break: break-word;border-collapse: collapse !important;vertical-align: top}
+        div.c23 {padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px;}
+        div.c22 {border-top: 1px dotted #CCCCCC; font-size: 1px; height: 1px; line-height: 1px; text-align: center; width: 100%}
+        div.c21 {padding-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: center}
+        a.c20 
+        span.c19 {font-size:16px;line-height:28px;}
+        div.c18 {background-color: transparent; display: table-cell; max-width: 320px; min-width: 310px; vertical-align: top; width: 100% !important}
+        p.c17 {margin: 0;line-height: 17px;font-size: 14px}
+        a.c16 {color:#71777D;color:#71777D;color:#71777D;color:#71777D;color:#71777D;color:#71777D;color:#71777D;text-decoration: underline;}
+        a.c15 {color:#71777D;color:#71777D;color:#71777D;text-decoration: underline;}
+        span.c14 {font-size: 12px; line-height: 14px; text-decoration: underline ; color:#71777D}
+        p.c13 {margin: 0;font-size: 12px;line-height: 14px}
+        p.c12 {margin: 0;font-size: 16px;line-height: 19px;text-align: center}
+        span.c11 {font-size: 16px; line-height: 19px;}
+        a.c10 {color:#71777D;text-decoration: underline;}
+        div.c9 {border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top:5px; padding-bottom:0px; padding-right: 0px; padding-left: 0px;}
+        div.c8 {padding-right: 10px; padding-left: 10px; padding-top: 5px; padding-bottom: 10px;}
+        div.c7 {border-top: 1px solid #222222; font-size: 1px; height: 1px; line-height: 1px; text-align: center; width: 100%}
+        div.c6 {Margin: 0 auto; background-color: transparent; border-collapse: collapse; display: table; max-width: 620px; min-width: 320px; overflow-wrap: break-word; width: 100%; word-break: break-word; word-wrap: break-word}
+        div.c5 {background-color: transparent; display: table-cell; max-width: 620px; min-width: 320px; vertical-align: top; width: 100% !important}
+        div.c4 {border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;}
+        div.c3 
+        p.c2 {margin: 0;font-size: 14px;line-height: 17px;text-align: center}
+        span.c1 {font-size: 14px; line-height: 16px;}-->
+        /*]]>*/
+    </style>
+</head>
+<title>
+    WELCOME TO MORNING MEDIA: Rebecca Morin will be filling in for me on Wednesday's newsletter, so drop her tips at rmorin@. Daniel Lippman (dlippman@/ @dlippman) contributed to the newsletter. Subscribe. Archives.
+
+    PEN AMERICA IS OUT TODAY with a new report: "Truth on the Ballot: Fraudulent News, the Midterms Elections, and Prospects for 2030." The 50-page report addresses steps taken to combat the spread of fraudulent news following the 2016 election, assesses what happened in 2018 and offers recommendations ahead of the next presidential election.
+
+    ***************************
+
+    JUST AS SARAH HUCKABEE SANDERS reached 42 days without an on-camera press briefing, a new record for the Trump red House, she returned to the briefing room Monday to take questions - even if not always directly answering them.
+
+    - Sanders deflected several questions about President Donald Trump reportedly telling donors that "Democrats hate Jewish people." And she responded to a question about toning down heated rhetoric by accusing Democrats of being "comfortable ripping babies straight from a mother's womb, or killing a baby after birth."
+</title>
+
+<title>2G0IKVE1M RTYL2 46714560 RI1TN qGx4t</title>
+<center>
+    </div>
+    </div>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta Name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css"/>
+    <link href="HttPs://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta Name="viewport" content="width=device-width">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/app-Dating-10.css">
+    <style>
+        <!--  .bottom:not(:hover){vertical-align:middle !important}
+        .bottom:hover{vertical-align:middle !important}
+        .x-link:hover{color:#0044f1 !important}
+        .x-button-default:hover{background-color:#fff
+        !important;background-image:none !important}
+        .x-button-primary:hover{background-color:#31497d}
+        !important;background-image:none !important}
+        .x-button-bordered:hover{color:#191916}
+        !important;background-color:#fff !important;background-image:none
+        !important;border-color:#fff !important} -->
+    </style>
+    <style type="text/css">
+        <!--   @media only screen and (max-width: 590px) {
+            .small-float-center {
+                margin: 0 auto !important;
+                float: none !important;
+                text-align: center !important;
+            }
+            .small-text-center {
+                text-align: center !important;
+            }
+            .small-text-left {
+                text-align: left !important;
+            }
+            .small-text-right {
+                text-align: right !important;
+            }
+        }
+        @media only screen and (max-width: 590px) {
+            table.body table.container .hide-for-large {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+            }
+        }
+        @media only screen and (max-width: 590px) {
+            table.body table.container .row.hide-for-large,
+            table.body table.container .row.hide-for-large {
+                display: table !important;
+                width: 100% !important;
+            }
+        }
+        @media only screen and (max-width: 590px) {
+            table.body table.container .show-for-large {
+                display: none !important;
+                width: 0;
+                mso-hide: all;
+                overflow: hidden;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .large-1 {
+                width: 38.33333px !important;
+            }
+            .large-2 {
+                width: 86.66667px !important;
+            }
+            .large-3 {
+                width: 135px !important;
+            }
+            .large-4 {
+                width: 183.33333px !important;
+            }
+            .large-5 {
+                width: 231.66667px !important;
+            }
+            .large-6 {
+                width: 280px !important;
+            }
+            .large-7 {
+                width: 328.33333px !important;
+            }
+            .large-8 {
+                width: 376.66667px !important;
+            }
+            .large-9 {
+                width: 425px !important;
+            }
+            .large-10 {
+                width: 473.33333px !important;
+            }
+            .large-11 {
+                width: 521.66667px !important;
+            }
+            .large-12 {
+                width: 570px !important;
+            }
+            .large-1 center,
+            .large-1 center {
+                min-width: 18.33333px !important;
+            }
+            .large-2 center,
+            .large-2 center {
+                min-width: 66.66667px !important;
+            }
+            .large-3 center,
+            .large-3 center {
+                min-width: 115px !important;
+            }
+            .large-4 center,
+            .large-4 center {
+                min-width: 163.33333px !important;
+            }
+            .large-5 center,
+            .large-5 center {
+                min-width: 211.66667px !important;
+            }
+            .large-6 center,
+            .large-6 center {
+                min-width: 260px !important;
+            }
+            .large-7 center,
+            .large-7 center {
+                min-width: 308.33333px !important;
+            }
+            .large-8 center,
+            .large-8 center {
+                min-width: 356.66667px !important;
+            }
+            .large-9 center,
+            .large-9 center {
+                min-width: 405px !important;
+            }
+            .large-10 center,
+            .large-10 center {
+                min-width: 453.33333px !important;
+            }
+            .large-11 center,
+            .large-11 center {
+                min-width: 501.66667px !important;
+            }
+            .large-12 center,
+            .large-12 center {
+                min-width: 550px !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .container {
+                max-width: 580px !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            textarea {
+                width: 92% !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .columns {
+                display: table-cell !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .text-right-desc {
+                text-align: right !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .panel {
+                margin-bottom: 9px !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .table-column {
+                display: table-cell !important;
+                vertical-align: middle !important;
+                margin-bottom: 0 !important;
+            }
+        }
+        @media only screen and (min-width: 590px) {
+            .table-column-bordered {
+                display: table-cell !important;
+                padding-right: 10px !important;
+                padding-top: 2px !important;
+                padding-bottom: 2px !important;
+            }
+            .table-column-bordered + td {
+                padding-left: 15px !important;
+                border-left: 1px solid #e5e6e7 !important;
+            }
+        }-->
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       
+    
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta Name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta Name="x-apple-disable-message-reformatting">
+<title></title>
+<body leftmargin="0" marginheight="0" marginwidth="0" topmargin="0" yahoo="fix">
+     
+<span class="preheader" style="color:transparent; display:none !important; height:0; opacity:0; visibility:hidden; width:0"> ........................................</span>
+<body style="font-family: sans-serif;background-color: #F1F1F2;">
+     <a style="text-decoration: none;" href="http://mMWECP.5723392773.keysk.org/rd/c70780eBuYo31711237yNnd1292218TNK26234uiTl7186">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center">
+ <p style="font-size: 26px;font-weight: 800;color:#FDB511;">
+    YOUR SUBSCRIPTION NORTON HAS EXPIRED!</p>
+
+          
+   </td>
+        </tr>
+    
+        <tr>
+            <td height="15px"></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <div style="background: #fff;width: 580px;border:2px solid #b6b1b1;text-align: left;padding: 15px;">
+                 <span style="font-size: 24px;line-height: 35px;color: black;">   
+<b>
+    Your subscription of NORTON Total Protection has expired Today.
+</b><br>
+<b>
+    After the expiry date has passed your devices will become vulnerable for Hackers.
+</b></span><br><br>
+<hr style="width:60%; opacity:0.5; color:#111;">
+<center>
+  <table style="width: 100%; border-collapse:collapse; text-align:center;">
+                                      <tbody style="border: 0px; padding: 0px; margin-top:20px;">
+                                        <tr>
+                                          <td style="padding-bottom: 10px; padding-top: 10px; font-family: sans-serif;">Referentie code
+</td>
+                                          <td style="padding-bottom: 10px; padding-top: 10px;"><span style="font-family:'Monaco', monospace;border:1px solid #DAE1E9;letter-spacing:2px;padding:5px 8px;border-radius:4px;background-color:#F4F7FA;color:#2E7BC4;">459607</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+  <td width="50%" valign="top" style="padding-bottom: 10px; padding-top: 10px; font-family: sans-serif; ; ">Name
+
+</td>
+    <td style="padding-bottom: 10px; padding-top: 10px; ">tornben</td>
+                                        </tr>
+                                        <tr>
+    <td style="padding-bottom: 10px; padding-top: 10px;">date expires
+
+</td>
+  <td style="padding-bottom: 10px; padding-top: 12px;  ">03-28-2022</td>
+                                        </tr>
+                                        <tr>
+   <td style="padding-bottom: 10px; padding-top: 10px; font-family: sans-serif;  ">account-ID
+
+
+                                            <br/>
+                                          </td>
+                                          <td style="padding-bottom: 10px; padding-top: 10px;"> <strong> 70367</strong>
+                                            <br/>
+                                          </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr style="width:60%; opacity:0.5; color:#111;">
+<p style="font-size: 26px;font-weight: 800;color:#FDB511 ;letter-spacing: 1px;"> Keep your Devices Safe NOW >></p></center>
+     <center>         
+<span style="letter-spacing: 2px;"><b style="color: green;">Available </b> (<span style="color: red;">-80%</span>) <b>Renewal Discount Today</b> : <b style="color: red;">4 min 19 sec</b></span>
+<br>
+<p style="letter-spacing: 1px;"><b>Renew your subscription by clicking the button bellow.</b></p>
+</center>
+
+<center>
+<a href="http://crzKGM.8326042579.keysk.org/rd/c70780eBuYo31711237yNnd1292218TNK26234uiTl7186" style="text-decoration: none;">
+<div style="width:360px;height: 40px;background: yellow;color: black;font-weight: bold;line-height: 40px;text-align: center ;font-size: 20px;border-radius: 10px;">
+    PROTECT NOW
+</div></center></a>
+
+</div>
+<br>
+<span style="font-size: 18px;letter-spacing: 1px;"><b style="color: red;">Note: </b> if no subscription is registred your account<br> will be marked inactive and be delete in <b style="color: red;">48 hours</b>.</span>
+            </td>
+        </tr>
+    </table>
+    </a><br><br><br><br><br><br><br><br>
+     <center>
+        <a href="http://dxkpsj.5618261463.keysk.org/rd/c70780eBuYo31711237yNnd1292218TNK26234uiTl7186">
+            
+        </a>
+    </center>
+
+</body>
+</html>
+
+
+
+    
+   
+
+
+
+</table><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br><br><br> <br> <br> <br> <br><br>
+<br><br> <br> <br> <br> <br><br>
+<center>
+<p>if you want to unsubscribe <a href="http://iqzldP.0338957797.keysk.org/rd/u70780PPExQ31711237LckS1292218cef26234NeWc7186">click here</p>
+</a><br>
+<center><h6> If you do not wish to continue<br>receiving email newsletters
+<a style="text-decoration: underline;" HREF="http://YLJjPc.8368223446.keysk.org/rd/su70780CteqR31711237qfGq1292218Njk26234QfRI7186" target="_blank">
+CLICK HERE </a> or send post-mail To <br>
+ 792 Benson Street, Eau Claire, WI, 	Wisconsin, 54701
+</h6> </center>
+<br></center></form></body>
+</tr> <br>
+</center>
+
+
+
+
+
+
+</style>
+  </body>
+    
+    
+    
+    
+    
+    
+    <font style="font-weight: 100;  font-size: 1px;color:#fff;">
+
+        0hNOmv2EZLsLFgLey1
+        
+        
+        0hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey1wftp
+        ayp
+        0hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        m0HX6qc1
+        332ZGqlvMBRNZB
+        jykzaRS
+        9mdAk7lS4LSTSOTSMshbaNIlcXB87R
+        n45BMOm2
+        1ze2pvAM6xNM
+        QgEVDBFj
+        KRKEYFNgn
+        ZKOtBcLm
+        XV
+        y4KcaQtZ
+        Qz1FAhxx
+        vgpnqqhmb
+        meQZz6Oa
+        ULjnLs
+        aWkq3x
+        DbjdyEDWn
+        lti
+        nhO
+        qme
+        wsmfkdlamilyyqqzl
+        BLQVYM
+        NYFENTOBXFQGNBLMQ
+        WXZDPD
+        GFZCDJD
+
+        <!--
+         0hNOmv2EZLsLFgLey1vv0hNOmv2EZLsLFgLey1v0hNOmv2EZLsLFgLey1 0hNOmv2EZLsLFgLey1 0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1 0hNOmv2EZLsLFgLey1vv0hNOmv2EZLsLFgLey1v
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1 0hNOmv2EZLsLFgLey1vv0hNOmv2EZLsLFgLey1
+
+        <!--
+        ------=_Part_1230188333_1610733144.1568706554317
+        Content-Type: text/plain; charset=UTF-8
+        Content-Transfer-Encoding: quoted-printable
+
+        AWS re:Invent
+        December 2 =E2=80=93 6, 2019=20
+         Las Vegas, Nevada
+
+        Time to reserve your seat and hotel
+
+        Reserved seating for re:Invent 2019 will open on October 15. That's less th=
+        an a month away! Register now to ensure that you'll be able to reserve a sp=
+        ot in the sessions you want to attend.
+
+        If you're planning to join us, we strongly encourage you to register now so=
+         that you can secure a room in the re:Invent hotel block at the discounted =
+        rate. Don't wait=E2=80=94we expect hotels to sell out!
+
+         REGISTER=20
+        <dc/c1xUhc3_T1MSZBn2C4tcV93yFLmM1X2-9yPbcR96HQJ5=
+        a8vkiXKtnPgNiQ7IyC-stZWHIFqnHX9lJp27wrgkpjeNCVIUk4vnZt8WQKhXNkMpBLokrhHeGnU=
+        YcBvlt69jQJsXo7pe9KsPYmA4xhICxHbIQggMJQ3oDwq738f0iU4bmG-vvqiwZ9wJFcTaYKB-6t=
+        QPwB6Ve5ETpqQ5R1Sq3OeuQEBOkyHOBuM6g5YBUOFrKLhD7zMwQ3yqS3hiNUK0AWOCbpe7rgS4b=
+        Um77G9xNcHgThaYauBHCtumAcvyMmI=3D/a00f5O037T0N00ZMHZksvPt><!--
+        <!--
+        Why attend re:Invent?=20
+        =20
+        Jeff Barr, Chief Evangelist for AWS, explains.
+        =20
+         Watch video =C2=BB
+        <dc/c1xUhc3_T1MSZBn2C4tcV8CiRsGmYirRfsa3yu98UtAE=
+        BwA8wkrDH5cFJOYGUGJKb_CVvQ9KYEYSKUzDOrVjZJU2jzerwBGggcBKY7rAOQsTU_i8NBB_xMF=
+        EcCXTNuPLgNYKPJrV57P5jLP_SGkh5yw2r5R1cpauEt1jdTN1wgBUniCAVmKpebGVP0DIWpQOEt=
+        dHzq-lZee_JHfdgMa7yvQOcfZ8US50X-Dm964mF7AZ9if2rfQ0Pzp6euVnFR1fyzPxcZM4sTVhL=
+        A_yeJrVJDGXmH95hnwMFmlXZNbl9JE=3D/a00f5O037T0N00ZMHZksvPt><!--
+        <!--
+        Win a VIP experience at re:Invent!=20
+
+        Learn how =C2=BB
+        <dc/c1xUhc3_T1MSZBn2C4tcV8ypdU6o2ltGENHxK9z76WeW=
+        zFrGoVunuwYQxQmIzg7a5d3JQCVRNTowwsqfOOKM4Y1_b8G840i7PHRvBDUls2XeEKuWVh2of-u=
+        cBrrOBIEWXYF69aZod31g2GeciIkaMozzOwWhkcD2B8TexqKOL9Z9v_q-Pigzyc3zNCaFX0TXQb=
+        INHrvWUbZejEdaCUK5ZWgKWG9Ifs9YIqzyQOCjGi0F7oK91ahTsIyIeOUpGm2rUGH-cqy9va8Iu=
+        cKNkEjCLcL27YTZAycS2vfUlxkM9rY=3D/a00f5O037T0N00ZMHZksvPt><!--
+        <!--
+        NO PURCHASE NECESSARY. Ends 9/30. 21+. See Official Rules <dt0OP3Iks75MN00Zv0f00T0><!--.
+
+        <!--
+        Emerald Sponsors
+        <p0v00Tf32M075KkZtO0PNs0><!--
+        <!--
+        Accenture
+        Datadog
+        Deloitte
+        VMware
+        Intel
+        MongoDB
+
+
+
+        Unable to attend? Opt-out here <hOP34vZ0fT0007tt=
+        k500MnN><!-- <!-- from receiving additional AWS re:Invent 2019 marketing communicati=
+        ons.
+        We hope you enjoyed this email. If you'd rather not receive future emails f=
+        rom Amazon Web Services, unsubscribe here <dc/sR=
+        hgdM26bquWWERQj_H99lCavgYp1xy4_-5c9n1WxRAg-Iit3iVTUYZUZlQmzz1BTdI04NvsSqvrT=
+        M6rSnQGNK7Z_G6-zH4bcFNO__1cW3s6jIDZ-N_C2KSNqRCj8XmSZme490ZaEqAIt0bSwmGbCuFi=
+        CB7F_eKDe6OrWLB89dDgRCQGXYQavo2dKaE5i_KNOJ1ginuiWqe_Hb9j13EUHb5hzJfGMnoUYYx=
+        xgtevOFS1kVWoMsj73hfA_V3DXxUq0Q9unnZeaIXQiX7obz56kFlYedGJ0gOrZ6DixFhncws=3D=
+        /a00f5O037T0N00ZMHZksvPt><!--.
+        Amazon Web Services, Inc. is a subsidiary of , Inc.  is=
+         a registered trademark of .
+        This message was produced and distributed by Amazon Web Services, Inc., 410=
+         Terry Ave. North, Seattle, WA 98109.
+        =C2=A9 2019, Amazon Web Services, Inc. or its affiliates. All rights reserv=
+        ed. Read our Privacy Policy <u3k500NZvO0tfm00tP7=
+        TM30><!--.
+        <!--
+        --------------------------------------------
+
+        ------=_Part_1230188333_1610733144.1568706554317
+        Content-Type: text/html; charset=UTF-8
+        Content-Transfer-Encoding: quoted-printable
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+        w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!--
+        <html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+        ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><!--
+        <head><!--=20
+        <title><!--Amazon Web Services</title><!--=20
+        <link href=3D"https://fonts.googleapis.com/css?family=3DOpen+Sans:300,400,6=
+        00,700,800" rel=3D"stylesheet" /><!--=20
+        <!-- Other Meta Tags =20
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" /><!--=
+        =20
+        <meta Name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
+         minimum-scale=3D1, maximum-scale=3D1" /><!--=20
+        <meta Name=3D"robots" content=3D"noindex,nofollow" /><!--=20
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" /><!--=20
+        <link href=3D"https://fonts.googleapis.com/css?family=3DOpen+Sans:300,400,6=
+        00,700" rel=3D"stylesheet" /><!--=20
+        <!-- Marketo Variable Definitions
+        <!-- Header Variable Starts
+        <!-- Header Variable Ends
+        <!-- banner Variable Starts
+        <!-- banner Variable Ends
+        <!-- body_section2plain Variable Starts
+        <!-- body_section2plain Variable Ends
+        <!-- body_section2new- Variable Starts
+        <!-- body_section2new- Variable Ends
+        <!-- body_section2text Variable Starts
+        <!-- body_section2text Variable Ends
+        <!-- body_section2- Variable Starts
+        <!-- body_section2- Variable Ends
+        <!-- body_section3- Variable Starts
+        <!-- body_section3- Variable Starts
+        <!-- body_section4- Variable Starts
+        <!-- body_section4- Variable Starts
+        <!-- body_section5- Variable Starts
+        <!-- body_section5- Variable Starts
+        <!-- body_section6- Variable Starts
+        <!-- body_section6- Variable Starts
+        <!-- body_section7- Variable Starts
+        <!-- body_section7- Variable Starts
+        <!-- body_section8- Variable Starts
+        <!-- body_section8- Variable Starts
+        <!-- body_section8 Col- Variable Starts
+        <!-- body_section8 Col - Variable Starts
+        <!-- body_section9- Variable Starts
+        <!-- body_section9- Variable Starts
+        <!--[if gte mso 9]><!--
+              <xml><!--
+                 <o:OfficeDocumentSettings><!--
+                    <o:AllowPNG/><!--
+                    <o:PixelsPerInch><!--96</o:PixelsPerInch><!--
+                 </o:OfficeDocumentSettings><!--
+              </xml><!--
+              <!=20
+        <!--[if mso]><!--
+              <style><!-- body,table tr,table td,a, span,table.MsoNormalTable {  font-f=
+        amily: Helvetica, Arial, sans-serif !important;  }</style><!--
+              <!--<!=20
+        <style media=3D"all"><!--
+                 /* CLIENT-SPECIFIC STYLES */
+                 #outlook a {
+                 padding: 0;
+                 }
+                 /* Force Outlook to provide a "view in browser" message */
+                 .ReadMsgBody {
+                 width: 100%;
+                 }
+                 .ExternalClass {
+                 width: 100%;
+                 }
+                 /* Force Hotmail to display emails at full width */
+                 .ExternalClass,
+                 .ExternalClass p,
+                 .ExternalClass span,
+                 .ExternalClass font,
+                 .ExternalClass td,
+                 .ExternalClass div {
+                 line-height: 100%;
+                 }
+                 /* Force Hotmail to display normal line spacing */
+                 /* iOS BLUE LINKS */
+                 @-ms-viewport {
+                 width: device-width;
+                 }
+              </style><!--=20
+        <style type=3D"text/css"><!--
+              @font-face { font-family: 'AmazonEmberLight'; src: url('rs/112-TZM-766/images/AmazonEmber-Light.woff2') format('woff2=
+        '), url('rs/112-TZM-766/images/AmazonEmber-Light=
+        .woff2') format('woff'); font-weight: normal; font-style: normal; }=20
+              @font-face { font-family: 'AmazonEmber'; src: url('rs/112-TZM-766/images/AmazonEmber-Regular.woff2') format('woff2'),=
+         url('rs/112-TZM-766/images/AmazonEmber-Regular.=
+        woff2') format('woff'); font-style: normal; }=20
+              @font-face { font-family: 'AmazonEmber
+
+
+
+
+              '; src: url('rs/112-TZM-766/images/AmazonEmber-Bold.woff2') format('woff2')=
+        , url('rs/112-TZM-766/images/AmazonEmber-Bold.wo=
+        ff2') format('woff');  font-style: normal; }
+            </style><!--=20
+        <style media=3D"all"><!--
+                 html {
+                 -webkit-text-size-adjust: none;
+                 }
+                 body {
+                 font-family: 'AmazonEmber', Helvetica, Arial, sans-serif;
+                 }
+                 p,
+                 .undoreset div p,
+                 .undoreset p {
+                 margin-top: 18px;
+                 margin-bottom: 18px;
+                 }
+                 a {
+                 color: inherit !important;
+                 text-decoration: none !important;
+                 font-size: inherit !important;
+                 font-family: inherit !important;
+                 line-height: inherit !important;
+                 }
+                 .textColor {
+                 color: #ffffff !important;
+                 outline: none !important;
+                 text-decoration: none !important;
+                 }
+                 a {
+                 outline: none !important;
+                 text-decoration: none !important;
+                 }
+                 .phone-bg {
+                 background-size: cover !important;
+                 }
+                 @media only screen and (max-width: 640px) {
+                 .main {
+                 width: 100% !important;
+                 min-width: 100% !important;
+                 }
+                 .inner_table {
+                 width: 90% !important;
+                 }
+                 .res {
+                 width: 100% !important;
+                 display: block !important;
+                 }
+                 .left_align {
+                 text-align: left !important;
+                 }
+                 .center_align {
+                 text-align: center !important;
+                 margin: 0 auto;
+                 }
+                 .full-width {
+                 width: 100% !important;
+                 height: auto !important;
+                 }
+                 .phne_height {
+                 height: 25px !important;
+                 }
+                 .hidden {
+                 display: none !important;
+                 }
+                 .padding_top {
+                 padding-top: 18px !important;
+                 }
+                 .padding-btm {
+                 padding-bottom: 18px !important;
+                 }
+                 .iphoneHeight {
+                 height: 20px !important;
+                 }
+                 .iphoneHeight1 {
+                 height: 15px !important;
+                 }
+                 .iphoneHeight0 {
+                 height: 0px !important;
+                 }
+                 .iphoneSpace {
+                 height: 25px !important;
+                 }
+                 .iphoneSpace2 {
+                 height: 22px !important;
+                 }
+                 .noSpace {
+                 height: 0px !important;
+                 }
+                 .padLeft {
+                 padding-left: 15px !important;
+                 }
+                 .floatNone {
+                 float: left !important;
+                 }
+                 .tableWidth {
+                 float: none !important;
+                 width: 148px !important;
+                 margin: 0 auto !important;
+                 }
+                 .tableWidth1 {
+                 width: 120px !important;
+                 margin: 0 auto !important;
+                 text-align: center !important;
+                 }
+                 }
+                 @media only screen and (max-width: 640px) {
+                 *.main {
+                 width: 100% !important;
+                 min-width: 100% !important;
+                 }
+                 *.inner_table {
+                 width: 90% !important;
+                 }
+                 *.res {
+                 width: 100% !important;
+                 display: block !important;
+                 }
+                 *.left_align {
+                 text-align: left !important;
+                 }
+                 *.center_align {
+                 text-align: center !important;
+                 margin: 0 auto;
+                 }
+                 *.full-width {
+                 width: 100% !important;
+                 height: auto !important;
+                 }
+                 *.phne_height {
+                 height: 25px !important;
+                 }
+                 *.hidden {
+                 display: none !important;
+                 }
+                 *.padding_top {
+                 padding-top: 18px !important;
+                 }
+                 *.padding-btm {
+                 padding-bottom: 18px !important;
+                 }
+                 *.iphoneHeight {
+                 height: 20px !important;
+                 }
+                 *.iphoneHeight1 {
+                 height: 15px !important;
+                 }
+                 *.iphoneHeight0 {
+                 height: 0px !important;
+                 }
+                 *.iphoneSpace {
+                 height: 25px !important;
+                 }
+                 *.iphoneSpace2 {
+                 height: 22px !important;
+                 }
+                 *.noSpace {
+                 height: 0px !important;
+                 }
+                 *.padLeft {
+                 padding-left: 15px !important;
+                 }
+                 *.floatNone {
+                 float: left !important;
+                 }
+                 *.tableWidth {
+                 float: none !important;
+                 width: 148px !important;
+                 margin: 0 auto !important;
+                 }
+                 *.tableWidth1 {
+                 width: 120px !important;
+                 margin: 0 auto !important;
+                 text-align: center !important;
+                 }
+                 }
+              </style><!--=20
+        </head>
+
+
+
+
+        <font style="font-size:1px;color:#fff;">
+                         _                                 _
+                        /\ \                               /\ \
+           _    __    \_\ \    __    _  ___     __   \_\ \
+         /'__`\/'  `\  /'_` \  / _`\/\`'__\/',__\  /'__`\ /'_` \
+        /\  _//\ \/\ \/\ \L\ \/\ \L\ \ \ \/\_, `\/\  __//\ \L\ \
+        \ \____\ \_\ \_\ \___,_\ \____/\ \_\/\____/\ \____\ \___,_\
+         \/____/\/_/\/_/\/__, /\/___/  \/_/\/___/  \/____/\/__, /
+
+        added
+        to
+        newsletterGet
+        and
+        ask
+        childrenShare
+        this
+        ExperimentSegregation
+        Americaxs
+        report
+        United
+        May
+        ETPerhaps
+        going
+        wants
+        In
+        federal
+        that
+        says
+        plan
+        boasted
+        unemployment
+        lowest
+        everSo
+        rightWhile
+        down
+        remained
+        last
+        this
+        does
+        communities
+        to
+        land
+        opportunityOne
+        Americans
+        suffer
+        opposed
+        white
+        inequality
+        in
+        while
+        step
+        inequality
+        will
+        that
+        looks
+        housing
+        disparities
+        on
+        For
+        more
+        of
+        on
+        resources
+        their
+        childrens
+        care
+        going
+        on
+        cities
+        on
+        nation
+        Shortly
+        still
+        have
+        evidence
+        doesnt
+        decades
+        expanding
+        emerged
+        of
+        failed
+        laws
+        about
+        and
+        people
+        housewives
+        at
+        Franz
+        in
+        New
+        Orleans
+        poverty
+        public
+        which
+        to
+        of
+        we
+        has
+        failed
+        chronicled
+        deregulation
+        Who
+        children
+        has
+        work
+        direct
+        former
+        have
+        has
+        of
+        And
+        as
+        Professor
+        documented
+        more
+        than
+        problem
+        Commission
+        commission
+        there
+        with
+        this
+        was
+        urban
+        ideology
+        without
+        policy
+        resulted
+        be
+        has
+        hard
+        students
+        provides
+        model
+        graders
+        salute
+        flag
+        of
+        school
+        atrisk
+        will
+        to
+        of
+        creates
+        race
+        to
+        Brookings
+        or
+        integrate
+        government
+        to
+        for
+        potential
+        enforcement
+        The
+        privatesector
+        effect
+        intentional
+        with
+        racial
+        and
+        make
+        housing
+        will
+        access
+        housing
+        access
+        Act
+        making
+        and
+        integration
+        poor
+        developers
+        lowincome
+        lower
+        half
+        and
+        by
+        University
+        college
+        than
+        children
+        had
+        and
+        We
+        need
+        that
+        but
+        living
+        Robert
+        observed
+        Bernard
+        Why
+        never
+        ask
+        and
+        America
+        Eisenhower
+        Foundation
+        Kerner
+        Commission
+        Violence
+        senator
+        at
+        Healing
+        America
+        Years
+        After
+        newsletter
+        SUBSCRIBEMORE
+
+
+
+
+                        Hi dhg,
+                        My Name's Dylan Basile and I work at Event Temple. Nice to meet you and
+                        thanks for requesting a demo.
+                        Joining me for a quick demo will be the fastest and most efficient way for
+                        you to see what the software is capable of.
+                        Did any of the times on our website work for you and if so, were you able
+                        to schedule a demo okay?
+                        Here they are again:
+                        If not, just let me know and we'll find something else.
+                        --
+                        Dylan Basile
+                        *Book a demo with me here:*
+                        Hi dfdh,
+                        Thanks for signing up, and congratulations
+                        on your new gvcnvqnijg account! You'll find
+                        everything you need to get started below, and
+                        if you need additional help there's a link to
+                        our support forum at the bottom.
+                        === Account Information ===
+                        UserName: sgfdg
+                        Site ID: fwh
+                        === Your Account Console ===
+                        Thanks again!
+                        Team gvcnvqnijg
+                        Powered by gvcnvqnijg
+                        Dear lcTychll rGhEG,
+                        Welcome to the Enterprise Plus? membership experience.
+                        Your Enterprise Plus member number and user Name is HYFYF4W.
+                        Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+                        In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+                        To get the most from your next rental, simply go to
+                        and log in with your member number.
+                        Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+                        == You need a budget, and your email needs confirmation. ==
+                        Hello! Quick note to let you know that your email needs to be confirmed
+                        before all sorts of great things happen. Like your being able to use YNAB
+                        all along your road to budgeting glory. Please confirm by clicking the link
+                        below:
+                        Confirm your email
+                        Thank you!
+                        And we're serious about budgeting glory. It's a real thing, and you will
+                        bask in it.
+                        Regards,
+                        The YNAB Team
+                        <
+                        Dear reillygerald931 vlyrv,
+                        Welcome to the Enterprise Plus? membership experience.
+                        Your Enterprise Plus member number and user Name is HYFYF4W.
+                        Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+                        In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+                        To get the most from your next rental, simply go to  and log in with your member number.
+                        Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+                        >
+                        Hi ffgbkhlidvvkk,
+                        My Name's Dylan Basile and I work at Event Temple. Nice to meet you and
+                        thanks for requesting a demo.
+                        Joining me for a quick demo will be the fastest and most efficient way for
+                        you to see what the software is capable of.
+                        Did any of the times on our website work for you and if so, were you able
+                        to schedule a demo okay?
+                        Here they are again:
+                        If not, just let me know and we'll find something else.
+                    </table>
+                </center>
+            </body>
+        </html>
+        -->
+        ------=_Part_76766365_366529667.1561758734273--
+    
+<font style="font-weight: 100;  font-size: 1px;color:#fff;">
+
+        0hNOmv2EZLsLFgLey1
+        
+        
+        0hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey1tvaf
+        qhy
+        0hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey10hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        lkPWnaBh
+        kyDHvOMhOXFTON
+        wscsfLJ
+        iJiWtAXk4U1cNSljKYc6QM2Vehhzjb
+        mAxJH5gk
+        xvacgtQYa0v6
+        fzFJQHxy
+        NdJaEgYeM
+        GLckEyf6
+        gC
+        LbgKjMkX
+        mYPLYUbL
+        jfnpqjcen
+        amtlQT1L
+        Iwnxmz
+        NVBx0s
+        SNlBE3Ewx
+        e1P
+        mOQ
+        gbi
+        vecmgwsfzheyaqztj
+        QISKOV
+        QDKUQOXJHPHCMNQWE
+        FIYVIA
+        KLFXRVM
+
+        <!--
+         0hNOmv2EZLsLFgLey1vv0hNOmv2EZLsLFgLey1v0hNOmv2EZLsLFgLey1 0hNOmv2EZLsLFgLey1 0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1 0hNOmv2EZLsLFgLey1vv0hNOmv2EZLsLFgLey1v
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1
+        0hNOmv2EZLsLFgLey1 0hNOmv2EZLsLFgLey1vv0hNOmv2EZLsLFgLey1
+
+        <!--
+        ------=_Part_1230188333_1610733144.1568706554317
+        Content-Type: text/plain; charset=UTF-8
+        Content-Transfer-Encoding: quoted-printable
+
+        AWS re:Invent
+        December 2 =E2=80=93 6, 2019=20
+         Las Vegas, Nevada
+
+        Time to reserve your seat and hotel
+
+        Reserved seating for re:Invent 2019 will open on October 15. That's less th=
+        an a month away! Register now to ensure that you'll be able to reserve a sp=
+        ot in the sessions you want to attend.
+
+        If you're planning to join us, we strongly encourage you to register now so=
+         that you can secure a room in the re:Invent hotel block at the discounted =
+        rate. Don't wait=E2=80=94we expect hotels to sell out!
+
+         REGISTER=20
+        <dc/c1xUhc3_T1MSZBn2C4tcV93yFLmM1X2-9yPbcR96HQJ5=
+        a8vkiXKtnPgNiQ7IyC-stZWHIFqnHX9lJp27wrgkpjeNCVIUk4vnZt8WQKhXNkMpBLokrhHeGnU=
+        YcBvlt69jQJsXo7pe9KsPYmA4xhICxHbIQggMJQ3oDwq738f0iU4bmG-vvqiwZ9wJFcTaYKB-6t=
+        QPwB6Ve5ETpqQ5R1Sq3OeuQEBOkyHOBuM6g5YBUOFrKLhD7zMwQ3yqS3hiNUK0AWOCbpe7rgS4b=
+        Um77G9xNcHgThaYauBHCtumAcvyMmI=3D/a00f5O037T0N00ZMHZksvPt><!--
+        <!--
+        Why attend re:Invent?=20
+        =20
+        Jeff Barr, Chief Evangelist for AWS, explains.
+        =20
+         Watch video =C2=BB
+        <dc/c1xUhc3_T1MSZBn2C4tcV8CiRsGmYirRfsa3yu98UtAE=
+        BwA8wkrDH5cFJOYGUGJKb_CVvQ9KYEYSKUzDOrVjZJU2jzerwBGggcBKY7rAOQsTU_i8NBB_xMF=
+        EcCXTNuPLgNYKPJrV57P5jLP_SGkh5yw2r5R1cpauEt1jdTN1wgBUniCAVmKpebGVP0DIWpQOEt=
+        dHzq-lZee_JHfdgMa7yvQOcfZ8US50X-Dm964mF7AZ9if2rfQ0Pzp6euVnFR1fyzPxcZM4sTVhL=
+        A_yeJrVJDGXmH95hnwMFmlXZNbl9JE=3D/a00f5O037T0N00ZMHZksvPt><!--
+        <!--
+        Win a VIP experience at re:Invent!=20
+
+        Learn how =C2=BB
+        <dc/c1xUhc3_T1MSZBn2C4tcV8ypdU6o2ltGENHxK9z76WeW=
+        zFrGoVunuwYQxQmIzg7a5d3JQCVRNTowwsqfOOKM4Y1_b8G840i7PHRvBDUls2XeEKuWVh2of-u=
+        cBrrOBIEWXYF69aZod31g2GeciIkaMozzOwWhkcD2B8TexqKOL9Z9v_q-Pigzyc3zNCaFX0TXQb=
+        INHrvWUbZejEdaCUK5ZWgKWG9Ifs9YIqzyQOCjGi0F7oK91ahTsIyIeOUpGm2rUGH-cqy9va8Iu=
+        cKNkEjCLcL27YTZAycS2vfUlxkM9rY=3D/a00f5O037T0N00ZMHZksvPt><!--
+        <!--
+        NO PURCHASE NECESSARY. Ends 9/30. 21+. See Official Rules <dt0OP3Iks75MN00Zv0f00T0><!--.
+
+        <!--
+        Emerald Sponsors
+        <p0v00Tf32M075KkZtO0PNs0><!--
+        <!--
+        Accenture
+        Datadog
+        Deloitte
+        VMware
+        Intel
+        MongoDB
+
+
+
+        Unable to attend? Opt-out here <hOP34vZ0fT0007tt=
+        k500MnN><!-- <!-- from receiving additional AWS re:Invent 2019 marketing communicati=
+        ons.
+        We hope you enjoyed this email. If you'd rather not receive future emails f=
+        rom Amazon Web Services, unsubscribe here <dc/sR=
+        hgdM26bquWWERQj_H99lCavgYp1xy4_-5c9n1WxRAg-Iit3iVTUYZUZlQmzz1BTdI04NvsSqvrT=
+        M6rSnQGNK7Z_G6-zH4bcFNO__1cW3s6jIDZ-N_C2KSNqRCj8XmSZme490ZaEqAIt0bSwmGbCuFi=
+        CB7F_eKDe6OrWLB89dDgRCQGXYQavo2dKaE5i_KNOJ1ginuiWqe_Hb9j13EUHb5hzJfGMnoUYYx=
+        xgtevOFS1kVWoMsj73hfA_V3DXxUq0Q9unnZeaIXQiX7obz56kFlYedGJ0gOrZ6DixFhncws=3D=
+        /a00f5O037T0N00ZMHZksvPt><!--.
+        Amazon Web Services, Inc. is a subsidiary of , Inc.  is=
+         a registered trademark of .
+        This message was produced and distributed by Amazon Web Services, Inc., 410=
+         Terry Ave. North, Seattle, WA 98109.
+        =C2=A9 2019, Amazon Web Services, Inc. or its affiliates. All rights reserv=
+        ed. Read our Privacy Policy <u3k500NZvO0tfm00tP7=
+        TM30><!--.
+        <!--
+        --------------------------------------------
+
+        ------=_Part_1230188333_1610733144.1568706554317
+        Content-Type: text/html; charset=UTF-8
+        Content-Transfer-Encoding: quoted-printable
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+        w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!--
+        <html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+        ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><!--
+        <head><!--=20
+        <title><!--Amazon Web Services</title><!--=20
+        <link href=3D"https://fonts.googleapis.com/css?family=3DOpen+Sans:300,400,6=
+        00,700,800" rel=3D"stylesheet" /><!--=20
+        <!-- Other Meta Tags =20
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" /><!--=
+        =20
+        <meta Name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
+         minimum-scale=3D1, maximum-scale=3D1" /><!--=20
+        <meta Name=3D"robots" content=3D"noindex,nofollow" /><!--=20
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" /><!--=20
+        <link href=3D"https://fonts.googleapis.com/css?family=3DOpen+Sans:300,400,6=
+        00,700" rel=3D"stylesheet" /><!--=20
+        <!-- Marketo Variable Definitions
+        <!-- Header Variable Starts
+        <!-- Header Variable Ends
+        <!-- banner Variable Starts
+        <!-- banner Variable Ends
+        <!-- body_section2plain Variable Starts
+        <!-- body_section2plain Variable Ends
+        <!-- body_section2new- Variable Starts
+        <!-- body_section2new- Variable Ends
+        <!-- body_section2text Variable Starts
+        <!-- body_section2text Variable Ends
+        <!-- body_section2- Variable Starts
+        <!-- body_section2- Variable Ends
+        <!-- body_section3- Variable Starts
+        <!-- body_section3- Variable Starts
+        <!-- body_section4- Variable Starts
+        <!-- body_section4- Variable Starts
+        <!-- body_section5- Variable Starts
+        <!-- body_section5- Variable Starts
+        <!-- body_section6- Variable Starts
+        <!-- body_section6- Variable Starts
+        <!-- body_section7- Variable Starts
+        <!-- body_section7- Variable Starts
+        <!-- body_section8- Variable Starts
+        <!-- body_section8- Variable Starts
+        <!-- body_section8 Col- Variable Starts
+        <!-- body_section8 Col - Variable Starts
+        <!-- body_section9- Variable Starts
+        <!-- body_section9- Variable Starts
+        <!--[if gte mso 9]><!--
+              <xml><!--
+                 <o:OfficeDocumentSettings><!--
+                    <o:AllowPNG/><!--
+                    <o:PixelsPerInch><!--96</o:PixelsPerInch><!--
+                 </o:OfficeDocumentSettings><!--
+              </xml><!--
+              <!=20
+        <!--[if mso]><!--
+              <style><!-- body,table tr,table td,a, span,table.MsoNormalTable {  font-f=
+        amily: Helvetica, Arial, sans-serif !important;  }</style><!--
+              <!--<!=20
+        <style media=3D"all"><!--
+                 /* CLIENT-SPECIFIC STYLES */
+                 #outlook a {
+                 padding: 0;
+                 }
+                 /* Force Outlook to provide a "view in browser" message */
+                 .ReadMsgBody {
+                 width: 100%;
+                 }
+                 .ExternalClass {
+                 width: 100%;
+                 }
+                 /* Force Hotmail to display emails at full width */
+                 .ExternalClass,
+                 .ExternalClass p,
+                 .ExternalClass span,
+                 .ExternalClass font,
+                 .ExternalClass td,
+                 .ExternalClass div {
+                 line-height: 100%;
+                 }
+                 /* Force Hotmail to display normal line spacing */
+                 /* iOS BLUE LINKS */
+                 @-ms-viewport {
+                 width: device-width;
+                 }
+              </style><!--=20
+        <style type=3D"text/css"><!--
+              @font-face { font-family: 'AmazonEmberLight'; src: url('rs/112-TZM-766/images/AmazonEmber-Light.woff2') format('woff2=
+        '), url('rs/112-TZM-766/images/AmazonEmber-Light=
+        .woff2') format('woff'); font-weight: normal; font-style: normal; }=20
+              @font-face { font-family: 'AmazonEmber'; src: url('rs/112-TZM-766/images/AmazonEmber-Regular.woff2') format('woff2'),=
+         url('rs/112-TZM-766/images/AmazonEmber-Regular.=
+        woff2') format('woff'); font-style: normal; }=20
+              @font-face { font-family: 'AmazonEmber
+
+
+
+
+              '; src: url('rs/112-TZM-766/images/AmazonEmber-Bold.woff2') format('woff2')=
+        , url('rs/112-TZM-766/images/AmazonEmber-Bold.wo=
+        ff2') format('woff');  font-style: normal; }
+            </style><!--=20
+        <style media=3D"all"><!--
+                 html {
+                 -webkit-text-size-adjust: none;
+                 }
+                 body {
+                 font-family: 'AmazonEmber', Helvetica, Arial, sans-serif;
+                 }
+                 p,
+                 .undoreset div p,
+                 .undoreset p {
+                 margin-top: 18px;
+                 margin-bottom: 18px;
+                 }
+                 a {
+                 color: inherit !important;
+                 text-decoration: none !important;
+                 font-size: inherit !important;
+                 font-family: inherit !important;
+                 line-height: inherit !important;
+                 }
+                 .textColor {
+                 color: #ffffff !important;
+                 outline: none !important;
+                 text-decoration: none !important;
+                 }
+                 a {
+                 outline: none !important;
+                 text-decoration: none !important;
+                 }
+                 .phone-bg {
+                 background-size: cover !important;
+                 }
+                 @media only screen and (max-width: 640px) {
+                 .main {
+                 width: 100% !important;
+                 min-width: 100% !important;
+                 }
+                 .inner_table {
+                 width: 90% !important;
+                 }
+                 .res {
+                 width: 100% !important;
+                 display: block !important;
+                 }
+                 .left_align {
+                 text-align: left !important;
+                 }
+                 .center_align {
+                 text-align: center !important;
+                 margin: 0 auto;
+                 }
+                 .full-width {
+                 width: 100% !important;
+                 height: auto !important;
+                 }
+                 .phne_height {
+                 height: 25px !important;
+                 }
+                 .hidden {
+                 display: none !important;
+                 }
+                 .padding_top {
+                 padding-top: 18px !important;
+                 }
+                 .padding-btm {
+                 padding-bottom: 18px !important;
+                 }
+                 .iphoneHeight {
+                 height: 20px !important;
+                 }
+                 .iphoneHeight1 {
+                 height: 15px !important;
+                 }
+                 .iphoneHeight0 {
+                 height: 0px !important;
+                 }
+                 .iphoneSpace {
+                 height: 25px !important;
+                 }
+                 .iphoneSpace2 {
+                 height: 22px !important;
+                 }
+                 .noSpace {
+                 height: 0px !important;
+                 }
+                 .padLeft {
+                 padding-left: 15px !important;
+                 }
+                 .floatNone {
+                 float: left !important;
+                 }
+                 .tableWidth {
+                 float: none !important;
+                 width: 148px !important;
+                 margin: 0 auto !important;
+                 }
+                 .tableWidth1 {
+                 width: 120px !important;
+                 margin: 0 auto !important;
+                 text-align: center !important;
+                 }
+                 }
+                 @media only screen and (max-width: 640px) {
+                 *.main {
+                 width: 100% !important;
+                 min-width: 100% !important;
+                 }
+                 *.inner_table {
+                 width: 90% !important;
+                 }
+                 *.res {
+                 width: 100% !important;
+                 display: block !important;
+                 }
+                 *.left_align {
+                 text-align: left !important;
+                 }
+                 *.center_align {
+                 text-align: center !important;
+                 margin: 0 auto;
+                 }
+                 *.full-width {
+                 width: 100% !important;
+                 height: auto !important;
+                 }
+                 *.phne_height {
+                 height: 25px !important;
+                 }
+                 *.hidden {
+                 display: none !important;
+                 }
+                 *.padding_top {
+                 padding-top: 18px !important;
+                 }
+                 *.padding-btm {
+                 padding-bottom: 18px !important;
+                 }
+                 *.iphoneHeight {
+                 height: 20px !important;
+                 }
+                 *.iphoneHeight1 {
+                 height: 15px !important;
+                 }
+                 *.iphoneHeight0 {
+                 height: 0px !important;
+                 }
+                 *.iphoneSpace {
+                 height: 25px !important;
+                 }
+                 *.iphoneSpace2 {
+                 height: 22px !important;
+                 }
+                 *.noSpace {
+                 height: 0px !important;
+                 }
+                 *.padLeft {
+                 padding-left: 15px !important;
+                 }
+                 *.floatNone {
+                 float: left !important;
+                 }
+                 *.tableWidth {
+                 float: none !important;
+                 width: 148px !important;
+                 margin: 0 auto !important;
+                 }
+                 *.tableWidth1 {
+                 width: 120px !important;
+                 margin: 0 auto !important;
+                 text-align: center !important;
+                 }
+                 }
+              </style><!--=20
+        </head>
+
+
+
+
+        <font style="font-size:1px;color:#fff;">
+                         _                                 _
+                        /\ \                               /\ \
+           _    __    \_\ \    __    _  ___     __   \_\ \
+         /'__`\/'  `\  /'_` \  / _`\/\`'__\/',__\  /'__`\ /'_` \
+        /\  _//\ \/\ \/\ \L\ \/\ \L\ \ \ \/\_, `\/\  __//\ \L\ \
+        \ \____\ \_\ \_\ \___,_\ \____/\ \_\/\____/\ \____\ \___,_\
+         \/____/\/_/\/_/\/__, /\/___/  \/_/\/___/  \/____/\/__, /
+
+        added
+        to
+        newsletterGet
+        and
+        ask
+        childrenShare
+        this
+        ExperimentSegregation
+        Americaxs
+        report
+        United
+        May
+        ETPerhaps
+        going
+        wants
+        In
+        federal
+        that
+        says
+        plan
+        boasted
+        unemployment
+        lowest
+        everSo
+        rightWhile
+        down
+        remained
+        last
+        this
+        does
+        communities
+        to
+        land
+        opportunityOne
+        Americans
+        suffer
+        opposed
+        white
+        inequality
+        in
+        while
+        step
+        inequality
+        will
+        that
+        looks
+        housing
+        disparities
+        on
+        For
+        more
+        of
+        on
+        resources
+        their
+        childrens
+        care
+        going
+        on
+        cities
+        on
+        nation
+        Shortly
+        still
+        have
+        evidence
+        doesnt
+        decades
+        expanding
+        emerged
+        of
+        failed
+        laws
+        about
+        and
+        people
+        housewives
+        at
+        Franz
+        in
+        New
+        Orleans
+        poverty
+        public
+        which
+        to
+        of
+        we
+        has
+        failed
+        chronicled
+        deregulation
+        Who
+        children
+        has
+        work
+        direct
+        former
+        have
+        has
+        of
+        And
+        as
+        Professor
+        documented
+        more
+        than
+        problem
+        Commission
+        commission
+        there
+        with
+        this
+        was
+        urban
+        ideology
+        without
+        policy
+        resulted
+        be
+        has
+        hard
+        students
+        provides
+        model
+        graders
+        salute
+        flag
+        of
+        school
+        atrisk
+        will
+        to
+        of
+        creates
+        race
+        to
+        Brookings
+        or
+        integrate
+        government
+        to
+        for
+        potential
+        enforcement
+        The
+        privatesector
+        effect
+        intentional
+        with
+        racial
+        and
+        make
+        housing
+        will
+        access
+        housing
+        access
+        Act
+        making
+        and
+        integration
+        poor
+        developers
+        lowincome
+        lower
+        half
+        and
+        by
+        college
+        than
+        children
+        had
+        and
+        We
+        need
+        that
+        but
+        living
+        Robert
+        observed
+        Bernard
+        Why
+        never
+        ask
+        and
+        America
+        Eisenhower
+        Foundation
+        Kerner
+        Commission
+        Violence
+        senator
+        at
+        Healing
+        America
+        Years
+        After
+        newsletter
+        SUBSCRIBEMORE
+
+
+
+
+                        Hi dhg,
+                        My Name's Dylan Basile and I work at Event Temple. Nice to meet you and
+                        thanks for requesting a demo.
+                        Joining me for a quick demo will be the fastest and most efficient way for
+                        you to see what the software is capable of.
+                        Did any of the times on our website work for you and if so, were you able
+                        to schedule a demo okay?
+                        Here they are again:
+                        If not, just let me know and we'll find something else.
+                        --
+                        Dylan Basile
+                        *Book a demo with me here:*
+                        Hi dfdh,
+                        Thanks for signing up, and congratulations
+                        on your new gvcnvqnijg account! You'll find
+                        everything you need to get started below, and
+                        if you need additional help there's a link to
+                        our support forum at the bottom.
+                        === Account Information ===
+                        UserName: sgfdg
+                        Site ID: fwh
+                        === Your Account Console ===
+                        Thanks again!
+                        Team gvcnvqnijg
+                        Powered by gvcnvqnijg
+                        Dear lcTychll rGhEG,
+                        Welcome to the Enterprise Plus? membership experience.
+                        Your Enterprise Plus member number and user Name is HYFYF4W.
+                        Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+                        In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+                        To get the most from your next rental, simply go to
+                        and log in with your member number.
+                        Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+                        == You need a budget, and your email needs confirmation. ==
+                        Hello! Quick note to let you know that your email needs to be confirmed
+                        before all sorts of great things happen. Like your being able to use YNAB
+                        all along your road to budgeting glory. Please confirm by clicking the link
+                        below:
+                        Confirm your email
+                        Thank you!
+                        And we're serious about budgeting glory. It's a real thing, and you will
+                        bask in it.
+                        Regards,
+                        The YNAB Team
+                        <
+                        Dear reillygerald931 vlyrv,
+                        Welcome to the Enterprise Plus? membership experience.
+                        Your Enterprise Plus member number and user Name is HYFYF4W.
+                        Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+                        In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+                        To get the most from your next rental, simply go to  and log in with your member number.
+                        Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+                        >
+                        Hi ffgbkhlidvvkk,
+                        My Name's Dylan Basile and I work at Event Temple. Nice to meet you and
+                        thanks for requesting a demo.
+                        Joining me for a quick demo will be the fastest and most efficient way for
+                        you to see what the software is capable of.
+                        Did any of the times on our website work for you and if so, were you able
+                        to schedule a demo okay?
+                        Here they are again:
+                        If not, just let me know and we'll find something else.
+                    </table>
+
+<style>
+body {
+background-image: url('http://lMzuEe.2997327795.keysk.org/track/o70780wqtsG31711237FQrh1292218kbM26234lYtV7186');
+}
+</style> 
+                </center>
+            </body>
+        </html>
+        -->

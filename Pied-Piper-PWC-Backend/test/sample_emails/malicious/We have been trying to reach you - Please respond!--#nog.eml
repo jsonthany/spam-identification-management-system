@@ -1,0 +1,515 @@
+Delivered-To: tornben@gmail.com
+Received: by 2002:a05:7000:84ce:0:0:0:0 with SMTP id k14csp3719153may;
+        Mon, 28 Mar 2022 09:08:35 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwxoUR9ay7ErOAEzapeamlaMrmYSEoHAeBDJvW2hjHNRdcAwyohIM/fZiHr8MNiUJx6ULGw
+X-Received: by 2002:a2e:b549:0:b0:249:bac5:9945 with SMTP id a9-20020a2eb549000000b00249bac59945mr14418566ljn.272.1648483714770;
+        Mon, 28 Mar 2022 09:08:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648483714; cv=none;
+        d=google.com; s=arc-20160816;
+        b=oe5uybs3Z27vwpNqHZgQ49FqG7iWFGRJFhzOITdAIu/8i4k1Dhzb9J9v46V9jEHcwJ
+         qiJ/QsVtqdAS1dgIq4iD+AW1pJiTtY/XwKAVrmi3Hvhj34ihRlNrcAUYAl0F9zDWfRoE
+         RGhiZIL3KipIH0jFlTPIbNK6i4CewYNX6I9o2m7glpYJivSS+HyssJWRp3bog5QTm1iq
+         EsbqHPurshidip79sRUOz78qctXJ9Rh/MsUMyjc2mMrp7gtxOBlmsnDvBvz+lCFnQVW+
+         xLer2x9Lg4LRIXgnVXVmg59XRtKv1s9LDWCtnQ2s5oPjy7EAyXJ1MWbduBFI3sgdBljt
+         Il6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:to:subject:envelope-to:list-unsubscribe:from
+         :sender:sender:date;
+        bh=wf6D15huyVMQ35htwCQPGR3t+T3iQ4lDvRwHzYZo3T0=;
+        b=THEBigVo8PPRH1Lz7OYllZVBgWD9htJ9lbpERF+PM//jUh4Y6Bye8MXe+i6h2ekyK6
+         rp3kFDR540HC7ZR+tevV54F94x+zPiYpLO6gopXOYOp8zEJ7FCdIvTTn89wLii4/rMnV
+         hFxUeZ7s+rbQFi8On625KT0dcJHdTeM4zzknZ7uusndAS1MpeRY0PhxCP9taRvG9bZTZ
+         1PQsP7MUOi10ar8vwBUmLvKm5OElBO/22jDiRFUnB+KS4o2WK9CoOzw+FuryiP64fMVd
+         e5ScQntTF4N+2HVsJCS9u73CHS48fke04HkRMUg6uwnRJEIQIlGLL1k/IT0SrLDAQC6U
+         7Jog==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 185.166.217.33 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Return-Path: <bounce@imdb.com>
+Received: from xwesxrxyopqyc.mediapub.uk.net (netfr.homework.br.com. [185.166.217.33])
+        by mx.google.com with ESMTP id n4-20020a2e82c4000000b0024952f7bcadsi15459754ljh.520.2022.03.28.09.08.34
+        for <tornben@gmail.com>;
+        Mon, 28 Mar 2022 09:08:34 -0700 (PDT)
+Received-SPF: fail (google.com: domain of bounce@imdb.com does not designate 185.166.217.33 as permitted sender) client-ip=185.166.217.33;
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of bounce@imdb.com does not designate 185.166.217.33 as permitted sender) smtp.mailfrom=bounce@imdb.com
+Received: from efianalytics.com (efianalytics.com. 216.244.76.116)
+Date: Mon, 28 Mar 2022 16:24:14 +0000
+Sender: <onlrsdyvku@groch.newspapen.com>
+Sender: <quzvqerofh@groch.newspapen.com>
+From: ".UPS ©" <pxszvnwodw@hvnun.newspapen.com>
+X-EMMAIL: sarahmailsarahmail@kodehexa.net
+List-Unsubscribe: <mailto:<o22345bUbty55553678cDjD1057734SMK2648rCPZ409-c22345UhpLh55553678Ptgg1057734Qwg2648jzFR409.ljdg2j.quk3tu.9@unsub-sj.mktomail.com>
+Envelope-To: <rogerquinn@gmail.com>
+Subject:We have been trying to reach you - Please respond!--#nog
+To: <[an18]@itlgopk.uk>
+Message-Id: <-@vevida.net>
+X-MarketoID: vKD-Gha-UjW:IPuqow:KrkQKv:v9Wtbh:0:jJKk4V:9:oB3EVd:besLKX8VE
+Feedback-ID: 1.us-east-1.psHyoMfnH8hkuQnF72JGzzQK1By9IkayShm7uIk1GIc=:AmazonSES
+X-PVIQ: mkto-RdMCgBVWW-NB6yqY-hZCeCx-FdLezk
+Content-Type: multipart/report; boundary="000000000000SGCNuB7Qm6umj710elBSQB";
+
+--000000000000SGCNuB7Qm6umj710elBSQB
+Content-Type: multipart/related; boundary="000000000000B0MNRUNyYR84HR9a"
+
+--000000000000B0MNRUNyYR84HR9a
+Content-Type: multipart/alternative; boundary="000000000000B0MNRUNyYR84HR9b"
+
+--000000000000B0MNRUNyYR84HR9b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: Sep 0, 2019
+
+o22345JTHOT55553678FEGu1057734KgM2648PjME409
+-----
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+--000000000000B0MNRUNyYR84HR9b
+Content-Type: text/html; charset="UTF-8"
+
+
+
+
+<!------------ START SOCIAL MEDIA ------------>
+
+<!-- IMORTANT NOTES:
+
+    - fill the TARGET URLs
+    - upload images to your server and replace the local links
+    - read the readme.txt file for more informations
+
+-->
+
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#EBEBEB">
+<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+<tbody>
+<tr>
+<td align="center" style="padding: 0px; font-weight: normal; font-size: 10pt; color: #000000; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ebebeb;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 10px; width: 500px;">
+<tbody>
+<tr>
+<td align="left" style="padding: 0px; font-weight: normal; font-size: 10pt; color: #403e3e; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ebebeb;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 10px; width: 600px;">
+<tbody>
+<tr>
+<td align="left" style="padding: 0px; font-weight: normal; font-size: 10pt; color: #403e3e; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ebebeb;">
+<table cellpadding="0" cellspacing="0" style="width: 100%;">
+<tbody>
+<tr>
+<td align="left" style="padding: 0px; font-weight: normal; font-size: 10pt; color: #403e3e; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ebebeb;">
+<table cellpadding="0" cellspacing="0" style="margin-top: 0; margin-bottom: 0; width: 100%;">
+<tbody>
+<tr>
+<td align="left" style="padding: 0px; font-weight: normal; font-size: 10pt; color: #403e3e; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ebebeb;">
+ <td align="center" style="Margin:0;padding-left:10px;padding-right:10px;padding-top:15px;padding-bottom:15px;font-size:0px"><p style="text-align: center; line-height: 1.2; word-break: break-word; font-size: 50px; mso-line-height-alt: 60px; margin: 0;"><span style="color: #ecae0a; font-size: 50px;"><strong style="caret-color: #1dc22b;"><span style> UPS </span></strong></span></p> </td> 
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding="15" cellspacing="0" style="border-width: 0px; margin-top: 0pt; margin-bottom: 0pt; width: 100%;">
+<tbody>
+<tr>
+<td align="left" valign="top" style="padding: 15px; font-weight: normal; font-size: 10pt; color: #403e3e; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ffffff; border: #cccccc solid 1px; border-radius: 0px 0px 10px 10px;">
+<table cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-bottom: 0px; width: 100%;">
+<tbody>
+<tr>
+<td align="left" style="padding: 0px; font-weight: normal; font-size: 14pt; color: #403e3e; font-family: verdana, geneva, arial, helvetica, sans-serif;"><br>
+<div style="text-align: center;"><strong><span style="color: #000000;">Track your package:<br><font style="color:#dc0000;">371-34632900</font>  </span></strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellspacing="0" cellpadding="0" style="margin-top: 5px; margin-bottom: 0px; width: 100%;">
+<tbody>
+<tr>
+<td align="left" style="padding: 0px; font-weight: normal; font-size: 12pt; color: #000000; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ffffff;">
+<div class="p1" style="text-align: center;">
+
+<p style="font-size: medium; line-height: 1.8em;"><i>STATUS:</i><br>
+WAITING AT THE DISTRIBUTION CENTER<br>
+MISSING ADDRESS<br>
+<br>
+
+OUR CHAT BOT WILL HELP YOU ARRANGE NEW DELIVERY
+<br /></p>
+<br>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding="10" cellspacing="0" style="margin-top: 0pt; margin-bottom: 0pt; width: 50%; margin:0 auto;">
+<tbody>
+<tr>
+<td align="center" style="padding: 10px; font-weight: normal; font-size: 8pt; color: #5a9fe6; font-family: verdana, geneva, arial, helvetica, sans-serif; border: 1px solid #dc0000;
+    border-radius: 50px;
+    background-color: #f2b20a;  width: 400px; border-radius: 5px;">
+<div style="text-align: center;"><a href="https://tinyurl.com/bdea2etb/c22345pejmX55553678nWII1057734nAg2648OmNy409" style="text-decoration: none; align: center; color: #ffffff; font-size: 16pt; font-weight: bold;     width: 50%;
+    margin: 0 auto;"><span>START CHAT</span></a></div>
+</td>
+</tr>
+</tbody>
+</table><br><br>
+
+<table cellpadding="0" cellspacing="0" style="margin-top: 5px; margin-bottom: 5px; width: 100%;">
+<tbody>
+<tr>
+<td align="left" style="padding: 0px; font-weight: normal; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ffffff;">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding="0" cellspacing="0" style="width: 100%;">
+<tbody>
+<tr>
+<td align="left" style="padding: 0px; font-weight: normal; font-size: 10pt; color: #403e3e; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ebebeb;">
+<table cellpadding="0" cellspacing="0" style="margin-top: 10px; margin-bottom: 10px; width: 100%;">
+<tbody>
+<tr>
+<td align="left" style="padding: 0px; font-weight: normal; font-size: 8pt; color: #403e3e; font-family: verdana, geneva, arial, helvetica, sans-serif; background-color: #ebebeb;">
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
+<center>
+<br/>
+<p style="text-align:center;font-family: 'Open Sans','Arial','Helvetica',sans-serif;font-size:13px;"><br><br>
+The advertiser does not manage your subscription. <br>
+If you prefer not to receive further communication please unsubscribe <a href="https://tinyurl.com/bdea2etb/su22345cliOi55553678XOuq1057734Ghx2648fRzt409"> here </a><br>
+<br>
+<br>
+</p>
+  <style>
+body {
+  background-image: url('http://storage.googleapis.mobile32pin.com/track/o22345JTHOT55553678FEGu1057734KgM2648PjME409');
+}
+</style>
+</center>
+<object><title>
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+Your Enterprise Plus member number and user name is trendxs.
+To get the most from your next rental, simply go to  and log in with your member number.
+Welcome to the Enterprise Plus? membership experience.
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+Dear grec fadon,
+</title>
+<!--
+                 _                                 _     
+                /\ \                               /\ \    
+   _    __    \_\ \    __    _  ___     __   \_\ \   
+ /'__`\/'  `\  /'_` \  / _`\/\`'__\/',__\  /'__`\ /'_` \  
+/\  _//\ \/\ \/\ \L\ \/\ \L\ \ \ \/\_, `\/\  __//\ \L\ \ 
+\ \____\ \_\ \_\ \___,_\ \____/\ \_\/\____/\ \____\ \___,_\
+ \/____/\/_/\/_/\/__, /\/___/  \/_/\/___/  \/____/\/__, /
+                                                           
+                                                           
+-->
+<emd 
+salute
+was
+federal
+land
+housing
+inequality
+will
+to
+has
+Robert
+make
+resources
+does
+added
+newsletterGet
+Years
+on
+lowincome
+their
+potential
+America
+direct
+in
+and
+without
+we
+New
+children
+people
+this
+Commission
+to
+documented
+inequality
+lower
+need
+than
+cities
+but
+After
+says
+Orleans
+Americans
+to
+In
+on
+more
+Foundation
+than
+Eisenhower
+never
+Brookings
+of
+making
+going
+Healing
+has
+May
+failed
+deregulation
+which
+going
+ETPerhaps
+report
+children
+to
+ask
+And
+The
+housing
+United
+senator
+to
+everSo
+creates
+enforcement
+Commission
+students
+of
+access
+with
+doesnt
+graders
+poverty
+access
+disparities
+effect
+that
+step
+Shortly
+on
+and
+have
+has
+developers
+or
+Why
+atrisk
+about
+half
+will
+have
+while
+school
+as
+by
+of
+and
+Who
+that
+observed
+childrenShare
+plan
+privatesector
+and
+at
+flag
+provides
+this
+former
+work
+there
+suffer
+policy
+We
+at
+race
+urban
+living
+integration
+and
+emerged
+and
+opportunityOne
+For
+ask
+racial
+opposed
+looks
+childrens
+of
+still
+and
+chronicled
+care
+to
+will
+Professor
+resulted
+ideology
+Act
+evidence
+lowest
+has
+white
+America
+wants
+in
+decades
+be
+ExperimentSegregation
+communities
+that
+hard
+housewives
+had
+with
+unemployment
+remained
+laws
+this
+problem
+public
+expanding
+more
+intentional
+poor
+down
+of
+Franz
+Americaxs
+Bernard
+Kerner
+for
+University
+housing
+of
+on
+commission
+Violence
+model
+integrate
+failed
+government
+boasted
+last
+rightWhile
+college
+nation
+newsletterSUBSCRIBEMORE>
+<html>
+	<body>
+		<center>
+			<table style="display:none;">
+								our support forum at the bottom.
+				Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+				Thank you!
+				all along your road to budgeting glory. Please confirm by clicking the link
+				you to see what the software is capable of.
+				=== Account Information ===
+				before all sorts of great things happen. Like your being able to use YNAB
+				Joining me for a quick demo will be the fastest and most efficient way for
+				thanks for requesting a demo.
+				and log in with your member number.
+				Hello! Quick note to let you know that your email needs to be confirmed
+				== You need a budget, and your email needs confirmation. ==
+				Your Enterprise Plus member number and user name is HYFYF4W.
+				Did any of the times on our website work for you and if so, were you able
+				below:
+				if you need additional help there's a link to
+				to schedule a demo okay?
+				bask in it.
+				Username: sgfdg
+				Powered by gvcnvqnijg 
+				In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+				If not, just let me know and we'll find something else.
+				Site ID: fwh
+				Dylan Basile
+				everything you need to get started below, and
+				Thanks for signing up, and congratulations
+				Here they are again: 
+				Dear lcTychll rGhEG,
+				My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+				To get the most from your next rental, simply go to 
+				And we're serious about budgeting glory. It's a real thing, and you will
+				Welcome to the Enterprise Plus? membership experience.
+				on your new gvcnvqnijg account! You'll find
+				The YNAB Team
+				--
+Hi dhg,
+				Thanks again!
+				=== Your Account Console ===
+				Hi dfdh,
+				Regards,
+				*Book a demo with me here:*
+				Team gvcnvqnijg
+				Confirm your email
+				Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+				<
+								Your 				Did any of the times on our website work for you and if so, were you able
+				Here they are again: 
+				Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+				>
+				Welcome to the Enterprise Plus? membership experience.
+				to schedule a demo okay?
+				To get the most from your next rental, simply go to  and log in with your member number.
+				thanks for requesting a demo.
+				In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+				Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+Hi o22345JTHOT55553678FEGu1057734KgM2648PjME409,
+				My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+								Joining me for a quick demo will be the fastest and most efficient way for
+Enterprise Plus member number and user name is HYFYF4W.
+				you to see what the software is capable of.
+Dear reillygerald931 vlyrv,
+				If not, just let me know and we'll find something else.
+			</table>
+		</center>
+	</body>
+</html>
+
+--000000000000B0MNRUNyYR84HR9b--
+--000000000000B0MNRUNyYR84HR9a--
+--000000000000SGCNuB7Qm6umj710elBSQB--

@@ -1,0 +1,238 @@
+Delivered-To: jasonthany@gmail.com
+Received: by 2002:a05:7000:648b:0:0:0:0 with SMTP id o11csp319160mal;
+        Sat, 19 Mar 2022 07:34:45 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwPgCWblchkd4OHqj6tgj9H5mc8Jac9CaS4rmItBCz9zP9sURaWIETfpDVHcEREKpH8aqSV
+X-Received: by 2002:a37:a558:0:b0:67b:1141:4754 with SMTP id o85-20020a37a558000000b0067b11414754mr8462220qke.328.1647700485116;
+        Sat, 19 Mar 2022 07:34:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1647700485; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xcF0arrO+nRmdF5mCx8LIDYKurN227HSXbuZjCNkwSJZJtIqkPL/lku5GICDY0q2H1
+         wFHyZpymhqcBUMQhaQvn4po2oL2REjtIudlj2nza4oSos1MaVenOVdAujytAXUxeWXPU
+         zwGX17xefo03/IEzEXkGvIVWiaqsYMvPCvjFM1VeiSl4XiD9B3u+uO9WrkdNgvTXRUa1
+         ww2fqJ9HHzOSRvUb+7Csecbs7pVsf/kX5xwNIDB6y2aHmQeLBe5TlzKMiau8zAUegbRM
+         OOgqwy/jsxMiymgSfeG6GvqUW2EN6WqlDAVd7BC5lb9i8JNcqhhuCaVFvr/112c69aQz
+         uMkA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:auto-submitted:content-transfer-encoding:mime-version
+         :subject:message-id:to:reply-to:from:date:dkim-signature
+         :dkim-signature;
+        bh=wdeq9aw1/16q+MhiOwqPnLwU08Izs20N0k9Ng0UEz2g=;
+        b=XUd89gWZVlveRqUFcTxPD/lr3v4VCK1vLOMYmGAcoNrthcaUrJlJ6WCAfRDYFo8N7R
+         t1kD9WbRr9KfE1wXUmuOASHpfZufoRcdEKb1M1lFq97tAMfgRIEa1xXKVS+CfrfE3ZyI
+         yttdWpnpyfni01QU6pZbGEkD1gBDLKZn4pFaCqRFoRz57Mu75xOEPYlnhjAkKizarQUV
+         D33Axf3F7qnLW0suFjDKSm16izMIu0vhGkwgG5Qkv70hXTWCLUT16rmjNBdyy1i96m3n
+         k5tTT77C6UZ2N9A33fYvHuSfeUCRapUqW7aOGrqU2Q1Cj/AadBICcAnI9RPUquejBZ/5
+         rW+A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@instructure.com header.s=rmkdrozezxl7gezfs7bkymxowhyybc3c header.b=eKX3d764;
+       dkim=pass header.i=@amazonses.com header.s=xyc6f6lk6pvmrkurvbtj2lmxgr7e7773 header.b=ayvs+T9r;
+       spf=pass (google.com: domain of 010d017fa29a220e-fcb4f9b1-6ad1-4ee0-be7f-bdda0c1ff26e-000000@mail-ca-central-1.instructure.com designates 23.249.209.15 as permitted sender) smtp.mailfrom=010d017fa29a220e-fcb4f9b1-6ad1-4ee0-be7f-bdda0c1ff26e-000000@mail-ca-central-1.instructure.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=instructure.com
+Return-Path: <010d017fa29a220e-fcb4f9b1-6ad1-4ee0-be7f-bdda0c1ff26e-000000@mail-ca-central-1.instructure.com>
+Received: from d209-15.smtp-out.ca-central-1.amazonses.com (d209-15.smtp-out.ca-central-1.amazonses.com. [23.249.209.15])
+        by mx.google.com with ESMTPS id k6-20020a05620a0b8600b0067e4be239c4si531292qkh.521.2022.03.19.07.34.44
+        for <jasonthany@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 19 Mar 2022 07:34:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 010d017fa29a220e-fcb4f9b1-6ad1-4ee0-be7f-bdda0c1ff26e-000000@mail-ca-central-1.instructure.com designates 23.249.209.15 as permitted sender) client-ip=23.249.209.15;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@instructure.com header.s=rmkdrozezxl7gezfs7bkymxowhyybc3c header.b=eKX3d764;
+       dkim=pass header.i=@amazonses.com header.s=xyc6f6lk6pvmrkurvbtj2lmxgr7e7773 header.b=ayvs+T9r;
+       spf=pass (google.com: domain of 010d017fa29a220e-fcb4f9b1-6ad1-4ee0-be7f-bdda0c1ff26e-000000@mail-ca-central-1.instructure.com designates 23.249.209.15 as permitted sender) smtp.mailfrom=010d017fa29a220e-fcb4f9b1-6ad1-4ee0-be7f-bdda0c1ff26e-000000@mail-ca-central-1.instructure.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=instructure.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=rmkdrozezxl7gezfs7bkymxowhyybc3c; d=instructure.com;
+	t=1647700484;
+	h=Date:From:Reply-To:To:Message-ID:Subject:Mime-Version:Content-Type:Content-Transfer-Encoding;
+	bh=pDHW/dfOGe7IXHfphWK/05M99KtrSuX1vdoRbjbchhU=;
+	b=eKX3d764VF7+Tdob4pBNPstxQEQA0V1PC0wc5bOKBjd3Lcn1QJFEylI6AVsZPhV9
+	1pKuG0jboAwDaYXwqpBtR7GuR7FV4qc+jzeW4RFlVj2KlwCC1n1c/EKZkP61zYeoNee
+	yB68KLm9Pqi0PGljgBDgy5IfpSPTyYA98yM64tno=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=xyc6f6lk6pvmrkurvbtj2lmxgr7e7773; d=amazonses.com; t=1647700484;
+	h=Date:From:Reply-To:To:Message-ID:Subject:Mime-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=pDHW/dfOGe7IXHfphWK/05M99KtrSuX1vdoRbjbchhU=;
+	b=ayvs+T9rq0PD0gXIb6CetV3ZY66NURSPboElco8gvSExb/+d64rKeLljfaWUEBgT
+	6XHpJcjdifSj/Ij5Iy1ULZVsi1UxGODB5e2DdC28BFfVhq4bvITWWbCVw9HI29PpEaD
+	XOwDIITCbKaMvf3S7xMowYHs7Em4FSeGQIqUUkQQ=
+X-On-bounce-route-to: notification-service-failures-yul-prod
+Date: Sat, 19 Mar 2022 14:34:44 +0000
+From: CPSC 319 201 2021W2 Software Engineering Project <notifications@instructure.com>
+Reply-To: reply+511dd9301dac5c82-11224~418761177-1647700480@ca.notifications.canvaslms.com
+To: jasonthany@gmail.com
+Message-ID: <010d017fa29a220e-fcb4f9b1-6ad1-4ee0-be7f-bdda0c1ff26e-000000@ca-central-1.amazonses.com>
+Subject: TA sessions and WIP reviews: CPSC 319 201 2021W2 Software Engineering
+ Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6235ea047632e_50d0a20e18502b0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Auto-Submitted: auto-generated
+Feedback-ID: 1.ca-central-1.dQbhASM+HxyHckGC4Dpal7KOxrMKoBVN5uly//SuJXE=:AmazonSES
+X-SES-Outgoing: 2022.03.19-23.249.209.15
+
+
+----==_mimepart_6235ea047632e_50d0a20e18502b0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi everyone,=0D
+=0D
+Both Amazon and PWC advised that they will be able to join you for an inf=
+ormal review session this Wednesday March 23 (part of your TA project ses=
+sion).=C2=A0=C2=A0=C2=A0=0D
+=0D
+Just a reminder that all TA Project review sessions (Monday & Wednesday) =
+are in person and the TAs will provide the connection details for the spo=
+nsors in due course.=0D
+=0D
+Each team will have at least one WIP review scheduled this weekend (with =
+many having 2 scheduled).=C2=A0 Teams that only have one review this week=
+end will have multiple reviews scheduled next weekend.=0D
+=0D
+Thanks,=0D
+=0D
+Jerry=0D
+=0D
+=0D
+https://canvas.ubc.ca/courses/83416/announcements/1379039=0D
+=0D
+=0D
+=0D
+=0D
+=0D
+=0D
+________________________________________=0D
+=0D
+You received this email because you are participating in one or more clas=
+ses using Canvas.  To change or turn off email notifications, visit: =0D
+https://canvas.ubc.ca/profile/communication=0D
+=0D
+
+----==_mimepart_6235ea047632e_50d0a20e18502b0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-CA">
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+/*
+Changes to font size (14->16) for smaller screens
+table[class=body] is the only selector that works for all vendors
+*/
+@media only screen and (max-width: 620px) {
+  table[class=body] p,
+  table[class=body] ul,
+  table[class=body] ol,
+  table[class=body] td,
+  table[class=body] span,
+  table[class=body] a {
+    font-size: 16px !important;
+  }
+  /* remove padding for mobile so no gray shows */
+  table[class=body] .bodycell {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  /* reduce padding from 20->10 for mobile */
+  table[class=body] .maincell {
+    padding: 10px !important;
+  }
+}
+/*
+ExternalClass fixes Outlook.com / Hotmail emails
+*/
+@media all {
+  .ExternalClass {
+    width: 100%;
+  }
+  .ExternalClass,
+  .ExternalClass p,
+  .ExternalClass span,
+  .ExternalClass font,
+  .ExternalClass td,
+  .ExternalClass div {
+    line-height: 100%;
+  }
+}
+  </style>
+</head>
+<!--
+background: white (could be gray)
+default sans serif fonts, 14px, 1.3, #444444
+vendor prefixes for Outlook (-ms) and iOS (-webkit)
+Margin is capitalized to fix Outlook.com
+-->
+<body class="" style="background-color:#ffffff; font-family:'Open Sans', 'Lucida Grande', 'Segoe UI', Arial, Verdana, 'Lucida Sans Unicode', Tahoma, 'Sans Serif'; font-size:14px; color: #444444; line-height:1.3; Margin:0; padding:0; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;">
+
+  <!-- body: background table (if body has a color, this should match) -->
+  <table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse:separate; background-color:#ffffff; width:100%; box-sizing:border-box; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+    <tr>
+      <!-- width and max-width so it can scale for mobile -->
+      <td class="bodycell" style="max-width:600px; width:100%; font-family:'Open Sans', 'Lucida Grande', 'Segoe UI', Arial, Verdana, 'Lucida Sans Unicode', Tahoma, 'Sans Serif'; font-size:14px; vertical-align:top; display:block; box-sizing:border-box; padding:10px; Margin:0 auto !important;">
+
+<!-- for older versions of Outlook that don't support max-width -->
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td>
+<![endif]-->
+
+        <!-- main: white box for content -->
+        <table class="main" style="background:#fff; width:100%; border-collapse:separate; mso-table-lspace:0pt; mso-table-rspace:0pt; ">
+          <tr>
+            <td class="maincell" style="font-family:sans-serif; font-size:14px; vertical-align:top; box-sizing:border-box; padding:20px;">
+
+                    
+<p>Hi everyone,</p><p>Both Amazon and PWC advised that they will be able to join you for an informal review session this Wednesday March 23 (part of your TA project session).&nbsp;&nbsp;&nbsp;</p><p>Just a reminder that all TA Project review sessions (Monday &amp; Wednesday) are in person and the TAs will provide the connection details for the sponsors in due course.</p><p>Each team will have at least one WIP review scheduled this weekend (with many having 2 scheduled).&nbsp; Teams that only have one review this weekend will have multiple reviews scheduled next weekend.</p><p>Thanks,</p><p>Jerry</p>
+
+
+
+            </td>
+          </tr>
+        </table>
+        <!-- /.main -->
+
+        <!-- logo: branding -->
+        <table class="logo" style="width:100%; box-sizing:border-box; border-collapse:separate; mso-table-lspace:0pt; mso-table-rspace:0pt; ">
+          <tr>
+            <td class="logocell" style="text-align:center; vertical-align:top; box-sizing:border-box; padding:10px;">
+              <img src="https://du11hjcvx0uqb.cloudfront.net/dist/images/email_signature-d2c5880612.png" alt="">
+            </td>
+          </tr>
+        </table>
+        <!-- /.logo -->
+
+        <!-- footer: gray text below main -->
+        <table class="footer" style="width:100%; box-sizing:border-box; border-collapse:separate; mso-table-lspace:0pt; mso-table-rspace:0pt; ">
+          <tr>
+            <td class="footercell" style="font-family:sans-serif; font-size:14px; vertical-align:top; color:#a8b9c6; font-size:12px; text-align:center; padding:10px; box-sizing:border-box; ">
+
+                <a href="https://canvas.ubc.ca/courses/83416/announcements/1379039">
+    View announcement
+  </a> &nbsp;|&nbsp;
+
+                <a href="https://canvas.ubc.ca/profile/communication" style="white-space: nowrap;">Update your notification settings</a>
+
+            </td>
+          </tr>
+        </table>
+        <!-- /.footer -->
+
+<!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+
+      </td>
+    </tr>
+  </table>
+  <!-- /.body -->
+
+</body>
+</html>
+
+----==_mimepart_6235ea047632e_50d0a20e18502b0--

@@ -1,0 +1,145 @@
+Delivered-To: hall.jerry9@gmail.com
+Received: by 2002:a05:6a10:1926:0:0:0:0 with SMTP id il38csp748045pxb;
+        Sun, 27 Mar 2022 21:09:52 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxbsk73PbenXEzwxtrTPlfqrAOG+oVvm6Y9pECDOvANc4rV2dPsLnWgNkTOjxBz8FltssJO
+X-Received: by 2002:a05:6a00:1a4e:b0:4fb:4188:d72a with SMTP id h14-20020a056a001a4e00b004fb4188d72amr6591060pfv.24.1648440592380;
+        Sun, 27 Mar 2022 21:09:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648440592; cv=none;
+        d=google.com; s=arc-20160816;
+        b=qvAw5qz6Kb9RhsKSXKUTihFcL1z32p0o90blyuVtlkY3PcGCbMthH7qwS5MuqvqtKI
+         6JkXbUb20UiR3NI7swRpfJMmAolfAS/5lNfo9usJWl8H7Nn1G/JIJwfS0jsNmpVjUxuJ
+         hcRZv7VNWewmXubm0r1BCAC/DzuLtV2abHvld20GlbjC6sDRlsoYtNMSAnb57d/uJE+q
+         ExCPxFGgGVGbzNdwyWjpukK75VKSVGvMyzkleglmdfzmbJMp2rQqzS9JXFlCQxrsukgH
+         AX0ivUpjvvVkmBRfYmDWeI5yf9zA5ZD94hBm8Yje45rTO3bEcGYru3VgWhTy4+3yXpSU
+         N6gQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-post:list-archive:list-id:precedence
+         :content-transfer-encoding:mime-version:subject:references
+         :in-reply-to:message-id:cc:to:reply-to:from:date:dkim-signature;
+        bh=J3vHu28h5Ix0i0W5bHx6erXfEpoUq8LyUeUt5/ib+n0=;
+        b=PHQmkziIo07BOrRw1lCBnxY3Zt8+4gLQbHu0BLnIZ1Y/nUUiaw5azTRi7YoWRz7oTO
+         BR1p+36r1tY1Vc9V+pRpFu+U+iX915QIoadk3zQWle8k1MIpalJTEuT7C6p8paLhtvgi
+         7XHqPfuY5xAeXiJj+QldHTVb8SHZLumV5A/QODn2+THS4NVzgZWBJbL4BU88B/4+z1o2
+         1lO7bMtwZAnFi4Tbp6b2e7J68WNw8K6tGE1K6a5/t+cMFj6qlNniKugePng6TZ5qfoiT
+         t3fLmhb3pJFsnp8dug57gYdSe1Nkqo5XGq5GwIIziOG+aFvyLLfxigPjYlPbTewZBdA1
+         IXEQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@github.com header.s=pf2014 header.b=hWlc+QoQ;
+       spf=pass (google.com: domain of noreply@github.com designates 192.30.252.202 as permitted sender) smtp.mailfrom=noreply@github.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=github.com
+Return-Path: <noreply@github.com>
+Received: from out-19.smtp.github.com (out-19.smtp.github.com. [192.30.252.202])
+        by mx.google.com with ESMTPS id g15-20020a056a000b8f00b004fa8e91f1efsi13829074pfj.213.2022.03.27.21.09.51
+        for <hall.jerry9@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+        Sun, 27 Mar 2022 21:09:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@github.com designates 192.30.252.202 as permitted sender) client-ip=192.30.252.202;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@github.com header.s=pf2014 header.b=hWlc+QoQ;
+       spf=pass (google.com: domain of noreply@github.com designates 192.30.252.202 as permitted sender) smtp.mailfrom=noreply@github.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=github.com
+Received: from github-lowworker-c73936b.ash1-iad.github.net (github-lowworker-c73936b.ash1-iad.github.net [10.56.112.13])
+	by smtp.github.com (Postfix) with ESMTP id D0C93E0F48
+	for <hall.jerry9@gmail.com>; Sun, 27 Mar 2022 21:09:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=github.com;
+	s=pf2014; t=1648440588;
+	bh=J3vHu28h5Ix0i0W5bHx6erXfEpoUq8LyUeUt5/ib+n0=;
+	h=Date:From:Reply-To:To:Cc:In-Reply-To:References:Subject:List-ID:
+	 List-Archive:List-Post:List-Unsubscribe:From;
+	b=hWlc+QoQvGh2AzwX+eKuPNPvLkFH4O/UpJhCcQubTz5HVmN4cX4Z5tyt47fa/y+Nf
+	 paPxxYNs/RgWF8fvBkfqXejx1W4UqUiuKievjO2P16uL9WdF0fyVXoYdEP3E4ejf3P
+	 oa3AInoMn1u4mEe4f7fIJAQ4WU2jJM9QgIeY5jYU=
+Date: Sun, 27 Mar 2022 21:09:48 -0700
+From: ybz1013 <notifications@github.com>
+Reply-To: CPSC319-Winter-term-2/Pied-Piper-PWC-Backend <reply+AK534EGCZRFQJB4V6OY4DY6AJZTYZEVBNHHEM6VKJU@reply.github.com>
+To: CPSC319-Winter-term-2/Pied-Piper-PWC-Backend <Pied-Piper-PWC-Backend@noreply.github.com>
+Cc: Jerry Hall <hall.jerry9@gmail.com>, 
+ Comment <comment@noreply.github.com>
+Message-ID: <CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64/review/922593430@github.com>
+In-Reply-To: <CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64@github.com>
+References: <CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64@github.com>
+Subject: Re: [CPSC319-Winter-term-2/Pied-Piper-PWC-Backend] implement
+ EmailServerConnector.ts (PR #64)
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6241350cc21c0_127ac6fc2798d2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Precedence: list
+X-GitHub-Sender: ybz1013
+X-GitHub-Recipient: jerry-hall
+X-GitHub-Reason: comment
+List-ID: CPSC319-Winter-term-2/Pied-Piper-PWC-Backend
+ <Pied-Piper-PWC-Backend.CPSC319-Winter-term-2.github.com>
+List-Archive: https://github.com/CPSC319-Winter-term-2/Pied-Piper-PWC-Backend
+List-Post: <mailto:reply+AK534EGCZRFQJB4V6OY4DY6AJZTYZEVBNHHEM6VKJU@reply.github.com>
+List-Unsubscribe: <mailto:unsub+AK534EGCZRFQJB4V6OY4DY6AJZTYZEVBNHHEM6VKJU@reply.github.com>,
+ <https://github.com/notifications/unsubscribe/AK534ECLBUCXQTM2LANZ3VTVCEWIZANCNFSM5RYOWX7Q>
+X-Auto-Response-Suppress: All
+X-GitHub-Recipient-Address: hall.jerry9@gmail.com
+
+
+----==_mimepart_6241350cc21c0_127ac6fc2798d2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+@ybz1013 commented on this pull request.
+
+
+
+> @@ -40,11 +67,11 @@ export class EmailManager {
+    * @param rawEmail email that has already been classified once
+    * @param newClassifierResult new ClassifierResult waiting to be updated
+    */
+-  static changeClassification(rawEmail: string, newClassifierResult: ClassifierResult): void {
++  static async changeClassification(rawEmail: string, newClassifierResult: ClassifierResult): Promise<void> {
+
+can you just add it as a separate function and we can discuss it later?
+
+-- 
+Reply to this email directly or view it on GitHub:
+https://github.com/CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64#discussion_r836040036
+You are receiving this because you commented.
+
+Message ID: <CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64/review/922593430@github.com>
+----==_mimepart_6241350cc21c0_127ac6fc2798d2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p></p>
+<p><b>@ybz1013</b> commented on this pull request.</p>
+
+<hr>
+
+<p>In <a href="https://github.com/CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64#discussion_r836040036">src/EmailManager.ts</a>:</p>
+<pre style='color:#555'>&gt; @@ -40,11 +67,11 @@ export class EmailManager {
+    * @param rawEmail email that has already been classified once
+    * @param newClassifierResult new ClassifierResult waiting to be updated
+    */
+-  static changeClassification(rawEmail: string, newClassifierResult: ClassifierResult): void {
++  static async changeClassification(rawEmail: string, newClassifierResult: ClassifierResult): Promise&lt;void&gt; {
+</pre>
+<p dir="auto">can you just add it as a separate function and we can discuss it later?</p>
+
+<p style="font-size:small;-webkit-text-size-adjust:none;color:#666;">&mdash;<br />Reply to this email directly, <a href="https://github.com/CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64#discussion_r836040036">view it on GitHub</a>, or <a href="https://github.com/notifications/unsubscribe-auth/AK534EG6ZNKGY3O3LJJXGV3VCEWIZANCNFSM5RYOWX7Q">unsubscribe</a>.<br />You are receiving this because you commented.<img src="https://github.com/notifications/beacon/AK534ECCGRBEIAEBYUMTD7TVCEWIZA5CNFSM5RYOWX72YY3PNVWWK3TUL52HS4DFWFIHK3DMKJSXC5LFON2FEZLWNFSXPKTDN5WW2ZLOORPWSZGOG362RFQ.gif" height="1" width="1" alt="" /><span style="color: transparent; font-size: 0; display: none; visibility: hidden; overflow: hidden; opacity: 0; width: 0; height: 0; max-width: 0; max-height: 0; mso-hide: all">Message ID: <span>&lt;CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64/review/922593430</span><span>@</span><span>github</span><span>.</span><span>com&gt;</span></span></p>
+<script type="application/ld+json">[
+{
+"@context": "http://schema.org",
+"@type": "EmailMessage",
+"potentialAction": {
+"@type": "ViewAction",
+"target": "https://github.com/CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64#discussion_r836040036",
+"url": "https://github.com/CPSC319-Winter-term-2/Pied-Piper-PWC-Backend/pull/64#discussion_r836040036",
+"name": "View Pull Request"
+},
+"description": "View this Pull Request on GitHub",
+"publisher": {
+"@type": "Organization",
+"name": "GitHub",
+"url": "https://github.com"
+}
+}
+]</script>
+----==_mimepart_6241350cc21c0_127ac6fc2798d2--

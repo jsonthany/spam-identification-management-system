@@ -1,0 +1,279 @@
+Delivered-To: premiumrich@gmail.com
+Received: by 2002:a05:6838:735a:0:0:0:0 with SMTP id y26csp993721nkm;
+        Sun, 20 Mar 2022 09:23:32 -0700 (PDT)
+X-Received: by 2002:a17:902:8306:b0:14f:a386:6a44 with SMTP id bd6-20020a170902830600b0014fa3866a44mr8761702plb.140.1647793411410;
+        Sun, 20 Mar 2022 09:23:31 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1647793411; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=S0kYPU7/Kx2/3guf+7eY45ZJAhJSvcLN/4NrwUKjiXS8Efr57QKimyMCiC1cm280wi
+         OTfr9C7KHWpapPLm31uXMioDtV6WT0aS4YiqT1EX9PQCK072D05GtyFWsqUXHCU8hhGl
+         dDCdyO6Moyg3eHBqX6VvsoN7uHZlNK7YsnesUZ+Zs+GAKoRDitgsd8NGoM7ihzvpdp6O
+         /PMlMB0opSUkG5V4W6zhUB0Wkv8mTRfdRIbteNv//dSwlM1BYoViD2hE/ivHQAB7rnLZ
+         Owza2aTTLNAQSN3y/kzad+vGgFk/5rH1076odWk2sFnJ+CzPSrYsAj0/4Sid0igBrNpy
+         PjOw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=organization:sender:date:to:subject:from:message-id:mime-version
+         :domainkey-signature:dkim-signature:delivered-to;
+        bh=nU6wWb0DNpRpv0VutT6KZ4fvGkAsYvpQINT/3N4BVqw=;
+        b=GOq97G4U779wMTOv9b0pBPYnQ++RIjPYWeyNeBhYD7AemPj5BbQ0kKahJx5rA0vpDl
+         ltyPXHJgcjG3kPegEGfkSBmA8b/WmzQ2scRxZw6gNZ/lfdZNNvjbS2z0ftiwNUlwMxxY
+         oCB0zbUS56uPo+BnvkQNqkVjwSW8wR/qzyOAOpd8HJtNfpXAJc+eYi5S+Yn+CGDiBefM
+         bBJj8OafN7vkllVqv7SmG8OMFdhQkYIUB6c/PadKbRvQXJ0pTxEbdTTxzmdD8bCeJw24
+         /CB+h/p8V13crhiQKt2KM1RsMu7kQA0U1jFs5fA18+HhXQ+RxvZeGxJQOisTUZv42ARZ
+         vq0Q==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@wildocean.icu header.s=mail header.b=Ut54Y3Dp;
+       arc=pass (i=1 spf=pass spfdomain=wildocean.icu dkim=pass dkdomain=wildocean.icu);
+       spf=pass (google.com: domain of richardy910+caf_=premiumrich=gmail.com@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom="richardy910+caf_=premiumrich=gmail.com@gmail.com"
+Return-Path: <richardy910+caf_=premiumrich=gmail.com@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d5-20020a056a0024c500b004fa762b9d17sor3143610pfv.51.2022.03.20.09.23.31
+        for <premiumrich@gmail.com>
+        (Google Transport Security);
+        Sun, 20 Mar 2022 09:23:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of richardy910+caf_=premiumrich=gmail.com@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@wildocean.icu header.s=mail header.b=Ut54Y3Dp;
+       arc=pass (i=1 spf=pass spfdomain=wildocean.icu dkim=pass dkdomain=wildocean.icu);
+       spf=pass (google.com: domain of richardy910+caf_=premiumrich=gmail.com@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom="richardy910+caf_=premiumrich=gmail.com@gmail.com"
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:delivered-to:dkim-signature:domainkey-signature
+         :mime-version:message-id:from:subject:to:date:sender:organization;
+        bh=nU6wWb0DNpRpv0VutT6KZ4fvGkAsYvpQINT/3N4BVqw=;
+        b=gCH4ffC/fzDoeWR1LMAStwtj8edcGoUHRkyLKczmBFZ/C1fI4UqZvpjIZYNHFnFTV5
+         hJJ84a3BYeHTz6KU0wiokZ5gHsbkZ8NN96owdwfFLrCClOZTLOHi0Ir3E/kcUTwTMOcF
+         TjdNQLHfSKEwVwtj3UcnU+4sp3ta1mbxmtDfRZsoA+M2G3SM2QAnTt5kjsbh3ZhJf1uX
+         Ih2y2ffiEVw8K7eAWE/FLl8NoIv7yv4tIIgV2/ENhVh14Js3sGEC8o+4hdCnNLqouZkT
+         1dc6R2CkFwANEqhPe//aMYL1jfxIzTefMBOO49jRy8URgfsTF2vmzTP26hLHStgAw/X8
+         3kdA==
+X-Gm-Message-State: AOAM531rJu0i0A87bnWvaSb2E6mgeZqCQF2uKgMF+cZBAvkJ3Euy0xCI
+	wFjuZXE67xUATLmo16cK5ltkz5zLXKoAR4WkiFEX5CPZQgkzoflIxw==
+X-Received: by 2002:a05:6a00:14c9:b0:4f7:763b:2efd with SMTP id w9-20020a056a0014c900b004f7763b2efdmr19935557pfu.55.1647793410874;
+        Sun, 20 Mar 2022 09:23:30 -0700 (PDT)
+X-Forwarded-To: premiumrich@gmail.com
+X-Forwarded-For: richardy910@gmail.com premiumrich@gmail.com
+Delivered-To: richardy910@gmail.com
+Received: by 2002:a17:522:86ae:b0:437:1325:4065 with SMTP id w14csp632297pvz;
+        Sun, 20 Mar 2022 09:23:29 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwZwqfIrE1hToXqtINF0Hus9m0BaV9K6cgwTlKIysozXhnNA+EgouHRXUzoL6wd9/bR+Je1
+X-Received: by 2002:a05:6000:18ce:b0:203:c83c:30b with SMTP id w14-20020a05600018ce00b00203c83c030bmr15261795wrq.221.1647793408988;
+        Sun, 20 Mar 2022 09:23:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1647793408; cv=none;
+        d=google.com; s=arc-20160816;
+        b=IMhhK1+siZe9lVPJwHlpATb6GYTnKYmxlQr+n4gkGjuyjpKfdOBsPHUG/fXiovmO9Z
+         vDtUhXPBRSGt4HFnp/noYJp4ROF3dySREGvQ6VRtq+BRbEEDylpCzAeao4+jRsFZJfAQ
+         T3YFmZK6hTfItFDsfg+5FeI6KynfT9o27MSeY0hf3mbfiU0wG4Cg60JQPGEMhOHeOldt
+         sSNebomb/eWcEWbF5/voUI5oMlwwv7FtkFhzDLJrhJq8dX+rrRYEVZE1xHcx0AF5ci8b
+         dGWKtoTwZ0EpiXqQzyiZLPtBr08QBAaHv7QHaerzorGe4Nqahho8W37fjLxr7IChxhNH
+         qgTg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=organization:sender:date:to:subject:from:message-id:mime-version
+         :domainkey-signature:dkim-signature;
+        bh=nU6wWb0DNpRpv0VutT6KZ4fvGkAsYvpQINT/3N4BVqw=;
+        b=OnNjQYx9B7kBwgJf5gjAyuyG+AB0/5x3LBui0NzaMvKvTzRP2WxhMssHfPz8p/Ewqs
+         QkEqltDJ/0/XtMppbV96QyfzyVZo5bNCfFuhlQqSuH3a0DEJ0rGd3hs/vZTLm/ICUvOJ
+         6p5biQSdqFYeF0+Wr8GGLeiYnRCcPDCNP7kA9fSE13rCdHVmgUJkX/3BhsdS7mBNX1vw
+         eo+7BgDYfDcz/S6gxP9fSipHmhwPhB6ITulAqhwEIA6+D2vXCN/7D/0JuG7K4CMd3Isl
+         xBa/q8t7GAfv6kRRf+aK0duKI/Amq++2iDwRLqkQ5x8bti4xDYaeyGfGOvYsQLbPBLpd
+         L85Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@wildocean.icu header.s=mail header.b=Ut54Y3Dp;
+       spf=pass (google.com: domain of efhp2kxu@wildocean.icu designates 85.234.130.16 as permitted sender) smtp.mailfrom=eFHp2kXU@wildocean.icu
+Return-Path: <eFHp2kXU@wildocean.icu>
+Received: from wildocean.icu (wildocean.icu. [85.234.130.16])
+        by mx.google.com with ESMTPS id o13-20020a05600c4fcd00b0038c77be9cb5si5589682wmq.125.2022.03.20.09.23.28
+        for <richardy910@gmail.com>
+        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Sun, 20 Mar 2022 09:23:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of efhp2kxu@wildocean.icu designates 85.234.130.16 as permitted sender) client-ip=85.234.130.16;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=wildocean.icu;
+ h=MIME-Version:Message-ID:From:Subject:To:Content-Type:Date:Sender; i=weuw5dl@RVjszLzk.wildocean.icu;
+ bh=32gDOBtgDLsltvh2NVhlGXQ1Vyk=;
+ b=Ut54Y3DpMy0F3NaD8MhiebLjSD8SAjQD+azEgr5g8Ofa2saK0ahdKxn61KkG4idaRDFwVjPPQ87A
+   LEwu+HHanL0zdYL4S2Ur1WjXpd9KbT7nZbZZ0S/fH/A0RsivLjim6THWT19NOH2z/PIBf9JEBs3N
+   HQuw8jqqBb6APTWaH7Q=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail; d=wildocean.icu;
+ b=X3K5WOFGsQxlQBZCakM04qdqHzQRFI38C7fHk0hwX5D/q8qL0Jq8qrejz4dgtBY2SnNStDkIMF2e
+   cbB5AuYvG8aD7jFn/E0nIxbC8lB0zP4W1dE2PJO1PoQ8GFNwQyxM+DnxZoSpeY+IkC5mml4p1uPR
+   K30kl6Y7TB2PmOX7Xds=;
+MIME-Version: 1.0
+Message-ID: <$20200221210206@mt4srv01>
+From: //Shopper/\Savings// <support@wildocean.icu>
+Subject: Survey Registration Confirmation richardy910 ===== ti48916
+To: richardy910@gmail.com
+Content-Type: multipart/digest; boundary="_919696d7-11e9-49be-a770-bf0c95f222a2_"
+Date: Sun, 20 Mar 2022 17:21:21 +0100
+Sender: weuw5dl@RVjszLzk.wildocean.icu
+Organization: Oracle Corporation
+X-Priority: 3
+X-Proofpoint-ORIG-GUID: j9OgRwqtm_ghYhoBR7jYEwyAR4hup1ic
+X-Proofpoint-GUID: j9OgRwqtm_ghYhoBR7jYEwyAR4hup1ic
+X-Proofpoint-Virus-Version: vendor=nai engine=6300 definitions=10291 signatures=694221
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 adultscore=0 spamscore=0 malwarescore=0 suspectscore=0 mlxlogscore=999 bulkscore=0 phishscore=0 mlxscore=0 classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-2202240000 definitions=main-2203200108
+
+--_919696d7-11e9-49be-a770-bf0c95f222a2_
+Content-Type: multipart/parallel; boundary="c2a9a2347fe8e05fb9020cb97752eae03b446ef1c6a1e6859d8de50644c3"
+
+--c2a9a2347fe8e05fb9020cb97752eae03b446ef1c6a1e6859d8de50644c3
+Content-Type: multipart/alternative; boundary="_----------=PmmaymaMrwna!2"
+
+
+
+--_----------=PmmaymaMrwna!2
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: Hexa
+
+Hello,
+
+ 
+
+My name is ttmei mdcny with ????/////yplei\\\??????, hope your day is going well. I am a Market Research Representative with the company. I see that you attempted to sign up for the FREE ????/////yplei\\\?????? platform on 11/5/2018 and you did not go through with completing registration for the platform.
+
+ 
+
+Can you please respond back via email and let me know why you did not complete the full sign up the platform? We want to learn what we can do to improve your registration process.
+
+ 
+
+Please put an X next to the reasons that apply to why you did not fully sign up and send the email back to my attention.
+
+ 
+
+???        Signed up by accident ________________________________
+
+???        I did not get the verify email to sign up ____________________
+
+???        Signed up under another email __________________________
+
+???        I am afraid of getting SPAM emails___________________________
+
+???        I didn???t know how long it will take to register _____________________
+
+???        I was afraid I was going to be asked for a credit card _______________
+
+???        I am using a competitor???s system and was just browsing ______________
+
+???        I was afraid revenue comes from third party advertisement ___________
+
+???        If other, please specify _____________________________________
+
+ 
+
+I look forward to hearing back from you and please know we are here to assist you however we can.
+
+ 
+
+We truly appreciate you taking a few minutes to respond and helping us to improve our onboarding experience.
+
+ 
+
+Thank you,
+
+ 
+
+Melissa McManus
+
+Market Research Representative
+
+cid:image001.png@01D44532.425539F0
+
+Phone: 862-225-3391
+
+Email: melissa.mcmanus@????/////yplei\\\??????
+
+Skype: live:melissa.mcmanus_3
+
+
+--_----------=_16V5w7Q4deVT__919696d7-11e9-49be-a770-bf0c95f222a2_
+Content-Type: text/html; charset=utf-8
+
+
+
+<p>WELCOME</p>
+<p>Hi Quincy,</p>
+<p>Thanks for subscribing ??? it???s great to have you join us!</p>
+<p>At ????/////yplei\\\??????, our vision is gender equality for all. We work with women across the Asia Pacific region to advance and protect the rights of women and girls. We can't wait to share with you the inspirational journeys of the women who are already making a transformative difference in their communities.</p>
+<p>We'll keep you updated with the latest news from our partners in Myanmar, Cambodia, Fiji, Papua New Guinea and Bougainville, Solomon Islands and Timor-Leste.</p>
+<p>You'll also be the first to hear about important fundraising and advocacy opportunities as soon as they arise. If in the meantime there is something in particular you'd like to receive, simply respond to this email and we'll be happy to assist.</p>
+<p>Thank you again for your support!</p>
+<p>In solidarity,</p>
+<p>The Women of ????/////yplei\\\??????</p>
+<p>JOIN US ON FACEBOOK</p>
+<p>FORWARD TO A FRIEND</p>
+<p>TERMS & CONDITIONS: Read the ????/////yplei\\\?????? Privacy Policy and Terms & Conditions.</p>
+sqkpu<p>Level 1, 250 Queen Street, Melbourne, Victoria, Australia Phone: (+61) 3 9650 5574 | Donation Hotline: 1300 661 812 Email: ????/////yplei\\\??????@????/////yplei\\\??????.org.au to the address: [email address] Unsubscribe</p>
+
+--_----------=PmmaymaMrwna!2
+Content-Type: text/html; charset=utf-8
+
+
+
+
+<center>
+<a href="http://s3.us-west-2.amazonaws.com/53308799075242/IXHYXPQEIJTCADZLTWYNX.html#r.php?t=c&d=21592&l=2064&c=84881">
+<b>
+<font size="6" color="#FFB366">Congratulation richardy910 !!<br> You're on our List </font></a><br><br><br><br><br><br><br><br>
+<img src="http://s3.us-west-2.amazonaws.com/53308799075242/IXHYXPQEIJTCADZLTWYNX.png" alt="" usemap="#80Sf">
+<map name="80Sf" >
+<area shape="rect" href="http://s3.us-west-2.amazonaws.com/53308799075242/IXHYXPQEIJTCADZLTWYNX.html#r.php?t=c&d=21592&l=2064&c=84881" coords="20,11,453,690" >
+<area shape="rect" href="http://s3.us-west-2.amazonaws.com/53308799075242/SHXPCTAQGWABXMQATTQIO.html#r.php?t=u&d=21592&l=2064&c=84881" coords="195,728,320,746" >
+<area shape="rect" href="http://s3.us-west-2.amazonaws.com/53308799075242/OQGGXNQIFUPRODESGFKRR.html#opt.php?d=21592&l=2064&c=84881&em=fb2bc7889bd6c129c2a85db5478509a7" coords="158,798,381,822" >
+</map>
+
+<HeaD>
+<ObJECT>
+<TitLe>
+<applet>
+91108454 85.234.130.16
+
+
+--_----------=PmmaymaMrwna!2--
+--c2a9a2347fe8e05fb9020cb97752eae03b446ef1c6a1e6859d8de50644c3--
+--_919696d7-11e9-49be-a770-bf0c95f222a2_
+Content-Type: text/html;
+Content-Transfer-Encoding: Hexa
+
+
+<p>Thank you for signing up for the ????/////yplei\\\?????? Registry.</p>
+<p>You are receiving this mes????/////yplei\\\?????? as a service of ????/////yplei\\\??????. In order to protect your privacy, all future notifications will be from ????/////yplei\\\?????? and will not list any health related information until after you sign in with the username and password you established. If you did not sign up for the ????/////yplei\\\?????? Registry, please ignore this mes????/////yplei\\\??????.</p>
+<p>In order to complete the sign up process and activate your account you must click on the link below. Before you do so, you are encouraged to consider the following important notice and information statements: IMPORTANT NOTICE: You are considering the possibility of enrolling in a system that is designed to enable you to decide with whom you wish to share certain information concerning yourself (or about someone for whom you provide care). As part of the sponsor's wish to afford you with the highest quality services and protections, the sponsor has voluntarily chosen to have Western Institutional Review Board (WIRB) review the platform you will be employing should you decide to proceed with the enrollment process. WIRB is an independent organization established in 1968 specifically to certify human subject protection for health-related research programs. Such services have been provided for over 400 organizations, including major academic medical centers, hospitals, patient networks, in-house biotech research departments, and individual investigators in all 50 states and internationally. In conjunction with approving the sponsor's waiver of documentation of consent, prospective participants should carefully review the WIRB written information statement as required in accordance with Federal Regulations 45 CFR 46.117 and 21 CFR 56.109(d).</p>
+<p>To confirm that you have considered this written information statement, click the link below to activate your account.</p>
+<p>Click to activate your account</p>
+<p>If the link does not work, you can paste this address into your browser :</p>
+<p>Thank you,</p>
+<p>The ????/////yplei\\\?????? Team</p>
+<p>Private Access is a registered trademark of Private Access, Inc. Portions of the Private Access technology are protected under U.S. Patent Nos. 7,028,049; 7,664,663; 8,131,764; 8.904,554; 8,909,669; and pending applications. This mes????/////yplei\\\?????? was produced by our system, and distributed from Amazon Web Services email servers to assure the highest possible reliability. Private Access, Inc. is located at 19800 MacArthur Boulevard, Suite 300, Irvine, CA 92612. Please do not respond to this email. All responses to the email address shown above are discarded. For questions, or concerns, please contact our offices M-F during normal business hours at (888) 917-7482, or by sending an email to support@PrivateAccess</p>
+----E366SQB7;ujiRQz----E366SQB7;ujiRQz
+----E366SQB7;ujiRQz----E366SQB7;ujiRQz
+<p>Dear TAnxQ,</p>
+<p>Your username is:</p>
+<p>Don't know your password or want to change it?</p>
+<p>Send Password Reset Email</p>
+<p>Need more assistance? We're happy to help.</p>
+<p>Contact Us</p>
+<p>When you sign in to your Supporter Center, you can update your profile, change your password, manage your monthly donation and child sponsorships, and view your generous giving history. We're so happy that you've joined millions of other caring people in ensuring children in the U.S. and around the world have what every child deserves: a future.</p>
+<p>Sincerely,</p>
+<p>Your Save the Children Team</p>
+<p>P.S. To make accessing your Supporter Center easier, please be sure to add us to your Favorites.</p>
+<p>You???re important to us and to the children whose lives and futures you help to change. Please contact us any time you need more information or have a question.</p>
+<p>Contact Supporter Services:</p>
+<p>1-800-728-3843</p>
+----E366SQB7;ujiRQz----E366SQB7;ujiRQz
+----E366SQB7;ujiRQz----E366SQB7;ujiRQz
+
+Bonjour iVLMTSv,
+Pour finaliser la cr??ation de votre compte Oracle, validez votre adresse email.
+Valider l'adresse email   
+Vous pouvez ??galement utiliser l'URL ci-dessous pour effectuer votre action.
+
+https://profile.fsugnj.com/myprofile/account/verify.jspx?key=314F554A08E9434263A553B94F0675C61E9877E620CA94F1EA8BF29BA7BD450C17AFE1B343446318EE31CAE1A0477BB5AD68574B94C47B51D918F190B504CE43
+Ce lien expirera dans 24 heures. S???il a expir??, demandez ?? recevoir un nouvel email de validation.
+Nous avons re??u une demande de cr??ation d???un compte Oracle associ?? ?? votre adresse email. Si vous n???avez pas fait cette demande, envoyez une demande d???aide ou un email ?? l???adresse profilehelp_ww@fsugnj.com.
+Merci !
+L?????quipe de gestion des comptes Oracle
+Copyright @ 2022, Oracle et/ou ses filiales. Tous droits r??serv??s.
+Aide sur votre compte | Conditions d???utilisation | Confidentialit?? 	
+
+----E366SQB7;ujiRQz----E366SQB7;ujiRQz
+----E366SQB7;ujiRQz----E366SQB7;ujiRQz
